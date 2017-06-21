@@ -2,6 +2,7 @@
 using Template10.Common;
 using Template10.Utils;
 using Windows.UI.Xaml;
+using XD.UWP.CurrencyExchanger.UWPAPP.Models;
 
 namespace XD.UWP.CurrencyExchanger.UWPAPP.Services.SettingsServices
 {
@@ -73,5 +74,136 @@ namespace XD.UWP.CurrencyExchanger.UWPAPP.Services.SettingsServices
                 Views.Shell.HamburgerMenu.IsFullScreen = value;
             }
         }
+
+
+        /// <summary>
+        /// Gets or sets the share email.
+        /// </summary>
+        /// <value>
+        /// The share email.
+        /// </value>
+        public string ShareEmail
+        {
+            get { return _helper.Read<string>(nameof(ShareEmail), string.Empty); }
+            set
+            {
+                _helper.Write(nameof(ShareEmail), value);
+            }
+        }
+
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance is automatic refresh rates on startup.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if this instance is automatic refresh rates on startup; otherwise, <c>false</c>.
+        /// </value>
+        public bool IsAutoRefreshRatesOnStartup
+        {
+            get { return _helper.Read<bool>(nameof(IsAutoRefreshRatesOnStartup), false); }
+            set
+            {
+                _helper.Write(nameof(IsAutoRefreshRatesOnStartup), value);
+            }
+        }
+
+
+        /// <summary>
+        /// Gets or sets the decimal precision.
+        /// </summary>
+        /// <value>
+        /// The decimal precision.
+        /// </value>
+        public int DecimalPrecision
+        {
+            get { return _helper.Read<int>(nameof(DecimalPrecision), 2); }
+            set
+            {
+                _helper.Write(nameof(DecimalPrecision), value);
+            }
+        }
+
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance is localized currency symbol.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if this instance is localized currency symbol; otherwise, <c>false</c>.
+        /// </value>
+        public bool IsLocalizedCurrencySymbol
+        {
+            get { return _helper.Read<bool>(nameof(IsLocalizedCurrencySymbol), false); }
+            set
+            {
+                _helper.Write(nameof(IsLocalizedCurrencySymbol), value);
+            }
+        }
+
+
+        /// <summary>
+        /// Gets or sets the default type of the chart.
+        /// </summary>
+        /// <value>
+        /// The default type of the chart.
+        /// </value>
+        public HistoryChartType DefaultChartType
+        {
+            get { return _helper.Read<HistoryChartType>(nameof(DefaultChartType), HistoryChartType.ThreeMonths); }
+            set
+            {
+                _helper.Write(nameof(DefaultChartType), value);
+            }
+        }
+
+
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance is enable pull to refresh.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if this instance is enable pull to refresh; otherwise, <c>false</c>.
+        /// </value>
+        public bool IsEnablePullToRefresh
+        {
+            get { return _helper.Read<bool>(nameof(IsEnablePullToRefresh), false); }
+            set
+            {
+                _helper.Write(nameof(IsEnablePullToRefresh), value);
+            }
+        }
+
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance is enable automatic initialize0.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if this instance is enable automatic initialize0; otherwise, <c>false</c>.
+        /// </value>
+        public bool IsEnableAutoInitialize0
+        {
+            get { return _helper.Read<bool>(nameof(IsEnableAutoInitialize0), false); }
+            set
+            {
+                _helper.Write(nameof(IsEnableAutoInitialize0), value);
+            }
+        }
+
+
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this instance is enable live tile.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if this instance is enable live tile; otherwise, <c>false</c>.
+        /// </value>
+        public bool IsEnableLiveTile
+        {
+            get { return _helper.Read<bool>(nameof(IsEnableLiveTile), false); }
+            set
+            {
+                _helper.Write(nameof(IsEnableLiveTile), value);
+            }
+        }
+
     }
 }
