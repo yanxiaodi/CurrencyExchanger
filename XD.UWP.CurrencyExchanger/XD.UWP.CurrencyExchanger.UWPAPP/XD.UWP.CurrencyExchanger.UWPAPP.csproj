@@ -95,6 +95,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Calculator\HelperModules\Function.cs" />
+    <Compile Include="Calculator\HelperModules\Settings.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Models\CurrencyExchangeItem.cs" />
     <Compile Include="Models\CurrencyItem.cs" />
