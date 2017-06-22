@@ -98,6 +98,8 @@
     <Compile Include="Calculator\HelperModules\Function.cs" />
     <Compile Include="Calculator\HelperModules\Settings.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Context.cs" />
+    <Compile Include="ControlHelper\Converters.cs" />
     <Compile Include="Models\CurrencyExchangeItem.cs" />
     <Compile Include="Models\CurrencyItem.cs" />
     <Compile Include="Models\Dto\DtoCurrencyExchangeItem.cs" />
@@ -105,6 +107,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CurrencyService.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
+    <Compile Include="Utilities\AppResources.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
     <Compile Include="ViewModels\SettingsPageViewModel.cs" />
