@@ -9,8 +9,4 @@
     <PackageReference Include="MvvmCross.CodeAnalysis" Version="6.2.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Calculator\" />
-  </ItemGroup>
-
 </Project>
