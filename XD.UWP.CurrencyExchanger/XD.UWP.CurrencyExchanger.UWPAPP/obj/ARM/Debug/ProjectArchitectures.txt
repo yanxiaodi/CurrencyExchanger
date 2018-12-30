@@ -1,1 +1,0 @@
-E:\Source\Repos\yxd\CurrencyExchanger\XD.UWP.CurrencyExchanger\XD.UWP.CurrencyExchanger.UWPAPP\XD.UWP.CurrencyExchanger.UWPAPP.csproj;arm
