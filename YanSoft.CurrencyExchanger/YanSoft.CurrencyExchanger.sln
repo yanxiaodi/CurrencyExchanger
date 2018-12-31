@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YanSoft.CurrencyExchanger.Core", "src\YanSoft.CurrencyExchanger.Core\YanSoft.CurrencyExchanger.Core.csproj", "{A00BB99B-FD75-40A9-86C9-362A63DF0790}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YanSoft.CurrencyExchanger.Core", "src\YanSoft.CurrencyExchanger.Core\YanSoft.CurrencyExchanger.Core.csproj", "{A00BB99B-FD75-40A9-86C9-362A63DF0790}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YanSoft.CurrencyExchanger.UI", "src\YanSoft.CurrencyExchanger.UI\YanSoft.CurrencyExchanger.UI.csproj", "{DF26EBF1-CE88-46F7-AFC3-1BF92BCA4745}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YanSoft.CurrencyExchanger.UI", "src\YanSoft.CurrencyExchanger.UI\YanSoft.CurrencyExchanger.UI.csproj", "{DF26EBF1-CE88-46F7-AFC3-1BF92BCA4745}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YanSoft.CurrencyExchanger.Droid", "src\YanSoft.CurrencyExchanger.Droid\YanSoft.CurrencyExchanger.Droid.csproj", "{2A631008-B250-49C1-91B0-981338B2E509}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YanSoft.CurrencyExchanger.i
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YanSoft.CurrencyExchanger.UWP", "src\YanSoft.CurrencyExchanger.UWP\YanSoft.CurrencyExchanger.UWP.csproj", "{2B7CFF1C-94F4-45FE-B0B2-1120E30F9266}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YanSoft.CurrencyExchanger.Core.Test", "test\YanSoft.CurrencyExchanger.Core.Test\YanSoft.CurrencyExchanger.Core.Test.csproj", "{C48493F3-3976-4CE4-9F89-7BD0C97729F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YanSoft.CurrencyExchanger.Core.Test", "test\YanSoft.CurrencyExchanger.Core.Test\YanSoft.CurrencyExchanger.Core.Test.csproj", "{C48493F3-3976-4CE4-9F89-7BD0C97729F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YanSoft.CurrencyExchanger.Droid.Test", "test\YanSoft.CurrencyExchanger.Droid.Test\YanSoft.CurrencyExchanger.Droid.Test.csproj", "{A500C5DF-2EAF-4186-A261-80E29223858C}"
 EndProject
@@ -38,11 +38,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!Solution Items", "!Solutio
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{E3C8043A-7203-4C87-88BF-7F0A043E08D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YanSoft.CurrencyExchanger.WebApp", "src\YanSoft.CurrencyExchanger.WebApp\YanSoft.CurrencyExchanger.WebApp.csproj", "{B77B5A51-513D-4460-AE14-9B6422746934}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		src\YanSoft.CurrencyExchanger.Droid.Shared\YanSoft.CurrencyExchanger.Droid.Shared.projitems*{2A631008-B250-49C1-91B0-981338B2E509}*SharedItemsImports = 4
-		src\YanSoft.CurrencyExchanger.Droid.Shared\YanSoft.CurrencyExchanger.Droid.Shared.projitems*{A500C5DF-2EAF-4186-A261-80E29223858C}*SharedItemsImports = 4
-		src\YanSoft.CurrencyExchanger.Droid.Shared\YanSoft.CurrencyExchanger.Droid.Shared.projitems*{D626F744-33BB-4FC7-A8A7-8220873CDF38}*SharedItemsImports = 13
+		src\YanSoft.CurrencyExchanger.Droid.Shared\YanSoft.CurrencyExchanger.Droid.Shared.projitems*{2a631008-b250-49c1-91b0-981338b2e509}*SharedItemsImports = 4
+		src\YanSoft.CurrencyExchanger.Droid.Shared\YanSoft.CurrencyExchanger.Droid.Shared.projitems*{a500c5df-2eaf-4186-a261-80e29223858c}*SharedItemsImports = 4
+		src\YanSoft.CurrencyExchanger.Droid.Shared\YanSoft.CurrencyExchanger.Droid.Shared.projitems*{d626f744-33bb-4fc7-a8a7-8220873cdf38}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -337,19 +341,44 @@ Global
 		{47065886-EB93-4BF4-937F-74950A719C6C}.Release|x64.Build.0 = Release|Any CPU
 		{47065886-EB93-4BF4-937F-74950A719C6C}.Release|x86.ActiveCfg = Release|Any CPU
 		{47065886-EB93-4BF4-937F-74950A719C6C}.Release|x86.Build.0 = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|x64.Build.0 = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Debug|x86.Build.0 = Debug|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|ARM.Build.0 = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|iPhone.Build.0 = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|x64.ActiveCfg = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|x64.Build.0 = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|x86.ActiveCfg = Release|Any CPU
+		{B77B5A51-513D-4460-AE14-9B6422746934}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2A631008-B250-49C1-91B0-981338B2E509} = {72F3F06F-F26C-4CC8-B9F0-643CCD51F2AF}
+		{019913DE-804E-4E23-909F-CB3723637153} = {55C62F87-D0E7-40E9-8FEC-A4AEF194B6AA}
+		{2B7CFF1C-94F4-45FE-B0B2-1120E30F9266} = {61893EFF-1904-46E4-8179-614C82D3B82F}
 		{A500C5DF-2EAF-4186-A261-80E29223858C} = {72F3F06F-F26C-4CC8-B9F0-643CCD51F2AF}
 		{D626F744-33BB-4FC7-A8A7-8220873CDF38} = {72F3F06F-F26C-4CC8-B9F0-643CCD51F2AF}
-		{019913DE-804E-4E23-909F-CB3723637153} = {55C62F87-D0E7-40E9-8FEC-A4AEF194B6AA}
 		{B1C2AAE9-2BCC-4D7A-9346-5DEB1B8080B7} = {55C62F87-D0E7-40E9-8FEC-A4AEF194B6AA}
-		{2B7CFF1C-94F4-45FE-B0B2-1120E30F9266} = {61893EFF-1904-46E4-8179-614C82D3B82F}
 		{F88273DD-CB03-4FC7-BC33-76CFC7CE0325} = {61893EFF-1904-46E4-8179-614C82D3B82F}
 		{47065886-EB93-4BF4-937F-74950A719C6C} = {61893EFF-1904-46E4-8179-614C82D3B82F}
+		{B77B5A51-513D-4460-AE14-9B6422746934} = {E3C8043A-7203-4C87-88BF-7F0A043E08D2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BD2EF440-630C-4A82-BBF4-25EBB80D4A1D}
