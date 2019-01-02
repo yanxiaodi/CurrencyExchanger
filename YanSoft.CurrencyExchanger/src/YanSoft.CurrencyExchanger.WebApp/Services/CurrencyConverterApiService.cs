@@ -68,15 +68,20 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
             var cacheEntry = new List<CurrencyRate>();
             if (_cache.TryGetValue(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(sourceCode), out cacheEntry))
             {
-                result.Rates = cacheEntry.Where(x => targetCodes.ToList().Contains(x.TargetCode)).ToList();
+                result.Rates = cacheEntry.Where(x => targetCodes.ToList().Contains(x.Target)).ToList();
                 return result;
             }
             else
             {
                 HttpClient httpClient = _clientFactory.CreateClient(Constants.CurrencyConverterHttpClientName);
-                //Currently, I need to request all the currencies and store the result in the cache.
-                IEnumerable<string> targets = targetCodes.ToList().Select(x => $"{sourceCode}_{x}");
-                var queryParam = string.Join(',', targets);
+                // Request all the currencies and store the result in the cache.
+                List<Currency> currenciesCache = await GetCurrencies();
+
+                // Currently, only take 2 currencies for development.
+                IEnumerable<string> targets = currenciesCache.ToList().Where(x => targetCodes.Contains(x.Code)).Select(x => $"{sourceCode}_{x.Code}");
+                var queryParam = string.Join(',', targets.Take(2));
+                //IEnumerable<string> targets = currenciesCache.ToList().Select(x => $"{sourceCode}_{x.Code}");
+                //var queryParam = string.Join(',', targets);
                 var url = $"{_apiUri}convert?q={queryParam}";
                 HttpResponseMessage response = await httpClient.GetAsync(url);
                 if (response.StatusCode == System.Net.HttpStatusCode.OK)
@@ -86,8 +91,8 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
                     {
                         var currencyRate = new CurrencyRate
                         {
-                            SourceCode = sourceCode,
-                            TargetCode = targetCode
+                            Source = sourceCode,
+                            Target = targetCode
                         };
                         if (decimal.TryParse(responseObject["results"][$"{sourceCode}_{targetCode}"]["val"].ToString(), out var rate))
                         {
