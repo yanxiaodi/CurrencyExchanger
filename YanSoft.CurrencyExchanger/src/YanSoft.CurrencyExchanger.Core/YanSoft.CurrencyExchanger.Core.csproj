@@ -19,6 +19,7 @@
     <None Remove="MultilingualResources\YanSoft.CurrencyExchanger.Core.zh-Hant.xlf" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.0" />
     <PackageReference Include="MvvmCross" Version="6.2.2" />
     <PackageReference Include="MvvmCross.CodeAnalysis" Version="6.2.2" />
     <PackageReference Include="Plugin.Multilingual" Version="1.1.6-beta" />
