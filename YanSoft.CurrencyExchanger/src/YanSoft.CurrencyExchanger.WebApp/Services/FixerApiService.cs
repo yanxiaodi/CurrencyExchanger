@@ -16,7 +16,12 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
             _clientFactory = httpClientFactory;
         }
 
-        public async Task<CurrencyRatesResponse> GetLatestRates(string baseCode, IEnumerable<string> targetCodes)
+        public Task<List<Currency>> GetCurrencies()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<CurrencyRatesResponse> GetLatestRates(string sourceCode, IEnumerable<string> targetCodes)
         {
             HttpClient httpClient = _clientFactory.CreateClient(Constants.FixerHttpClientName);
 

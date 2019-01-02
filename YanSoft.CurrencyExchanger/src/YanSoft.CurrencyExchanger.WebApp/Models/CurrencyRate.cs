@@ -8,7 +8,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Models
 {
     public class CurrencyRate
     {
-        public string BaseCode { get; set; }
+        public string SourceCode { get; set; }
         public string TargetCode { get; set; }
         public decimal Rate { get; set; }
     }

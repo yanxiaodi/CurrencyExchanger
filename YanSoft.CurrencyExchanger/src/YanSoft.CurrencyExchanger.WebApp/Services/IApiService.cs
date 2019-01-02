@@ -9,12 +9,14 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
 {
     public interface IApiService
     {
+        Task<List<Currency>> GetCurrencies();
+
         /// <summary>
         /// Gets the latest rates.
         /// </summary>
         /// <param name="baseCode">The base code.</param>
         /// <param name="targetCodes">The target codes</param>
         /// <returns></returns>
-        Task<CurrencyRatesResponse> GetLatestRates(string baseCode, IEnumerable<string> targetCodes);
+        Task<CurrencyRatesResponse> GetLatestRates(string sourceCode, IEnumerable<string> targetCodes);
     }
 }
