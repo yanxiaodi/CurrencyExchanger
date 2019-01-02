@@ -1,5 +1,7 @@
-﻿using MvvmCross.IoC;
+using MvvmCross.IoC;
 using MvvmCross.ViewModels;
+using Plugin.Multilingual;
+using YanSoft.CurrencyExchanger.Core.Resources;
 using YanSoft.CurrencyExchanger.Core.ViewModels.Home;
 
 namespace YanSoft.CurrencyExchanger.Core
@@ -13,6 +15,8 @@ namespace YanSoft.CurrencyExchanger.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
+            AppResource.Culture = CrossMultilingual.Current.DeviceCultureInfo;
+            
             RegisterAppStart<HomeViewModel>();
         }
     }

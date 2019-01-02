@@ -7,10 +7,11 @@
     xmlns:local="clr-namespace:YanSoft.CurrencyExchanger.UI.Pages"
     x:Class="YanSoft.CurrencyExchanger.UI.Pages.HomePage"
     xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels.Home;assembly=YanSoft.CurrencyExchanger.Core"
-                      Title="Main page">
+                      Title="Main page"
+                      xmlns:utils="clr-namespace:YanSoft.CurrencyExchanger.Core.Utils;assembly=YanSoft.CurrencyExchanger.Core">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome!!&#10;App scaffolded with MvxScaffolding"
+            <Label Text="{utils:Translate App_Name}"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
