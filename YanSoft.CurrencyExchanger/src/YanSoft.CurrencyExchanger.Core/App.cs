@@ -1,4 +1,4 @@
-using MvvmCross.IoC;
+﻿using MvvmCross.IoC;
 using MvvmCross.ViewModels;
 using Plugin.Multilingual;
 using YanSoft.CurrencyExchanger.Core.Resources;
