@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
+using YanSoft.CurrencyExchanger.WebApp.Middlewares;
 using YanSoft.CurrencyExchanger.WebApp.Services;
 
 namespace YanSoft.CurrencyExchanger.WebApp
@@ -67,7 +68,7 @@ namespace YanSoft.CurrencyExchanger.WebApp
             //app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
-
+            //app.UseValidateRequest();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

@@ -7,6 +7,8 @@ namespace YanSoft.CurrencyExchanger.WebApp
 {
     public static class Constants
     {
+        public const int MinClientAppVersion = 1;
+
         public const string FixerApiKey = "{FixerApiKey}";
         public const string FixerHttpClientName = "fixer";
 
