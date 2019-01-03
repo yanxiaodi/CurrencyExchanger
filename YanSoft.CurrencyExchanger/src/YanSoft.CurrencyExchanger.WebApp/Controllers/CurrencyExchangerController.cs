@@ -30,7 +30,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Controllers
             var result = new ResponseInfo<List<Currency>>
             {
                 IsSuccess = true,
-                Result = response
+                Result = response.OrderBy(x => x.Code).ToList()
             };
             return result;
         }

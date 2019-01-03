@@ -1,26 +1,32 @@
+using MvvmCross;
 using MvvmCross.IoC;
 using MvvmCross.ViewModels;
 using Plugin.Multilingual;
+using YanSoft.CurrencyExchanger.Core.Common;
 using YanSoft.CurrencyExchanger.Core.Data;
+using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Resources;
+using YanSoft.CurrencyExchanger.Core.Services;
 using YanSoft.CurrencyExchanger.Core.ViewModels.Home;
+using YanSoft.CurrencyExchanger.Core.ViewModels.Main;
 
 namespace YanSoft.CurrencyExchanger.Core
 {
     public class App : MvxApplication
     {
-        public override void Initialize()
+        public override async void Initialize()
         {
             CreatableTypes()
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            AppResource.Culture = CrossMultilingual.Current.DeviceCultureInfo;
-            using(var db = new CurrencyDataContext())
-            {
-                db.Database.EnsureCreated();
-            }
+            AppResources.Culture = CrossMultilingual.Current.DeviceCultureInfo;
+
+            await Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>().InitializeDatabaseAsync();
+
+            Mvx.IoCProvider.RegisterSingleton(new Context());
+            Mvx.IoCProvider.Resolve<Context>().Initialize();
             RegisterAppStart<HomeViewModel>();
         }
     }
