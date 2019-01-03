@@ -29,8 +29,8 @@
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="Auto"/>
                                     </Grid.RowDefinitions>
-                                    <Label Text="{Binding Code}"/>
-                                    <Label Grid.Row="1" Text="{Binding Name}" />
+                                    <Label Text="{Binding TargetCode}"/>
+                                    <Label Grid.Row="1" Text="{Binding AmountText}" />
                                 </Grid>
                             </Grid>
                         </ViewCell>
