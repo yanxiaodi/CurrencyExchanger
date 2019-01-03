@@ -8,15 +8,19 @@ namespace YanSoft.CurrencyExchanger.Core.Services
 {
     interface IDataService<TEntity> where TEntity : class, new()
     {
-        Task InsertAsync(TEntity entity);
+        Task InitializeDatabaseAsync();
+        Task<bool> AddAsync(TEntity entity);
+
+        Task<bool> AddRangeAsync(IEnumerable<TEntity> entities);
 
         Task<TEntity> GetAsync(object id);
+        Task<IEnumerable<TEntity>> QueryAsync(Func<TEntity, bool> predicate);
 
         Task<List<TEntity>> GetAllAsync();
 
-        Task UpdateAsync(TEntity entity);
+        Task<bool> UpdateAsync(TEntity entity);
 
-        Task DeleteAsync(object id);
+        Task<bool> DeleteAsync(object id);
 
     }
 }

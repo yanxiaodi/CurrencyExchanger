@@ -7,13 +7,36 @@
     xmlns:local="clr-namespace:YanSoft.CurrencyExchanger.UI.Pages"
     x:Class="YanSoft.CurrencyExchanger.UI.Pages.HomePage"
     xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels.Home;assembly=YanSoft.CurrencyExchanger.Core"
-                      Title="Main page"
+                      Title="Currency Exchanger"
                       xmlns:utils="clr-namespace:YanSoft.CurrencyExchanger.Core.Utils;assembly=YanSoft.CurrencyExchanger.Core">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="{utils:Translate App_Name}"
+            <!--<Label Text="{utils:Translate App_Name}"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand" />-->
+            <ListView ItemsSource="{Binding CurrencyList}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <!--<Image Width="100" Source="{Binding Image, Converter={StaticResource FlagConverter}}" Grid.Column="0"/>-->
+                                <Grid  Grid.Column="1" Margin="10,0,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label Text="{Binding TargetCode}"/>
+                                    <Label Grid.Row="1" Text="{Binding AmountText}" />
+                                </Grid>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </views:MvxContentPage>
