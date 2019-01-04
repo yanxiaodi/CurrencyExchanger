@@ -43,7 +43,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Controllers
             {
                 return new ResponseInfo<CurrencyRatesResponse>
                 {
-                    Message = "Unexpected params. 'baseCode' and 'targetCodes' should not be null."
+                    Message = "Unexpected params. 'sourceCode' and 'targetCodes' should not be null."
                 };
             }
             CurrencyRatesResponse response = await _apiService.GetLatestRates(sourceCode, targetCodes.Split(','));
