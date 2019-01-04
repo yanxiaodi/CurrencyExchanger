@@ -24,9 +24,9 @@ namespace YanSoft.CurrencyExchanger.WebApp.Controllers
 
         [HttpGet]
         [ProducesResponseType(200)]
-        public async Task<ActionResult<ResponseInfo<List<Currency>>>> GetCurrencies()
+        public ActionResult<ResponseInfo<List<Currency>>> GetCurrencies()
         {
-            List<Currency> response = await _apiService.GetCurrencies();
+            List<Currency> response = _apiService.GetCurrencies();
             var result = new ResponseInfo<List<Currency>>
             {
                 IsSuccess = true,
