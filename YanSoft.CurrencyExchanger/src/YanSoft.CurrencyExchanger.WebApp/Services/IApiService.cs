@@ -9,7 +9,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
 {
     public interface IApiService
     {
-        Task<List<Currency>> GetCurrencies();
+        List<Currency> GetCurrencies();
 
         /// <summary>
         /// Gets the latest rates.
