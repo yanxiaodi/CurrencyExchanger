@@ -22,7 +22,7 @@ namespace YanSoft.CurrencyExchanger.Core.Services
                     var count = await db.CurrencyExchangeItems.CountAsync();
                     if (count == 0)
                     {
-                        var targetCodes = new List<string> { "USD", "EUR", "CNY", "NZD" };
+                        var targetCodes = new List<string> { "USD", "CNY" };
                         var targets = new List<CurrencyExchangeItem>();
                         targetCodes.ForEach(x =>
                         {
@@ -173,6 +173,26 @@ namespace YanSoft.CurrencyExchanger.Core.Services
                     var tracking = db.CurrencyExchangeItems.Update(entity);
                     await db.SaveChangesAsync();
                     return tracking.State == EntityState.Modified;
+                }
+            }
+            catch (Exception e)
+            {
+#if DEBUG
+                System.Diagnostics.Debug.WriteLine(e);
+#endif
+                return false;
+            }
+        }
+
+        public async Task<bool> UpdateRangeAsync(IEnumerable<CurrencyExchangeItem> entities)
+        {
+            try
+            {
+                using (var db = new CurrencyDataContext())
+                {
+                    db.CurrencyExchangeItems.UpdateRange(entities);
+                    await db.SaveChangesAsync();
+                    return true;
                 }
             }
             catch (Exception e)

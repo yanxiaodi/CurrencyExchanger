@@ -16,17 +16,17 @@ namespace YanSoft.CurrencyExchanger.WebApp.Controllers
     [ApiController]
     public class CurrencyExchangerController : ControllerBase
     {
-        private readonly IApiService _apiService;
+        private readonly IApiService apiService;
         public CurrencyExchangerController(IApiService apiService)
         {
-            _apiService = apiService;
+            this.apiService = apiService;
         }
 
         [HttpGet]
         [ProducesResponseType(200)]
         public ActionResult<ResponseInfo<List<Currency>>> GetCurrencies()
         {
-            List<Currency> response = _apiService.GetCurrencies();
+            List<Currency> response = apiService.GetCurrencies();
             var result = new ResponseInfo<List<Currency>>
             {
                 IsSuccess = true,
@@ -46,7 +46,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Controllers
                     Message = "Unexpected params. 'sourceCode' and 'targetCodes' should not be null."
                 };
             }
-            CurrencyRatesResponse response = await _apiService.GetLatestRates(sourceCode, targetCodes.Split(','));
+            CurrencyRatesResponse response = await apiService.GetLatestRates(sourceCode, targetCodes.Split(','));
             if(response.Rates.Count() == 0)
             {
                 return new ResponseInfo<CurrencyRatesResponse>

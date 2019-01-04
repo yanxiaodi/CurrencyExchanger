@@ -6,7 +6,7 @@ using YanSoft.CurrencyExchanger.Core.Models;
 
 namespace YanSoft.CurrencyExchanger.Core.Services
 {
-    interface IDataService<TEntity> where TEntity : class, new()
+    public interface IDataService<TEntity> where TEntity : class, new()
     {
         Task InitializeDatabaseAsync();
         Task<bool> AddAsync(TEntity entity);
@@ -19,6 +19,8 @@ namespace YanSoft.CurrencyExchanger.Core.Services
         Task<List<TEntity>> GetAllAsync();
 
         Task<bool> UpdateAsync(TEntity entity);
+
+        Task<bool> UpdateRangeAsync(IEnumerable<TEntity> entities);
 
         Task<bool> DeleteAsync(object id);
 
