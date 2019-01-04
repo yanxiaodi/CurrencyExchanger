@@ -45,8 +45,8 @@ namespace YanSoft.CurrencyExchanger.Core.Data
             modelBuilder.Entity<CurrencyExchangeItem>(
                 c =>
                 {
-                    c.Ignore(x => x.SourceCurrency);
-                    c.Ignore(x => x.TargetCurrency);
+                    //c.Ignore(x => x.SourceCurrency);
+                    //c.Ignore(x => x.TargetCurrency);
                     c.HasKey(x => x.Id);
                 });
         }

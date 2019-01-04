@@ -17,14 +17,14 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
             var list = await service.GetAllAsync();
             //CurrencyList = new ObservableCollection<CurrencyItem>(Mvx.IoCProvider.Resolve<Context>().AllCurrencyItemList);
-            CurrencyList = new ObservableCollection<CurrencyExchangeItem>(list);
+            CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()));
             await base.Initialize();
         }
 
 
         #region CurrencyList;
-        private ObservableCollection<CurrencyExchangeItem> _currencyList;
-        public ObservableCollection<CurrencyExchangeItem> CurrencyList
+        private ObservableCollection<CurrencyExchangeBindableItem> _currencyList;
+        public ObservableCollection<CurrencyExchangeBindableItem> CurrencyList
         {
             get => _currencyList;
             set => SetProperty(ref _currencyList, value);
