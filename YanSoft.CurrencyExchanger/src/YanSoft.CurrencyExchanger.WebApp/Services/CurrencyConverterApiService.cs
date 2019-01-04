@@ -25,7 +25,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
             _cache = memoryCache;
         }
 
-        public async Task<List<Currency>> GetCurrencies()
+        public List<Currency> GetCurrencies()
         {
             var result = new List<Currency>();
             var cacheEntry = new List<Currency>();
@@ -253,7 +253,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
             {
                 HttpClient httpClient = _clientFactory.CreateClient(Constants.CurrencyConverterHttpClientName);
                 // Request all the currencies and store the result in the cache.
-                List<Currency> currenciesCache = await GetCurrencies();
+                List<Currency> currenciesCache = GetCurrencies();
 
                 // Currently, only take 2 currencies for development.
                 IEnumerable<string> targets = currenciesCache.ToList().Where(x => targetCodes.Contains(x.Code)).Select(x => $"{sourceCode}_{x.Code}");

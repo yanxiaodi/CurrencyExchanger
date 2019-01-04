@@ -16,7 +16,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
             _clientFactory = httpClientFactory;
         }
 
-        public Task<List<Currency>> GetCurrencies()
+        public List<Currency> GetCurrencies()
         {
             throw new NotImplementedException();
         }
