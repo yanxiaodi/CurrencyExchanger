@@ -25,8 +25,8 @@ namespace YanSoft.CurrencyExchanger.Core
 
             await Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>().InitializeDatabaseAsync();
 
-            Mvx.IoCProvider.RegisterSingleton(new Context());
-            Mvx.IoCProvider.Resolve<Context>().Initialize();
+            Mvx.IoCProvider.RegisterSingleton(new GlobalContext());
+            Mvx.IoCProvider.Resolve<GlobalContext>().Initialize();
             RegisterAppStart<HomeViewModel>();
         }
     }

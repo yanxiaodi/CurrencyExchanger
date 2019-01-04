@@ -8,7 +8,7 @@ using YanSoft.CurrencyExchanger.Core.Utils;
 
 namespace YanSoft.CurrencyExchanger.Core.Common
 {
-    public class Context
+    public class GlobalContext
     {
         public List<CurrencyItem> AllCurrencyItemList { get; set; }
 
