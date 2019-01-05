@@ -9,11 +9,11 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
 {
     public class FixerApiService : IApiService
     {
-        private readonly IHttpClientFactory _clientFactory;
-        private readonly string _apiUri = "http://data.fixer.io/api/";
+        private readonly IHttpClientFactory clientFactory;
+        private readonly string apiUri = "http://data.fixer.io/api/";
         public FixerApiService(IHttpClientFactory httpClientFactory)
         {
-            _clientFactory = httpClientFactory;
+            clientFactory = httpClientFactory;
         }
 
         public List<Currency> GetCurrencies()
@@ -23,10 +23,10 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
 
         public async Task<CurrencyRatesResponse> GetLatestRates(string sourceCode, IEnumerable<string> targetCodes)
         {
-            HttpClient httpClient = _clientFactory.CreateClient(Constants.FixerHttpClientName);
+            HttpClient httpClient = clientFactory.CreateClient(Constants.FixerHttpClientName);
 
             //var url = $"http://data.fixer.io/api/latest?access_key={Constants.ApiKey}&base={baseCode}&symbols={targetCodes}";
-            var url = $"{_apiUri}latest?access_key={Constants.FixerApiKey}&base=&symbols=";
+            var url = $"{apiUri}latest?access_key={Constants.FixerApiKey}&base=&symbols=";
             HttpResponseMessage response = await httpClient.GetAsync(url);
             return new CurrencyRatesResponse();
         }

@@ -31,15 +31,16 @@ namespace YanSoft.CurrencyExchanger.Core.Models
             {
                 IsStandard = true;
                 Rate = 1;
+                Amount = 1;
             }
             else
             {
                 IsStandard = false;
                 Rate = 0;
+                Amount = 0;
             }
             UpdateTimeUtc = DateTimeHelper.ConvertDateTimeToTimestamp(DateTime.UtcNow);
             SortOrder = sortOrder;
-            Amount = 0;
         }
 
     }

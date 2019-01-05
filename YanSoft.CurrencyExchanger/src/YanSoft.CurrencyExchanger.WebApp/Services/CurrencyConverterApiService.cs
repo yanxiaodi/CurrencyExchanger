@@ -15,21 +15,21 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
     /// </summary>
     public class CurrencyConverterApiService : IApiService
     {
-        private readonly IHttpClientFactory _clientFactory;
-        private readonly IMemoryCache _cache;
-        private readonly string _apiUri = "https://free.currencyconverterapi.com/api/v6/";
+        private readonly IHttpClientFactory clientFactory;
+        private readonly IMemoryCache cache;
+        private readonly string apiUri = "https://free.currencyconverterapi.com/api/v6/";
 
         public CurrencyConverterApiService(IHttpClientFactory httpClientFactory, IMemoryCache memoryCache)
         {
-            _clientFactory = httpClientFactory;
-            _cache = memoryCache;
+            clientFactory = httpClientFactory;
+            cache = memoryCache;
         }
 
         public List<Currency> GetCurrencies()
         {
             var result = new List<Currency>();
             var cacheEntry = new List<Currency>();
-            if (_cache.TryGetValue(CacheHelper.GetCurrenciesOfCurrencyConverterCacheKeyName(), out cacheEntry))
+            if (cache.TryGetValue(CacheHelper.GetCurrenciesOfCurrencyConverterCacheKeyName(), out cacheEntry))
             {
                 return cacheEntry;
             }
@@ -63,7 +63,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
                 #endregion
 
                 result = GetCurrencyList();
-                _cache.Set(CacheHelper.GetCurrenciesOfCurrencyConverterCacheKeyName(), result, DateTime.Now.AddYears(1));
+                cache.Set(CacheHelper.GetCurrenciesOfCurrencyConverterCacheKeyName(), result, DateTime.Now.AddYears(1));
                 return result;
             }
         }
@@ -244,14 +244,14 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
             var result = new CurrencyRatesResponse();
 
             var cacheEntry = new List<CurrencyRate>();
-            if (_cache.TryGetValue(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(sourceCode), out cacheEntry))
+            if (cache.TryGetValue(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(sourceCode), out cacheEntry))
             {
                 result.Rates = cacheEntry.Where(x => targetCodes.ToList().Contains(x.Target)).ToList();
                 return result;
             }
             else
             {
-                HttpClient httpClient = _clientFactory.CreateClient(Constants.CurrencyConverterHttpClientName);
+                HttpClient httpClient = clientFactory.CreateClient(Constants.CurrencyConverterHttpClientName);
                 // Request all the currencies and store the result in the cache.
                 List<Currency> currenciesCache = GetCurrencies();
 
@@ -260,32 +260,46 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
                 var queryParam = string.Join(',', targets.Take(2));
                 //IEnumerable<string> targets = currenciesCache.ToList().Select(x => $"{sourceCode}_{x.Code}");
                 //var queryParam = string.Join(',', targets);
-                var url = $"{_apiUri}convert?q={queryParam}";
-                HttpResponseMessage response = await httpClient.GetAsync(url);
-                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                var url = $"{apiUri}convert?q={queryParam}";
+                try
                 {
-                    var responseObject = JObject.Parse(await response.Content.ReadAsStringAsync());
-                    targetCodes.ToList().ForEach(targetCode =>
+                    HttpResponseMessage response = await httpClient.GetAsync(url);
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
                     {
-                        var currencyRate = new CurrencyRate
+                        var responseObject = JObject.Parse(await response.Content.ReadAsStringAsync());
+                        targetCodes.ToList().ForEach(targetCode =>
                         {
-                            Source = sourceCode,
-                            Target = targetCode
-                        };
-                        if (decimal.TryParse(responseObject["results"][$"{sourceCode}_{targetCode}"]["val"].ToString(), out var rate))
-                        {
-                            currencyRate.Rate = rate;
-                        }
-                        else
-                        {
-                            currencyRate.Rate = 0;
-                        }
-                        result.Rates.Add(currencyRate);
-                    });
-                    _cache.Set(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(sourceCode), result.Rates, DateTime.Now.AddMinutes(10));
-                    return result;
+                            var currencyRate = new CurrencyRate
+                            {
+                                Source = sourceCode,
+                                Target = targetCode
+                            };
+                            if (responseObject["results"] != null && responseObject["results"][$"{sourceCode}_{targetCode}"] != null)
+                            {
+                                if (decimal.TryParse(responseObject["results"][$"{sourceCode}_{targetCode}"]["val"].ToString(), out var rate))
+                                {
+                                    currencyRate.Rate = rate;
+                                }
+                                else
+                                {
+                                    currencyRate.Rate = 0;
+                                }
+                            }
+                            else
+                            {
+                                currencyRate.Rate = 0;
+                            }
+                            result.Rates.Add(currencyRate);
+                        });
+                        cache.Set(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(sourceCode), result.Rates, DateTime.Now.AddMinutes(10));
+                        return result;
+                    }
+                    else
+                    {
+                        return result;
+                    }
                 }
-                else
+                catch
                 {
                     return result;
                 }
