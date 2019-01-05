@@ -261,31 +261,45 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
                 //IEnumerable<string> targets = currenciesCache.ToList().Select(x => $"{sourceCode}_{x.Code}");
                 //var queryParam = string.Join(',', targets);
                 var url = $"{apiUri}convert?q={queryParam}";
-                HttpResponseMessage response = await httpClient.GetAsync(url);
-                if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                try
                 {
-                    var responseObject = JObject.Parse(await response.Content.ReadAsStringAsync());
-                    targetCodes.ToList().ForEach(targetCode =>
+                    HttpResponseMessage response = await httpClient.GetAsync(url);
+                    if (response.StatusCode == System.Net.HttpStatusCode.OK)
                     {
-                        var currencyRate = new CurrencyRate
+                        var responseObject = JObject.Parse(await response.Content.ReadAsStringAsync());
+                        targetCodes.ToList().ForEach(targetCode =>
                         {
-                            Source = sourceCode,
-                            Target = targetCode
-                        };
-                        if (decimal.TryParse(responseObject["results"][$"{sourceCode}_{targetCode}"]["val"].ToString(), out var rate))
-                        {
-                            currencyRate.Rate = rate;
-                        }
-                        else
-                        {
-                            currencyRate.Rate = 0;
-                        }
-                        result.Rates.Add(currencyRate);
-                    });
-                    cache.Set(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(sourceCode), result.Rates, DateTime.Now.AddMinutes(10));
-                    return result;
+                            var currencyRate = new CurrencyRate
+                            {
+                                Source = sourceCode,
+                                Target = targetCode
+                            };
+                            if (responseObject["results"] != null && responseObject["results"][$"{sourceCode}_{targetCode}"] != null)
+                            {
+                                if (decimal.TryParse(responseObject["results"][$"{sourceCode}_{targetCode}"]["val"].ToString(), out var rate))
+                                {
+                                    currencyRate.Rate = rate;
+                                }
+                                else
+                                {
+                                    currencyRate.Rate = 0;
+                                }
+                            }
+                            else
+                            {
+                                currencyRate.Rate = 0;
+                            }
+                            result.Rates.Add(currencyRate);
+                        });
+                        cache.Set(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(sourceCode), result.Rates, DateTime.Now.AddMinutes(10));
+                        return result;
+                    }
+                    else
+                    {
+                        return result;
+                    }
                 }
-                else
+                catch
                 {
                     return result;
                 }
