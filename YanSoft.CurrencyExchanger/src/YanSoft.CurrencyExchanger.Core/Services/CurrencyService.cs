@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using YanSoft.CurrencyExchanger.Core.Models;
 using System.Linq;
+using YanSoft.CurrencyExchanger.Core.Utils;
 
 namespace YanSoft.CurrencyExchanger.Core.Services
 {
@@ -19,10 +20,41 @@ namespace YanSoft.CurrencyExchanger.Core.Services
             this.dataService = dataService;
         }
 
-        public void CalculateCurrencyAmount(ObservableCollection<CurrencyExchangeItem> list, CurrencyExchangeItem target = null)
+        public void CalculateCurrencyAmount(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem target = null)
         {
-            throw new NotImplementedException();
+            CurrencyExchangeBindableItem standardItem = list.FirstOrDefault(x => x.IsStandard == true);
+            if (standardItem != null)
+            {
+                if (target != null)
+                {
+                    if (target.IsStandard)
+                    {
+                        standardItem.Amount = target.Amount;
+                    }
+                    else
+                    {
+                        standardItem.Amount = target.Amount / target.Rate;
+                    }
+                    standardItem.AmountText = CurrencyHelper.FormatCurrencyAmount(standardItem.Amount, standardItem.TargetCurrency.CultureName);
+                }
+                foreach (var item in list.Where(x => x.IsStandard == false).ToList())
+                {
+                    if (target != null)
+                    {
+                        if (target.TargetCode != item.TargetCode)
+                        {
+                            item.Amount = standardItem.Amount * item.Rate;
+                        }
+                    }
+                    else
+                    {
+                        item.Amount = standardItem.Amount * item.Rate;
+                    }
+                    item.AmountText = CurrencyHelper.FormatCurrencyAmount(item.Amount, item.TargetCurrency.CultureName);
+                }
+            }
         }
+
 
         public async Task<bool> GetCurrencyRates(ObservableCollection<CurrencyExchangeBindableItem> list)
         {

@@ -11,7 +11,7 @@ namespace YanSoft.CurrencyExchanger.Core.Services
     {
         Task<bool> GetCurrencyRates(ObservableCollection<CurrencyExchangeBindableItem> list);
 
-        void CalculateCurrencyAmount(ObservableCollection<CurrencyExchangeItem> list, CurrencyExchangeItem target = null);
+        void CalculateCurrencyAmount(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem target = null);
 
         Task<bool> SaveCurrencyData(ObservableCollection<CurrencyExchangeBindableItem> list);
     }
