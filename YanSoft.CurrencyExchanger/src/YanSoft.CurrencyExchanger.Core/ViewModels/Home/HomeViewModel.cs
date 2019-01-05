@@ -9,6 +9,7 @@ using MvvmCross.ViewModels;
 using YanSoft.CurrencyExchanger.Core.Common;
 using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Services;
+using System.Linq;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
 {
@@ -25,7 +26,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
             var list = await service.GetAllAsync();
             //CurrencyList = new ObservableCollection<CurrencyItem>(Mvx.IoCProvider.Resolve<Context>().AllCurrencyItemList);
-            CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()));
+            CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
             //await currencyService.GetCurrencyRates(CurrencyList);
             await base.Initialize();
         }
@@ -78,6 +79,8 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         {
             // Implement your logic here.
             await currencyService.GetCurrencyRates(CurrencyList);
+            currencyService.CalculateCurrencyAmount(CurrencyList, CurrencyList.First(x => x.IsStandard));
+            await currencyService.SaveCurrencyData(CurrencyList);
         }
 
         private void OnGetLatestRatesException(Exception ex)

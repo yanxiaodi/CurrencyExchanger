@@ -160,7 +160,7 @@ namespace YanSoft.CurrencyExchanger.Core.Common
                 new CurrencyItem{Code = "TRY", Name = AppResources.Currency_TRY, Image="flag_turkey", CultureName="tr-TR"},
                 new CurrencyItem{Code = "TTD", Name = AppResources.Currency_TTD, Image="flag_trinidad_and_tobago", CultureName="en-TT"},
                 // Taiwan
-                new CurrencyItem{Code = "TWD", Name = AppResources.Currency_TWD, Image="taiwan", CultureName="zh-TW"},
+                new CurrencyItem{Code = "TWD", Name = AppResources.Currency_TWD, Image="flag_taiwan", CultureName="zh-TW"},
                 new CurrencyItem{Code = "TZS", Name = AppResources.Currency_TZS, Image="flag_tanzania", CultureName=""},
                 new CurrencyItem{Code = "UAH", Name = AppResources.Currency_UAH, Image="flag_ukraine", CultureName="uk-UA"},
                 new CurrencyItem{Code = "UGX", Name = AppResources.Currency_UGX, Image="flag_uganda", CultureName=""},

@@ -8,7 +8,8 @@
     x:Class="YanSoft.CurrencyExchanger.UI.Pages.HomePage"
     xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels.Home;assembly=YanSoft.CurrencyExchanger.Core"
                       Title="Currency Exchanger"
-                      xmlns:utils="clr-namespace:YanSoft.CurrencyExchanger.Core.Utils;assembly=YanSoft.CurrencyExchanger.Core">
+                      xmlns:utils="clr-namespace:YanSoft.CurrencyExchanger.Core.Utils;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:markupExt="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core">
     <ContentPage.Content>
         <StackLayout>
             <!--<Label Text="{utils:Translate App_Name}"
@@ -19,12 +20,27 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid>
+                            <StackLayout BackgroundColor="#eee" Orientation="Vertical">
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
+                                    </Image>
+                                    <Label Text="{Binding TargetCode}"
+                                TextColor="#f35e20" />
+                                    <Label Text="{Binding Rate}"
+                                HorizontalOptions="EndAndExpand"
+                                TextColor="#503026" />
+                                </StackLayout>
+                            </StackLayout>
+                            <!--<Grid>
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition/>
+                                    <ColumnDefinition Width="100"/>
+                                    <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
-                                <!--<Image Width="100" Source="{Binding Image, Converter={StaticResource FlagConverter}}" Grid.Column="0"/>-->
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Image Width="100" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}"/>
                                 <Grid  Grid.Column="1" Margin="10,0,0,0">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"/>
@@ -33,7 +49,7 @@
                                     <Label Text="{Binding TargetCode}"/>
                                     <Label Grid.Row="1" Text="{Binding Rate}" />
                                 </Grid>
-                            </Grid>
+                            </Grid>-->
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>

@@ -9,9 +9,13 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 
-namespace YanSoft.CurrencyExchanger.Core.Utils
+namespace YanSoft.CurrencyExchanger.Core.MarkupExtensions
 {
-    [ContentProperty("Text")]
+    /// <summary>
+    /// Use it like: <Label Text="{utils:Translate App_Name}" />
+    /// </summary>
+    /// <seealso cref="Xamarin.Forms.Xaml.IMarkupExtension" />
+    [ContentProperty(nameof(Text))]
     public class TranslateExtension : IMarkupExtension
     {
         const string ResourceId = "YanSoft.CurrencyExchanger.Core.Resources.AppResource";
