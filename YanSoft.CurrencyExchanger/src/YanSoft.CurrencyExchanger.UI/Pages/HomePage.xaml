@@ -16,53 +16,7 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />-->
             <Button Text="Refresh" Command="{Binding GetLatestRatesAsyncCommand}"></Button>
-            <ListView ItemsSource="{Binding CurrencyList}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout BackgroundColor="#eee" Orientation="Horizontal">
-                                <Image WidthRequest="100" HeightRequest="80"
-                                       Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
-                                </Image>
-                                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding TargetCode}" HorizontalOptions="Start"></Label>
-                                        <Label Text="{Binding AmountText}" HorizontalOptions="EndAndExpand"></Label>
-                                    </StackLayout>
-                                    <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start"></Label>
-                                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
-                                            <Label Text="1"></Label>
-                                            <Label Text="{Binding SourceCode}"></Label>
-                                            <Label Text="="></Label>
-                                            <Label Text="{Binding Rate}"></Label>
-                                            <Label Text="{Binding TargetCode}"></Label>
-                                        </StackLayout>
-                                    </StackLayout>
-                                </StackLayout>
-                            </StackLayout>
-                            <!--<Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="100"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="Auto" />
-                                </Grid.RowDefinitions>
-                                <Image Width="100" Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}"/>
-                                <Grid  Grid.Column="1" Margin="10,0,0,0">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="Auto"/>
-                                        <RowDefinition Height="Auto"/>
-                                    </Grid.RowDefinitions>
-                                    <Label Text="{Binding TargetCode}"/>
-                                    <Label Grid.Row="1" Text="{Binding Rate}" />
-                                </Grid>
-                            </Grid>-->
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
+            <ListView ItemsSource="{Binding CurrencyList}" ItemTemplate="{StaticResource CurrencyListItemDataTemplate}">
             </ListView>
         </StackLayout>
     </ContentPage.Content>
