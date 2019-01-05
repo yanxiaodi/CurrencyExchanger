@@ -20,15 +20,25 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout BackgroundColor="#eee" Orientation="Vertical">
-                                <StackLayout Orientation="Horizontal">
-                                    <Image Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
-                                    </Image>
-                                    <Label Text="{Binding TargetCode}"
-                                TextColor="#f35e20" />
-                                    <Label Text="{Binding Rate}"
-                                HorizontalOptions="EndAndExpand"
-                                TextColor="#503026" />
+                            <StackLayout BackgroundColor="#eee" Orientation="Horizontal">
+                                <Image WidthRequest="100" HeightRequest="80"
+                                       Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
+                                </Image>
+                                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding TargetCode}" HorizontalOptions="Start"></Label>
+                                        <Label Text="{Binding AmountText}" HorizontalOptions="EndAndExpand"></Label>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start"></Label>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                            <Label Text="1"></Label>
+                                            <Label Text="{Binding SourceCode}"></Label>
+                                            <Label Text="="></Label>
+                                            <Label Text="{Binding Rate}"></Label>
+                                            <Label Text="{Binding TargetCode}"></Label>
+                                        </StackLayout>
+                                    </StackLayout>
                                 </StackLayout>
                             </StackLayout>
                             <!--<Grid>
