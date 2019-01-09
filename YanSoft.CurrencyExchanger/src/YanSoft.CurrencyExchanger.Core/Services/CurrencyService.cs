@@ -11,13 +11,13 @@ namespace YanSoft.CurrencyExchanger.Core.Services
 {
     public class CurrencyService : ICurrencyService
     {
-        private readonly IApiService apiService;
-        private readonly IDataService<CurrencyExchangeItem> dataService;
+        private readonly IApiService _apiService;
+        private readonly IDataService<CurrencyExchangeItem> _dataService;
 
         public CurrencyService(IApiService apiService, IDataService<CurrencyExchangeItem> dataService)
         {
-            this.apiService = apiService;
-            this.dataService = dataService;
+            _apiService = apiService;
+            _dataService = dataService;
         }
 
         public void CalculateCurrencyAmount(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem target = null)
@@ -60,7 +60,7 @@ namespace YanSoft.CurrencyExchanger.Core.Services
         {
             var sourceCode = list.First().SourceCode;
             var targetCodes = string.Join(",", list.Where(x => !x.IsStandard).Select(x => x.TargetCode).ToList());
-            var response = await apiService.GetLatestRates(sourceCode, targetCodes);
+            var response = await _apiService.GetLatestRates(sourceCode, targetCodes);
             if (response.IsSuccess)
             {
                 foreach (var item in list)
@@ -82,7 +82,7 @@ namespace YanSoft.CurrencyExchanger.Core.Services
 
         public async Task<bool> SaveCurrencyData(ObservableCollection<CurrencyExchangeBindableItem> list)
         {
-            return await dataService.UpdateRangeAsync(list.Select(x => x.ToCurrencyExchangeItem()));
+            return await _dataService.UpdateRangeAsync(list.Select(x => x.ToCurrencyExchangeItem()));
         }
     }
 }

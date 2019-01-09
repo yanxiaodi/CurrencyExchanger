@@ -11,10 +11,10 @@ namespace YanSoft.CurrencyExchanger.Core.Services
 {
     public class ApiService : IApiService
     {
-        private readonly IHttpClientService httpClientService;
+        private readonly IHttpClientService _httpClientService;
         public ApiService(IHttpClientService httpClientService)
         {
-            this.httpClientService = httpClientService;
+            _httpClientService = httpClientService;
         }
 
         public async Task<ResponseInfo<CurrencyRatesResponse>> GetLatestRates(string sourceCode, string targetCodes)
@@ -23,7 +23,7 @@ namespace YanSoft.CurrencyExchanger.Core.Services
             var result = new ResponseInfo<CurrencyRatesResponse>();
             try
             {
-                var response = await httpClientService.CreateClient().GetAsync(url);
+                var response = await _httpClientService.CreateClient().GetAsync(url);
                 if (response.IsSuccessStatusCode)
                 {
                     var responseString = await response.Content.ReadAsStringAsync();

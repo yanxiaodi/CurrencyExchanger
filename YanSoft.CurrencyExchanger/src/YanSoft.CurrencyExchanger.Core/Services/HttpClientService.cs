@@ -9,22 +9,22 @@ namespace YanSoft.CurrencyExchanger.Core.Services
 {
     public class HttpClientService : IHttpClientService
     {
-        private static HttpClient httpClient;
+        private static HttpClient _httpClient;
         public HttpClient CreateClient()
         {
-            if(httpClient != null)
+            if(_httpClient != null)
             {
-                return httpClient;
+                return _httpClient;
             }
             else
             {
-                httpClient = new HttpClient();
+                _httpClient = new HttpClient();
                 DateTime dtNow = DateTime.UtcNow;
                 var saltKey = Guid.NewGuid().ToString();
-                httpClient.DefaultRequestHeaders.Add("token", ValidateHelper.GetToken(dtNow, saltKey));
-                httpClient.DefaultRequestHeaders.Add("version", AppConfigurations.AppVersion.ToString());
-                httpClient.DefaultRequestHeaders.Add("sk", saltKey);
-                return httpClient;
+                _httpClient.DefaultRequestHeaders.Add("token", ValidateHelper.GetToken(dtNow, saltKey));
+                _httpClient.DefaultRequestHeaders.Add("version", AppConfigurations.AppVersion.ToString());
+                _httpClient.DefaultRequestHeaders.Add("sk", saltKey);
+                return _httpClient;
             }
         }
     }
