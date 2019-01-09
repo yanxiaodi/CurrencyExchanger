@@ -15,17 +15,16 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
 {
     public class HomeViewModel : BaseViewModel
     {
-        private readonly ICurrencyService currencyService;
+        private readonly ICurrencyService _currencyService;
         public HomeViewModel(ICurrencyService currencyService)
         {
-            this.currencyService = currencyService;
+            _currencyService = currencyService;
         }
 
         public override async Task Initialize()
         {
             var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
             var list = await service.GetAllAsync();
-            //CurrencyList = new ObservableCollection<CurrencyItem>(Mvx.IoCProvider.Resolve<Context>().AllCurrencyItemList);
             CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
             //await currencyService.GetCurrencyRates(CurrencyList);
             await base.Initialize();
@@ -78,9 +77,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         private async Task GetLatestRatesAsync()
         {
             // Implement your logic here.
-            await currencyService.GetCurrencyRates(CurrencyList);
-            currencyService.CalculateCurrencyAmount(CurrencyList, CurrencyList.First(x => x.IsStandard));
-            await currencyService.SaveCurrencyData(CurrencyList);
+            await _currencyService.GetCurrencyRates(CurrencyList);
+            _currencyService.CalculateCurrencyAmount(CurrencyList, CurrencyList.First(x => x.IsStandard));
+            await _currencyService.SaveCurrencyData(CurrencyList);
         }
 
         private void OnGetLatestRatesException(Exception ex)

@@ -4,17 +4,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
     xmlns:mvx="clr-namespace:MvvmCross.Forms.Bindings;assembly=MvvmCross.Forms"
-    xmlns:local="clr-namespace:YanSoft.CurrencyExchanger.UI.Pages"
+    xmlns:local="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
     x:Class="YanSoft.CurrencyExchanger.UI.Pages.HomePage"
     xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels.Home;assembly=YanSoft.CurrencyExchanger.Core"
-                      Title="Currency Exchanger"
-                      xmlns:utils="clr-namespace:YanSoft.CurrencyExchanger.Core.Utils;assembly=YanSoft.CurrencyExchanger.Core"
-                      xmlns:markupExt="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core">
+>
     <ContentPage.Content>
         <StackLayout>
-            <!--<Label Text="{utils:Translate App_Name}"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />-->
             <Button Text="Refresh" Command="{Binding GetLatestRatesAsyncCommand}"></Button>
             <ListView ItemsSource="{Binding CurrencyList}" ItemTemplate="{StaticResource CurrencyListItemDataTemplate}">
             </ListView>
