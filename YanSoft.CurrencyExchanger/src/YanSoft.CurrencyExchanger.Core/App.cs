@@ -7,8 +7,7 @@ using YanSoft.CurrencyExchanger.Core.Data;
 using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Resources;
 using YanSoft.CurrencyExchanger.Core.Services;
-using YanSoft.CurrencyExchanger.Core.ViewModels.Home;
-using YanSoft.CurrencyExchanger.Core.ViewModels.Main;
+using YanSoft.CurrencyExchanger.Core.ViewModels;
 
 namespace YanSoft.CurrencyExchanger.Core
 {
@@ -27,7 +26,7 @@ namespace YanSoft.CurrencyExchanger.Core
 
             Mvx.IoCProvider.RegisterSingleton(new GlobalContext());
             Mvx.IoCProvider.Resolve<GlobalContext>().Initialize();
-            RegisterAppStart<HomeViewModel>();
+            RegisterAppStart<MasterDetailViewModel>();
         }
     }
 }
