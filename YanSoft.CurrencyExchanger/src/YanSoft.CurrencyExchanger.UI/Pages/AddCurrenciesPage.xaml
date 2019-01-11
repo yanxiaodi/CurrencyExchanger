@@ -5,12 +5,38 @@
              x:Class="YanSoft.CurrencyExchanger.UI.Pages.AddCurrenciesPage"
              xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
                       xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
-                      xmlns:markupExtensions="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core">
+                      xmlns:markupExtensions="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:controls="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+                      x:Name="MainContent"
+>
     <ContentPage.Content>
         <StackLayout Margin="8">
             <Entry Placeholder="currency code or currency name" ReturnType="Search"/>
-            <ListView ItemsSource="{Binding CurrencyItemList}"  CachingStrategy="RecycleElement"
-                      ItemTemplate="{StaticResource CurrencySelectableItemDataTemplate}" SelectionMode="None">
+            <ListView ItemsSource="{Binding CurrencyItemList}" 
+                       SelectionMode="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate >
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#eee" Orientation="Horizontal">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                        Command="{Binding BindingContext.DataContext.SelectItemCommand, Source={x:Reference MainContent}}"
+                                        CommandParameter="{Binding}">
+                                    </TapGestureRecognizer>
+                                </StackLayout.GestureRecognizers>
+                                <controls:CheckBox Text="" Type="Material"  IsChecked="{Binding IsSelected, Mode=TwoWay}"/>
+                                <Image WidthRequest="100" HeightRequest="80"
+                                       Source="{Binding CurrencyItem.Image, Converter={StaticResource FlagConverter}}">
+                                </Image>
+                                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                    <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" FontSize="Medium"></Label>
+                                    <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
 
             </ListView>
         </StackLayout>

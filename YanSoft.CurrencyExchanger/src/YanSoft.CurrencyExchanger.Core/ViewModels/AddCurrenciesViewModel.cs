@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MvvmCross.Commands;
 using MvvmCross.ViewModels;
 using Xamarin.Forms.Internals;
 using YanSoft.CurrencyExchanger.Core.Common;
@@ -25,6 +26,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             CurrencyItemList = new MvxObservableCollection<CurrencySelectableBindableItem>();
         }
 
+        #region Properties
+
+        
 
         #region CurrencyItemSourceList;
         private ObservableCollection<CurrencySelectableBindableItem> _currencyItemSourceList;
@@ -54,6 +58,12 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         }
         #endregion
 
+        #endregion
+
+
+        #region Lifecycle
+
+
         public override async Task Initialize()
         {
             await base.Initialize();
@@ -65,5 +75,37 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                     CurrencyItemList.Add(new CurrencySelectableBindableItem { CurrencyItem = x, IsSelected = false });
                 });
         }
+
+        #endregion
+
+        #region Commands
+
+
+        #region SelectItemCommand;
+        private IMvxCommand<CurrencySelectableBindableItem> _selectItemCommand;
+        public IMvxCommand<CurrencySelectableBindableItem> SelectItemCommand
+        {
+            get
+            {
+                _selectItemCommand = _selectItemCommand ?? new MvxCommand<CurrencySelectableBindableItem>(SelectItem);
+                return _selectItemCommand;
+            }
+        }
+        private void SelectItem(CurrencySelectableBindableItem param)
+        {
+            // Implement your logic here.
+            param.IsSelected = !param.IsSelected;
+            var sourceTarget =
+                CurrencyItemSourceList.SingleOrDefault(x => x.CurrencyItem.Code == param.CurrencyItem.Code);
+            if (sourceTarget != null)
+            {
+                sourceTarget.IsSelected = param.IsSelected;
+            }
+        }
+        #endregion
+
+        #endregion
+
+
     }
 }

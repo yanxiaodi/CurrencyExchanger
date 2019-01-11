@@ -3,7 +3,8 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     x:Class="YanSoft.CurrencyExchanger.UI.Resources.CustomDataTemplates"
                     xmlns:local="clr-namespace:YanSoft.CurrencyExchanger.UI.Resources"
-                    xmlns:converters="clr-namespace:YanSoft.CurrencyExchanger.Core.Converters;assembly=YanSoft.CurrencyExchanger.Core">
+                    xmlns:converters="clr-namespace:YanSoft.CurrencyExchanger.Core.Converters;assembly=YanSoft.CurrencyExchanger.Core"
+                    xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit">
 
     <converters:FlagConverter x:Key="FlagConverter" />
 
@@ -35,6 +36,13 @@
     <DataTemplate x:Key="CurrencySelectableItemDataTemplate">
         <ViewCell>
             <StackLayout BackgroundColor="#eee" Orientation="Horizontal">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Command="{Binding BindingContext.DataContext.SelectItemCommand, Source={x:Reference MainContent}}"
+                        CommandParameter="{Binding}">
+                    </TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+                <input:CheckBox Text="" Type="Material"  IsChecked="{Binding IsSelected, Mode=TwoWay}"/>
                 <Image WidthRequest="100" HeightRequest="80"
                        Source="{Binding CurrencyItem.Image, Converter={StaticResource FlagConverter}}">
                 </Image>
