@@ -7,11 +7,28 @@
     xmlns:local="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
     x:Class="YanSoft.CurrencyExchanger.UI.Pages.HomePage"
     xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels.Home;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                      xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+                      xmlns:uwp="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
+
 >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Currency" Order="Primary"  Priority="0" >
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="baseline_add_black_36.png" />
+                    <On Platform="Android" Value="baseline_add_black_36.png"/>
+                    <On Platform="UWP" Value="Assets/icons/baseline_add_black_36.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+            </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Refresh" Command="{Binding GetLatestRatesAsyncCommand}"></Button>
-            <ListView ItemsSource="{Binding CurrencyList}" ItemTemplate="{StaticResource CurrencyListItemDataTemplate}">
+            <ListView ItemsSource="{Binding CurrencyList}" 
+                      ItemTemplate="{StaticResource CurrencyListItemDataTemplate}">
+                
             </ListView>
         </StackLayout>
     </ContentPage.Content>

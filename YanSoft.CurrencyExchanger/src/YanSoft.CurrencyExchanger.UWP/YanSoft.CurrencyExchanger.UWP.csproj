@@ -110,6 +110,7 @@
     <Content Include="Assets\BadgeLogo.scale-150.png" />
     <Content Include="Assets\BadgeLogo.scale-200.png" />
     <Content Include="Assets\BadgeLogo.scale-400.png" />
+    <Content Include="Assets\icons\baseline_add_black_36.png" />
     <Content Include="Assets\images\flag_albania.png" />
     <Content Include="Assets\images\flag_algeria.png" />
     <Content Include="Assets\images\flag_argentina.png" />
@@ -255,7 +256,7 @@
     <Content Include="Assets\images\flag_yemen.png" />
     <Content Include="Assets\images\flag_zambia.png" />
     <Content Include="Assets\images\flag_zimbabwe.png" />
-    <Content Include="Assets\images\taiwan.png" />
+    <Content Include="Assets\images\flag_taiwan.png" />
     <Content Include="Assets\LargeTile.scale-100.png" />
     <Content Include="Assets\LargeTile.scale-125.png" />
     <Content Include="Assets\LargeTile.scale-150.png" />
@@ -348,6 +349,7 @@
       <Version>3.4.0.1008975</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

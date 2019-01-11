@@ -304,6 +304,9 @@
       <Name>YanSoft.CurrencyExchanger.UI</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\drawable\baseline_add_black_36.png" />
+  </ItemGroup>
   <Import Project="..\YanSoft.CurrencyExchanger.Droid.Shared\YanSoft.CurrencyExchanger.Droid.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -88,5 +88,52 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         }
         #endregion
 
+
+
+        #region RefreshRatesAsyncCommand;
+
+        #region RefreshRatesTaskNotifier;
+        private MvxNotifyTask _refreshRatesTaskNotifier;
+        /// <summary>
+        /// Use the IsNotCompleted/IsCompleted properties of the RefreshRatesTaskNotifier to show an indicator. Using the MvxNotifyTask is a recommended way to use an async command.
+        /// </summary>
+        /// <value>
+        /// The RefreshRates task notifier.
+        /// </value>
+        public MvxNotifyTask RefreshRatesTaskNotifier
+        {
+            get => _refreshRatesTaskNotifier;
+            set => SetProperty(ref _refreshRatesTaskNotifier, value);
+        }
+        #endregion
+
+        private IMvxCommand _refreshRatesTaskNotifierAsyncCommand;
+        public IMvxCommand RefreshRatesAsyncCommand
+        {
+            get
+            {
+                _refreshRatesTaskNotifierAsyncCommand = _refreshRatesTaskNotifierAsyncCommand ?? new MvxCommand(() =>
+                {
+                    RefreshRatesTaskNotifier = MvxNotifyTask.Create(async () =>
+                        {
+                            await RefreshRatesAsync();
+                        },
+                        OnRefreshRatesException);
+                });
+                return _refreshRatesTaskNotifierAsyncCommand;
+            }
+        }
+        private async Task RefreshRatesAsync()
+        {
+            // Implement your logic here.
+            await GetLatestRatesAsync();
+        }
+
+        private void OnRefreshRatesException(Exception ex)
+        {
+            // Catch and log the exception here.
+        }
+        #endregion
+
     }
 }

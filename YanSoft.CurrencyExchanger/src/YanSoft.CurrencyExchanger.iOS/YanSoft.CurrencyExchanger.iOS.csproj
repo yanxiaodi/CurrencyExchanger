@@ -93,10 +93,6 @@
     <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ITunesArtwork Include="iTunesArtwork\MvxForms\src\YanSoft.CurrencyExchanger.iOS\iTunesArtwork" />
-    <ITunesArtwork Include="iTunesArtwork%402x\MvxForms\src\YanSoft.CurrencyExchanger.iOS\iTunesArtwork%402x" />
-    <ITunesArtwork Include="iTunesArtwork\MvxForms\src\YanSoft.CurrencyExchanger.iOS\iTunesArtwork" />
-    <ITunesArtwork Include="iTunesArtwork%402x\MvxForms\src\YanSoft.CurrencyExchanger.iOS\iTunesArtwork%402x" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard">

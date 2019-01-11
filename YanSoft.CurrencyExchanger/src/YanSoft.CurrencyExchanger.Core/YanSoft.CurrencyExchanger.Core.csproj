@@ -43,7 +43,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\" />
+    <Folder Include="Assets\images\" />
     <Folder Include="Exceptions\" />
   </ItemGroup>
 </Project>
