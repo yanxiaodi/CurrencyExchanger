@@ -61,6 +61,15 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to currency code or currency name.
+        /// </summary>
+        internal static string AddCurrencies_SearchEntryPlaceholder {
+            get {
+                return ResourceManager.GetString("AddCurrencies_SearchEntryPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to UAE Dirham.
         /// </summary>
         internal static string Currency_AED {

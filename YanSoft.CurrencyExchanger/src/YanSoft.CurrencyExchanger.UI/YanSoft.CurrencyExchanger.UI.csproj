@@ -20,6 +20,9 @@
     <Compile Update="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Pages\AddCurrenciesPage.xaml.cs">
+      <DependentUpon>AddCurrenciesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Pages\HomePage.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
@@ -32,7 +35,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Pages\CurrencyExchangeItemListPage.xaml">
+    <EmbeddedResource Update="Pages\AddCurrenciesPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\MasterDetailPage.xaml">

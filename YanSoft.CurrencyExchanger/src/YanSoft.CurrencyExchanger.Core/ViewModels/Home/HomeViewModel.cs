@@ -10,15 +10,18 @@ using YanSoft.CurrencyExchanger.Core.Common;
 using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Services;
 using System.Linq;
+using MvvmCross.Navigation;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
 {
     public class HomeViewModel : BaseViewModel
     {
         private readonly ICurrencyService _currencyService;
-        public HomeViewModel(ICurrencyService currencyService)
+        private readonly IMvxNavigationService _navigationService;
+        public HomeViewModel(ICurrencyService currencyService, IMvxNavigationService navigationService)
         {
             _currencyService = currencyService;
+            _navigationService = navigationService;
         }
 
         public override async Task Initialize()
@@ -132,6 +135,25 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         private void OnRefreshRatesException(Exception ex)
         {
             // Catch and log the exception here.
+        }
+        #endregion
+
+
+
+        #region NavigateToAddCurrenciesAsyncCommand;
+        private IMvxAsyncCommand _navigateToAddCurrenciesAsyncCommand;
+        public IMvxAsyncCommand NavigateToAddCurrenciesAsyncCommand
+        {
+            get
+            {
+                _navigateToAddCurrenciesAsyncCommand = _navigateToAddCurrenciesAsyncCommand ?? new MvxAsyncCommand(MyCommandAsync);
+                return _navigateToAddCurrenciesAsyncCommand;
+            }
+        }
+        private async Task MyCommandAsync()
+        {
+            // Implement your logic here.
+            await _navigationService.Navigate<AddCurrenciesViewModel>();
         }
         #endregion
 

@@ -7,7 +7,7 @@
 
     <converters:FlagConverter x:Key="FlagConverter" />
 
-    <DataTemplate x:Key="CurrencyListItemDataTemplate">
+    <DataTemplate x:Key="CurrencyExchangeItemDataTemplate">
         <ViewCell>
             <StackLayout BackgroundColor="#eee" Orientation="Horizontal">
                 <Image WidthRequest="100" HeightRequest="80"
@@ -32,5 +32,20 @@
             </StackLayout>
         </ViewCell>
     </DataTemplate>
+    <DataTemplate x:Key="CurrencySelectableItemDataTemplate">
+        <ViewCell>
+            <StackLayout BackgroundColor="#eee" Orientation="Horizontal">
+                <Image WidthRequest="100" HeightRequest="80"
+                       Source="{Binding CurrencyItem.Image, Converter={StaticResource FlagConverter}}">
+                </Image>
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" FontSize="Medium"></Label>
+                    <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ViewCell>
+    </DataTemplate>
 
+    
+    
 </ResourceDictionary>

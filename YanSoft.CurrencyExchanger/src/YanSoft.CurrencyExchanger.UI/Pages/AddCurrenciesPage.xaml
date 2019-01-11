@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage x:TypeArguments="viewModels:AddCurrenciesViewModel" 
+                      xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YanSoft.CurrencyExchanger.UI.Pages.AddCurrenciesPage"
+             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                      xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:markupExtensions="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core">
+    <ContentPage.Content>
+        <StackLayout Margin="8">
+            <Entry Placeholder="currency code or currency name" ReturnType="Search"/>
+            <ListView ItemsSource="{Binding CurrencyItemList}"  CachingStrategy="RecycleElement"
+                      ItemTemplate="{StaticResource CurrencySelectableItemDataTemplate}" SelectionMode="None">
+
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</views:MvxContentPage>

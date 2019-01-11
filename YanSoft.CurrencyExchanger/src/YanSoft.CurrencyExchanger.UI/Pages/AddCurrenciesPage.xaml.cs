@@ -12,9 +12,10 @@ using YanSoft.CurrencyExchanger.Core.ViewModels;
 namespace YanSoft.CurrencyExchanger.UI.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CurrencyExchangeItemListPage : MvxContentPage<CurrencyExchangeItemListViewModel>
+	[MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail, Title = "Add Currencies")]
+    public partial class AddCurrenciesPage : MvxContentPage<AddCurrenciesViewModel>
 	{
-		public CurrencyExchangeItemListPage ()
+		public AddCurrenciesPage()
 		{
 			InitializeComponent ();
 		}

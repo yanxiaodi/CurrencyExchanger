@@ -14,7 +14,7 @@
 
 >
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add Currency" Order="Primary"  Priority="0" >
+        <ToolbarItem Text="Add Currency" Order="Primary"  Priority="0" Command="{Binding NavigateToAddCurrenciesAsyncCommand}">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="baseline_add_black_36.png" />
@@ -25,9 +25,9 @@
             </ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout Margin="8">
             <ListView ItemsSource="{Binding CurrencyList}" 
-                      ItemTemplate="{StaticResource CurrencyListItemDataTemplate}">
+                      ItemTemplate="{StaticResource CurrencyExchangeItemDataTemplate}">
                 
             </ListView>
         </StackLayout>
