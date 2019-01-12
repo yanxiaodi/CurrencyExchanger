@@ -19,5 +19,14 @@ namespace YanSoft.CurrencyExchanger.UI.Pages
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void EntrySearchKeyword_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            System.Diagnostics.Debug.WriteLine(e.NewTextValue);
+            if (BindingContext.DataContext is AddCurrenciesViewModel vm)
+            {
+                vm.SearchCurrencyCommand.Execute(e.NewTextValue);
+            }
+        }
+    }
 }

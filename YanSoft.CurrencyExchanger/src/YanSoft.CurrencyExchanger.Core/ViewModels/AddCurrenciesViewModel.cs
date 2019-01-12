@@ -104,6 +104,32 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         }
         #endregion
 
+
+        #region SearchCurrencyCommand;
+        private IMvxCommand<string> _searchCurrencyCommand;
+        public IMvxCommand<string> SearchCurrencyCommand
+        {
+            get
+            {
+                _searchCurrencyCommand = _searchCurrencyCommand ?? new MvxCommand<string>(SearchCurrency);
+                return _searchCurrencyCommand;
+            }
+        }
+        private void SearchCurrency(string param)
+        {
+            // Implement your logic here.
+            System.Diagnostics.Debug.WriteLine(param);
+            CurrencyItemList.Clear();
+            var keyword = param.Trim().ToLower();
+            CurrencyItemSourceList.Where(x => x.CurrencyItem.Code.ToLower().Contains(keyword)
+            || x.CurrencyItem.Name.ToLower().Contains(keyword))
+                .ForEach(x =>
+                {
+                    CurrencyItemList.Add(x);
+                });
+        }
+        #endregion
+
         #endregion
 
 

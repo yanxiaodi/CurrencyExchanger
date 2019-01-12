@@ -8,10 +8,27 @@
                       xmlns:markupExtensions="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
                       xmlns:controls="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
                       x:Name="MainContent"
+                      xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
 >
     <ContentPage.Content>
         <StackLayout Margin="8">
-            <Entry Placeholder="currency code or currency name" ReturnType="Search"/>
+            <!--The Behavior cannot work properly here. It seems like a bug. I need to investigate it.
+            Currently, I just call the Command in the code-behide file - It is not a good way.-->
+            <!--<Entry x:Name="EntrySearchKeyword" Placeholder="currency code or currency name" 
+                   ReturnType="Search"
+                   ReturnCommand="{Binding SearchCurrencyCommand}"
+                   ReturnCommandParameter="{Binding Text, Source={x:Reference EntrySearchKeyword}}"
+                   TextChanged="EntrySearchKeyword_TextChanged">-->
+                <!--<Entry.Behaviors>
+                    <behaviors:EventHandlerBehavior EventName="TextChanged">
+                        <behaviors:InvokeCommandAction Command="SearchCurrencyCommand" 
+                                                       CommandParameter="{Binding Text, Source={x:Reference EntrySearchKeyword}}"/>
+                    </behaviors:EventHandlerBehavior>
+                </Entry.Behaviors>-->
+            <Entry x:Name="EntrySearchKeyword" Placeholder="currency code or currency name" 
+                   ReturnType="Search"
+                   TextChanged="EntrySearchKeyword_TextChanged">
+            </Entry>
             <ListView ItemsSource="{Binding CurrencyItemList}" CachingStrategy="RecycleElement"
                        SelectionMode="None">
                 <ListView.ItemTemplate>
