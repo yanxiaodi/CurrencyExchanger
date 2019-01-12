@@ -153,7 +153,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         private async Task MyCommandAsync()
         {
             // Implement your logic here.
-            await _navigationService.Navigate<AddCurrenciesViewModel>();
+            await _navigationService.Navigate<AddCurrenciesViewModel, ObservableCollection<CurrencyExchangeBindableItem>>(CurrencyList);
         }
         #endregion
 

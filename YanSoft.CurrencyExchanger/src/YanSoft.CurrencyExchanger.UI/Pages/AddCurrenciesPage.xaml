@@ -10,7 +10,7 @@
                       x:Name="MainContent"
                       xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Order="Primary"  Priority="0" Command="{Binding NavigateToAddCurrenciesAsyncCommand}">
+        <ToolbarItem Text="Add" Order="Primary"  Priority="0" Command="{Binding AddCurrenciesAsyncCommand}">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="outline_done_black_48dp.png" />

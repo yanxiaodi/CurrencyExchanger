@@ -10,7 +10,7 @@
 
     <DataTemplate x:Key="CurrencyExchangeItemDataTemplate">
         <ViewCell>
-            <StackLayout BackgroundColor="#eee" Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
                 <Image WidthRequest="100" HeightRequest="80"
                                        Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
                 </Image>
@@ -35,7 +35,7 @@
     </DataTemplate>
     <DataTemplate x:Key="CurrencySelectableItemDataTemplate">
         <ViewCell>
-            <StackLayout BackgroundColor="#eee" Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
                 <StackLayout.GestureRecognizers>
                     <TapGestureRecognizer 
                         Command="{Binding BindingContext.DataContext.SelectItemCommand, Source={x:Reference MainContent}}"
@@ -43,12 +43,12 @@
                     </TapGestureRecognizer>
                 </StackLayout.GestureRecognizers>
                 <input:CheckBox Text="" Type="Material"  IsChecked="{Binding IsSelected, Mode=TwoWay}"/>
-                <Image WidthRequest="100" HeightRequest="80"
+                <Image
                        Source="{Binding CurrencyItem.Image, Converter={StaticResource FlagConverter}}">
                 </Image>
                 <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                    <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" FontSize="Medium"></Label>
-                    <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start"></Label>
+                    <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" Style="{DynamicResource ListItemTextStyle}"></Label>
+                    <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
                 </StackLayout>
             </StackLayout>
         </ViewCell>
