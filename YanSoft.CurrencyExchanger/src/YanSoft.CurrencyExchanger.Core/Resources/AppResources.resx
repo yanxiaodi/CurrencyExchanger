@@ -609,4 +609,7 @@
   <data name="Currency_MZN" xml:space="preserve">
     <value>Mozambican Metical</value>
   </data>
+  <data name="AddCurrencies_SearchEntryPlaceholder" xml:space="preserve">
+    <value>currency code or currency name</value>
+  </data>
 </root>

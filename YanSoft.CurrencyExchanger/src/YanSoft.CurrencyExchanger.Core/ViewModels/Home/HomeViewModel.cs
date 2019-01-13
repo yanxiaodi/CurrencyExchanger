@@ -10,25 +10,25 @@ using YanSoft.CurrencyExchanger.Core.Common;
 using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Services;
 using System.Linq;
+using MvvmCross.Navigation;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
 {
     public class HomeViewModel : BaseViewModel
     {
         private readonly ICurrencyService _currencyService;
-        public HomeViewModel(ICurrencyService currencyService)
+        private readonly IMvxNavigationService _navigationService;
+        private readonly IDataService<CurrencyExchangeItem> _dataService;
+        public HomeViewModel(IMvxNavigationService navigationService, ICurrencyService currencyService, IDataService<CurrencyExchangeItem> dataService)
         {
             _currencyService = currencyService;
+            _navigationService = navigationService;
+            _dataService = dataService;
         }
 
-        public override async Task Initialize()
-        {
-            var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
-            var list = await service.GetAllAsync();
-            CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
-            //await currencyService.GetCurrencyRates(CurrencyList);
-            await base.Initialize();
-        }
+
+
+        #region Properties
 
 
         #region CurrencyList;
@@ -40,6 +40,26 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         }
         #endregion
 
+
+        #endregion
+
+
+        #region Lifecycle events
+
+        public override async Task Initialize()
+        {
+            var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
+            var list = await service.GetAllAsync();
+            CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
+            await _currencyService.GetCurrencyRates(CurrencyList);
+            await base.Initialize();
+        }
+
+
+
+        #endregion
+
+        #region Commands
 
         #region GetLatestRatesAsyncCommand;
 
@@ -87,6 +107,73 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             // Catch and log the exception here.
         }
         #endregion
+
+
+        #region RefreshRatesAsyncCommand;
+
+        #region RefreshRatesTaskNotifier;
+        private MvxNotifyTask _refreshRatesTaskNotifier;
+        /// <summary>
+        /// Use the IsNotCompleted/IsCompleted properties of the RefreshRatesTaskNotifier to show an indicator. Using the MvxNotifyTask is a recommended way to use an async command.
+        /// </summary>
+        /// <value>
+        /// The RefreshRates task notifier.
+        /// </value>
+        public MvxNotifyTask RefreshRatesTaskNotifier
+        {
+            get => _refreshRatesTaskNotifier;
+            set => SetProperty(ref _refreshRatesTaskNotifier, value);
+        }
+        #endregion
+
+        private IMvxCommand _refreshRatesTaskNotifierAsyncCommand;
+        public IMvxCommand RefreshRatesAsyncCommand
+        {
+            get
+            {
+                _refreshRatesTaskNotifierAsyncCommand = _refreshRatesTaskNotifierAsyncCommand ?? new MvxCommand(() =>
+                {
+                    RefreshRatesTaskNotifier = MvxNotifyTask.Create(async () =>
+                        {
+                            await RefreshRatesAsync();
+                        },
+                        OnRefreshRatesException);
+                });
+                return _refreshRatesTaskNotifierAsyncCommand;
+            }
+        }
+        private async Task RefreshRatesAsync()
+        {
+            // Implement your logic here.
+            await GetLatestRatesAsync();
+        }
+
+        private void OnRefreshRatesException(Exception ex)
+        {
+            // Catch and log the exception here.
+        }
+        #endregion
+
+
+        #region NavigateToAddCurrenciesAsyncCommand;
+        private IMvxAsyncCommand _navigateToAddCurrenciesAsyncCommand;
+        public IMvxAsyncCommand NavigateToAddCurrenciesAsyncCommand
+        {
+            get
+            {
+                _navigateToAddCurrenciesAsyncCommand = _navigateToAddCurrenciesAsyncCommand ?? new MvxAsyncCommand(MyCommandAsync);
+                return _navigateToAddCurrenciesAsyncCommand;
+            }
+        }
+        private async Task MyCommandAsync()
+        {
+            // Implement your logic here.
+            await _navigationService.Navigate<AddCurrenciesViewModel, ObservableCollection<CurrencyExchangeBindableItem>>(CurrencyList);
+        }
+        #endregion
+
+        #endregion
+
 
     }
 }

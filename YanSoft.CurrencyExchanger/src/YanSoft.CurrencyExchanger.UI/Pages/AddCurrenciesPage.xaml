@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage x:TypeArguments="viewModels:AddCurrenciesViewModel" 
+                      xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YanSoft.CurrencyExchanger.UI.Pages.AddCurrenciesPage"
+             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                      xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:markupExtensions="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:controls="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+                      x:Name="MainContent"
+                      xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add" Order="Primary"  Priority="0" Command="{Binding AddCurrenciesAsyncCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="outline_done_black_48dp.png" />
+                    <On Platform="Android" Value="outline_done_white_48dp.png"/>
+                    <On Platform="UWP" Value="Assets/icons/outline_done_black_48dp.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Margin="8">
+            <!--The Behavior cannot work properly here. It seems like a bug. I need to investigate it.
+            Currently, I just call the Command in the code-behide file - It is not a good way.-->
+            <!--<Entry x:Name="EntrySearchKeyword" Placeholder="currency code or currency name" 
+                   ReturnType="Search"
+                   ReturnCommand="{Binding SearchCurrencyCommand}"
+                   ReturnCommandParameter="{Binding Text, Source={x:Reference EntrySearchKeyword}}"
+                   TextChanged="EntrySearchKeyword_TextChanged">-->
+                <!--<Entry.Behaviors>
+                    <behaviors:EventHandlerBehavior EventName="TextChanged">
+                        <behaviors:InvokeCommandAction Command="SearchCurrencyCommand" 
+                                                       CommandParameter="{Binding Text, Source={x:Reference EntrySearchKeyword}}"/>
+                    </behaviors:EventHandlerBehavior>
+                </Entry.Behaviors>-->
+            <Entry x:Name="EntrySearchKeyword" Placeholder="currency code or currency name" 
+                   ReturnType="Search"
+                   TextChanged="EntrySearchKeyword_TextChanged">
+            </Entry>
+            <ListView ItemsSource="{Binding CurrencyItemList}" CachingStrategy="RecycleElement"
+                       SelectionMode="None">
+                <ListView.ItemTemplate>
+                    <DataTemplate >
+                        <ViewCell>
+                            <StackLayout BackgroundColor="#eee" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                        Command="{Binding BindingContext.DataContext.SelectItemCommand, Source={x:Reference MainContent}}"
+                                        CommandParameter="{Binding}">
+                                    </TapGestureRecognizer>
+                                </StackLayout.GestureRecognizers>
+                                <controls:CheckBox Text="" Type="Material"  IsChecked="{Binding IsSelected, Mode=TwoWay}"/>
+                                <Image WidthRequest="100" HeightRequest="80"
+                                       Source="{Binding CurrencyItem.Image, Converter={StaticResource FlagConverter}}">
+                                </Image>
+                                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                    <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" FontSize="Medium"></Label>
+                                    <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start"></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</views:MvxContentPage>

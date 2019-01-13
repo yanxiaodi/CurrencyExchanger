@@ -93,6 +93,9 @@
     <PackageReference Include="MvvmCross.Forms">
       <Version>6.2.2</Version>
     </PackageReference>
+    <PackageReference Include="Plugin.CurrentActivity">
+      <Version>2.1.0.4</Version>
+    </PackageReference>
     <PackageReference Include="System.Buffers">
       <Version>4.5.0</Version>
     </PackageReference>
@@ -116,6 +119,9 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
       <Version>3.4.0.1008975</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms.InputKit">
+      <Version>2.3.5</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -303,6 +309,18 @@
       <Project>{DF26EBF1-CE88-46F7-AFC3-1BF92BCA4745}</Project>
       <Name>YanSoft.CurrencyExchanger.UI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\outline_done_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\outline_add_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\outline_add_white_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\outline_done_white_48dp.png" />
   </ItemGroup>
   <Import Project="..\YanSoft.CurrencyExchanger.Droid.Shared\YanSoft.CurrencyExchanger.Droid.Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

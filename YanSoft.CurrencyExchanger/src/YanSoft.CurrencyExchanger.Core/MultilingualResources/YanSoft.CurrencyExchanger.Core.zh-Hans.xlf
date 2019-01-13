@@ -662,6 +662,10 @@
           <source>Mozambican Metical</source>
           <target state="new">Mozambican Metical</target>
         </trans-unit>
+        <trans-unit id="AddCurrencies_SearchEntryPlaceholder" translate="yes" xml:space="preserve">
+          <source>currency code or currency name</source>
+          <target state="new">currency code or currency name</target>
+        </trans-unit>
       </group>
     </body>
   </file>
