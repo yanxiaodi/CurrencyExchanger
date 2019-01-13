@@ -18,10 +18,12 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
     {
         private readonly ICurrencyService _currencyService;
         private readonly IMvxNavigationService _navigationService;
-        public HomeViewModel(ICurrencyService currencyService, IMvxNavigationService navigationService)
+        private readonly IDataService<CurrencyExchangeItem> _dataService;
+        public HomeViewModel(IMvxNavigationService navigationService, ICurrencyService currencyService, IDataService<CurrencyExchangeItem> dataService)
         {
             _currencyService = currencyService;
             _navigationService = navigationService;
+            _dataService = dataService;
         }
 
 

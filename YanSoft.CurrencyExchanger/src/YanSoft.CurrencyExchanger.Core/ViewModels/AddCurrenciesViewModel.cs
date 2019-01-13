@@ -165,15 +165,13 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             // Implement your logic here.
             var sourceCurrency = CurrencyList.FirstOrDefault().SourceCurrency;
             var count = CurrencyList.Count;
-            var items = new List<CurrencyExchangeItem>();
             CurrencyItemSourceList.Where(x => x.IsSelected)
                 .ForEach(x =>
                 {
                     var item = new CurrencyExchangeItem(new CurrencyItem { Code = sourceCurrency.Code }, new CurrencyItem { Code = x.CurrencyItem.Code }, ++count);
-                    items.Add(item);
+                    _dataService.AddAsync(item);
                     CurrencyList.Add(item.ToCurrencyExchangeBindableItem());
                 });
-            await _dataService.AddRangeAsync(items);
             await _currencyService.GetCurrencyRates(CurrencyList);
             await _navigationService.Close(this);
         }
