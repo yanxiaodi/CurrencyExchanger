@@ -17,11 +17,13 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
     public class AddCurrenciesViewModel : BaseViewModel<ObservableCollection<CurrencyExchangeBindableItem>>
     {
         private readonly IMvxNavigationService _navigationService;
+        private readonly ICurrencyService _currencyService;
         private readonly GlobalContext _globalContext;
         private readonly IDataService<CurrencyExchangeItem> _dataService;
-        public AddCurrenciesViewModel(IMvxNavigationService navigationService, GlobalContext globalContext, IDataService<CurrencyExchangeItem> dataService)
+        public AddCurrenciesViewModel(IMvxNavigationService navigationService, ICurrencyService currencyService, GlobalContext globalContext, IDataService<CurrencyExchangeItem> dataService)
         {
             _navigationService = navigationService;
+            _currencyService = currencyService;
             _globalContext = globalContext;
             _dataService = dataService;
             //CurrencyItemSelectedList = new ObservableCollection<CurrencySelectableBindableItem>();
@@ -73,7 +75,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         #endregion
 
 
-        #region Lifecycle
+        #region Lifecycle events
 
         public override void Prepare(ObservableCollection<CurrencyExchangeBindableItem> list)
         {
@@ -163,12 +165,16 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             // Implement your logic here.
             var sourceCurrency = CurrencyList.FirstOrDefault().SourceCurrency;
             var count = CurrencyList.Count;
+            var items = new List<CurrencyExchangeItem>();
             CurrencyItemSourceList.Where(x => x.IsSelected)
                 .ForEach(x =>
                 {
                     var item = new CurrencyExchangeItem(new CurrencyItem { Code = sourceCurrency.Code }, new CurrencyItem { Code = x.CurrencyItem.Code }, ++count);
+                    items.Add(item);
                     CurrencyList.Add(item.ToCurrencyExchangeBindableItem());
                 });
+            await _dataService.AddRangeAsync(items);
+            await _currencyService.GetCurrencyRates(CurrencyList);
             await _navigationService.Close(this);
         }
         #endregion

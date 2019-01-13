@@ -24,14 +24,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             _navigationService = navigationService;
         }
 
-        public override async Task Initialize()
-        {
-            var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
-            var list = await service.GetAllAsync();
-            CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
-            //await currencyService.GetCurrencyRates(CurrencyList);
-            await base.Initialize();
-        }
+
+
+        #region Properties
 
 
         #region CurrencyList;
@@ -43,6 +38,26 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         }
         #endregion
 
+
+        #endregion
+
+
+        #region Lifecycle events
+
+        public override async Task Initialize()
+        {
+            var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
+            var list = await service.GetAllAsync();
+            CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
+            await _currencyService.GetCurrencyRates(CurrencyList);
+            await base.Initialize();
+        }
+
+
+
+        #endregion
+
+        #region Commands
 
         #region GetLatestRatesAsyncCommand;
 
@@ -92,7 +107,6 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         #endregion
 
 
-
         #region RefreshRatesAsyncCommand;
 
         #region RefreshRatesTaskNotifier;
@@ -139,7 +153,6 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         #endregion
 
 
-
         #region NavigateToAddCurrenciesAsyncCommand;
         private IMvxAsyncCommand _navigateToAddCurrenciesAsyncCommand;
         public IMvxAsyncCommand NavigateToAddCurrenciesAsyncCommand
@@ -156,6 +169,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             await _navigationService.Navigate<AddCurrenciesViewModel, ObservableCollection<CurrencyExchangeBindableItem>>(CurrencyList);
         }
         #endregion
+
+        #endregion
+
 
     }
 }
