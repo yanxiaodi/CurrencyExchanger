@@ -33,7 +33,10 @@ namespace YanSoft.CurrencyExchanger.Core.Services
                     }
                     else
                     {
-                        standardItem.Amount = target.Amount / target.Rate;
+                        if (target.Rate != 0)
+                        {
+                            standardItem.Amount = target.Amount / target.Rate;
+                        }
                     }
                     standardItem.AmountText = CurrencyHelper.FormatCurrencyAmount(standardItem.Amount, standardItem.TargetCurrency.CultureName);
                 }
@@ -71,7 +74,6 @@ namespace YanSoft.CurrencyExchanger.Core.Services
                         item.Rate = result != null ? result.Rate : 0;
                     }
                 }
-                await SaveCurrencyData(list);
                 return true;
             }
             else

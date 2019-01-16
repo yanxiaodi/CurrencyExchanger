@@ -11,6 +11,7 @@ using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Services;
 using System.Linq;
 using MvvmCross.Navigation;
+using YanSoft.CurrencyExchanger.Core.Calculator.Parser;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
 {
@@ -40,6 +41,40 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         }
         #endregion
 
+        #region Calculator
+
+        #region IsCalculatorDialogVisible;
+        private bool _isCalculatorDialogVisible;
+        public bool IsCalculatorDialogVisible
+        {
+            get => _isCalculatorDialogVisible;
+            set => SetProperty(ref _isCalculatorDialogVisible, value);
+        }
+        #endregion
+
+
+        #region CalcExpression;
+        private string _calcExpression;
+        public string CalcExpression
+        {
+            get => _calcExpression;
+            set => SetProperty(ref _calcExpression, value);
+        }
+        #endregion
+
+
+        #region CalcResult;
+        private string _calcResult;
+        public string CalcResult
+        {
+            get => _calcResult;
+            set => SetProperty(ref _calcResult, value);
+        }
+        #endregion
+
+        #endregion
+
+
 
         #endregion
 
@@ -51,7 +86,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
             var list = await service.GetAllAsync();
             CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
-            await _currencyService.GetCurrencyRates(CurrencyList);
+            await GetLatestRatesAsync();
             await base.Initialize();
         }
 
@@ -170,6 +205,296 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             // Implement your logic here.
             await _navigationService.Navigate<AddCurrenciesViewModel, ObservableCollection<CurrencyExchangeBindableItem>>(CurrencyList);
         }
+        #endregion
+
+
+
+
+        #region Calculator
+
+
+        #region CurrentCalcCurrencyExchangeItem;
+        private CurrencyExchangeBindableItem _currentCalcCurrencyExchangeItem;
+        public CurrencyExchangeBindableItem CurrentCalcCurrencyExchangeItem
+        {
+            get => _currentCalcCurrencyExchangeItem;
+            set => SetProperty(ref _currentCalcCurrencyExchangeItem, value);
+        }
+        #endregion
+
+
+        #region ShowCalculatorCommand;
+        private IMvxCommand<CurrencyExchangeBindableItem> _showCalculatorCommand;
+        public IMvxCommand<CurrencyExchangeBindableItem> ShowCalculatorCommand
+        {
+            get
+            {
+                _showCalculatorCommand = _showCalculatorCommand ?? new MvxCommand<CurrencyExchangeBindableItem>(ShowCalculator);
+                return _showCalculatorCommand;
+            }
+        }
+        private void ShowCalculator(CurrencyExchangeBindableItem param)
+        {
+            // Implement your logic here.
+            CurrentCalcCurrencyExchangeItem = param;
+            CalcExpression = CalcResult = param.Amount.ToString();
+            // TODO
+            //if (AppSettings.Instance.IsEnableAutoInitialize0)
+            //{
+            //    vm.CalcExpression = vm.CalcResult = "0";
+            //}
+            //else
+            //{
+            //    vm.CalcExpression = vm.CalcResult = item.Amount.ToString();
+            //}
+            if (!IsCalculatorDialogVisible)
+            {
+                IsCalculatorDialogVisible = true;
+            }
+        }
+        #endregion
+
+
+        #region ClearCalcExpressionCommand;
+        private IMvxCommand _clearCalcExpressionCommand;
+        public IMvxCommand  ClearCalcExpressionCommand
+        {
+            get
+            {
+                _clearCalcExpressionCommand = _clearCalcExpressionCommand ?? new MvxCommand( ClearCalcExpression);
+                return _clearCalcExpressionCommand;
+            }
+        }
+        private void  ClearCalcExpression()
+        {
+            // Implement your logic here.
+            CalcExpression = CalcResult = "0";
+        }
+        #endregion
+
+
+        #region BackspaceCommand;
+        private IMvxCommand _backspaceCommand;
+        public IMvxCommand BackspaceCommand
+        {
+            get
+            {
+                _backspaceCommand = _backspaceCommand ?? new MvxCommand(Backspace);
+                return _backspaceCommand;
+            }
+        }
+        private void Backspace()
+        {
+            // Implement your logic here.
+            if (CalcExpression == "0")
+            {
+                return;
+            }
+            if (CalcExpression.Length == 1)
+            {
+                CalcExpression = CalcResult = "0";
+            }
+            else
+            {
+                CalcExpression = CalcExpression.Substring(0, CalcExpression.Length - 1);
+                var last = CalcExpression.Last().ToString();
+                if (last != "+" && last != "-" && last != "*" && last != "/" && last != ".")
+                {
+                    var exp = ComputeExpression();
+                    if (exp != null)
+                    {
+                        CalcResult = exp.Value.ToString();
+                    }
+                }
+            }
+        }
+        #endregion
+
+
+        #region AppendCalculatorTextCommand;
+        private IMvxCommand<string> _appendCalculatorTextCommand;
+        public IMvxCommand<string> AppendCalculatorTextCommand
+        {
+            get
+            {
+                _appendCalculatorTextCommand = _appendCalculatorTextCommand ?? new MvxCommand<string>(AppendCalculatorText);
+                return _appendCalculatorTextCommand;
+            }
+        }
+        private void AppendCalculatorText(string text)
+        {
+            // Implement your logic here.
+            if (string.IsNullOrEmpty(text))
+            {
+                return;
+            }
+            if (CalcExpression == "0")
+            {
+                if (text != "+" && text != "-" && text != "*" && text != "/" && text != ".")
+                {
+                    CalcExpression = CalcResult = text;
+                }
+                else
+                {
+                    CalcExpression += text;
+                }
+            }
+            else
+            {
+                // Only calculate the result when inputting the number.
+                if (text != "+" && text != "-" && text != "*" && text != "/" && text != ".")
+                {
+                    CalcExpression += text;
+                    var exp = ComputeExpression();
+                    if (exp != null)
+                    {
+                        CalcResult = exp.Value.ToString();
+                    }
+                }
+                else
+                {
+                    string last = CalcExpression.Last().ToString();
+                    if (last != "+" && last != "-" && last != "*" && last != "/" && last != ".")
+                    {
+                        CalcExpression += text;
+                    }
+                }
+            }
+        }
+        #endregion
+
+
+        #region ComputeAnswerCommand;
+        private IMvxCommand _computeAnswerCommand;
+        public IMvxCommand ComputeAnswerCommand
+        {
+            get
+            {
+                _computeAnswerCommand = _computeAnswerCommand ?? new MvxCommand(ComputeAnswer);
+                return _computeAnswerCommand;
+            }
+        }
+        private void ComputeAnswer()
+        {
+            // Implement your logic here.
+            var exp = ComputeExpression();
+            if (exp != null)
+            {
+                CalcExpression = CalcResult = exp.Value.ToString();
+            }
+            else
+            {
+                CalcResult = "8-(";
+            }
+        }
+        #endregion
+
+
+
+        #region SetCurrencyAmountAsyncCommand;
+
+        #region SetCurrencyAmountTaskNotifier;
+        private MvxNotifyTask _setCurrencyAmountTaskNotifier;
+        /// <summary>
+        /// Use the IsNotCompleted/IsCompleted properties of the SetCurrencyAmountTaskNotifier to show an indicator. Using the MvxNotifyTask is a recommended way to use an async command.
+        /// </summary>
+        /// <value>
+        /// The SetCurrencyAmount task notifier.
+        /// </value>
+        public MvxNotifyTask SetCurrencyAmountTaskNotifier
+        {
+            get => _setCurrencyAmountTaskNotifier;
+            set => SetProperty(ref _setCurrencyAmountTaskNotifier, value);
+        }
+        #endregion
+
+        private IMvxCommand _setCurrencyAmountAsyncCommand;
+        public IMvxCommand SetCurrencyAmountAsyncCommand
+        {
+            get
+            {
+                _setCurrencyAmountAsyncCommand = _setCurrencyAmountAsyncCommand ?? new MvxCommand(() =>
+                {
+                    SetCurrencyAmountTaskNotifier = MvxNotifyTask.Create(async () =>
+                        {
+                            await SetCurrencyAmountAsync();
+                        },
+                        OnSetCurrencyAmountException);
+                });
+                return _setCurrencyAmountAsyncCommand;
+            }
+        }
+        private async Task SetCurrencyAmountAsync()
+        {
+            // Implement your logic here.
+            if (CalcResult != "8-(")
+            {
+                decimal.TryParse(CalcResult, out var result);
+                CurrencyExchangeBindableItem target = CurrencyList.FirstOrDefault(x => x.TargetCode == CurrentCalcCurrencyExchangeItem.TargetCode && x.SourceCode == CurrentCalcCurrencyExchangeItem.SourceCode);
+                if (target != null)
+                {
+                    target.Amount = result;
+                    _currencyService.CalculateCurrencyAmount(CurrencyList, target);
+                    await _currencyService.SaveCurrencyData(CurrencyList);
+                }
+                IsCalculatorDialogVisible = false;
+            }
+        }
+
+        private void OnSetCurrencyAmountException(Exception ex)
+        {
+            // Catch and log the exception here.
+        }
+        #endregion
+
+
+        #region CancelCalculatorCommand;
+        private IMvxCommand _cancelCalculatorCommand;
+        public IMvxCommand CancelCalculatorCommand
+        {
+            get
+            {
+                _cancelCalculatorCommand = _cancelCalculatorCommand ?? new MvxCommand(CancelCalculator);
+                return _cancelCalculatorCommand;
+            }
+        }
+        private void CancelCalculator()
+        {
+            // Implement your logic here.
+            IsCalculatorDialogVisible = false;
+        }
+        #endregion
+
+        private ConstantExpression ComputeExpression()
+        {
+            try
+            {
+                IExpression exp = FunctionParser.Parse(CalcExpression);
+                if (exp != null)
+                {
+                    IExpression answer = exp.Simplify();
+                    if (answer is ConstantExpression)
+                    {
+                        return (ConstantExpression)answer;
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                }
+                else
+                {
+                    //TODO
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+
         #endregion
 
         #endregion
