@@ -44,7 +44,13 @@
                 <ListView.ItemTemplate>
                     <DataTemplate >
                         <ViewCell>
-                            <StackLayout BackgroundColor="#eee" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                            <StackLayout BackgroundColor="Transparent" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                                <StackLayout.Padding>
+                                    <OnPlatform x:TypeArguments="Thickness">
+                                        <On Platform="iOS, Android" Value="4" />
+                                        <On Platform="UWP" Value="0,3,0,3" />
+                                    </OnPlatform>
+                                </StackLayout.Padding>
                                 <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer 
                                         Command="{Binding BindingContext.DataContext.SelectItemCommand, Source={x:Reference MainContent}}"
@@ -52,7 +58,7 @@
                                     </TapGestureRecognizer>
                                 </StackLayout.GestureRecognizers>
                                 <controls:CheckBox Text="" Type="Material"  IsChecked="{Binding IsSelected, Mode=TwoWay}"/>
-                                <Image WidthRequest="100" HeightRequest="80"
+                                <Image WidthRequest="100" HeightRequest="70"
                                        Source="{Binding CurrencyItem.Image, Converter={StaticResource FlagConverter}}">
                                 </Image>
                                 <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
