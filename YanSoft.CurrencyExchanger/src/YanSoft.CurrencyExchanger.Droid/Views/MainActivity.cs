@@ -24,6 +24,8 @@ namespace YanSoft.CurrencyExchanger.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+            Xamarin.Essentials.Platform.Init(this, bundle); // add this line to your code
+
         }
     }
 }
