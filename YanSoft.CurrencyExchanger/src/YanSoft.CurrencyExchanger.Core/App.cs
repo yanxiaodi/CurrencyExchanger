@@ -31,6 +31,7 @@ namespace YanSoft.CurrencyExchanger.Core
 
             Mvx.IoCProvider.RegisterSingleton(new GlobalContext());
             Mvx.IoCProvider.Resolve<GlobalContext>().Initialize();
+            Mvx.IoCProvider.RegisterSingleton(new AppSettings());
             RegisterAppStart<MasterDetailViewModel>();
         }
 

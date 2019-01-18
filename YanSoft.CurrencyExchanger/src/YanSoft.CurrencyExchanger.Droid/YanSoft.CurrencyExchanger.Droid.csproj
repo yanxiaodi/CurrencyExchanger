@@ -38,6 +38,9 @@
     <AndroidLinkSkip>YanSoft.CurrencyExchanger.Core;YanSoft.CurrencyExchanger.UI;</AndroidLinkSkip>
     <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
     <EnableProguard>false</EnableProguard>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -49,8 +52,12 @@
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
     <AndroidLinkSkip>YanSoft.CurrencyExchanger.Core;YanSoft.CurrencyExchanger.UI;</AndroidLinkSkip>
-    <EnableProguard>true</EnableProguard>
+    <EnableProguard>false</EnableProguard>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android" />
@@ -116,6 +123,9 @@
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Media.Compat">
       <Version>27.0.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.0.1</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Forms">
       <Version>3.4.0.1008975</Version>
