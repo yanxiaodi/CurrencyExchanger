@@ -30,5 +30,18 @@ namespace YanSoft.CurrencyExchanger.UI.Pages
                 navigationPage.BarBackgroundColor = (Color)Application.Current.Resources["PrimaryColor"];
             }
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            if (BindingContext.DataContext is HomeViewModel vm)
+            {
+                if (vm.IsCalculatorDialogVisible)
+                {
+                    vm.IsCalculatorDialogVisible = false;
+                    return true;
+                }
+            }
+            return base.OnBackButtonPressed();
+        }
     }
 }
