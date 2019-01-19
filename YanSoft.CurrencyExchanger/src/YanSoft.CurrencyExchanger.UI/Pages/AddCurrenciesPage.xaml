@@ -21,7 +21,7 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Margin="8">
+        <StackLayout Margin="6">
             <!--The Behavior cannot work properly here. It seems like a bug. I need to investigate it.
             Currently, I just call the Command in the code-behide file - It is not a good way.-->
             <!--<Entry x:Name="EntrySearchKeyword" Placeholder="currency code or currency name" 
@@ -62,8 +62,8 @@
                                        Source="{Binding CurrencyItem.Image, Converter={StaticResource FlagConverter}}">
                                 </Image>
                                 <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                                    <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" FontSize="Medium"></Label>
-                                    <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start"></Label>
+                                    <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" Style="{DynamicResource ListItemTextStyle}"></Label>
+                                    <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

@@ -20,11 +20,13 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         private readonly ICurrencyService _currencyService;
         private readonly IMvxNavigationService _navigationService;
         private readonly IDataService<CurrencyExchangeItem> _dataService;
-        public HomeViewModel(IMvxNavigationService navigationService, ICurrencyService currencyService, IDataService<CurrencyExchangeItem> dataService)
+        private readonly AppSettings _appSettings;
+        public HomeViewModel(IMvxNavigationService navigationService, ICurrencyService currencyService, IDataService<CurrencyExchangeItem> dataService, AppSettings appSettings)
         {
             _currencyService = currencyService;
             _navigationService = navigationService;
             _dataService = dataService;
+            _appSettings = appSettings;
         }
 
 
@@ -237,16 +239,14 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         {
             // Implement your logic here.
             CurrentCalcCurrencyExchangeItem = param;
-            CalcExpression = CalcResult = param.Amount.ToString();
-            // TODO
-            //if (AppSettings.Instance.IsEnableAutoInitialize0)
-            //{
-            //    vm.CalcExpression = vm.CalcResult = "0";
-            //}
-            //else
-            //{
-            //    vm.CalcExpression = vm.CalcResult = item.Amount.ToString();
-            //}
+            if (_appSettings.IsEnableAutoInitializeToZero)
+            {
+                CalcExpression = CalcResult = "0";
+            }
+            else
+            {
+                CalcExpression = CalcResult = param.Amount.ToString();
+            }
             if (!IsCalculatorDialogVisible)
             {
                 IsCalculatorDialogVisible = true;

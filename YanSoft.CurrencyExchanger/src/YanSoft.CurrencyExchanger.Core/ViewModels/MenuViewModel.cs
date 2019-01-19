@@ -57,7 +57,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                     await _navigationService.Navigate<HomeViewModel>();
                     break;
                 case "Settings":
-                    await _navigationService.Navigate<HomeViewModel>();
+                    await _navigationService.Navigate<SettingsViewModel>();
                     break;
                 default:
                     break;

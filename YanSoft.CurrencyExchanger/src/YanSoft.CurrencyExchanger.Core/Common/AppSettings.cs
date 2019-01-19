@@ -56,13 +56,13 @@ namespace YanSoft.CurrencyExchanger.Core.Common
         }
         #endregion
 
-        #region IsLocalizedCurrencySymbol
-        const string IsLocalizedCurrencySymbolKeyName = "IsLocalizedCurrencySymbol";
-        const bool IsLocalizedCurrencySymbolDefault = false;
-        public bool IsLocalizedCurrencySymbol
+        #region IsEnableLocalizedCurrencySymbol
+        const string IsEnableLocalizedCurrencySymbolKeyName = "IsEnableLocalizedCurrencySymbol";
+        const bool IsEnableLocalizedCurrencySymbolDefault = false;
+        public bool IsEnableLocalizedCurrencySymbol
         {
-            get => Preferences.Get(IsLocalizedCurrencySymbolKeyName, IsLocalizedCurrencySymbolDefault);
-            set => Preferences.Set(IsLocalizedCurrencySymbolKeyName, value);
+            get => Preferences.Get(IsEnableLocalizedCurrencySymbolKeyName, IsEnableLocalizedCurrencySymbolDefault);
+            set => Preferences.Set(IsEnableLocalizedCurrencySymbolKeyName, value);
         }
         #endregion
 
