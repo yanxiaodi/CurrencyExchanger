@@ -90,12 +90,12 @@ namespace YanSoft.CurrencyExchanger.Core.Models
         #endregion
 
 
-        #region IsStandard;
-        private bool _isStandard;
-        public bool IsStandard
+        #region IsSourceCurrency;
+        private bool _isSourceCurrency;
+        public bool IsSourceCurrency
         {
-            get => _isStandard;
-            set => SetProperty(ref _isStandard, value);
+            get => _isSourceCurrency;
+            set => SetProperty(ref _isSourceCurrency, value);
         }
         #endregion
 

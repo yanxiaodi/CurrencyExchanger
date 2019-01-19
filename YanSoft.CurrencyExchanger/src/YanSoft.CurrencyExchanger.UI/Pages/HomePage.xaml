@@ -11,7 +11,8 @@
                       xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
                       xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
                       xmlns:uwp="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
-                      x:Name="MainContent">
+                      x:Name="MainContent"
+                      xmlns:animation="clr-namespace:YanSoft.CurrencyExchanger.Core.AnimationHelper;assembly=YanSoft.CurrencyExchanger.Core">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add Currency" Order="Primary"  Priority="0" Command="{Binding NavigateToAddCurrenciesAsyncCommand}">
             <ToolbarItem.Icon>
@@ -57,7 +58,8 @@
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
                                         <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}"></Label>
-                                        <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="EndAndExpand">
+                                        <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="EndAndExpand"
+                                                     IsVisible="{Binding IsSourceCurrency, Converter={StaticResource SourceCurrencyVisibleConverter}}">
                                             <Label Text="1" Style="{StaticResource myListItemDetailTextStyle}"></Label>
                                             <Label Text="{Binding SourceCode}" Style="{StaticResource myListItemDetailTextStyle}"></Label>
                                             <Label Text="=" Style="{StaticResource myListItemDetailTextStyle}"></Label>
@@ -71,7 +73,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <StackLayout Grid.Row="0" Grid.RowSpan="2" Spacing="0" IsVisible="{Binding IsCalculatorDialogVisible}"
+            <StackLayout Grid.Row="0" Grid.RowSpan="2" Spacing="0" animation:IsVisibleFadeInAndOutAnimation.IsVisible="{Binding IsCalculatorDialogVisible}"
                   HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <StackLayout VerticalOptions="FillAndExpand" Spacing="0" BackgroundColor="Black" Opacity="0.5"></StackLayout>
                 <StackLayout Orientation="Horizontal" Spacing="0">

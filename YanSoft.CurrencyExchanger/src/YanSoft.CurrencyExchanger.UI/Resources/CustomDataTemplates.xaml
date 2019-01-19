@@ -7,7 +7,7 @@
                     xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit">
 
     <converters:FlagConverter x:Key="FlagConverter" />
-        
+    <converters:SourceCurrencyVisibleConverter x:Key="SourceCurrencyVisibleConverter" />
     <DataTemplate x:Key="CurrencyExchangeItemDataTemplate">
         <ViewCell>
             <StackLayout Orientation="Horizontal" Padding="4">

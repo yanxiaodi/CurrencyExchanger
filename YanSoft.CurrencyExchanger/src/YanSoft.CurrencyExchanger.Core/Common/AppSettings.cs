@@ -38,7 +38,7 @@ namespace YanSoft.CurrencyExchanger.Core.Common
 
         #region IsAutoRefreshRatesOnStartup
         const string IsAutoRefreshRatesOnStartupKeyName = "IsAutoRefreshRatesOnStartup";
-        const bool IsAutoRefreshRatesOnStartupDefault = false;
+        const bool IsAutoRefreshRatesOnStartupDefault = true;
         public bool IsAutoRefreshRatesOnStartup
         {
             get => Preferences.Get(IsAutoRefreshRatesOnStartupKeyName, IsAutoRefreshRatesOnStartupDefault);

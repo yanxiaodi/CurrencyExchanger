@@ -98,7 +98,10 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         public override void ViewAppearing()
         {
             base.ViewAppearing();
-            _currencyService.UpdateCurrencyAmountText(CurrencyList);
+            if (_currencyList != null)
+            {
+                _currencyService.UpdateCurrencyAmountText(CurrencyList);
+            }
         }
 
 
@@ -143,7 +146,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         {
             // Implement your logic here.
             await _currencyService.GetCurrencyRates(CurrencyList);
-            _currencyService.CalculateCurrencyAmount(CurrencyList, CurrencyList.First(x => x.IsStandard));
+            _currencyService.CalculateCurrencyAmount(CurrencyList, CurrencyList.First(x => x.IsSourceCurrency));
             await _currencyService.SaveCurrencyData(CurrencyList);
         }
 

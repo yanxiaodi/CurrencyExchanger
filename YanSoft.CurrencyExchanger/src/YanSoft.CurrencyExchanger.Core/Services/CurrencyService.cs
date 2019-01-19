@@ -22,12 +22,12 @@ namespace YanSoft.CurrencyExchanger.Core.Services
 
         public void CalculateCurrencyAmount(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem target = null)
         {
-            CurrencyExchangeBindableItem standardItem = list.FirstOrDefault(x => x.IsStandard == true);
+            CurrencyExchangeBindableItem standardItem = list.FirstOrDefault(x => x.IsSourceCurrency == true);
             if (standardItem != null)
             {
                 if (target != null)
                 {
-                    if (target.IsStandard)
+                    if (target.IsSourceCurrency)
                     {
                         standardItem.Amount = target.Amount;
                     }
@@ -40,7 +40,7 @@ namespace YanSoft.CurrencyExchanger.Core.Services
                     }
                     standardItem.AmountText = CurrencyHelper.FormatCurrencyAmount(standardItem.Amount, standardItem.TargetCurrency.CultureName);
                 }
-                foreach (var item in list.Where(x => x.IsStandard == false).ToList())
+                foreach (var item in list.Where(x => x.IsSourceCurrency == false).ToList())
                 {
                     if (target != null)
                     {
@@ -62,13 +62,13 @@ namespace YanSoft.CurrencyExchanger.Core.Services
         public async Task<bool> GetCurrencyRates(ObservableCollection<CurrencyExchangeBindableItem> list)
         {
             var sourceCode = list.First().SourceCode;
-            var targetCodes = string.Join(",", list.Where(x => !x.IsStandard).Select(x => x.TargetCode).ToList());
+            var targetCodes = string.Join(",", list.Where(x => !x.IsSourceCurrency).Select(x => x.TargetCode).ToList());
             var response = await _apiService.GetLatestRates(sourceCode, targetCodes);
             if (response.IsSuccess)
             {
                 foreach (var item in list)
                 {
-                    if (!item.IsStandard)
+                    if (!item.IsSourceCurrency)
                     {
                         var result = response.Result.Rates.FirstOrDefault(x => x.Target == item.TargetCode);
                         item.Rate = result != null ? result.Rate : 0;

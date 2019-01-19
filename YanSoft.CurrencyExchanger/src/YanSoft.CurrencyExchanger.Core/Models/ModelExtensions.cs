@@ -19,7 +19,7 @@ namespace YanSoft.CurrencyExchanger.Core.Models
                 SourceCode = model.SourceCode,
                 TargetCurrency = Mvx.IoCProvider.Resolve<GlobalContext>().AllCurrencyItemList.First(x => x.Code == model.TargetCode),
                 TargetCode = model.TargetCode,
-                IsStandard = model.IsStandard,
+                IsSourceCurrency = model.IsSourceCurrency,
                 Rate = model.Rate,
                 Amount = model.Amount,
                 SortOrder = model.SortOrder,
@@ -39,7 +39,7 @@ namespace YanSoft.CurrencyExchanger.Core.Models
                 Amount = model.Amount,
                 SourceCode = model.SourceCode,
                 TargetCode = model.TargetCode,
-                IsStandard = model.IsStandard,
+                IsSourceCurrency = model.IsSourceCurrency,
                 Rate = model.Rate,
                 SortOrder = model.SortOrder,
                 UpdateTimeUtc = DateTimeHelper.ConvertDateTimeToTimestamp(model.UpdateTimeUtc)
