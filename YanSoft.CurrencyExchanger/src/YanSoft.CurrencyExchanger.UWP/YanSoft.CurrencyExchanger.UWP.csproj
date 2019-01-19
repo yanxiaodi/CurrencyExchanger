@@ -103,6 +103,9 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="Assets\fonts\Font Awesome 5 Brands-Regular-400.otf" />
+    <Content Include="Assets\fonts\Font Awesome 5 Free-Regular-400.otf" />
+    <Content Include="Assets\fonts\Font Awesome 5 Free-Solid-900.otf" />
     <None Include="YanSoft.CurrencyExchanger.UWP_StoreKey.pfx" />
   </ItemGroup>
   <ItemGroup>

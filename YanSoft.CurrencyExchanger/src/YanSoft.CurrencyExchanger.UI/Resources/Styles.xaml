@@ -13,5 +13,4 @@
     <Style x:Key="myListItemDetailTextStyle" TargetType="Label" BaseResourceKey="ListItemDetailTextStyle">
         <Setter Property="FontSize" Value="Small" />
     </Style>
-
 </ResourceDictionary>

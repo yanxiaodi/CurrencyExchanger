@@ -49,13 +49,20 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Padding="12" BackgroundColor="Transparent">
+                            <StackLayout Padding="12" Orientation="Horizontal" BackgroundColor="Transparent">
                                 <StackLayout.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding BindingContext.DataContext.ShowDetailPageAsyncCommand, Source={x:Reference MainContent}}"
                                         CommandParameter="{Binding}">
                                     </TapGestureRecognizer>
                                 </StackLayout.GestureRecognizers>
-                                <Label Text="{Binding}" VerticalOptions="Center"></Label>
+                                <Label Text="{Binding Icon}" WidthRequest="30" HorizontalOptions="Start" HorizontalTextAlignment="Center" VerticalOptions="Center">
+                                    <Label.FontFamily>
+                                        <OnPlatform UWP="Assets/fonts/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free"
+                                                    Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Regular"
+                                                    iOS="Font Awesome 5 Free"></OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                                <Label Text="{Binding Name}" VerticalOptions="Center"></Label>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
