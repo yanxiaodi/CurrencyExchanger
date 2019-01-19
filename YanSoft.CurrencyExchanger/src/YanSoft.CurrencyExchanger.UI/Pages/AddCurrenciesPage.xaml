@@ -21,7 +21,10 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Margin="8">
+        <StackLayout >
+            <StackLayout.Margin>
+                <OnPlatform UWP="20" Android="6" iOS="6" ></OnPlatform>
+            </StackLayout.Margin>
             <!--The Behavior cannot work properly here. It seems like a bug. I need to investigate it.
             Currently, I just call the Command in the code-behide file - It is not a good way.-->
             <!--<Entry x:Name="EntrySearchKeyword" Placeholder="currency code or currency name" 
@@ -41,14 +44,18 @@
             </Entry>
             <ListView ItemsSource="{Binding CurrencyItemList}" CachingStrategy="RecycleElement"
                        SelectionMode="None">
+                
+                <ListView.RowHeight>
+                    <OnPlatform Android="60" iOS="60"></OnPlatform>
+                </ListView.RowHeight>
                 <ListView.ItemTemplate>
                     <DataTemplate >
                         <ViewCell>
-                            <StackLayout BackgroundColor="Transparent" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                            <StackLayout BackgroundColor="Transparent" Spacing="0"  Orientation="Horizontal" VerticalOptions="CenterAndExpand">
                                 <StackLayout.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="iOS, Android" Value="4" />
-                                        <On Platform="UWP" Value="0,3,0,3" />
+                                        <On Platform="UWP" Value="10" />
                                     </OnPlatform>
                                 </StackLayout.Padding>
                                 <StackLayout.GestureRecognizers>
@@ -58,12 +65,12 @@
                                     </TapGestureRecognizer>
                                 </StackLayout.GestureRecognizers>
                                 <controls:CheckBox Text="" Type="Material"  IsChecked="{Binding IsSelected, Mode=TwoWay}"/>
-                                <Image WidthRequest="100" HeightRequest="70"
+                                <Image Margin="6,0,0,0"
                                        Source="{Binding CurrencyItem.Image, Converter={StaticResource FlagConverter}}">
                                 </Image>
-                                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                                    <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" FontSize="Medium"></Label>
-                                    <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start"></Label>
+                                <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Center" Padding="6,0,6,0" HorizontalOptions="FillAndExpand">
+                                    <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}"></Label>
+                                    <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}" ></Label>
                                 </StackLayout>
                             </StackLayout>
                         </ViewCell>

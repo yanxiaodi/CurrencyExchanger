@@ -14,7 +14,7 @@ namespace YanSoft.CurrencyExchanger.Core.Models
         public decimal Rate { get; set; }
         public decimal Amount { get; set; }
         public int SortOrder { get; set; }
-        public bool IsStandard { get; set; }
+        public bool IsSourceCurrency { get; set; }
         public int UpdateTimeUtc { get; set; }
 
         public CurrencyExchangeItem()
@@ -29,13 +29,13 @@ namespace YanSoft.CurrencyExchanger.Core.Models
             TargetCode = target.Code;
             if (source.Code.Equals(target.Code))
             {
-                IsStandard = true;
+                IsSourceCurrency = true;
                 Rate = 1;
                 Amount = 1;
             }
             else
             {
-                IsStandard = false;
+                IsSourceCurrency = false;
                 Rate = 0;
                 Amount = 0;
             }

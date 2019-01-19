@@ -35,20 +35,21 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         }
         #endregion
 
+
         #region ShowDetailPageAsyncCommand;
-        private IMvxAsyncCommand _showDetailPageAsyncCommand;
-        public IMvxAsyncCommand ShowDetailPageAsyncCommand
+        private IMvxAsyncCommand<string> _showDetailPageAsyncCommand;
+        public IMvxAsyncCommand<string> ShowDetailPageAsyncCommand
         {
             get
             {
-                _showDetailPageAsyncCommand = _showDetailPageAsyncCommand ?? new MvxAsyncCommand(ShowDetailPageAsync);
+                _showDetailPageAsyncCommand = _showDetailPageAsyncCommand ?? new MvxAsyncCommand<string>(ShowDetailPageAsync);
                 return _showDetailPageAsyncCommand;
             }
         }
-        private async Task ShowDetailPageAsync()
+        private async Task ShowDetailPageAsync(string param)
         {
             // Implement your logic here.
-            switch (SelectedMenuItem)
+            switch (param)
             {
                 case "Home":
                     await _navigationService.Navigate<HomeViewModel>();
@@ -57,7 +58,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                     await _navigationService.Navigate<HomeViewModel>();
                     break;
                 case "Settings":
-                    await _navigationService.Navigate<HomeViewModel>();
+                    await _navigationService.Navigate<SettingsViewModel>();
                     break;
                 default:
                     break;
@@ -74,16 +75,54 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         }
         #endregion
 
+        //#region ShowDetailPageAsyncCommand;
+        //private IMvxAsyncCommand _showDetailPageAsyncCommand;
+        //public IMvxAsyncCommand ShowDetailPageAsyncCommand
+        //{
+        //    get
+        //    {
+        //        _showDetailPageAsyncCommand = _showDetailPageAsyncCommand ?? new MvxAsyncCommand(ShowDetailPageAsync);
+        //        return _showDetailPageAsyncCommand;
+        //    }
+        //}
+        //private async Task ShowDetailPageAsync()
+        //{
+        //    // Implement your logic here.
+        //    switch (SelectedMenuItem)
+        //    {
+        //        case "Home":
+        //            await _navigationService.Navigate<HomeViewModel>();
+        //            break;
+        //        case "Charts":
+        //            await _navigationService.Navigate<HomeViewModel>();
+        //            break;
+        //        case "Settings":
+        //            await _navigationService.Navigate<SettingsViewModel>();
+        //            break;
+        //        default:
+        //            break;
+        //    }
+        //    if (Application.Current.MainPage is MasterDetailPage masterDetailPage)
+        //    {
+        //        masterDetailPage.IsPresented = false;
+        //    }
+        //    else if (Application.Current.MainPage is NavigationPage navigationPage
+        //             && navigationPage.CurrentPage is MasterDetailPage nestedMasterDetail)
+        //    {
+        //        nestedMasterDetail.IsPresented = false;
+        //    }
+        //}
+        //#endregion
 
-        #region SelectedMenuItem;
-        private string _selectedMenuItem;
-        public string SelectedMenuItem
-        {
-            get => _selectedMenuItem;
-            set => SetProperty(ref _selectedMenuItem, value);
-        }
-        #endregion
 
+        //#region SelectedMenuItem;
+        //private string _selectedMenuItem;
+        //public string SelectedMenuItem
+        //{
+        //    get => _selectedMenuItem;
+        //    set => SetProperty(ref _selectedMenuItem, value);
+        //}
+        //#endregion
     }
 
 }

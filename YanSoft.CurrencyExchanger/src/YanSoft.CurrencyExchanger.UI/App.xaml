@@ -12,6 +12,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <resources:Colors />
                 <resources:CustomDataTemplates />
+                <resources:Styles />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
 

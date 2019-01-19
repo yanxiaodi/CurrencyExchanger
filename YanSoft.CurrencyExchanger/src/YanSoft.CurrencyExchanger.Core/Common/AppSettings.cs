@@ -36,13 +36,13 @@ namespace YanSoft.CurrencyExchanger.Core.Common
 
         }
 
-        #region IsAutoRefreshRatesOnStartup
-        const string IsAutoRefreshRatesOnStartupKeyName = "IsAutoRefreshRatesOnStartup";
-        const bool IsAutoRefreshRatesOnStartupDefault = false;
-        public bool IsAutoRefreshRatesOnStartup
+        #region IsAutoRefreshRatesOnStartupEnabled
+        const string IsAutoRefreshRatesOnStartupEnabledKeyName = "IsAutoRefreshRatesOnStartupEnabled";
+        const bool IsAutoRefreshRatesOnStartupEnabledDefault = true;
+        public bool IsAutoRefreshRatesOnStartupEnabled
         {
-            get => Preferences.Get(IsAutoRefreshRatesOnStartupKeyName, IsAutoRefreshRatesOnStartupDefault);
-            set => Preferences.Set(IsAutoRefreshRatesOnStartupKeyName, value);
+            get => Preferences.Get(IsAutoRefreshRatesOnStartupEnabledKeyName, IsAutoRefreshRatesOnStartupEnabledDefault);
+            set => Preferences.Set(IsAutoRefreshRatesOnStartupEnabledKeyName, value);
         }
         #endregion
 
@@ -56,34 +56,34 @@ namespace YanSoft.CurrencyExchanger.Core.Common
         }
         #endregion
 
-        #region IsLocalizedCurrencySymbol
-        const string IsLocalizedCurrencySymbolKeyName = "IsLocalizedCurrencySymbol";
-        const bool IsLocalizedCurrencySymbolDefault = false;
-        public bool IsLocalizedCurrencySymbol
+        #region IsLocalizedCurrencySymbolEnabled
+        const string IsLocalizedCurrencySymbolEnabledKeyName = "IsLocalizedCurrencySymbolEnabled";
+        const bool IsLocalizedCurrencySymbolEnabledDefault = false;
+        public bool IsLocalizedCurrencySymbolEnabled
         {
-            get => Preferences.Get(IsLocalizedCurrencySymbolKeyName, IsLocalizedCurrencySymbolDefault);
-            set => Preferences.Set(IsLocalizedCurrencySymbolKeyName, value);
+            get => Preferences.Get(IsLocalizedCurrencySymbolEnabledKeyName, IsLocalizedCurrencySymbolEnabledDefault);
+            set => Preferences.Set(IsLocalizedCurrencySymbolEnabledKeyName, value);
         }
         #endregion
 
-        #region IsEnablePullToRefresh
-        const string IsEnablePullToRefreshKeyName = "IsEnablePullToRefresh";
-        const bool IsEnablePullToRefreshDefault = false;
-        public bool IsEnablePullToRefresh
+        #region IsPullToRefreshEnabled
+        const string IsPullToRefreshEnabledKeyName = "IsPullToRefreshEnabled";
+        const bool IsPullToRefreshEnabledDefault = false;
+        public bool IsPullToRefreshEnabled
         {
-            get => Preferences.Get(IsEnablePullToRefreshKeyName, IsEnablePullToRefreshDefault);
-            set => Preferences.Set(IsEnablePullToRefreshKeyName, value);
+            get => Preferences.Get(IsPullToRefreshEnabledKeyName, IsPullToRefreshEnabledDefault);
+            set => Preferences.Set(IsPullToRefreshEnabledKeyName, value);
         }
         #endregion
 
 
-        #region IsEnableAutoInitializeToZero
-        const string IsEnableAutoInitializeToZeroKeyName = "IsEnableAutoInitialize0";
-        const bool IsEnableAutoInitializeToZeroDefault = true;
-        public bool IsEnableAutoInitializeToZero
+        #region IsAutoInitializeToZeroEnabled
+        const string IsAutoInitializeToZeroEnabledKeyName = "IsAutoInitializeToZeroEnabled";
+        const bool IsAutoInitializeToZeroEnabledDefault = true;
+        public bool IsAutoInitializeToZeroEnabled
         {
-            get => Preferences.Get(IsEnableAutoInitializeToZeroKeyName, IsEnableAutoInitializeToZeroDefault);
-            set => Preferences.Set(IsEnableAutoInitializeToZeroKeyName, value);
+            get => Preferences.Get(IsAutoInitializeToZeroEnabledKeyName, IsAutoInitializeToZeroEnabledDefault);
+            set => Preferences.Set(IsAutoInitializeToZeroEnabledKeyName, value);
         }
         #endregion
 
