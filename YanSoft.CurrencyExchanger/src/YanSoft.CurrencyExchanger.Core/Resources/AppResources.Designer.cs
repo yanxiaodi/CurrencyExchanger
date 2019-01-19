@@ -61,6 +61,60 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The exchange rate data of this app is from www.currencyconverterapi.com. Your use of this application and rely on the content of any risks and consequences should be on its own, this application and the developer does not take any legal responsibility..
+        /// </summary>
+        internal static string About_Disclaimer_Content {
+            get {
+                return ResourceManager.GetString("About_Disclaimer_Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disclaimer.
+        /// </summary>
+        internal static string About_Disclaimer_Title {
+            get {
+                return ResourceManager.GetString("About_Disclaimer_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to feedback.
+        /// </summary>
+        internal static string About_Feedback {
+            get {
+                return ResourceManager.GetString("About_Feedback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to like me!.
+        /// </summary>
+        internal static string About_LikeMe {
+            get {
+                return ResourceManager.GetString("About_LikeMe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to share.
+        /// </summary>
+        internal static string About_Share {
+            get {
+                return ResourceManager.GetString("About_Share", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I recommend Currency Exchanger to get latest currency rates..
+        /// </summary>
+        internal static string About_Share_Content {
+            get {
+                return ResourceManager.GetString("About_Share_Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to currency code or currency name.
         /// </summary>
         internal static string AddCurrencies_SearchEntryPlaceholder {

@@ -24,10 +24,10 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                 new CommonMenuItem{Icon = "\uf015", Name = "Home" },
                 new CommonMenuItem{Icon = "\uf201", Name = "Charts" },
                 new CommonMenuItem{Icon = "\uf013", Name = "Settings" },
-                new CommonMenuItem{Icon = "\uf1e0", Name = "Share" },
-                new CommonMenuItem{Icon = "\uf118", Name = "Like Me!" },
-                new CommonMenuItem{Icon = "\uf0e0", Name = "Feedback" },
-                new CommonMenuItem{Icon = "\uf4c4", Name = "Help" },
+                //new CommonMenuItem{Icon = "\uf1e0", Name = "Share" },
+                //new CommonMenuItem{Icon = "\uf118", Name = "Like Me!" },
+                //new CommonMenuItem{Icon = "\uf0e0", Name = "Feedback" },
+                //new CommonMenuItem{Icon = "\uf4c4", Name = "Help" },
                 new CommonMenuItem{Icon = "\uf129", Name = "About" },
 
 
@@ -67,6 +67,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                     break;
                 case "Settings":
                     await _navigationService.Navigate<SettingsViewModel>();
+                    break;
+                case "About":
+                    await _navigationService.Navigate<AboutViewModel>();
                     break;
                 default:
                     break;
@@ -131,6 +134,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         //    set => SetProperty(ref _selectedMenuItem, value);
         //}
         //#endregion
+
     }
 
 }

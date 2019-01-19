@@ -10,7 +10,6 @@
                       xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
                       xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
                       xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
-                      xmlns:uwp="clr-namespace:Xamarin.Forms.PlatformConfiguration.WindowsSpecific;assembly=Xamarin.Forms.Core"
                       x:Name="MainContent"
                       xmlns:animation="clr-namespace:YanSoft.CurrencyExchanger.Core.AnimationHelper;assembly=YanSoft.CurrencyExchanger.Core"
                       xmlns:controlHelper="clr-namespace:YanSoft.CurrencyExchanger.Core.ControlHelper;assembly=YanSoft.CurrencyExchanger.Core">
