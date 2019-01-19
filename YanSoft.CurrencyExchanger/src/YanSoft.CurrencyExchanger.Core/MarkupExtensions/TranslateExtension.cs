@@ -18,7 +18,7 @@ namespace YanSoft.CurrencyExchanger.Core.MarkupExtensions
     [ContentProperty(nameof(Text))]
     public class TranslateExtension : IMarkupExtension
     {
-        const string ResourceId = "YanSoft.CurrencyExchanger.Core.Resources.AppResource";
+        const string ResourceId = "YanSoft.CurrencyExchanger.Core.Resources.AppResources";
 
         static readonly Lazy<ResourceManager> ResManager = new Lazy<ResourceManager>(() => new ResourceManager(ResourceId, typeof(TranslateExtension).GetTypeInfo().Assembly));
 

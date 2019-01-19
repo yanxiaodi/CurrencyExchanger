@@ -612,4 +612,22 @@
   <data name="AddCurrencies_SearchEntryPlaceholder" xml:space="preserve">
     <value>currency code or currency name</value>
   </data>
+  <data name="About_Disclaimer_Content" xml:space="preserve">
+    <value>The exchange rate data of this app is from www.currencyconverterapi.com. Your use of this application and rely on the content of any risks and consequences should be on its own, this application and the developer does not take any legal responsibility.</value>
+  </data>
+  <data name="About_Disclaimer_Title" xml:space="preserve">
+    <value>Disclaimer</value>
+  </data>
+  <data name="About_Feedback" xml:space="preserve">
+    <value>feedback</value>
+  </data>
+  <data name="About_LikeMe" xml:space="preserve">
+    <value>like me!</value>
+  </data>
+  <data name="About_Share" xml:space="preserve">
+    <value>share</value>
+  </data>
+  <data name="About_Share_Content" xml:space="preserve">
+    <value>I recommend Currency Exchanger to get latest currency rates.</value>
+  </data>
 </root>

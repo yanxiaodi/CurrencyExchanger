@@ -7,6 +7,7 @@ using MvvmCross.Commands;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
 using Xamarin.Forms;
+using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.ViewModels.Home;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels
@@ -18,17 +19,24 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         public MenuViewModel(IMvxNavigationService navigationService)
         {
             _navigationService = navigationService;
-            MenuItemList = new MvxObservableCollection<string>()
+            MenuItemList = new MvxObservableCollection<CommonMenuItem>()
             {
-                "Home",
-                "Charts",
-                "Settings"
+                new CommonMenuItem{Icon = "\uf015", Name = "Home" },
+                new CommonMenuItem{Icon = "\uf201", Name = "Charts" },
+                new CommonMenuItem{Icon = "\uf013", Name = "Settings" },
+                //new CommonMenuItem{Icon = "\uf1e0", Name = "Share" },
+                //new CommonMenuItem{Icon = "\uf118", Name = "Like Me!" },
+                //new CommonMenuItem{Icon = "\uf0e0", Name = "Feedback" },
+                //new CommonMenuItem{Icon = "\uf4c4", Name = "Help" },
+                new CommonMenuItem{Icon = "\uf129", Name = "About" },
+
+
             };
         }
 
         #region MenuItemList;
-        private ObservableCollection<string> _menuItemList;
-        public ObservableCollection<string> MenuItemList
+        private ObservableCollection<CommonMenuItem> _menuItemList;
+        public ObservableCollection<CommonMenuItem> MenuItemList
         {
             get => _menuItemList;
             set => SetProperty(ref _menuItemList, value);
@@ -37,19 +45,19 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
 
 
         #region ShowDetailPageAsyncCommand;
-        private IMvxAsyncCommand<string> _showDetailPageAsyncCommand;
-        public IMvxAsyncCommand<string> ShowDetailPageAsyncCommand
+        private IMvxAsyncCommand<CommonMenuItem> _showDetailPageAsyncCommand;
+        public IMvxAsyncCommand<CommonMenuItem> ShowDetailPageAsyncCommand
         {
             get
             {
-                _showDetailPageAsyncCommand = _showDetailPageAsyncCommand ?? new MvxAsyncCommand<string>(ShowDetailPageAsync);
+                _showDetailPageAsyncCommand = _showDetailPageAsyncCommand ?? new MvxAsyncCommand<CommonMenuItem>(ShowDetailPageAsync);
                 return _showDetailPageAsyncCommand;
             }
         }
-        private async Task ShowDetailPageAsync(string param)
+        private async Task ShowDetailPageAsync(CommonMenuItem param)
         {
             // Implement your logic here.
-            switch (param)
+            switch (param.Name)
             {
                 case "Home":
                     await _navigationService.Navigate<HomeViewModel>();
@@ -59,6 +67,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                     break;
                 case "Settings":
                     await _navigationService.Navigate<SettingsViewModel>();
+                    break;
+                case "About":
+                    await _navigationService.Navigate<AboutViewModel>();
                     break;
                 default:
                     break;
@@ -123,6 +134,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         //    set => SetProperty(ref _selectedMenuItem, value);
         //}
         //#endregion
+
     }
 
 }
