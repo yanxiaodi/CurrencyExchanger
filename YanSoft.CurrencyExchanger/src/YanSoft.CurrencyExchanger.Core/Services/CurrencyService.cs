@@ -86,5 +86,13 @@ namespace YanSoft.CurrencyExchanger.Core.Services
         {
             return await _dataService.UpdateRangeAsync(list.Select(x => x.ToCurrencyExchangeItem()));
         }
+
+        public void UpdateCurrencyAmountText(ObservableCollection<CurrencyExchangeBindableItem> list)
+        {
+            foreach (var item in list)
+            {
+                item.AmountText = CurrencyHelper.FormatCurrencyAmount(item.Amount, item.TargetCurrency.CultureName);
+            }
+        }
     }
 }

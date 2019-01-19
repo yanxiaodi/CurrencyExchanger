@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="YanSoft.CurrencyExchanger.UI.Resources.Styles"
+                    xmlns:local="clr-namespace:YanSoft.CurrencyExchanger.UI.Resources"
+                    xmlns:converters="clr-namespace:YanSoft.CurrencyExchanger.Core.Converters;assembly=YanSoft.CurrencyExchanger.Core"
+                    xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit">
+
+    <Style x:Key="myListItemTitleTextStyle" TargetType="Label" BaseResourceKey="ListItemTextStyle">
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="Margin" Value="0" />
+    </Style>
+    <Style x:Key="myListItemDetailTextStyle" TargetType="Label" BaseResourceKey="ListItemDetailTextStyle">
+        <Setter Property="FontSize" Value="Small" />
+    </Style>
+
+</ResourceDictionary>

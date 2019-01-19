@@ -88,10 +88,18 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
             var list = await service.GetAllAsync();
             CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
-            await GetLatestRatesAsync();
+            if (_appSettings.IsAutoRefreshRatesOnStartup)
+            {
+                await GetLatestRatesAsync();
+            }
             await base.Initialize();
         }
 
+        public override void ViewAppearing()
+        {
+            base.ViewAppearing();
+            _currencyService.UpdateCurrencyAmountText(CurrencyList);
+        }
 
 
         #endregion

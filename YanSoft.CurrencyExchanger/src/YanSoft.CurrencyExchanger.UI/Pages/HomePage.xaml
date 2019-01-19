@@ -30,6 +30,9 @@
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
             <ListView Grid.Row="0" Margin="6" ItemsSource="{Binding CurrencyList}">
+                <ListView.RowHeight>
+                    <OnPlatform Android="60" iOS="60"></OnPlatform>
+                </ListView.RowHeight>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -45,21 +48,21 @@
                                                           CommandParameter="{Binding}">
                                     </TapGestureRecognizer>
                                 </StackLayout.GestureRecognizers>
-                                <Image HeightRequest="70" Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
+                                <Image Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
                                 </Image>
-                                <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand" Padding="4">
+                                <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand" Padding="6">
                                     <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
-                                        <Label Text="{Binding TargetCode}" HorizontalOptions="Start" Style="{DynamicResource ListItemTextStyle}" ></Label>
-                                        <Label Text="{Binding AmountText}" HorizontalOptions="EndAndExpand" Style="{DynamicResource ListItemTextStyle}" ></Label>
+                                        <Label Text="{Binding TargetCode}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}" ></Label>
+                                        <Label Text="{Binding AmountText}" HorizontalOptions="EndAndExpand" Style="{StaticResource myListItemTitleTextStyle}" ></Label>
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
-                                        <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                                        <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}"></Label>
                                         <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="EndAndExpand">
-                                            <Label Text="1" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
-                                            <Label Text="{Binding SourceCode}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
-                                            <Label Text="=" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
-                                            <Label Text="{Binding Rate}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
-                                            <Label Text="{Binding TargetCode}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                                            <Label Text="1" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                            <Label Text="{Binding SourceCode}" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                            <Label Text="=" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                            <Label Text="{Binding Rate}" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                            <Label Text="{Binding TargetCode}" Style="{StaticResource myListItemDetailTextStyle}"></Label>
                                         </StackLayout>
                                     </StackLayout>
                                 </StackLayout>
@@ -117,8 +120,9 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Button Text="Accept" HorizontalOptions="FillAndExpand" Command="{Binding SetCurrencyAmountAsyncCommand}"/>
-                            <Button Text="Cancel" HorizontalOptions="FillAndExpand" Grid.Column="1" Command="{Binding CancelCalculatorCommand}" />
+                            <Button Text="Cancel" HorizontalOptions="FillAndExpand" Grid.Column="0" Command="{Binding CancelCalculatorCommand}" />
+                            <Button Text="Accept" HorizontalOptions="FillAndExpand" Grid.Column="1" Command="{Binding SetCurrencyAmountAsyncCommand}"/>
+
                         </Grid>
                     </Grid>
                     <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" BackgroundColor="Black" Opacity="0.5"></StackLayout>

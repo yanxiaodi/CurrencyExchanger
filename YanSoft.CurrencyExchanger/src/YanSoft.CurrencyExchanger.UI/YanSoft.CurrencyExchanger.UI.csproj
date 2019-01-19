@@ -27,6 +27,9 @@
     <Compile Update="Pages\HomePage.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
+    <Compile Update="Resources\Styles.xaml.cs">
+      <DependentUpon>Styles.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Resources\CustomDataTemplates.xaml.cs">
       <DependentUpon>CustomDataTemplates.xaml</DependentUpon>
     </Compile>
