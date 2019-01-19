@@ -50,7 +50,7 @@
                                 </StackLayout.GestureRecognizers>
                                 <Image Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
                                 </Image>
-                                <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand" Padding="6">
+                                <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Padding="6,0,6,0">
                                     <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
                                         <Label Text="{Binding TargetCode}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}" ></Label>
                                         <Label Text="{Binding AmountText}" HorizontalOptions="EndAndExpand" Style="{StaticResource myListItemTitleTextStyle}" ></Label>

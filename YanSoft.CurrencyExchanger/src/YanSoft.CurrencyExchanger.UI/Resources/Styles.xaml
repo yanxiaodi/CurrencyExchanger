@@ -8,7 +8,7 @@
 
     <Style x:Key="myListItemTitleTextStyle" TargetType="Label" BaseResourceKey="ListItemTextStyle">
         <Setter Property="FontSize" Value="Medium" />
-        <Setter Property="Margin" Value="0" />
+        <Setter Property="FontAttributes" Value="None" />
     </Style>
     <Style x:Key="myListItemDetailTextStyle" TargetType="Label" BaseResourceKey="ListItemDetailTextStyle">
         <Setter Property="FontSize" Value="Small" />

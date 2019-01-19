@@ -65,7 +65,7 @@
                                 <Image Margin="6,0,0,0"
                                        Source="{Binding CurrencyItem.Image, Converter={StaticResource FlagConverter}}">
                                 </Image>
-                                <StackLayout Orientation="Vertical" Spacing="0" Padding="6" HorizontalOptions="FillAndExpand">
+                                <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Center" Padding="6,0,6,0" HorizontalOptions="FillAndExpand">
                                     <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}"></Label>
                                     <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}" ></Label>
                                 </StackLayout>
