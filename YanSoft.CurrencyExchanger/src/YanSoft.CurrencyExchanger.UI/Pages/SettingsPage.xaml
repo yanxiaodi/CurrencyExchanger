@@ -17,8 +17,20 @@
                     </ViewCell>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Pull To Refresh" HorizontalOptions="Start" VerticalOptions="Center"/>
-                            <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsEnablePullToRefresh, Mode=TwoWay}"></Switch>
+                            <Label Text="Pull To Refresh (No UWP)" HorizontalOptions="Start" VerticalOptions="Center">
+                                <Label.TextColor>
+                                    <OnPlatform x:TypeArguments="Color">
+                                        <On Platform="UWP" Value="Gray" />
+                                    </OnPlatform>
+                                </Label.TextColor>
+                            </Label>
+                            <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsEnablePullToRefresh, Mode=TwoWay}">
+                                <Switch.IsEnabled>
+                                    <OnPlatform x:TypeArguments="x:Boolean">
+                                        <On Platform="UWP" Value="False" />
+                                    </OnPlatform>
+                                </Switch.IsEnabled>
+                            </Switch>
                         </StackLayout>
                     </ViewCell>
                 </TableSection>

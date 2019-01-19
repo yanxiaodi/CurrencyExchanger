@@ -31,21 +31,24 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <ListView Grid.Row="0" Margin="6" ItemsSource="{Binding CurrencyList}" 
+            <ListView Grid.Row="0" ItemsSource="{Binding CurrencyList}" 
                       controlHelper:ListViewIsPullToRefreshEnabled.Enabled="{Binding IsPullToRefreshEnabled}" 
                       RefreshCommand="{Binding GetLatestRatesAsyncCommand}"
                       controlHelper:ListViewIsRefreshing.IsRefreshing="{Binding IsRefreshing}">
+                <ListView.Margin>
+                    <OnPlatform UWP="20" Android="6" iOS="6" ></OnPlatform>
+                </ListView.Margin>
                 <ListView.RowHeight>
-                    <OnPlatform Android="60" iOS="60"></OnPlatform>
+                    <OnPlatform Android="60" iOS="60" ></OnPlatform>
                 </ListView.RowHeight>
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <StackLayout BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                                 <StackLayout.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="iOS, Android" Value="4" />
-                                        <On Platform="UWP" Value="0,3,0,3" />
+                                        <On Platform="UWP" Value="10" />
                                     </OnPlatform>
                                 </StackLayout.Padding>
                                 <StackLayout.GestureRecognizers>

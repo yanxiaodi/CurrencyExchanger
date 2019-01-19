@@ -21,7 +21,10 @@
         </ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Margin="6">
+        <StackLayout >
+            <StackLayout.Margin>
+                <OnPlatform UWP="20" Android="6" iOS="6" ></OnPlatform>
+            </StackLayout.Margin>
             <!--The Behavior cannot work properly here. It seems like a bug. I need to investigate it.
             Currently, I just call the Command in the code-behide file - It is not a good way.-->
             <!--<Entry x:Name="EntrySearchKeyword" Placeholder="currency code or currency name" 
@@ -41,7 +44,7 @@
             </Entry>
             <ListView ItemsSource="{Binding CurrencyItemList}" CachingStrategy="RecycleElement"
                        SelectionMode="None">
-
+                
                 <ListView.RowHeight>
                     <OnPlatform Android="60" iOS="60"></OnPlatform>
                 </ListView.RowHeight>
@@ -52,7 +55,7 @@
                                 <StackLayout.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="iOS, Android" Value="4" />
-                                        <On Platform="UWP" Value="0,3,0,3" />
+                                        <On Platform="UWP" Value="10" />
                                     </OnPlatform>
                                 </StackLayout.Padding>
                                 <StackLayout.GestureRecognizers>
