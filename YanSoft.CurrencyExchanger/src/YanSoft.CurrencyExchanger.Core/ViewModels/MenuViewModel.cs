@@ -45,12 +45,12 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
 
 
         #region ShowDetailPageAsyncCommand;
-        private IMvxAsyncCommand<string> _showDetailPageAsyncCommand;
-        public IMvxAsyncCommand<string> ShowDetailPageAsyncCommand
+        private IMvxAsyncCommand<CommonMenuItem> _showDetailPageAsyncCommand;
+        public IMvxAsyncCommand<CommonMenuItem> ShowDetailPageAsyncCommand
         {
             get
             {
-                _showDetailPageAsyncCommand = _showDetailPageAsyncCommand ?? new MvxAsyncCommand<string>(ShowDetailPageAsync);
+                _showDetailPageAsyncCommand = _showDetailPageAsyncCommand ?? new MvxAsyncCommand<CommonMenuItem>(ShowDetailPageAsync);
                 return _showDetailPageAsyncCommand;
             }
         }
