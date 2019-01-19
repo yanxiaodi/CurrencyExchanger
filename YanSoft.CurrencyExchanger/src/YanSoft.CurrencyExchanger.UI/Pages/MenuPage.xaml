@@ -64,6 +64,9 @@
                                                     Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Regular"
                                                     iOS="Font Awesome 5 Free"></OnPlatform>
                                     </Label.FontFamily>
+                                    <Label.FontAttributes>
+                                        <OnPlatform iOS="Bold"></OnPlatform>
+                                    </Label.FontAttributes>
                                 </Label>
                                 <Label Text="{Binding Name}" VerticalOptions="Center"></Label>
                             </StackLayout>
