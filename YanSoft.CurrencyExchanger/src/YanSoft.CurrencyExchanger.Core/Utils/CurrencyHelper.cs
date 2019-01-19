@@ -13,7 +13,7 @@ namespace YanSoft.CurrencyExchanger.Core.Utils
         {
             //TODO
             var appSettings = Mvx.IoCProvider.Resolve<AppSettings>();
-            if (appSettings.IsEnableLocalizedCurrencySymbol)
+            if (appSettings.IsLocalizedCurrencySymbolEnabled)
             {
                 string currencyFormat = string.Format("C{0}", appSettings.DecimalPrecision);
                 if (string.IsNullOrEmpty(cultureName))

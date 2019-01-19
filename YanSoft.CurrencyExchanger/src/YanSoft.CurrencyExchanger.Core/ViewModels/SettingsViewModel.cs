@@ -24,13 +24,13 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         {
             get
             {
-                _isAutoRefreshRatesOnStartup = _appSettings.IsAutoRefreshRatesOnStartup;
+                _isAutoRefreshRatesOnStartup = _appSettings.IsAutoRefreshRatesOnStartupEnabled;
                 return _isAutoRefreshRatesOnStartup;
             }
             set
             {
                 SetProperty(ref _isAutoRefreshRatesOnStartup, value);
-                _appSettings.IsAutoRefreshRatesOnStartup = value;
+                _appSettings.IsAutoRefreshRatesOnStartupEnabled = value;
             }
         }
         #endregion
@@ -42,13 +42,13 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         {
             get
             {
-                _isEnablePullToRefresh = _appSettings.IsEnablePullToRefresh;
+                _isEnablePullToRefresh = _appSettings.IsPullToRefreshEnabled;
                 return _isEnablePullToRefresh;
             }
             set
             {
                 SetProperty(ref _isEnablePullToRefresh, value);
-                _appSettings.IsEnablePullToRefresh = value;
+                _appSettings.IsPullToRefreshEnabled = value;
             }
         }
         #endregion
@@ -78,13 +78,13 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         {
             get
             {
-                _isEnableLocalizedCurrencySymbol = _appSettings.IsEnableLocalizedCurrencySymbol;
+                _isEnableLocalizedCurrencySymbol = _appSettings.IsLocalizedCurrencySymbolEnabled;
                 return _isEnableLocalizedCurrencySymbol;
             }
             set
             {
                 SetProperty(ref _isEnableLocalizedCurrencySymbol, value);
-                _appSettings.IsEnableLocalizedCurrencySymbol = value;
+                _appSettings.IsLocalizedCurrencySymbolEnabled = value;
             }
         }
         #endregion
@@ -96,13 +96,13 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         {
             get
             {
-                _isEnableAutoInitializeToZero = _appSettings.IsEnableAutoInitializeToZero;
+                _isEnableAutoInitializeToZero = _appSettings.IsAutoInitializeToZeroEnabled;
                 return _isEnableAutoInitializeToZero;
             }
             set
             {
                 SetProperty(ref _isEnableAutoInitializeToZero, value);
-                _appSettings.IsEnableAutoInitializeToZero = value;
+                _appSettings.IsAutoInitializeToZeroEnabled = value;
             }
         }
         #endregion

@@ -27,12 +27,33 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             _navigationService = navigationService;
             _dataService = dataService;
             _appSettings = appSettings;
+            IsPullToRefreshEnabled = false;
+            IsRefreshing = false;
         }
 
 
 
         #region Properties
 
+
+        #region IsPullToRefreshEnabled;
+        private bool _isPullToRefreshEnabled;
+        public bool IsPullToRefreshEnabled
+        {
+            get => _isPullToRefreshEnabled;
+            set => SetProperty(ref _isPullToRefreshEnabled, value);
+        }
+        #endregion
+
+
+        #region IsRefreshing;
+        private bool _isRefreshing;
+        public bool IsRefreshing
+        {
+            get => _isRefreshing;
+            set => SetProperty(ref _isRefreshing, value);
+        }
+        #endregion
 
         #region CurrencyList;
         private ObservableCollection<CurrencyExchangeBindableItem> _currencyList;
@@ -85,10 +106,12 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
 
         public override async Task Initialize()
         {
+            IsPullToRefreshEnabled = _appSettings.IsPullToRefreshEnabled;
+
             var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
             var list = await service.GetAllAsync();
             CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
-            if (_appSettings.IsAutoRefreshRatesOnStartup)
+            if (_appSettings.IsAutoRefreshRatesOnStartupEnabled)
             {
                 await GetLatestRatesAsync();
             }
@@ -98,6 +121,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         public override void ViewAppearing()
         {
             base.ViewAppearing();
+            IsPullToRefreshEnabled = _appSettings.IsPullToRefreshEnabled;
             if (_currencyList != null)
             {
                 _currencyService.UpdateCurrencyAmountText(CurrencyList);
@@ -135,7 +159,13 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
                 {
                     GetLatestRatesTaskNotifier = MvxNotifyTask.Create(async () =>
                         {
+                            IsRefreshing = true;
                             await GetLatestRatesAsync();
+                            if (IsRefreshing)
+                            {
+                                IsRefreshing = false;
+                            }
+
                         },
                         OnGetLatestRatesException);
                 });
@@ -250,7 +280,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         {
             // Implement your logic here.
             CurrentCalcCurrencyExchangeItem = param;
-            if (_appSettings.IsEnableAutoInitializeToZero)
+            if (_appSettings.IsAutoInitializeToZeroEnabled)
             {
                 CalcExpression = CalcResult = "0";
             }
