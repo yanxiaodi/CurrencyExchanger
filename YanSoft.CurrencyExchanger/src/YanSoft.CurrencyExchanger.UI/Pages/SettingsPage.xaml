@@ -9,36 +9,41 @@
         <TableView Intent="Settings">
             <TableRoot>
                 <TableSection Title="Common">
-                    <SwitchCell Text="Auto Refresh" On="{Binding IsAutoRefreshRatesOnStartup, Mode=TwoWay}"></SwitchCell>
-                    <SwitchCell Text="Pull To Refresh" On="{Binding IsEnablePullToRefresh, Mode=TwoWay}"></SwitchCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                            <Label Text="Auto Refresh" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsAutoRefreshRatesOnStartup, Mode=TwoWay}"></Switch>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                            <Label Text="Pull To Refresh" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsEnablePullToRefresh, Mode=TwoWay}"></Switch>
+                        </StackLayout>
+                    </ViewCell>
                 </TableSection>
                 <TableSection Title="Currencies">
                     <ViewCell>
-                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                            <Label Text="Precision" HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold"/>
+                        <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                            <Label Text="Precision" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Label Text="{Binding DecimalPrecision}" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Margin="20,0,0,0" ></Label>
                             <Stepper Minimum="0" Maximum="8" HorizontalOptions="End" Value="{Binding DecimalPrecision, Mode=TwoWay}"></Stepper>
                         </StackLayout>
                     </ViewCell>
-                    <SwitchCell Text="Localize Currency Symbol" On="{Binding IsEnableLocalizedCurrencySymbol, Mode=TwoWay}"></SwitchCell>
-                    <SwitchCell Text="Auto Initialize To 0" On="{Binding IsEnableAutoInitializeToZero, Mode=TwoWay}"></SwitchCell>
-
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                            <Label Text="Localize Currency Symbol" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsEnableLocalizedCurrencySymbol, Mode=TwoWay}"></Switch>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                            <Label Text="Auto Initialize To 0" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsEnableAutoInitializeToZero, Mode=TwoWay}"></Switch>
+                        </StackLayout>
+                    </ViewCell>
                 </TableSection>
             </TableRoot>
         </TableView>
-        <!--<StackLayout Margin="6" Orientation="Vertical" HorizontalOptions="FillAndExpand">
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                <Label Text="Auto Refresh" VerticalOptions="Center" HorizontalOptions="Start"></Label>
-                <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsAutoRefreshRatesOnStartup, Mode=TwoWay}"></Switch>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                <Label Text="Pull To Refresh" VerticalOptions="Center" HorizontalOptions="Start"></Label>
-                <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsEnablePullToRefresh, Mode=TwoWay}"></Switch>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
-                <Label Text="Decimal Precision" VerticalOptions="Center" HorizontalOptions="Start"></Label>
-                <Slider Minimum="0" Maximum="8" HorizontalOptions="EndAndExpand" Value="{Binding DecimalPrecision, Mode=TwoWay}"></Slider>
-            </StackLayout>
-        </StackLayout>-->
     </ContentPage.Content>
 </views:MvxContentPage>

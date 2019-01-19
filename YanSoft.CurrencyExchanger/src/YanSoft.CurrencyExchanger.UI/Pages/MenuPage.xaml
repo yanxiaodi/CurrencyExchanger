@@ -25,7 +25,7 @@
                 </StackLayout.Margin>
                 <Label Text="Currency Exchanger" Margin="10" VerticalOptions="Center" FontSize="Large"></Label>
             </StackLayout>
-            <ListView ItemsSource="{Binding MenuItemList}" 
+            <!--<ListView ItemsSource="{Binding MenuItemList}" 
                       SelectedItem="{Binding SelectedMenuItem, Mode=TwoWay}">
                 <ListView.Behaviors>
                     <behaviors:EventHandlerBehavior EventName="ItemSelected">
@@ -44,27 +44,23 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>
-            <!--<ListView ItemsSource="{Binding MenuItemList}">
+            </ListView>-->
+            <ListView ItemsSource="{Binding MenuItemList}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        -->
-            <!--<TextCell Text="{Binding}" Command="{Binding BindingContext.DataContext.ShowDetailPageAsyncCommand, Source={x:Reference MainContent}}" CommandParameter="{Binding}"></TextCell>-->
-            <!--<ViewCell>
-                            <StackLayout Padding="10">
+                        <ViewCell>
+                            <StackLayout Padding="12" BackgroundColor="Transparent">
                                 <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer 
-                                        Command="{Binding BindingContext.DataContext.ShowDetailPageAsyncCommand, Source={x:Reference MainContent}}"
+                                    <TapGestureRecognizer Command="{Binding BindingContext.DataContext.ShowDetailPageAsyncCommand, Source={x:Reference MainContent}}"
                                         CommandParameter="{Binding}">
                                     </TapGestureRecognizer>
                                 </StackLayout.GestureRecognizers>
                                 <Label Text="{Binding}" VerticalOptions="Center"></Label>
                             </StackLayout>
-                        </ViewCell>-->
-            <!--
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>-->
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </views:MvxContentPage>
