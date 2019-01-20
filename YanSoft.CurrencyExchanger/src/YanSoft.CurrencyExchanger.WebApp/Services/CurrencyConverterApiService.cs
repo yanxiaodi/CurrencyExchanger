@@ -239,12 +239,12 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
             return result;
         }
 
-        public async Task<CurrencyRatesResponse> GetLatestRates(string sourceCode, IEnumerable<string> targetCodes)
+        public async Task<CurrencyRatesResponse> GetLatestRates(string baseCode, IEnumerable<string> targetCodes)
         {
             var result = new CurrencyRatesResponse();
 
             var cacheEntry = new List<CurrencyRate>();
-            if (cache.TryGetValue(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(sourceCode), out cacheEntry))
+            if (cache.TryGetValue(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(baseCode), out cacheEntry))
             {
                 result.Rates = cacheEntry.Where(x => targetCodes.ToList().Contains(x.Target)).ToList();
                 return result;
@@ -256,7 +256,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
                 List<Currency> currenciesCache = GetCurrencies();
 
                 // Currently, only take 2 currencies for development.
-                IEnumerable<string> targets = currenciesCache.ToList().Where(x => targetCodes.Contains(x.Code)).Select(x => $"{sourceCode}_{x.Code}");
+                IEnumerable<string> targets = currenciesCache.ToList().Where(x => targetCodes.Contains(x.Code)).Select(x => $"{baseCode}_{x.Code}");
                 var queryParam = string.Join(',', targets.Take(2));
                 //IEnumerable<string> targets = currenciesCache.ToList().Select(x => $"{sourceCode}_{x.Code}");
                 //var queryParam = string.Join(',', targets);
@@ -271,12 +271,12 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
                         {
                             var currencyRate = new CurrencyRate
                             {
-                                Source = sourceCode,
+                                Base = baseCode,
                                 Target = targetCode
                             };
-                            if (responseObject["results"] != null && responseObject["results"][$"{sourceCode}_{targetCode}"] != null)
+                            if (responseObject["results"] != null && responseObject["results"][$"{baseCode}_{targetCode}"] != null)
                             {
-                                if (decimal.TryParse(responseObject["results"][$"{sourceCode}_{targetCode}"]["val"].ToString(), out var rate))
+                                if (decimal.TryParse(responseObject["results"][$"{baseCode}_{targetCode}"]["val"].ToString(), out var rate))
                                 {
                                     currencyRate.Rate = rate;
                                 }
@@ -291,7 +291,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
                             }
                             result.Rates.Add(currencyRate);
                         });
-                        cache.Set(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(sourceCode), result.Rates, DateTime.Now.AddMinutes(10));
+                        cache.Set(CacheHelper.GetLatestRatesOfCurrencyConverterCacheKeyName(baseCode), result.Rates, DateTime.Now.AddMinutes(10));
                         return result;
                     }
                     else

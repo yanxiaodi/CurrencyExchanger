@@ -37,16 +37,16 @@ namespace YanSoft.CurrencyExchanger.WebApp.Controllers
 
         [HttpGet]
         [ProducesResponseType(200)]
-        public async Task<ActionResult<ResponseInfo<CurrencyRatesResponse>>> GetLatestRates(string sourceCode, string targetCodes)
+        public async Task<ActionResult<ResponseInfo<CurrencyRatesResponse>>> GetLatestRates(string baseCode, string targetCodes)
         {
-            if (string.IsNullOrEmpty(sourceCode) || string.IsNullOrEmpty(targetCodes))
+            if (string.IsNullOrEmpty(baseCode) || string.IsNullOrEmpty(targetCodes))
             {
                 return new ResponseInfo<CurrencyRatesResponse>
                 {
-                    Message = "Unexpected params. 'sourceCode' and 'targetCodes' should not be null."
+                    Message = "Unexpected params. 'baseCode' and 'targetCodes' should not be null."
                 };
             }
-            CurrencyRatesResponse response = await apiService.GetLatestRates(sourceCode, targetCodes.Split(','));
+            CurrencyRatesResponse response = await apiService.GetLatestRates(baseCode, targetCodes.Split(','));
             if(response.Rates.Count() == 0)
             {
                 return new ResponseInfo<CurrencyRatesResponse>
