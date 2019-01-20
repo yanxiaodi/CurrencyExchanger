@@ -19,14 +19,16 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
     {
         private readonly ICurrencyService _currencyService;
         private readonly IMvxNavigationService _navigationService;
-        private readonly IDataService<CurrencyExchangeItem> _dataService;
+        //private readonly IDataService<CurrencyExchangeItem> _dataService;
         private readonly AppSettings _appSettings;
-        public HomeViewModel(IMvxNavigationService navigationService, ICurrencyService currencyService, IDataService<CurrencyExchangeItem> dataService, AppSettings appSettings)
+        private readonly GlobalContext _globalContext;
+        public HomeViewModel(IMvxNavigationService navigationService, ICurrencyService currencyService, AppSettings appSettings, GlobalContext globalContext)
         {
             _currencyService = currencyService;
             _navigationService = navigationService;
-            _dataService = dataService;
+            //_dataService = dataService;
             _appSettings = appSettings;
+            _globalContext = globalContext;
             IsPullToRefreshEnabled = false;
             IsRefreshing = false;
         }
@@ -108,9 +110,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         {
             IsPullToRefreshEnabled = _appSettings.IsPullToRefreshEnabled;
 
-            var service = Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>();
-            var list = await service.GetAllAsync();
+            var list = await _currencyService.GetAllCurreciesAsync();
             CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
+            _globalContext.CurrentBaseCurrency = CurrencyList.First(x => x.IsBaseCurrency);
             if (_appSettings.IsAutoRefreshRatesOnStartupEnabled)
             {
                 await GetLatestRatesAsync();
@@ -175,9 +177,26 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         private async Task GetLatestRatesAsync()
         {
             // Implement your logic here.
-            await _currencyService.GetCurrencyRates(CurrencyList);
-            _currencyService.CalculateCurrencyAmount(CurrencyList, CurrencyList.First(x => x.IsSourceCurrency));
-            await _currencyService.SaveCurrencyData(CurrencyList);
+            await _currencyService.GetCurrencyRatesAsync(CurrencyList);
+            _currencyService.CalculateCurrencyAmount(CurrencyList, CurrencyList.First(x => x.IsBaseCurrency));
+
+            if (_appSettings.IsPinBaseCurrencyToTopEnabled)
+            {
+                if (_globalContext.CurrentBaseCurrency.SortOrder != 0)
+                {
+                    var baseCurrency = CurrencyList.First(x =>
+                    x.BaseCode == _globalContext.CurrentBaseCurrency.BaseCode
+                    && x.TargetCode == _globalContext.CurrentBaseCurrency.TargetCode);
+                    CurrencyList.Remove(baseCurrency);
+                    CurrencyList.Insert(0, baseCurrency);
+                    for (var i = 0; i < CurrencyList.Count; i++)
+                    {
+                        CurrencyList[i].SortOrder = i;
+                    }
+                    await _currencyService.SaveCurrencyDataAsync(CurrencyList);
+                }
+            }
+            await _currencyService.SaveCurrencyDataAsync(CurrencyList);
         }
 
         private void OnGetLatestRatesException(Exception ex)
@@ -251,6 +270,33 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         #endregion
 
 
+
+        #region SetBaseCurrencyAsyncCommand;
+        private IMvxAsyncCommand<CurrencyExchangeBindableItem> _setBaseCurrencyAsyncCommand;
+        public IMvxAsyncCommand<CurrencyExchangeBindableItem> SetBaseCurrencyAsyncCommand
+        {
+            get
+            {
+                _setBaseCurrencyAsyncCommand = _setBaseCurrencyAsyncCommand ?? new MvxAsyncCommand<CurrencyExchangeBindableItem>(SetBaseCurrencyAsync);
+                return _setBaseCurrencyAsyncCommand;
+            }
+        }
+        private async Task SetBaseCurrencyAsync(CurrencyExchangeBindableItem param)
+        {
+            // Implement your logic here.
+            _globalContext.CurrentBaseCurrency = param;
+            IsRefreshing = true;
+
+            _currencyService.SetBaseCurrency(CurrencyList, param);
+            await GetLatestRatesAsync();
+            if (IsRefreshing)
+            {
+                IsRefreshing = false;
+            }
+
+            
+        }
+        #endregion
 
 
         #region Calculator
@@ -471,12 +517,12 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             if (CalcResult != "8-(")
             {
                 decimal.TryParse(CalcResult, out var result);
-                CurrencyExchangeBindableItem target = CurrencyList.FirstOrDefault(x => x.TargetCode == CurrentCalcCurrencyExchangeItem.TargetCode && x.SourceCode == CurrentCalcCurrencyExchangeItem.SourceCode);
+                CurrencyExchangeBindableItem target = CurrencyList.FirstOrDefault(x => x.TargetCode == CurrentCalcCurrencyExchangeItem.TargetCode && x.BaseCode == CurrentCalcCurrencyExchangeItem.BaseCode);
                 if (target != null)
                 {
                     target.Amount = result;
                     _currencyService.CalculateCurrencyAmount(CurrencyList, target);
-                    await _currencyService.SaveCurrencyData(CurrencyList);
+                    await _currencyService.SaveCurrencyDataAsync(CurrencyList);
                 }
                 IsCalculatorDialogVisible = false;
             }

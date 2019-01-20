@@ -43,21 +43,32 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                            <!--<ViewCell.ContextActions>
+                                <MenuItem CommandParameter="{Binding}" 
+               Text="Base Currency" />
+                                <MenuItem CommandParameter="{Binding}"
+               Text="Delete" IsDestructive="True" />
+                            </ViewCell.ContextActions>-->
+                            <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                                 <StackLayout.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
                                         <On Platform="iOS, Android" Value="4" />
                                         <On Platform="UWP" Value="10" />
                                     </OnPlatform>
                                 </StackLayout.Padding>
-                                <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding BindingContext.DataContext.ShowCalculatorCommand, Source={x:Reference MainContent}}"
-                                                          CommandParameter="{Binding}">
-                                    </TapGestureRecognizer>
-                                </StackLayout.GestureRecognizers>
+                                
                                 <Image Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.DataContext.SetBaseCurrencyAsyncCommand, Source={x:Reference MainContent}}"
+                                                          CommandParameter="{Binding}"></TapGestureRecognizer>
+                                    </Image.GestureRecognizers>
                                 </Image>
-                                <StackLayout Orientation="Vertical" Spacing="0" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Padding="6,0,6,0">
+                                <StackLayout Orientation="Vertical" Spacing="0" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Padding="6,0,6,0">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.DataContext.ShowCalculatorCommand, Source={x:Reference MainContent}}"
+                                                          CommandParameter="{Binding}">
+                                        </TapGestureRecognizer>
+                                    </StackLayout.GestureRecognizers>
                                     <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
                                         <Label Text="{Binding TargetCode}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}" ></Label>
                                         <Label Text="{Binding AmountText}" HorizontalOptions="EndAndExpand" Style="{StaticResource myListItemTitleTextStyle}" ></Label>
@@ -65,9 +76,9 @@
                                     <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
                                         <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}"></Label>
                                         <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="EndAndExpand"
-                                                     IsVisible="{Binding IsSourceCurrency, Converter={StaticResource SourceCurrencyVisibleConverter}}">
+                                                     IsVisible="{Binding IsBaseCurrency, Converter={StaticResource BaseCurrencyVisibleConverter}}">
                                             <Label Text="1" Style="{StaticResource myListItemDetailTextStyle}"></Label>
-                                            <Label Text="{Binding SourceCode}" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                            <Label Text="{Binding BaseCode}" Style="{StaticResource myListItemDetailTextStyle}"></Label>
                                             <Label Text="=" Style="{StaticResource myListItemDetailTextStyle}"></Label>
                                             <Label Text="{Binding Rate}" Style="{StaticResource myListItemDetailTextStyle}"></Label>
                                             <Label Text="{Binding TargetCode}" Style="{StaticResource myListItemDetailTextStyle}"></Label>

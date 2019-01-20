@@ -46,6 +46,27 @@ namespace YanSoft.CurrencyExchanger.Core.Common
         }
         #endregion
 
+        #region IsPullToRefreshEnabled
+        const string IsPullToRefreshEnabledKeyName = "IsPullToRefreshEnabled";
+        const bool IsPullToRefreshEnabledDefault = false;
+        public bool IsPullToRefreshEnabled
+        {
+            get => Preferences.Get(IsPullToRefreshEnabledKeyName, IsPullToRefreshEnabledDefault);
+            set => Preferences.Set(IsPullToRefreshEnabledKeyName, value);
+        }
+        #endregion
+
+        #region IsPinBaseCurrencyToTopEnabled
+        const string IsPinBaseCurrencyToTopEnabledKeyName = "IsPinBaseCurrencyToTopEnabled";
+        const bool IsPinBaseCurrencyToTopEnabledDefault = true;
+        public bool IsPinBaseCurrencyToTopEnabled
+        {
+            get => Preferences.Get(IsPinBaseCurrencyToTopEnabledKeyName, IsPinBaseCurrencyToTopEnabledDefault);
+            set => Preferences.Set(IsPinBaseCurrencyToTopEnabledKeyName, value);
+        }
+        #endregion
+
+
         #region DecimalPrecision
         const string DecimalPrecisionKeyName = "DecimalPrecision";
         const int DecimalPrecisionDefault = 2;
@@ -66,15 +87,6 @@ namespace YanSoft.CurrencyExchanger.Core.Common
         }
         #endregion
 
-        #region IsPullToRefreshEnabled
-        const string IsPullToRefreshEnabledKeyName = "IsPullToRefreshEnabled";
-        const bool IsPullToRefreshEnabledDefault = false;
-        public bool IsPullToRefreshEnabled
-        {
-            get => Preferences.Get(IsPullToRefreshEnabledKeyName, IsPullToRefreshEnabledDefault);
-            set => Preferences.Set(IsPullToRefreshEnabledKeyName, value);
-        }
-        #endregion
 
 
         #region IsAutoInitializeToZeroEnabled

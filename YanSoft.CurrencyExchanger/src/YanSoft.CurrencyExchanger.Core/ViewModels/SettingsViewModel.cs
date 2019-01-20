@@ -54,6 +54,23 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         #endregion
 
 
+        #region IsPinBaseCurrencyToTopEnabled;
+        private bool _isPinBaseCurrencyToTopEnabled;
+        public bool IsPinBaseCurrencyToTopEnabled
+        {
+            get
+            {
+                _isPinBaseCurrencyToTopEnabled = _appSettings.IsPinBaseCurrencyToTopEnabled;
+                return _isPinBaseCurrencyToTopEnabled;
+            }
+            set
+            {
+                SetProperty(ref _isPinBaseCurrencyToTopEnabled, value);
+                _appSettings.IsPinBaseCurrencyToTopEnabled = value;
+            }
+        }
+        #endregion
+
         #region DecimalPrecision;
         private int _decimalPrecision;
         public int DecimalPrecision

@@ -6,7 +6,7 @@ using Xamarin.Forms;
 
 namespace YanSoft.CurrencyExchanger.Core.Converters
 {
-    public class SourceCurrencyVisibleConverter : IValueConverter
+    public class BaseCurrencyVisibleConverter : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {

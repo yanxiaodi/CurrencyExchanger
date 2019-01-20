@@ -20,31 +20,36 @@ namespace YanSoft.CurrencyExchanger.Core.Services
             _dataService = dataService;
         }
 
-        public void CalculateCurrencyAmount(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem target = null)
+        public async Task<List<CurrencyExchangeItem>> GetAllCurreciesAsync()
         {
-            CurrencyExchangeBindableItem standardItem = list.FirstOrDefault(x => x.IsSourceCurrency == true);
+            return await _dataService.GetAllAsync();
+        }
+
+        public void CalculateCurrencyAmount(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem targetCurrency = null)
+        {
+            CurrencyExchangeBindableItem standardItem = list.FirstOrDefault(x => x.IsBaseCurrency);
             if (standardItem != null)
             {
-                if (target != null)
+                if (targetCurrency != null)
                 {
-                    if (target.IsSourceCurrency)
+                    if (targetCurrency.IsBaseCurrency)
                     {
-                        standardItem.Amount = target.Amount;
+                        standardItem.Amount = targetCurrency.Amount;
                     }
                     else
                     {
-                        if (target.Rate != 0)
+                        if (targetCurrency.Rate != 0)
                         {
-                            standardItem.Amount = target.Amount / target.Rate;
+                            standardItem.Amount = targetCurrency.Amount / targetCurrency.Rate;
                         }
                     }
                     standardItem.AmountText = CurrencyHelper.FormatCurrencyAmount(standardItem.Amount, standardItem.TargetCurrency.CultureName);
                 }
-                foreach (var item in list.Where(x => x.IsSourceCurrency == false).ToList())
+                foreach (var item in list.Where(x => x.IsBaseCurrency == false).ToList())
                 {
-                    if (target != null)
+                    if (targetCurrency != null)
                     {
-                        if (target.TargetCode != item.TargetCode)
+                        if (targetCurrency.TargetCode != item.TargetCode)
                         {
                             item.Amount = standardItem.Amount * item.Rate;
                         }
@@ -58,17 +63,28 @@ namespace YanSoft.CurrencyExchanger.Core.Services
             }
         }
 
-
-        public async Task<bool> GetCurrencyRates(ObservableCollection<CurrencyExchangeBindableItem> list)
+        public void SetBaseCurrency(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem baseCurrency)
         {
-            var sourceCode = list.First().SourceCode;
-            var targetCodes = string.Join(",", list.Where(x => !x.IsSourceCurrency).Select(x => x.TargetCode).ToList());
+            foreach (var x in list)
+            {
+                x.IsBaseCurrency = false;
+                x.BaseCurrency = baseCurrency.TargetCurrency;
+                x.BaseCode = baseCurrency.TargetCode;
+            }
+            baseCurrency.IsBaseCurrency = true;
+        }
+
+
+        public async Task<bool> GetCurrencyRatesAsync(ObservableCollection<CurrencyExchangeBindableItem> list)
+        {
+            var sourceCode = list.First().BaseCode;
+            var targetCodes = string.Join(",", list.Where(x => !x.IsBaseCurrency).Select(x => x.TargetCode).ToList());
             var response = await _apiService.GetLatestRates(sourceCode, targetCodes);
             if (response.IsSuccess)
             {
                 foreach (var item in list)
                 {
-                    if (!item.IsSourceCurrency)
+                    if (!item.IsBaseCurrency)
                     {
                         var result = response.Result.Rates.FirstOrDefault(x => x.Target == item.TargetCode);
                         item.Rate = result != null ? result.Rate : 0;
@@ -82,7 +98,7 @@ namespace YanSoft.CurrencyExchanger.Core.Services
             }
         }
 
-        public async Task<bool> SaveCurrencyData(ObservableCollection<CurrencyExchangeBindableItem> list)
+        public async Task<bool> SaveCurrencyDataAsync(ObservableCollection<CurrencyExchangeBindableItem> list)
         {
             return await _dataService.UpdateRangeAsync(list.Select(x => x.ToCurrencyExchangeItem()));
         }

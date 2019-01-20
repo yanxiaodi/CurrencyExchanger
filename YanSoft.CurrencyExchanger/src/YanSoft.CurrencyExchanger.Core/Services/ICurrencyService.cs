@@ -9,11 +9,12 @@ namespace YanSoft.CurrencyExchanger.Core.Services
 {
     public interface ICurrencyService
     {
-        Task<bool> GetCurrencyRates(ObservableCollection<CurrencyExchangeBindableItem> list);
+        Task<bool> GetCurrencyRatesAsync(ObservableCollection<CurrencyExchangeBindableItem> list);
 
-        void CalculateCurrencyAmount(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem target = null);
-
-        Task<bool> SaveCurrencyData(ObservableCollection<CurrencyExchangeBindableItem> list);
+        void CalculateCurrencyAmount(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem targetCurrency = null);
+        void SetBaseCurrency(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem baseCurrency);
+        Task<List<CurrencyExchangeItem>> GetAllCurreciesAsync();
+        Task<bool> SaveCurrencyDataAsync(ObservableCollection<CurrencyExchangeBindableItem> list);
 
         void UpdateCurrencyAmountText(ObservableCollection<CurrencyExchangeBindableItem> list);
     }
