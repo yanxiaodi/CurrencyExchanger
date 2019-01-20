@@ -13,4 +13,13 @@
     <Style x:Key="myListItemDetailTextStyle" TargetType="Label" BaseResourceKey="ListItemDetailTextStyle">
         <Setter Property="FontSize" Value="Small" />
     </Style>
+
+    <OnPlatform x:Key="FontAwesomeString" x:TypeArguments="x:String">
+        <On Platform="iOS" Value="Font Awesome 5 Free" />
+        <On Platform="Android" Value="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" />
+        <On Platform="UWP" Value="Assets/fonts/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free" />
+    </OnPlatform>
+    <Style x:Key="FontAwesome" TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesomeString}" />
+    </Style>
 </ResourceDictionary>
