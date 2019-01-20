@@ -48,7 +48,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>-->
-            <ListView ItemsSource="{Binding MenuItemList}">
+            <ListView ItemsSource="{Binding MenuItemList}" SelectionMode="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

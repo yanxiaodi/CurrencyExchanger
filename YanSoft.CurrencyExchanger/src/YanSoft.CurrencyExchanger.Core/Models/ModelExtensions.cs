@@ -15,11 +15,11 @@ namespace YanSoft.CurrencyExchanger.Core.Models
             var result = new CurrencyExchangeBindableItem
             {
                 Id = model.Id,
-                SourceCurrency = Mvx.IoCProvider.Resolve<GlobalContext>().AllCurrencyItemList.First(x => x.Code == model.SourceCode),
-                SourceCode = model.SourceCode,
+                BaseCurrency = Mvx.IoCProvider.Resolve<GlobalContext>().AllCurrencyItemList.First(x => x.Code == model.BaseCode),
+                BaseCode = model.BaseCode,
                 TargetCurrency = Mvx.IoCProvider.Resolve<GlobalContext>().AllCurrencyItemList.First(x => x.Code == model.TargetCode),
                 TargetCode = model.TargetCode,
-                IsSourceCurrency = model.IsSourceCurrency,
+                IsBaseCurrency = model.IsBaseCurrency,
                 Rate = model.Rate,
                 Amount = model.Amount,
                 SortOrder = model.SortOrder,
@@ -37,9 +37,9 @@ namespace YanSoft.CurrencyExchanger.Core.Models
             {
                 Id = model.Id,
                 Amount = model.Amount,
-                SourceCode = model.SourceCode,
+                BaseCode = model.BaseCode,
                 TargetCode = model.TargetCode,
-                IsSourceCurrency = model.IsSourceCurrency,
+                IsBaseCurrency = model.IsBaseCurrency,
                 Rate = model.Rate,
                 SortOrder = model.SortOrder,
                 UpdateTimeUtc = DateTimeHelper.ConvertDateTimeToTimestamp(model.UpdateTimeUtc)

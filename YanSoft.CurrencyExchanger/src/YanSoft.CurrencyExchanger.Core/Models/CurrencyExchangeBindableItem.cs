@@ -10,22 +10,22 @@ namespace YanSoft.CurrencyExchanger.Core.Models
         public Guid Id { get; set; }
 
 
-        #region SourceCurrency;
-        private CurrencyItem _sourceCurrency;
-        public CurrencyItem SourceCurrency
+        #region BaseCurrency;
+        private CurrencyItem _baseCurrency;
+        public CurrencyItem BaseCurrency
         {
-            get => _sourceCurrency;
-            set => SetProperty(ref _sourceCurrency, value);
+            get => _baseCurrency;
+            set => SetProperty(ref _baseCurrency, value);
         }
         #endregion
 
 
-        #region SourceCode;
-        private string _sourceCode;
-        public string SourceCode
+        #region BaseCode;
+        private string _baseCode;
+        public string BaseCode
         {
-            get => _sourceCode;
-            set => SetProperty(ref _sourceCode, value);
+            get => _baseCode;
+            set => SetProperty(ref _baseCode, value);
         }
         #endregion
 
@@ -90,12 +90,12 @@ namespace YanSoft.CurrencyExchanger.Core.Models
         #endregion
 
 
-        #region IsSourceCurrency;
-        private bool _isSourceCurrency;
-        public bool IsSourceCurrency
+        #region IsBaseCurrency;
+        private bool _isBaseCurrency;
+        public bool IsBaseCurrency
         {
-            get => _isSourceCurrency;
-            set => SetProperty(ref _isSourceCurrency, value);
+            get => _isBaseCurrency;
+            set => SetProperty(ref _isBaseCurrency, value);
         }
         #endregion
 

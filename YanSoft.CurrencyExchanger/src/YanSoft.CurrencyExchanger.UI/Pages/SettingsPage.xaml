@@ -11,13 +11,13 @@
                 <TableSection Title="Common">
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Auto Refresh" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="Auto fefresh when app starts" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsAutoRefreshRatesOnStartup, Mode=TwoWay}"></Switch>
                         </StackLayout>
                     </ViewCell>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Pull To Refresh (No UWP)" HorizontalOptions="Start" VerticalOptions="Center">
+                            <Label Text="Pull to refresh (No UWP)" HorizontalOptions="Start" VerticalOptions="Center">
                                 <Label.TextColor>
                                     <OnPlatform x:TypeArguments="Color">
                                         <On Platform="UWP" Value="Gray" />
@@ -36,14 +36,20 @@
                 <TableSection Title="Currencies">
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Precision" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="Pin base currency to top" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsPinBaseCurrencyToTopEnabled, Mode=TwoWay}"></Switch>
+                        </StackLayout>
+                    </ViewCell>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                            <Label Text="Decimals" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Label Text="{Binding DecimalPrecision}" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Margin="20,0,0,0" ></Label>
                             <Stepper Minimum="0" Maximum="8" HorizontalOptions="End" Value="{Binding DecimalPrecision, Mode=TwoWay}" VerticalOptions="Center"></Stepper>
                         </StackLayout>
                     </ViewCell>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Localize Currency Symbol" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="Localize currency symbol" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsEnableLocalizedCurrencySymbol, Mode=TwoWay}"></Switch>
                         </StackLayout>
                     </ViewCell>
