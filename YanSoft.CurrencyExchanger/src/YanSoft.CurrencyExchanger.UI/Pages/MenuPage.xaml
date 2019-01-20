@@ -58,15 +58,10 @@
                                         CommandParameter="{Binding}">
                                     </TapGestureRecognizer>
                                 </StackLayout.GestureRecognizers>
-                                <Label Text="{Binding Icon}" WidthRequest="30" HorizontalOptions="Start" HorizontalTextAlignment="Center" VerticalOptions="Center">
-                                    <Label.FontFamily>
-                                        <OnPlatform UWP="Assets/fonts/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free"
-                                                    Android="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Regular"
-                                                    iOS="Font Awesome 5 Free"></OnPlatform>
-                                    </Label.FontFamily>
-                                    <Label.FontAttributes>
-                                        <OnPlatform iOS="Bold"></OnPlatform>
-                                    </Label.FontAttributes>
+                                <Label Text="{Binding Icon}" FontAttributes="Bold" 
+                                       WidthRequest="30" HorizontalOptions="Start" 
+                                       HorizontalTextAlignment="Center" VerticalOptions="Center"
+                                       Style="{StaticResource FontAwesome}">
                                 </Label>
                                 <Label Text="{Binding Name}" VerticalOptions="Center"></Label>
                             </StackLayout>

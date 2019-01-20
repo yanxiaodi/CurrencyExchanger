@@ -7,6 +7,7 @@
                       x:TypeArguments="viewModels:AboutViewModel"
                       xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout Margin="20">
             <Image Source="{ext:ImageResource YanSoft.CurrencyExchanger.Core.Assets.images.StoreLogo.png}"
                    WidthRequest="50" HeightRequest="50"></Image>
@@ -20,24 +21,27 @@
             <Label Text="{ext:Translate About_Disclaimer_Content}" 
                    Style="{DynamicResource BodyStyle}" 
                    HorizontalOptions="StartAndExpand"></Label>
-            <Button Text="{ext:Translate About_Feedback}" Margin="0,20,0,0" Command="{Binding FeedbackAsyncCommand}">
+            <Button Text="{ext:Translate About_Feedback}" Margin="0,20,0,0"
+                    Command="{Binding FeedbackAsyncCommand}">
                 <Button.HorizontalOptions>
-                    <OnPlatform UWP="Center" ></OnPlatform>
+                    <OnPlatform UWP="Center" iOS="Center" Android="CenterAndExpand" ></OnPlatform>
                 </Button.HorizontalOptions>
                 <Button.WidthRequest>
-                    <OnPlatform UWP="200"></OnPlatform>
+                    <OnPlatform UWP="200" iOS="200" Android="200"></OnPlatform>
                 </Button.WidthRequest>
             </Button>
-            <Button Text="{ext:Translate About_Share}" Margin="0,20,0,0" Command="{Binding ShareAsyncCommand}">
+            <Button Text="{ext:Translate About_Share}" Margin="0,10,0,0" 
+                    Command="{Binding ShareAsyncCommand}">
                 <Button.HorizontalOptions>
-                    <OnPlatform UWP="Center" ></OnPlatform>
+                    <OnPlatform UWP="Center" iOS="Center" Android="CenterAndExpand" ></OnPlatform>
                 </Button.HorizontalOptions>
                 <Button.WidthRequest>
-                    <OnPlatform UWP="200"></OnPlatform>
+                    <OnPlatform UWP="200" iOS="200" Android="200"></OnPlatform>
                 </Button.WidthRequest>
             </Button>
             <!--<Button Text="{ext:Translate About_LikeMe}"></Button>-->
 
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </views:MvxContentPage>
