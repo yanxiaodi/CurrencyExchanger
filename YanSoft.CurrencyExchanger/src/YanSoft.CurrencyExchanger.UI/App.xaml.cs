@@ -10,7 +10,6 @@ namespace YanSoft.CurrencyExchanger.UI
     {
         public App()
         {
-            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NjE3MjdAMzEzNjJlMzQyZTMwZ0FWVFFhUlJ0V0JQUXJSTmhmd3VKMzFSWkdTNTlSZWU4K0xkdktzb0NhYz0=");
             InitializeComponent();
         }
     }
