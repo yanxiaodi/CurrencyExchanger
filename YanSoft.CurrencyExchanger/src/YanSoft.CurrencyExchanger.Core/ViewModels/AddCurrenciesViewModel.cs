@@ -19,13 +19,12 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         private readonly IMvxNavigationService _navigationService;
         private readonly ICurrencyService _currencyService;
         private readonly GlobalContext _globalContext;
-        private readonly IDataService<CurrencyExchangeItem> _dataService;
-        public AddCurrenciesViewModel(IMvxNavigationService navigationService, ICurrencyService currencyService, GlobalContext globalContext, IDataService<CurrencyExchangeItem> dataService)
+        public AddCurrenciesViewModel(IMvxNavigationService navigationService,
+            ICurrencyService currencyService, GlobalContext globalContext)
         {
             _navigationService = navigationService;
             _currencyService = currencyService;
             _globalContext = globalContext;
-            _dataService = dataService;
             //CurrencyItemSelectedList = new ObservableCollection<CurrencySelectableBindableItem>();
             CurrencyItemSourceList = new ObservableCollection<CurrencySelectableBindableItem>();
             CurrencyItemList = new MvxObservableCollection<CurrencySelectableBindableItem>();
@@ -165,14 +164,11 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             // Implement your logic here.
             var baseCurrency = _globalContext.CurrentBaseCurrency;
             var count = CurrencyList.Count;
-            CurrencyItemSourceList.Where(x => x.IsSelected)
-                .ForEach(x =>
-                {
-                    var item = new CurrencyExchangeItem(new CurrencyItem { Code = baseCurrency.BaseCode }, new CurrencyItem { Code = x.CurrencyItem.Code }, ++count);
-                    _dataService.AddAsync(item);
-                    CurrencyList.Add(item.ToCurrencyExchangeBindableItem());
-                });
+            var items = CurrencyItemSourceList.Where(x => x.IsSelected)
+                .Select(x => new CurrencyExchangeItem(new CurrencyItem { Code = baseCurrency.BaseCode }, new CurrencyItem { Code = x.CurrencyItem.Code }, ++count));
+            await _currencyService.AddCurrenciesAsync(CurrencyList, items);
             await _currencyService.GetCurrencyRatesAsync(CurrencyList);
+            _currencyService.CalculateCurrencyAmount(CurrencyList, _globalContext.CurrentBaseCurrency);
             await _navigationService.Close(this);
         }
         #endregion

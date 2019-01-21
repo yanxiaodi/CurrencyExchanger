@@ -14,12 +14,29 @@
         <Setter Property="FontSize" Value="Small" />
     </Style>
 
-    <OnPlatform x:Key="FontAwesomeString" x:TypeArguments="x:String">
+    
+    <OnPlatform x:Key="FontAwesomeSolidString" x:TypeArguments="x:String">
         <On Platform="iOS" Value="Font Awesome 5 Free" />
         <On Platform="Android" Value="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" />
         <On Platform="UWP" Value="Assets/fonts/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free" />
     </OnPlatform>
-    <Style x:Key="FontAwesome" TargetType="Label">
-        <Setter Property="FontFamily" Value="{StaticResource FontAwesomeString}" />
+    <Style x:Key="FontAwesomeSolidLabel" TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesomeSolidString}" />
+    </Style>
+    <Style x:Key="FontAwesomeSolidButton" TargetType="Button">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesomeSolidString}" />
+    </Style>
+
+
+    <OnPlatform x:Key="FontAwesomeRegularString" x:TypeArguments="x:String">
+        <On Platform="iOS" Value="Font Awesome 5 Free" />
+        <On Platform="Android" Value="Font Awesome 5 Free-Regular-400.otf#Font Awesome 5 Free Regular" />
+        <On Platform="UWP" Value="Assets/fonts/Font Awesome 5 Free-Regular-400.otf#Font Awesome 5 Free" />
+    </OnPlatform>
+    <Style x:Key="FontAwesomeRegularLabel" TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesomeRegularString}" />
+    </Style>
+    <Style x:Key="FontAwesomeRegularButton" TargetType="Button">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesomeRegularString}" />
     </Style>
 </ResourceDictionary>

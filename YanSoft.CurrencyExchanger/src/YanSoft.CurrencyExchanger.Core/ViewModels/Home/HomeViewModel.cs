@@ -281,6 +281,23 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         #endregion
 
 
+        #region NavigateToEditListAsyncCommand;
+        private IMvxAsyncCommand _NavigateToEditListAsyncCommand;
+        public IMvxAsyncCommand NavigateToEditListAsyncCommand
+        {
+            get
+            {
+                _NavigateToEditListAsyncCommand = _NavigateToEditListAsyncCommand ?? new MvxAsyncCommand(NavigateToEditListAsync);
+                return _NavigateToEditListAsyncCommand;
+            }
+        }
+        private async Task NavigateToEditListAsync()
+        {
+            // Implement your logic here.
+            await _navigationService.Navigate<EditListViewModel, ObservableCollection<CurrencyExchangeBindableItem>>(CurrencyList);
+
+        }
+        #endregion
 
         #region SetBaseCurrencyAsyncCommand;
         private IMvxAsyncCommand<CurrencyExchangeBindableItem> _setBaseCurrencyAsyncCommand;
@@ -327,12 +344,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             // Implement your logic here.
             if (!param.IsBaseCurrency)
             {
-                CurrencyList.Remove(param);
-                for (var i = 0; i < CurrencyList.Count; i++)
-                {
-                    CurrencyList[i].SortOrder = i;
-                }
-                await _currencyService.SaveCurrencyDataAsync(CurrencyList);
+                await _currencyService.DeleteCurrencyAsync(CurrencyList, param);
             }
         }
         #endregion

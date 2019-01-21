@@ -15,7 +15,9 @@ namespace YanSoft.CurrencyExchanger.Core.Services
         void SetBaseCurrency(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem baseCurrency);
         Task<List<CurrencyExchangeItem>> GetAllCurreciesAsync();
         Task<bool> SaveCurrencyDataAsync(ObservableCollection<CurrencyExchangeBindableItem> list);
-
+        Task AddCurrenciesAsync(ObservableCollection<CurrencyExchangeBindableItem> list, IEnumerable<CurrencyExchangeItem> items);
+        Task DeleteCurrencyAsync(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem item);
+        Task UpdateSortOrderAsync(ObservableCollection<CurrencyExchangeBindableItem> list);
         void UpdateCurrencyAmountText(ObservableCollection<CurrencyExchangeBindableItem> list);
     }
 }

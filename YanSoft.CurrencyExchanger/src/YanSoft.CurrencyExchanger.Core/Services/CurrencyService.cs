@@ -98,6 +98,32 @@ namespace YanSoft.CurrencyExchanger.Core.Services
             }
         }
 
+        public async Task DeleteCurrencyAsync(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem item)
+        {
+            var target = list.FirstOrDefault(x => x.Id == item.Id);
+            if(target != null)
+            {
+                list.Remove(target);
+                for (var i = 0; i < list.Count; i++)
+                {
+                    list[i].SortOrder = i;
+                }
+                await _dataService.DeleteAsync(target.Id);
+                await _dataService.UpdateRangeAsync(list.Select(x => x.ToCurrencyExchangeItem()));
+            }        
+        }
+
+        public async Task UpdateSortOrderAsync(ObservableCollection<CurrencyExchangeBindableItem> list)
+        {
+            for (var i = 0; i < list.Count; i++)
+            {
+                list[i].SortOrder = i;
+            }
+            await _dataService.UpdateRangeAsync(list.Select(x => x.ToCurrencyExchangeItem()));
+        }
+
+
+
         public async Task<bool> SaveCurrencyDataAsync(ObservableCollection<CurrencyExchangeBindableItem> list)
         {
             return await _dataService.UpdateRangeAsync(list.Select(x => x.ToCurrencyExchangeItem()));
@@ -109,6 +135,12 @@ namespace YanSoft.CurrencyExchanger.Core.Services
             {
                 item.AmountText = CurrencyHelper.FormatCurrencyAmount(item.Amount, item.TargetCurrency.CultureName);
             }
+        }
+
+        public async Task AddCurrenciesAsync(ObservableCollection<CurrencyExchangeBindableItem> list, IEnumerable<CurrencyExchangeItem> items)
+        {
+            items.ToList().ForEach(x => list.Add(x.ToCurrencyExchangeBindableItem()));
+            await _dataService.AddRangeAsync(items);
         }
     }
 }

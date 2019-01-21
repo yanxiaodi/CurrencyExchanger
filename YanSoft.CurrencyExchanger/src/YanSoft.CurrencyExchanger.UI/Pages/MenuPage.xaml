@@ -61,7 +61,7 @@
                                 <Label Text="{Binding Icon}" FontAttributes="Bold" 
                                        WidthRequest="30" HorizontalOptions="Start" 
                                        HorizontalTextAlignment="Center" VerticalOptions="Center"
-                                       Style="{StaticResource FontAwesome}">
+                                       Style="{StaticResource FontAwesomeSolidLabel}">
                                 </Label>
                                 <Label Text="{Binding Name}" VerticalOptions="Center"></Label>
                             </StackLayout>

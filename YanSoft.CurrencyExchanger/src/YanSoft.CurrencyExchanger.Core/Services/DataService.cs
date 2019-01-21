@@ -116,7 +116,7 @@ namespace YanSoft.CurrencyExchanger.Core.Services
             {
                 using (var db = new CurrencyDataContext())
                 {
-                    return await db.CurrencyExchangeItems.ToListAsync();
+                    return await db.CurrencyExchangeItems.OrderBy(x => x.SortOrder).ToListAsync();
                 }
             }
             catch (Exception e)
