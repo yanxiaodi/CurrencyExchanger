@@ -43,12 +43,10 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <!--<ViewCell.ContextActions>
-                                <MenuItem CommandParameter="{Binding}" 
-               Text="Base Currency" />
-                                <MenuItem CommandParameter="{Binding}"
+                            <ViewCell.ContextActions>
+                                <MenuItem CommandParameter="{Binding}" Command="{Binding BindingContext.DataContext.DeleteCurrencyAsyncCommand, Source={x:Reference MainContent}}"
                Text="Delete" IsDestructive="True" />
-                            </ViewCell.ContextActions>-->
+                            </ViewCell.ContextActions>
                             <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                                 <StackLayout.Padding>
                                     <OnPlatform x:TypeArguments="Thickness">
