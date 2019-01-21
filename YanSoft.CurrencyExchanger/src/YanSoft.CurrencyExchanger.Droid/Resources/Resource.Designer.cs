@@ -6229,6 +6229,13 @@ namespace YanSoft.CurrencyExchanger.Droid
 			global::Plugin.InputKit.Resource.Styleable.ViewStubCompat_android_id = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Plugin.InputKit.Resource.Styleable.ViewStubCompat_android_inflatedId = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Plugin.InputKit.Resource.Styleable.ViewStubCompat_android_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglecollapseicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
+			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglevisibleicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.inputlayout_togglecollapseicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
+			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.inputlayout_togglevisibleicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.ApplicationName = global::YanSoft.CurrencyExchanger.Droid.Resource.String.ApplicationName;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Hello = global::YanSoft.CurrencyExchanger.Droid.Resource.String.Hello;
+			global::Syncfusion.ListView.XForms.Android.Resource.String.Load_More = global::YanSoft.CurrencyExchanger.Droid.Resource.String.Load_More;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -8596,26 +8603,26 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f0201ca
-			public const int avd_hide_password_1 = 2130837962;
+			// aapt resource value: 0x7f0201cd
+			public const int avd_hide_password_1 = 2130837965;
 			
-			// aapt resource value: 0x7f0201cb
-			public const int avd_hide_password_2 = 2130837963;
+			// aapt resource value: 0x7f0201ce
+			public const int avd_hide_password_2 = 2130837966;
 			
-			// aapt resource value: 0x7f0201cc
-			public const int avd_hide_password_3 = 2130837964;
+			// aapt resource value: 0x7f0201cf
+			public const int avd_hide_password_3 = 2130837967;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f0201cd
-			public const int avd_show_password_1 = 2130837965;
+			// aapt resource value: 0x7f0201d0
+			public const int avd_show_password_1 = 2130837968;
 			
-			// aapt resource value: 0x7f0201ce
-			public const int avd_show_password_2 = 2130837966;
+			// aapt resource value: 0x7f0201d1
+			public const int avd_show_password_2 = 2130837969;
 			
-			// aapt resource value: 0x7f0201cf
-			public const int avd_show_password_3 = 2130837967;
+			// aapt resource value: 0x7f0201d2
+			public const int avd_show_password_3 = 2130837970;
 			
 			// aapt resource value: 0x7f020056
 			public const int design_bottom_navigation_item_background = 2130837590;
@@ -9614,124 +9621,133 @@ namespace YanSoft.CurrencyExchanger.Droid
 			public const int ic_vol_type_tv_light = 2130837921;
 			
 			// aapt resource value: 0x7f0201a2
-			public const int mr_button_connected_dark = 2130837922;
+			public const int inputlayout_togglecollapseicon = 2130837922;
 			
 			// aapt resource value: 0x7f0201a3
-			public const int mr_button_connected_light = 2130837923;
+			public const int inputlayout_togglevisibleicon = 2130837923;
 			
 			// aapt resource value: 0x7f0201a4
-			public const int mr_button_connecting_dark = 2130837924;
+			public const int mr_button_connected_dark = 2130837924;
 			
 			// aapt resource value: 0x7f0201a5
-			public const int mr_button_connecting_light = 2130837925;
+			public const int mr_button_connected_light = 2130837925;
 			
 			// aapt resource value: 0x7f0201a6
-			public const int mr_button_dark = 2130837926;
+			public const int mr_button_connecting_dark = 2130837926;
 			
 			// aapt resource value: 0x7f0201a7
-			public const int mr_button_light = 2130837927;
+			public const int mr_button_connecting_light = 2130837927;
 			
 			// aapt resource value: 0x7f0201a8
-			public const int mr_dialog_close_dark = 2130837928;
+			public const int mr_button_dark = 2130837928;
 			
 			// aapt resource value: 0x7f0201a9
-			public const int mr_dialog_close_light = 2130837929;
+			public const int mr_button_light = 2130837929;
 			
 			// aapt resource value: 0x7f0201aa
-			public const int mr_dialog_material_background_dark = 2130837930;
+			public const int mr_dialog_close_dark = 2130837930;
 			
 			// aapt resource value: 0x7f0201ab
-			public const int mr_dialog_material_background_light = 2130837931;
+			public const int mr_dialog_close_light = 2130837931;
 			
 			// aapt resource value: 0x7f0201ac
-			public const int mr_group_collapse = 2130837932;
+			public const int mr_dialog_material_background_dark = 2130837932;
 			
 			// aapt resource value: 0x7f0201ad
-			public const int mr_group_expand = 2130837933;
+			public const int mr_dialog_material_background_light = 2130837933;
 			
 			// aapt resource value: 0x7f0201ae
-			public const int mr_media_pause_dark = 2130837934;
+			public const int mr_group_collapse = 2130837934;
 			
 			// aapt resource value: 0x7f0201af
-			public const int mr_media_pause_light = 2130837935;
+			public const int mr_group_expand = 2130837935;
 			
 			// aapt resource value: 0x7f0201b0
-			public const int mr_media_play_dark = 2130837936;
+			public const int mr_media_pause_dark = 2130837936;
 			
 			// aapt resource value: 0x7f0201b1
-			public const int mr_media_play_light = 2130837937;
+			public const int mr_media_pause_light = 2130837937;
 			
 			// aapt resource value: 0x7f0201b2
-			public const int mr_media_stop_dark = 2130837938;
+			public const int mr_media_play_dark = 2130837938;
 			
 			// aapt resource value: 0x7f0201b3
-			public const int mr_media_stop_light = 2130837939;
+			public const int mr_media_play_light = 2130837939;
 			
 			// aapt resource value: 0x7f0201b4
-			public const int mr_vol_type_audiotrack_dark = 2130837940;
+			public const int mr_media_stop_dark = 2130837940;
 			
 			// aapt resource value: 0x7f0201b5
-			public const int mr_vol_type_audiotrack_light = 2130837941;
+			public const int mr_media_stop_light = 2130837941;
 			
 			// aapt resource value: 0x7f0201b6
-			public const int navigation_empty_icon = 2130837942;
+			public const int mr_vol_type_audiotrack_dark = 2130837942;
 			
 			// aapt resource value: 0x7f0201b7
-			public const int notification_action_background = 2130837943;
+			public const int mr_vol_type_audiotrack_light = 2130837943;
 			
 			// aapt resource value: 0x7f0201b8
-			public const int notification_bg = 2130837944;
+			public const int navigation_empty_icon = 2130837944;
 			
 			// aapt resource value: 0x7f0201b9
-			public const int notification_bg_low = 2130837945;
+			public const int notification_action_background = 2130837945;
 			
 			// aapt resource value: 0x7f0201ba
-			public const int notification_bg_low_normal = 2130837946;
+			public const int notification_bg = 2130837946;
 			
 			// aapt resource value: 0x7f0201bb
-			public const int notification_bg_low_pressed = 2130837947;
+			public const int notification_bg_low = 2130837947;
 			
 			// aapt resource value: 0x7f0201bc
-			public const int notification_bg_normal = 2130837948;
+			public const int notification_bg_low_normal = 2130837948;
 			
 			// aapt resource value: 0x7f0201bd
-			public const int notification_bg_normal_pressed = 2130837949;
+			public const int notification_bg_low_pressed = 2130837949;
 			
 			// aapt resource value: 0x7f0201be
-			public const int notification_icon_background = 2130837950;
-			
-			// aapt resource value: 0x7f0201c8
-			public const int notification_template_icon_bg = 2130837960;
-			
-			// aapt resource value: 0x7f0201c9
-			public const int notification_template_icon_low_bg = 2130837961;
+			public const int notification_bg_normal = 2130837950;
 			
 			// aapt resource value: 0x7f0201bf
-			public const int notification_tile_bg = 2130837951;
+			public const int notification_bg_normal_pressed = 2130837951;
 			
 			// aapt resource value: 0x7f0201c0
-			public const int notify_panel_notification_icon_bg = 2130837952;
+			public const int notification_icon_background = 2130837952;
+			
+			// aapt resource value: 0x7f0201cb
+			public const int notification_template_icon_bg = 2130837963;
+			
+			// aapt resource value: 0x7f0201cc
+			public const int notification_template_icon_low_bg = 2130837964;
 			
 			// aapt resource value: 0x7f0201c1
-			public const int outline_add_black_48dp = 2130837953;
+			public const int notification_tile_bg = 2130837953;
 			
 			// aapt resource value: 0x7f0201c2
-			public const int outline_add_white_48dp = 2130837954;
+			public const int notify_panel_notification_icon_bg = 2130837954;
 			
 			// aapt resource value: 0x7f0201c3
-			public const int outline_done_black_48dp = 2130837955;
+			public const int outline_add_black_48dp = 2130837955;
 			
 			// aapt resource value: 0x7f0201c4
-			public const int outline_done_white_48dp = 2130837956;
+			public const int outline_add_white_48dp = 2130837956;
 			
 			// aapt resource value: 0x7f0201c5
-			public const int splash_screen = 2130837957;
+			public const int outline_done_black_48dp = 2130837957;
 			
 			// aapt resource value: 0x7f0201c6
-			public const int tooltip_frame_dark = 2130837958;
+			public const int outline_done_white_48dp = 2130837958;
 			
 			// aapt resource value: 0x7f0201c7
-			public const int tooltip_frame_light = 2130837959;
+			public const int outline_list_white_48dp = 2130837959;
+			
+			// aapt resource value: 0x7f0201c8
+			public const int splash_screen = 2130837960;
+			
+			// aapt resource value: 0x7f0201c9
+			public const int tooltip_frame_dark = 2130837961;
+			
+			// aapt resource value: 0x7f0201ca
+			public const int tooltip_frame_light = 2130837962;
 			
 			static Drawable()
 			{
@@ -10684,6 +10700,15 @@ namespace YanSoft.CurrencyExchanger.Droid
 		public partial class String
 		{
 			
+			// aapt resource value: 0x7f0a003e
+			public const int ApplicationName = 2131361854;
+			
+			// aapt resource value: 0x7f0a003d
+			public const int Hello = 2131361853;
+			
+			// aapt resource value: 0x7f0a003f
+			public const int Load_More = 2131361855;
+			
 			// aapt resource value: 0x7f0a0016
 			public const int abc_action_bar_home_description = 2131361814;
 			
@@ -10771,14 +10796,14 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0a0026
 			public const int abc_toolbar_collapse_description = 2131361830;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int app_message = 2131361858;
+			// aapt resource value: 0x7f0a0045
+			public const int app_message = 2131361861;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int app_name = 2131361856;
+			// aapt resource value: 0x7f0a0043
+			public const int app_name = 2131361859;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int app_welcome_message = 2131361857;
+			// aapt resource value: 0x7f0a0044
+			public const int app_welcome_message = 2131361860;
 			
 			// aapt resource value: 0x7f0a0034
 			public const int appbar_scrolling_view_behavior = 2131361844;
@@ -10792,11 +10817,11 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0a0000
 			public const int common_google_play_services_unknown_issue = 2131361792;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int fab_scroll_shrink_grow_autohide_behavior = 2131361853;
+			// aapt resource value: 0x7f0a0040
+			public const int fab_scroll_shrink_grow_autohide_behavior = 2131361856;
 			
-			// aapt resource value: 0x7f0a003f
-			public const int library_name = 2131361855;
+			// aapt resource value: 0x7f0a0042
+			public const int library_name = 2131361858;
 			
 			// aapt resource value: 0x7f0a0001
 			public const int mr_button_content_description = 2131361793;
@@ -10882,8 +10907,8 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0a003c
 			public const int status_bar_notification_info_overflow = 2131361852;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int view_scroll_translation_autohide_behavior = 2131361854;
+			// aapt resource value: 0x7f0a0041
+			public const int view_scroll_translation_autohide_behavior = 2131361857;
 			
 			static String()
 			{

@@ -1,9 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using MvvmCross.Forms.Platforms.Uap.Views;
+using Syncfusion.ListView.XForms.UWP;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
@@ -23,6 +25,21 @@ namespace YanSoft.CurrencyExchanger.UWP
         public App()
         {
             InitializeComponent();
+        }
+
+        protected override void OnLaunched(LaunchActivatedEventArgs activationArgs)
+        {
+            base.OnLaunched(activationArgs);
+            // you'll need to add `using System.Reflection;`
+            var assembliesToInclude = new List<Assembly>
+            {
+
+                //Now, add all the assemblies your app uses
+                typeof(SfListViewRenderer).GetTypeInfo().Assembly
+            };
+
+            // replaces Xamarin.Forms.Forms.Init(e);        
+            Xamarin.Forms.Forms.Init(activationArgs, assembliesToInclude);
         }
     }
 

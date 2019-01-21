@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +10,7 @@ namespace YanSoft.CurrencyExchanger.UI
     {
         public App()
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NjE3MjdAMzEzNjJlMzQyZTMwZ0FWVFFhUlJ0V0JQUXJSTmhmd3VKMzFSWkdTNTlSZWU4K0xkdktzb0NhYz0=");
             InitializeComponent();
         }
     }

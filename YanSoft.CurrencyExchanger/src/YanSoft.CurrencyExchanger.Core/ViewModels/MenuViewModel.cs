@@ -23,6 +23,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             {
                 new CommonMenuItem{Icon = "\uf015", Name = "Home" },
                 new CommonMenuItem{Icon = "\uf201", Name = "Charts" },
+                //new CommonMenuItem{Icon = "\uf03a", Name = "Edit"},
                 new CommonMenuItem{Icon = "\uf013", Name = "Settings" },
                 //new CommonMenuItem{Icon = "\uf1e0", Name = "Share" },
                 //new CommonMenuItem{Icon = "\uf118", Name = "Like Me!" },

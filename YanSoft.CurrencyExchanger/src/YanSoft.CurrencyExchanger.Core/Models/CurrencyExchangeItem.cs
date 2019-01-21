@@ -24,7 +24,7 @@ namespace YanSoft.CurrencyExchanger.Core.Models
 
         public CurrencyExchangeItem(CurrencyItem source, CurrencyItem target, int sortOrder)
         {
-            //Id = Guid.NewGuid();
+            Id = Guid.NewGuid();
             BaseCode = source.Code;
             TargetCode = target.Code;
             if (source.Code.Equals(target.Code))

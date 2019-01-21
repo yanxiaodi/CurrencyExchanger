@@ -23,6 +23,15 @@
                 </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
+        <ToolbarItem Text="Edit" Order="Primary"  Priority="0" Command="{Binding NavigateToEditListAsyncCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="outline_list_black_36dp.png" />
+                    <On Platform="Android" Value="outline_list_white_48dp.png"/>
+                    <On Platform="UWP" Value="Assets/icons/outline_list_black_48dp.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Grid>

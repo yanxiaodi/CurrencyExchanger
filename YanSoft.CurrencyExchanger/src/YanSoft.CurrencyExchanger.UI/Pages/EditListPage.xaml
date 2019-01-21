@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YanSoft.CurrencyExchanger.UI.Pages.EditListPage"
+             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+             xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
+            x:TypeArguments="viewModels:EditListViewModel" 
+                      x:Name="MainContent"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.Margin>
+                <OnPlatform UWP="20" Android="6" iOS="6" ></OnPlatform>
+            </StackLayout.Margin>
+            <syncfusion:SfListView x:Name="listView"  DragStartMode="OnDragIndicator"
+                   ItemsSource="{Binding CurrencyList}" SelectionMode="None"
+                                   ItemDragging="ListView_ItemDragging">
+                <!--<syncfusion:SfListView.Margin>
+                    <OnPlatform UWP="10" Android="6" iOS="6" ></OnPlatform>
+                </syncfusion:SfListView.Margin>-->
+                <syncfusion:SfListView.ItemSize>
+                    <OnPlatform Android="60" iOS="60" UWP="90" ></OnPlatform>
+                </syncfusion:SfListView.ItemSize>
+                <syncfusion:SfListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.Padding>
+                                <OnPlatform x:TypeArguments="Thickness">
+                                    <On Platform="iOS, Android" Value="4" />
+                                    <On Platform="UWP" Value="10" />
+                                </OnPlatform>
+                            </Grid.Padding>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0"
+                                       Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
+                            </Image>
+                            <StackLayout Orientation="Vertical" Spacing="0" Grid.Column="1" VerticalOptions="Center" Padding="6,0,6,0" HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding TargetCode}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}"></Label>
+                                <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}" ></Label>
+                            </StackLayout>
+                            <!--<Button VerticalOptions="CenterAndExpand" WidthRequest="50" HeightRequest="50" Grid.Column="2" HorizontalOptions="Start"
+                                   Text="&#xf015;" Style="{StaticResource FontAwesomeButton}" ></Button>-->
+
+                            <Button VerticalOptions="CenterAndExpand" WidthRequest="50" HeightRequest="50" Grid.Column="3" HorizontalOptions="FillAndExpand"
+                                   Text="&#xf2ed;" Style="{StaticResource FontAwesomeRegularButton}"
+                                    Command="{Binding BindingContext.DataContext.DeleteCurrencyAsyncCommand, Source={x:Reference MainContent}}"
+                                    CommandParameter="{Binding}"
+                                    IsVisible="{Binding IsBaseCurrency, Converter={StaticResource BaseCurrencyVisibleConverter}}"></Button>
+                            <syncfusion:DragIndicatorView Grid.Column="4" ListView="{x:Reference listView}" 
+                    HorizontalOptions="Center" 
+                    VerticalOptions="Center">
+                                <StackLayout WidthRequest="50">
+                                    <Label VerticalOptions="CenterAndExpand" Margin="0,0,0,0" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"
+                                   Text="&#xf0dc;" Style="{StaticResource FontAwesomeSolidLabel}" FontAttributes="Bold" FontSize="Large"></Label>
+                                </StackLayout>
+                            </syncfusion:DragIndicatorView>
+                            
+                        </Grid>
+                    </DataTemplate>
+                </syncfusion:SfListView.ItemTemplate>
+            </syncfusion:SfListView>
+        </StackLayout>
+    </ContentPage.Content>
+</views:MvxContentPage>
