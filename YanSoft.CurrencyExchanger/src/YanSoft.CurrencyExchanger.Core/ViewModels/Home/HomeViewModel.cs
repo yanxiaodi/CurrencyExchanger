@@ -112,7 +112,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
 
             var list = await _currencyService.GetAllCurreciesAsync();
             CurrencyList = new ObservableCollection<CurrencyExchangeBindableItem>(list.ConvertAll((x) => x.ToCurrencyExchangeBindableItem()).OrderBy(x => x.SortOrder));
-            _globalContext.CurrentBaseCurrency = CurrencyList.First(x => x.IsBaseCurrency);
+            SetCurrentBaseCurrency();
             if (_appSettings.IsAutoRefreshRatesOnStartupEnabled)
             {
                 await GetLatestRatesAsync();
@@ -127,6 +127,17 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             if (_currencyList != null)
             {
                 _currencyService.UpdateCurrencyAmountText(CurrencyList);
+            }
+        }
+
+        private void SetCurrentBaseCurrency()
+        {
+            _globalContext.CurrentBaseCurrency = CurrencyList.FirstOrDefault(x => x.IsBaseCurrency);
+            if (_globalContext.CurrentBaseCurrency == null)
+            {
+                CurrencyItem currency = _globalContext.AllCurrencyItemList.FirstOrDefault(x => x.Code == "USD");
+                var item = new CurrencyExchangeItem(currency, currency, 0);
+                _globalContext.CurrentBaseCurrency = item.ToCurrencyExchangeBindableItem();
             }
         }
 
@@ -298,6 +309,33 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         }
         #endregion
 
+
+
+
+        #region DeleteCurrencyAsyncCommand;
+        private IMvxAsyncCommand<CurrencyExchangeBindableItem> _deleteCurrencyAsyncCommand;
+        public IMvxAsyncCommand<CurrencyExchangeBindableItem> DeleteCurrencyAsyncCommand
+        {
+            get
+            {
+                _deleteCurrencyAsyncCommand = _deleteCurrencyAsyncCommand ?? new MvxAsyncCommand<CurrencyExchangeBindableItem>(DeleteCurrencyAsync);
+                return _deleteCurrencyAsyncCommand;
+            }
+        }
+        private async Task DeleteCurrencyAsync(CurrencyExchangeBindableItem param)
+        {
+            // Implement your logic here.
+            if (!param.IsBaseCurrency)
+            {
+                CurrencyList.Remove(param);
+                for (var i = 0; i < CurrencyList.Count; i++)
+                {
+                    CurrencyList[i].SortOrder = i;
+                }
+                await _currencyService.SaveCurrencyDataAsync(CurrencyList);
+            }
+        }
+        #endregion
 
         #region Calculator
 

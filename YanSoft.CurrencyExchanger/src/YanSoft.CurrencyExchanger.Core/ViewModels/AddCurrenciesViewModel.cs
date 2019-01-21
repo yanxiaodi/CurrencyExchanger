@@ -163,12 +163,12 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         private async Task AddCurrenciesAsync()
         {
             // Implement your logic here.
-            var sourceCurrency = CurrencyList.FirstOrDefault().BaseCurrency;
+            var baseCurrency = _globalContext.CurrentBaseCurrency;
             var count = CurrencyList.Count;
             CurrencyItemSourceList.Where(x => x.IsSelected)
                 .ForEach(x =>
                 {
-                    var item = new CurrencyExchangeItem(new CurrencyItem { Code = sourceCurrency.Code }, new CurrencyItem { Code = x.CurrencyItem.Code }, ++count);
+                    var item = new CurrencyExchangeItem(new CurrencyItem { Code = baseCurrency.BaseCode }, new CurrencyItem { Code = x.CurrencyItem.Code }, ++count);
                     _dataService.AddAsync(item);
                     CurrencyList.Add(item.ToCurrencyExchangeBindableItem());
                 });

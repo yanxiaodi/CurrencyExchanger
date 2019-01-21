@@ -40,7 +40,7 @@ namespace YanSoft.CurrencyExchanger.Core
             AppCenter.Start("uwp=ec4b3fea-1676-4964-a5f3-8c449b57f1e0;" +
                   "android=6b6af17f-9bfd-4c74-8ac4-fcfcef223bb2" +
                   "ios=cea8fbf3-310d-4f98-b77b-d22a02e6fac2",
-                  typeof(Analytics), typeof(Crashes), typeof(Push));
+                  typeof(Analytics), typeof(Crashes));
             return base.Startup();
 
         }
