@@ -7,6 +7,9 @@
                       x:TypeArguments="viewModels:SettingsViewModel" >
     <ContentPage.Content>
         <TableView Intent="Settings">
+            <TableView.Margin>
+                <OnPlatform UWP="20,0,20,0" Android="0" iOS="0" ></OnPlatform>
+            </TableView.Margin>
             <TableRoot>
                 <TableSection Title="Common">
                     <ViewCell>
