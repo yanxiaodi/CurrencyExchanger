@@ -54,7 +54,8 @@
                         <ViewCell>
                             <ViewCell.ContextActions>
                                 <MenuItem CommandParameter="{Binding}" Command="{Binding BindingContext.DataContext.DeleteCurrencyAsyncCommand, Source={x:Reference MainContent}}"
-               Text="Delete" IsDestructive="True" />
+               Text="Delete" IsDestructive="True" >
+                                </MenuItem>
                             </ViewCell.ContextActions>
                             <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                                 <StackLayout.Padding>
