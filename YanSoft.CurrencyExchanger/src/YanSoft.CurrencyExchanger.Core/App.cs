@@ -7,6 +7,7 @@ using MvvmCross;
 using MvvmCross.IoC;
 using MvvmCross.ViewModels;
 using Plugin.Multilingual;
+using Plugin.Toasts;
 using YanSoft.CurrencyExchanger.Core.Common;
 using YanSoft.CurrencyExchanger.Core.Data;
 using YanSoft.CurrencyExchanger.Core.Models;
@@ -33,8 +34,6 @@ namespace YanSoft.CurrencyExchanger.Core
             Mvx.IoCProvider.Resolve<GlobalContext>().Initialize();
             Mvx.IoCProvider.RegisterSingleton(new AppSettings());
             RegisterAppStart<MasterDetailViewModel>();
-
-            //ToastNotification.Init();
         }
 
         public override Task Startup()
