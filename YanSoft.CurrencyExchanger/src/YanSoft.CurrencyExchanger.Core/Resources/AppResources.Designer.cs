@@ -1598,5 +1598,41 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
                 return ResourceManager.GetString("Currency_ZMW", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Network unavailable..
+        /// </summary>
+        internal static string Toast_NetworkError {
+            get {
+                return ResourceManager.GetString("Toast_NetworkError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        internal static string Toast_Title_Error {
+            get {
+                return ResourceManager.GetString("Toast_Title_Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Info.
+        /// </summary>
+        internal static string Toast_Title_Info {
+            get {
+                return ResourceManager.GetString("Toast_Title_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Warning.
+        /// </summary>
+        internal static string Toast_Title_Warning {
+            get {
+                return ResourceManager.GetString("Toast_Title_Warning", resourceCulture);
+            }
+        }
     }
 }

@@ -630,4 +630,16 @@
   <data name="About_Share_Content" xml:space="preserve">
     <value>I recommend Currency Exchanger to get latest currency rates.</value>
   </data>
+  <data name="Toast_NetworkError" xml:space="preserve">
+    <value>Network unavailable.</value>
+  </data>
+  <data name="Toast_Title_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Toast_Title_Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Toast_Title_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
 </root>

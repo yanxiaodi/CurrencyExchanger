@@ -690,6 +690,22 @@
           <source>I recommend Currency Exchanger to get latest currency rates.</source>
           <target state="new">I recommend Currency Exchanger to get latest currency rates.</target>
         </trans-unit>
+        <trans-unit id="Toast_NetworkError" translate="yes" xml:space="preserve">
+          <source>Network error!</source>
+          <target state="new">Network error!</target>
+        </trans-unit>
+        <trans-unit id="Toast_Title_Error" translate="yes" xml:space="preserve">
+          <source>Error</source>
+          <target state="new">Error</target>
+        </trans-unit>
+        <trans-unit id="Toast_Title_Info" translate="yes" xml:space="preserve">
+          <source>Info</source>
+          <target state="new">Info</target>
+        </trans-unit>
+        <trans-unit id="Toast_Title_Warning" translate="yes" xml:space="preserve">
+          <source>Warning</source>
+          <target state="new">Warning</target>
+        </trans-unit>
       </group>
     </body>
   </file>
