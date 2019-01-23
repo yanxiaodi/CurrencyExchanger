@@ -12,9 +12,12 @@ namespace YanSoft.CurrencyExchanger.UWP
 
         protected override void InitializeIoC()
         {
+            
+            base.InitializeIoC();
             Mvx.IoCProvider.RegisterType<IToastNotificator, ToastNotification>();
             ToastNotification.Init();
-            base.InitializeIoC();
         }
+
+
     }
 }

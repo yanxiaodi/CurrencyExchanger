@@ -691,8 +691,8 @@
           <target state="new">I recommend Currency Exchanger to get latest currency rates.</target>
         </trans-unit>
         <trans-unit id="Toast_NetworkError" translate="yes" xml:space="preserve">
-          <source>Network error!</source>
-          <target state="new">Network error!</target>
+          <source>Network unavailable.</source>
+          <target state="new">Network unavailable.</target>
         </trans-unit>
         <trans-unit id="Toast_Title_Error" translate="yes" xml:space="preserve">
           <source>Error</source>
