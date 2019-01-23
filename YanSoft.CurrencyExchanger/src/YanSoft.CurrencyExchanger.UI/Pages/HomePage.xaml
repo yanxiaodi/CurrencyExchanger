@@ -12,7 +12,8 @@
                       xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
                       x:Name="MainContent"
                       xmlns:animation="clr-namespace:YanSoft.CurrencyExchanger.Core.AnimationHelper;assembly=YanSoft.CurrencyExchanger.Core"
-                      xmlns:controlHelper="clr-namespace:YanSoft.CurrencyExchanger.Core.ControlHelper;assembly=YanSoft.CurrencyExchanger.Core">
+                      xmlns:controlHelper="clr-namespace:YanSoft.CurrencyExchanger.Core.ControlHelper;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:controls="clr-namespace:YanSoft.CurrencyExchanger.Core.Controls;assembly=YanSoft.CurrencyExchanger.Core">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add Currency" Order="Primary"  Priority="0" Command="{Binding NavigateToAddCurrenciesAsyncCommand}">
             <ToolbarItem.Icon>
@@ -54,7 +55,8 @@
                         <ViewCell>
                             <ViewCell.ContextActions>
                                 <MenuItem CommandParameter="{Binding}" Command="{Binding BindingContext.DataContext.DeleteCurrencyAsyncCommand, Source={x:Reference MainContent}}"
-               Text="Delete" IsDestructive="True" />
+               Text="Delete" IsDestructive="True" >
+                                </MenuItem>
                             </ViewCell.ContextActions>
                             <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                                 <StackLayout.Padding>
@@ -157,6 +159,7 @@
                 <StackLayout VerticalOptions="FillAndExpand" Spacing="0" BackgroundColor="Black" Opacity="0.5"></StackLayout>
 
             </StackLayout>
+            <controls:AdBanner Grid.Row="1"/>
         </Grid>
     </ContentPage.Content>
 </views:MvxContentPage>

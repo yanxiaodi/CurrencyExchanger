@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using MvvmCross.Commands;
 using MvvmCross.Navigation;
 using MvvmCross.ViewModels;
+using Plugin.Toasts;
+using Xamarin.Essentials;
 using Xamarin.Forms.Internals;
 using YanSoft.CurrencyExchanger.Core.Common;
 using YanSoft.CurrencyExchanger.Core.Models;
@@ -19,12 +21,16 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         private readonly IMvxNavigationService _navigationService;
         private readonly ICurrencyService _currencyService;
         private readonly GlobalContext _globalContext;
+        private readonly IToastNotificator _toastNotificator;
+
         public AddCurrenciesViewModel(IMvxNavigationService navigationService,
-            ICurrencyService currencyService, GlobalContext globalContext)
+            ICurrencyService currencyService, GlobalContext globalContext, IToastNotificator toastNotificator)
         {
             _navigationService = navigationService;
             _currencyService = currencyService;
             _globalContext = globalContext;
+            _toastNotificator = toastNotificator;
+
             //CurrencyItemSelectedList = new ObservableCollection<CurrencySelectableBindableItem>();
             CurrencyItemSourceList = new ObservableCollection<CurrencySelectableBindableItem>();
             CurrencyItemList = new MvxObservableCollection<CurrencySelectableBindableItem>();
@@ -164,10 +170,19 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             // Implement your logic here.
             var baseCurrency = _globalContext.CurrentBaseCurrency;
             var count = CurrencyList.Count;
-            var items = CurrencyItemSourceList.Where(x => x.IsSelected)
+            var items = CurrencyItemSourceList.Where(x => x.IsSelected && CurrencyList.Count(c => c.TargetCode == x.CurrencyItem.Code) == 0)
                 .Select(x => new CurrencyExchangeItem(new CurrencyItem { Code = baseCurrency.BaseCode }, new CurrencyItem { Code = x.CurrencyItem.Code }, ++count));
             await _currencyService.AddCurrenciesAsync(CurrencyList, items);
-            await _currencyService.GetCurrencyRatesAsync(CurrencyList);
+            var current = Connectivity.NetworkAccess;
+            if (current == NetworkAccess.Internet)
+            {
+                // Connection to internet is available
+                await _currencyService.GetCurrencyRatesAsync(CurrencyList);
+            }
+            else
+            {
+                await _toastNotificator.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+            }
             _currencyService.CalculateCurrencyAmount(CurrencyList, _globalContext.CurrentBaseCurrency);
             await _navigationService.Close(this);
         }

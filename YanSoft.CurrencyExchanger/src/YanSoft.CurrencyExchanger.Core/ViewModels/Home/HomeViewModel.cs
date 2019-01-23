@@ -12,6 +12,8 @@ using YanSoft.CurrencyExchanger.Core.Services;
 using System.Linq;
 using MvvmCross.Navigation;
 using YanSoft.CurrencyExchanger.Core.Calculator.Parser;
+using Xamarin.Essentials;
+using Plugin.Toasts;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
 {
@@ -22,13 +24,17 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         //private readonly IDataService<CurrencyExchangeItem> _dataService;
         private readonly AppSettings _appSettings;
         private readonly GlobalContext _globalContext;
-        public HomeViewModel(IMvxNavigationService navigationService, ICurrencyService currencyService, AppSettings appSettings, GlobalContext globalContext)
+        private readonly IToastNotificator _toastNotificator;
+        public HomeViewModel(IMvxNavigationService navigationService,
+            ICurrencyService currencyService, AppSettings appSettings,
+            GlobalContext globalContext, IToastNotificator toastNotificator)
         {
             _currencyService = currencyService;
             _navigationService = navigationService;
             //_dataService = dataService;
             _appSettings = appSettings;
             _globalContext = globalContext;
+            _toastNotificator = toastNotificator;
             IsPullToRefreshEnabled = false;
             IsRefreshing = false;
         }
@@ -115,6 +121,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             SetCurrentBaseCurrency();
             if (_appSettings.IsAutoRefreshRatesOnStartupEnabled)
             {
+                // Connection to internet is available
                 await GetLatestRatesAsync();
             }
             await base.Initialize();
@@ -188,7 +195,17 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         private async Task GetLatestRatesAsync()
         {
             // Implement your logic here.
-            await _currencyService.GetCurrencyRatesAsync(CurrencyList);
+            var current = Connectivity.NetworkAccess;
+            if (current == NetworkAccess.Internet)
+            {
+                // Connection to internet is available
+                await _currencyService.GetCurrencyRatesAsync(CurrencyList);
+            }
+            else
+            {
+                await _toastNotificator.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+            }
+            
             _currencyService.CalculateCurrencyAmount(CurrencyList, CurrencyList.First(x => x.IsBaseCurrency));
 
             if (_appSettings.IsPinBaseCurrencyToTopEnabled)
@@ -312,17 +329,24 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         private async Task SetBaseCurrencyAsync(CurrencyExchangeBindableItem param)
         {
             // Implement your logic here.
-            _globalContext.CurrentBaseCurrency = param;
-            IsRefreshing = true;
-
-            _currencyService.SetBaseCurrency(CurrencyList, param);
-            await GetLatestRatesAsync();
-            if (IsRefreshing)
+            var current = Connectivity.NetworkAccess;
+            if (current == NetworkAccess.Internet)
             {
-                IsRefreshing = false;
-            }
+                // Connection to internet is available
+                _globalContext.CurrentBaseCurrency = param;
+                IsRefreshing = true;
 
-            
+                _currencyService.SetBaseCurrency(CurrencyList, param);
+                await GetLatestRatesAsync();
+                if (IsRefreshing)
+                {
+                    IsRefreshing = false;
+                }
+            }
+            else
+            {
+                await _toastNotificator.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+            }
         }
         #endregion
 

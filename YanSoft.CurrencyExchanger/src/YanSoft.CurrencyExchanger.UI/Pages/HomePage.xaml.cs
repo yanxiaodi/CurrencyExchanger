@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 namespace YanSoft.CurrencyExchanger.UI.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail, NoHistory = true, Title = "Currency Exchanger")]
+    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail, Title = "Currency Exchanger")]
     public partial class HomePage : MvxContentPage<HomeViewModel>
     {
         public HomePage()
