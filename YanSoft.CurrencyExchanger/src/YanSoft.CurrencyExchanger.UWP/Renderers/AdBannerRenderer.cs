@@ -14,6 +14,7 @@ namespace YanSoft.CurrencyExchanger.UWP.Renderers
 {
     public class AdBannerRenderer :ViewRenderer<AdBanner, AdControl>
     {
+        private AdControl adControl;
         public AdBannerRenderer()
         {
 
@@ -28,7 +29,7 @@ namespace YanSoft.CurrencyExchanger.UWP.Renderers
             }
             if(Control == null)
             {
-                var adControl = new AdControl
+                adControl = new AdControl
                 {
 #if DEBUG
                     ApplicationId = "3f83fe91-d6be-434d-a0ae-7351c5a997f1",
@@ -39,35 +40,59 @@ namespace YanSoft.CurrencyExchanger.UWP.Renderers
                     AdUnitId = "1100038490"
 #endif
                 };
-                var availableWidth = Window.Current.Bounds.Width;
-                if (availableWidth >= 728)
-                {
-                    adControl.Width = 728;
-                    adControl.Height = 90;
-                }
-                else if (availableWidth >= 640)
-                {
-                    adControl.Width = 640;
-                    adControl.Height = 100;
-                }
-                else if (availableWidth >= 320)
-                {
-                    adControl.Width = 320;
-                    adControl.Height = 50;
-                }
-                else if (availableWidth >= 300)
-                {
-                    adControl.Width = 300;
-                    adControl.Height = 50;
-                }
-
+                Tuple<int, int> initSize = GetAdSize();
+                adControl.Width = initSize.Item1;
+                adControl.Height = initSize.Item2;
 
                 e.NewElement.HeightRequest = adControl.Height;
-
-
                 SetNativeControl(adControl);
+            }
 
+            if (e.OldElement != null)
+            {
+                // Unsubscribe from event handlers and cleanup any resources
+                Window.Current.SizeChanged -= Current_SizeChanged;
+            }
+
+            if (e.NewElement != null)
+            {
+                // Configure the control and subscribe to event handlers
+                Window.Current.SizeChanged += Current_SizeChanged;
             }
         }
+
+        private void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        {
+            Tuple<int, int> size = GetAdSize();
+            adControl.Width = size.Item1;
+            adControl.Height = size.Item2;
+        }
+
+        private Tuple<int, int> GetAdSize()
+        {
+            var availableWidth = Window.Current.Bounds.Width;
+            if (availableWidth >= 728)
+            {
+                return new Tuple<int, int>(728, 90);
+            }
+            else if (availableWidth >= 640)
+            {
+                return new Tuple<int, int>(640, 100);
+            }
+            else if (availableWidth >= 320)
+            {
+                return new Tuple<int, int>(320, 50);
+            }
+            //else if (availableWidth >= 300)
+            //{
+            //    return new Tuple<int, int>(300, 50);
+            //}
+            else
+            {
+                return new Tuple<int, int>(300, 50);
+            }
+        }
+
+
     }
 }
