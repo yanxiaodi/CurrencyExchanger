@@ -170,7 +170,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             // Implement your logic here.
             var baseCurrency = _globalContext.CurrentBaseCurrency;
             var count = CurrencyList.Count;
-            var items = CurrencyItemSourceList.Where(x => x.IsSelected)
+            var items = CurrencyItemSourceList.Where(x => x.IsSelected && CurrencyList.Count(c => c.TargetCode == x.CurrencyItem.Code) == 0)
                 .Select(x => new CurrencyExchangeItem(new CurrencyItem { Code = baseCurrency.BaseCode }, new CurrencyItem { Code = x.CurrencyItem.Code }, ++count));
             await _currencyService.AddCurrenciesAsync(CurrencyList, items);
             var current = Connectivity.NetworkAccess;
