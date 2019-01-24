@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -11,6 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Polly;
+using Swashbuckle.AspNetCore.Swagger;
 using YanSoft.CurrencyExchanger.WebApp.Middlewares;
 using YanSoft.CurrencyExchanger.WebApp.Services;
 
@@ -48,6 +51,27 @@ namespace YanSoft.CurrencyExchanger.WebApp
                 .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(10)))
                 .AddTransientHttpErrorPolicy(p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600)));
 
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Title = "Currency Exchanger API",
+                    Version = "v1",
+                    Description = "Currency Exchanger API for Xamarin.Forms application.",
+                    Contact = new Contact
+                    {
+                        Name = "Xiaodi Yan",
+                        Email = "yan_xiaodi@hotmail.com",
+                        Url = ""
+                    }
+                });
+                // Set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
+            });
+
             //services.AddSingleton<IApiService, FixerApiService>();
             services.AddSingleton<IApiService, CurrencyConverterApiService>();
         }
@@ -64,6 +88,16 @@ namespace YanSoft.CurrencyExchanger.WebApp
                 app.UseExceptionHandler("/Home/Error");
                 app.UseHsts();
             }
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Currency Exchanger API V1");
+            });
 
             //app.UseHttpsRedirection();
             app.UseStaticFiles();
