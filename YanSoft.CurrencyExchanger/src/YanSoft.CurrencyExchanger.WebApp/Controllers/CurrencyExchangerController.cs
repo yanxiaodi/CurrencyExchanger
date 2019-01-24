@@ -12,6 +12,7 @@ using YanSoft.CurrencyExchanger.WebApp.Services;
 namespace YanSoft.CurrencyExchanger.WebApp.Controllers
 {
 
+    [ApiVersion("1.0")]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class CurrencyExchangerController : ControllerBase
@@ -22,19 +23,42 @@ namespace YanSoft.CurrencyExchanger.WebApp.Controllers
             this.apiService = apiService;
         }
 
+
+        /// <summary>
+        /// Gets the currencies.
+        /// </summary>
+        /// <returns></returns>
+        /// <response code="201">Returns all currencies.</response>
+        /// <response code="404">If there is no currency.</response>           
+        [Produces("application/json")]
         [HttpGet]
         [ProducesResponseType(200)]
+        [ProducesResponseType(404)]
         public ActionResult<ResponseInfo<List<Currency>>> GetCurrencies()
         {
             List<Currency> response = apiService.GetCurrencies();
-            var result = new ResponseInfo<List<Currency>>
+            if (response.Any())
             {
-                IsSuccess = true,
-                Result = response.OrderBy(x => x.Code).ToList()
-            };
-            return result;
+                var result = new ResponseInfo<List<Currency>>
+                {
+                    IsSuccess = true,
+                    Result = response.OrderBy(x => x.Code).ToList()
+                };
+                return result;
+            }
+            else
+            {
+                return new NotFoundResult();
+            }
         }
 
+        /// <summary>
+        /// Gets the latest currency rates.
+        /// </summary>
+        /// <param name="baseCode">The base code.</param>
+        /// <param name="targetCodes">The target codes.</param>
+        /// <returns></returns>
+        [Produces("application/json")]
         [HttpGet]
         [ProducesResponseType(200)]
         public async Task<ActionResult<ResponseInfo<CurrencyRatesResponse>>> GetLatestRates(string baseCode, string targetCodes)
@@ -73,28 +97,28 @@ namespace YanSoft.CurrencyExchanger.WebApp.Controllers
         //}
 
         // GET: api/CurrencyExchangerApi/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
-        {
-            return "value";
-        }
+        //[HttpGet("{id}", Name = "Get")]
+        //public string Get(int id)
+        //{
+        //    return "value";
+        //}
 
-        // POST: api/CurrencyExchangerApi
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
+        //// POST: api/CurrencyExchangerApi
+        //[HttpPost]
+        //public void Post([FromBody] string value)
+        //{
+        //}
 
-        // PUT: api/CurrencyExchangerApi/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        //// PUT: api/CurrencyExchangerApi/5
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody] string value)
+        //{
+        //}
 
-        // DELETE: api/ApiWithActions/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE: api/ApiWithActions/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }
