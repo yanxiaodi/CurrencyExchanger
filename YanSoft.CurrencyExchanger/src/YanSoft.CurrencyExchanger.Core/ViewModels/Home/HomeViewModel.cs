@@ -195,36 +195,32 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         private async Task GetLatestRatesAsync()
         {
             // Implement your logic here.
-            var current = Connectivity.NetworkAccess;
-            if (current == NetworkAccess.Internet)
+            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
             {
                 // Connection to internet is available
                 await _currencyService.GetCurrencyRatesAsync(CurrencyList);
+                _currencyService.CalculateCurrencyAmount(CurrencyList, _globalContext.CurrentBaseCurrency);
+
+                if (_appSettings.IsPinBaseCurrencyToTopEnabled)
+                {
+                    if (_globalContext.CurrentBaseCurrency.SortOrder != 0)
+                    {
+                        var baseCurrency = CurrencyList.First(x =>
+                        x.BaseCode == _globalContext.CurrentBaseCurrency.BaseCode
+                        && x.TargetCode == _globalContext.CurrentBaseCurrency.TargetCode);
+                        CurrencyList.Move(CurrencyList.IndexOf(baseCurrency), 0);
+                        for (var i = 0; i < CurrencyList.Count; i++)
+                        {
+                            CurrencyList[i].SortOrder = i;
+                        }
+                    }
+                }
+                await _currencyService.SaveCurrencyDataAsync(CurrencyList);
             }
             else
             {
                 await _toastNotificator.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
             }
-            
-            _currencyService.CalculateCurrencyAmount(CurrencyList, CurrencyList.First(x => x.IsBaseCurrency));
-
-            if (_appSettings.IsPinBaseCurrencyToTopEnabled)
-            {
-                if (_globalContext.CurrentBaseCurrency.SortOrder != 0)
-                {
-                    var baseCurrency = CurrencyList.First(x =>
-                    x.BaseCode == _globalContext.CurrentBaseCurrency.BaseCode
-                    && x.TargetCode == _globalContext.CurrentBaseCurrency.TargetCode);
-                    CurrencyList.Remove(baseCurrency);
-                    CurrencyList.Insert(0, baseCurrency);
-                    for (var i = 0; i < CurrencyList.Count; i++)
-                    {
-                        CurrencyList[i].SortOrder = i;
-                    }
-                    await _currencyService.SaveCurrencyDataAsync(CurrencyList);
-                }
-            }
-            await _currencyService.SaveCurrencyDataAsync(CurrencyList);
         }
 
         private void OnGetLatestRatesException(Exception ex)
@@ -329,8 +325,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         private async Task SetBaseCurrencyAsync(CurrencyExchangeBindableItem param)
         {
             // Implement your logic here.
-            var current = Connectivity.NetworkAccess;
-            if (current == NetworkAccess.Internet)
+            if (Connectivity.NetworkAccess == NetworkAccess.Internet)
             {
                 // Connection to internet is available
                 _globalContext.CurrentBaseCurrency = param;
