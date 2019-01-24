@@ -3,30 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Android.App;
-using Android.Content;
-using Android.Gms.Ads;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
+using Foundation;
+using Google.MobileAds;
+using UIKit;
 using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android;
+using Xamarin.Forms.Platform.iOS;
 using YanSoft.CurrencyExchanger.Core.Configurations;
 using YanSoft.CurrencyExchanger.Core.Controls;
-using YanSoft.CurrencyExchanger.Droid.Renderers;
+using YanSoft.CurrencyExchanger.iOS.Renderers;
 
 [assembly: ExportRenderer(typeof(AdBanner), typeof(AdBannerRenderer))]
-namespace YanSoft.CurrencyExchanger.Droid.Renderers
+namespace YanSoft.CurrencyExchanger.iOS.Renderers
 {
-    public class AdBannerRenderer : ViewRenderer<AdBanner, AdView>
+    public class AdBannerRenderer : ViewRenderer<AdBanner, BannerView>
     {
-        private AdView adControl;
-        Context context;
-        public AdBannerRenderer(Context _context) : base(_context)
-        {
-            context = _context;
-        }
+        private BannerView adControl;
+        
 
         protected override void OnElementChanged(ElementChangedEventArgs<AdBanner> e)
         {
@@ -53,22 +45,33 @@ namespace YanSoft.CurrencyExchanger.Droid.Renderers
             }
         }
 
-        private AdView CreateAdControl()
+        private BannerView CreateAdControl()
         {
-            adControl = new AdView(context)
+            adControl = new BannerView(AdSizeCons.SmartBannerPortrait)
             {
 #if DEBUG
-                AdUnitId = AppConfigurations.AdMobAndroidBannerTestAdUnitId,
+                AdUnitID = AppConfigurations.AdMobIosBannerTestAdUnitId,
 #endif
 #if !DEBUG
-                AdUnitId = AppConfigurations.AdMobAndroidBannerAdUnitId,
+                AdUnitId = AppConfigurations.AdMobIosAppId,
 #endif
-                AdSize  = AdSize.SmartBanner
             };
-            adControl.LoadAd(new AdRequest.Builder().Build());
+            adControl.RootViewController = GetRootViewController();
+            adControl.LoadRequest(Request.GetDefaultRequest());
             return adControl;
         }
 
+        private UIViewController GetRootViewController()
+        {
+            foreach (UIWindow window in UIApplication.SharedApplication.Windows)
+            {
+                if (window.RootViewController != null)
+                {
+                    return window.RootViewController;
+                }
+            }
+            return null;
+        }
 
     }
 }
