@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using Microsoft.Advertising.WinRT.UI;
 using Windows.UI.Xaml;
 using Xamarin.Forms.Platform.UWP;
+using YanSoft.CurrencyExchanger.Core.Configurations;
 using YanSoft.CurrencyExchanger.Core.Controls;
 using YanSoft.CurrencyExchanger.UWP.Renderers;
 
 [assembly: ExportRenderer(typeof(AdBanner), typeof(AdBannerRenderer))]
 namespace YanSoft.CurrencyExchanger.UWP.Renderers
 {
-    public class AdBannerRenderer :ViewRenderer<AdBanner, AdControl>
+    public class AdBannerRenderer : ViewRenderer<AdBanner, AdControl>
     {
         private AdControl adControl;
         public AdBannerRenderer()
@@ -29,21 +30,7 @@ namespace YanSoft.CurrencyExchanger.UWP.Renderers
             }
             if(Control == null)
             {
-                adControl = new AdControl
-                {
-#if DEBUG
-                    ApplicationId = "3f83fe91-d6be-434d-a0ae-7351c5a997f1",
-                    AdUnitId = "test",
-#endif
-#if !DEBUG
-                    ApplicationId = "9wzdncrdq91s",
-                    AdUnitId = "1100038490"
-#endif
-                };
-                Tuple<int, int> initSize = GetAdSize();
-                adControl.Width = initSize.Item1;
-                adControl.Height = initSize.Item2;
-
+                adControl = CreateAdControl();
                 e.NewElement.HeightRequest = adControl.Height;
                 SetNativeControl(adControl);
             }
@@ -59,6 +46,25 @@ namespace YanSoft.CurrencyExchanger.UWP.Renderers
                 // Configure the control and subscribe to event handlers
                 Window.Current.SizeChanged += Current_SizeChanged;
             }
+        }
+
+        private AdControl CreateAdControl()
+        {
+            adControl = new AdControl
+            {
+#if DEBUG
+                ApplicationId = AppConfigurations.MicrosoftAdTestAppId,
+                AdUnitId = AppConfigurations.MicrosoftAdTestAdUnitId
+#endif
+#if !DEBUG
+                    ApplicationId = AppConfigurations.MicrosoftAdAppId,
+                    AdUnitId = AppConfigurations.MicrosoftAdAdUnitId
+#endif
+            };
+            Tuple<int, int> initSize = GetAdSize();
+            adControl.Width = initSize.Item1;
+            adControl.Height = initSize.Item2;
+            return adControl;
         }
 
         private void Current_SizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
