@@ -12,6 +12,7 @@ using YanSoft.CurrencyExchanger.WebApp.Services;
 namespace YanSoft.CurrencyExchanger.WebApp.Controllers
 {
 
+    [ApiVersion("1.0")]
     [Route("api/[controller]/[action]")]
     [ApiController]
     public class CurrencyExchangerController : ControllerBase

@@ -10,10 +10,13 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Polly;
 using Swashbuckle.AspNetCore.Swagger;
+using Swashbuckle.AspNetCore.SwaggerGen;
 using YanSoft.CurrencyExchanger.WebApp.Middlewares;
 using YanSoft.CurrencyExchanger.WebApp.Services;
 
@@ -39,7 +42,14 @@ namespace YanSoft.CurrencyExchanger.WebApp
             });
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddApiVersioning(options =>
+            {
+                options.DefaultApiVersion = new ApiVersion(1, 0);
+                // reporting api versions will return the headers "api-supported-versions" and "api-deprecated-versions"
+                options.ReportApiVersions = true;
+            });
 
             services.AddMemoryCache();
 
@@ -51,33 +61,53 @@ namespace YanSoft.CurrencyExchanger.WebApp
                 .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(10)))
                 .AddTransientHttpErrorPolicy(p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600)));
 
-            // Register the Swagger generator, defining 1 or more Swagger documents
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info
+            services.AddVersionedApiExplorer(
+                options =>
                 {
-                    Title = "Currency Exchanger API",
-                    Version = "v1",
-                    Description = "Currency Exchanger API for Xamarin.Forms application.",
-                    Contact = new Contact
-                    {
-                        Name = "Xiaodi Yan",
-                        Email = "yan_xiaodi@hotmail.com",
-                        Url = ""
-                    }
+                    // add the versioned api explorer, which also adds IApiVersionDescriptionProvider service
+                    // note: the specified format code will format the version as "'v'major[.minor][-status]"
+                    options.GroupNameFormat = "'v'VVV";
+
+                    // note: this option is only necessary when versioning by url segment. the SubstitutionFormat
+                    // can also be used to control the format of the API version in route templates
+                    options.SubstituteApiVersionInUrl = true;
                 });
-                // Set the comments path for the Swagger JSON and UI.
-                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
-                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
-                c.IncludeXmlComments(xmlPath);
-            });
+
+            services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
+            services.AddSwaggerGen(
+                options =>
+                {
+                    // add a custom operation filter which sets default values
+                    options.OperationFilter<SwaggerDefaultValues>();
+
+                    // integrate xml comments
+                    options.IncludeXmlComments(XmlCommentsFilePath);
+                });
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new Info
+            //    {
+            //        Title = "Currency Exchanger API",
+            //        Version = "v1",
+            //        Description = "Currency Exchanger API for Xamarin.Forms application.",
+            //        Contact = new Contact
+            //        {
+            //            Name = "Xiaodi Yan",
+            //            Email = "yan_xiaodi@hotmail.com",
+            //            Url = ""
+            //        }
+            //    });
+            //    // Set the comments path for the Swagger JSON and UI.
+            //    c.IncludeXmlComments(XmlCommentsFilePath);
+            //});
 
             //services.AddSingleton<IApiService, FixerApiService>();
             services.AddSingleton<IApiService, CurrencyConverterApiService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IApiVersionDescriptionProvider provider)
         {
             if (env.IsDevelopment())
             {
@@ -94,10 +124,19 @@ namespace YanSoft.CurrencyExchanger.WebApp
 
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
             // specifying the Swagger JSON endpoint.
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Currency Exchanger API V1");
-            });
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Currency Exchanger API V1");
+            //});
+            app.UseSwaggerUI(
+                options =>
+                {
+                    // build a swagger endpoint for each discovered API version
+                    foreach (var description in provider.ApiVersionDescriptions)
+                    {
+                        options.SwaggerEndpoint($"/swagger/{description.GroupName}/swagger.json", $"Currency Exchanger API {description.GroupName.ToUpperInvariant()}");
+                    }
+                });
 
             //app.UseHttpsRedirection();
             app.UseStaticFiles();
@@ -109,6 +148,18 @@ namespace YanSoft.CurrencyExchanger.WebApp
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+
+        static string XmlCommentsFilePath
+        {
+            get
+            {
+                //var basePath = PlatformServices.Default.Application.ApplicationBasePath;
+                var basePath = AppContext.BaseDirectory;
+                //var fileName = typeof(Startup).GetTypeInfo().Assembly.GetName().Name + ".xml";
+                var fileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                return Path.Combine(basePath, fileName);
+            }
         }
     }
 }
