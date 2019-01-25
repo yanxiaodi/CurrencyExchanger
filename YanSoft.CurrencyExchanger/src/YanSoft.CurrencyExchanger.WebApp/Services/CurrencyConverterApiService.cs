@@ -305,5 +305,10 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
                 }
             }
         }
+
+        public Task<CurrencyRatesHistoryResponse> GetHistoryRates(string baseCode, string targetCode, int timestampStart, int timestampEnd, string interval)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

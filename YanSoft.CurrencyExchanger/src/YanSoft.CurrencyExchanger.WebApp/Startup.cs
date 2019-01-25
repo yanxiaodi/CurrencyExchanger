@@ -61,6 +61,10 @@ namespace YanSoft.CurrencyExchanger.WebApp
                 .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(10)))
                 .AddTransientHttpErrorPolicy(p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600)));
 
+            services.AddHttpClient(Constants.YahooFinanceHttpClinetName)
+                .AddPolicyHandler(Policy.TimeoutAsync<HttpResponseMessage>(TimeSpan.FromSeconds(10)))
+                .AddTransientHttpErrorPolicy(p => p.WaitAndRetryAsync(3, _ => TimeSpan.FromMilliseconds(600)));
+
             services.AddVersionedApiExplorer(
                 options =>
                 {
@@ -103,7 +107,9 @@ namespace YanSoft.CurrencyExchanger.WebApp
             //});
 
             //services.AddSingleton<IApiService, FixerApiService>();
-            services.AddSingleton<IApiService, CurrencyConverterApiService>();
+            //services.AddSingleton<IApiService, CurrencyConverterApiService>();
+            services.AddSingleton<IApiService, YahooFinanceApiService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

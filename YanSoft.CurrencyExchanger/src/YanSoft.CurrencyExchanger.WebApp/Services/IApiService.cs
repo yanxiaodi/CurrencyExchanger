@@ -18,5 +18,7 @@ namespace YanSoft.CurrencyExchanger.WebApp.Services
         /// <param name="targetCodes">The target codes</param>
         /// <returns></returns>
         Task<CurrencyRatesResponse> GetLatestRates(string baseCode, IEnumerable<string> targetCodes);
+
+        Task<CurrencyRatesHistoryResponse> GetHistoryRates(string baseCode, string targetCode, int timestampStart, int timestampEnd, string interval);
     }
 }
