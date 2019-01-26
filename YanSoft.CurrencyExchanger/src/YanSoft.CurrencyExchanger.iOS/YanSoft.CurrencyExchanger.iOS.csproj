@@ -70,6 +70,7 @@
     <Compile Include="Linker\LinkerPleaseInclude.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\AdBannerRenderer.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Styles\ColorPalette.cs" />
     <None Include="Entitlements.plist" />
@@ -79,12 +80,41 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
+    <ImageAsset Include="Icons.xcassets\outline_list_black_36dp.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_add_black_48dp.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_add_black_48dp.imageset\outline_add_black_48pt_1x[2].png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_done_black_48dp.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_done_black_48dp.imageset\outline_done_black_48dp.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_list_black_36dp.imageset\outline_list_black_36dp.png">
+      <Visible>false</Visible>
+    </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ITunesArtwork Include="iTunesArtwork\MvxForms\src\YanSoft.CurrencyExchanger.iOS\iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x\MvxForms\src\YanSoft.CurrencyExchanger.iOS\iTunesArtwork%402x" />
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\LaunchImages.launchimage\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <BundleResource Include="Resources\Font Awesome 5 Brands-Regular-400.otf" />
+    <BundleResource Include="Resources\Font Awesome 5 Free-Regular-400.otf" />
+    <BundleResource Include="Resources\Font Awesome 5 Free-Solid-900.otf" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard">
@@ -107,8 +137,23 @@
     <PackageReference Include="MvvmCross.Forms">
       <Version>6.2.2</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfChart">
+      <Version>16.4.0.47</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfListView">
+      <Version>16.4.0.47</Version>
+    </PackageReference>
+    <PackageReference Include="Toasts.Forms.Plugin">
+      <Version>3.3.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Essentials">
+      <Version>1.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms">
       <Version>3.4.0.1008975</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.iOS.MobileAds">
+      <Version>7.32.0</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
@@ -216,6 +261,951 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\hamburger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Flags.xcassets\flag_albania.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_albania.imageset\flag_albania.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_algeria.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_algeria.imageset\flag_algeria.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_argentina.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_argentina.imageset\flag_argentina.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_aruba.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_aruba.imageset\flag_aruba.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_australia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_australia.imageset\flag_australia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bahamas.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bahamas.imageset\flag_bahamas.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bahrain.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bahrain.imageset\flag_bahrain.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bangladesh.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bangladesh.imageset\flag_bangladesh.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_barbados.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_barbados.imageset\flag_barbados.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_belarus.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_belarus.imageset\flag_belarus.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_belize.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_belize.imageset\flag_belize.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bermuda.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bermuda.imageset\flag_bermuda.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bhutan.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bhutan.imageset\flag_bhutan.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bolivia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bolivia.imageset\flag_bolivia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_botswana.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_botswana.imageset\flag_botswana.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_brazil.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_brazil.imageset\flag_brazil.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_brunei.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_brunei.imageset\flag_brunei.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bulgaria.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_bulgaria.imageset\flag_bulgaria.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_burma.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_burma.imageset\flag_burma.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_burundi.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_burundi.imageset\flag_burundi.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_cambodia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_cambodia.imageset\flag_cambodia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_cameroon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_cameroon.imageset\flag_cameroon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_canada.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_canada.imageset\flag_canada.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_cape_verde.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_cape_verde.imageset\flag_cape_verde.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_cayman_islands.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_cayman_islands.imageset\flag_cayman_islands.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_chile.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_chile.imageset\flag_chile.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_china.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_china.imageset\flag_china.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_colombia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_colombia.imageset\flag_colombia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_comoros.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_comoros.imageset\flag_comoros.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_costa_rica.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_costa_rica.imageset\flag_costa_rica.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_croatia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_croatia.imageset\flag_croatia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_cuba.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_cuba.imageset\flag_cuba.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_czech_republic.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_czech_republic.imageset\flag_czech_republic.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_denmark.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_denmark.imageset\flag_denmark.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_djibouti.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_djibouti.imageset\flag_djibouti.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_dominica.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_dominica.imageset\flag_dominica.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_ecuador.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_ecuador.imageset\flag_ecuador.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_egypt.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_egypt.imageset\flag_egypt.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_el_salvador.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_el_salvador.imageset\flag_el_salvador.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_eritrea.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_eritrea.imageset\flag_eritrea.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_estonia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_estonia.imageset\flag_estonia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_ethiopia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_ethiopia.imageset\flag_ethiopia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_eu.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_eu.imageset\flag_eu.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_falkland_islands.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_falkland_islands.imageset\flag_falkland_islands.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_fiji.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_fiji.imageset\flag_fiji.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_french_polynesia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_french_polynesia.imageset\flag_french_polynesia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_gambia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_gambia.imageset\flag_gambia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_ghana.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_ghana.imageset\flag_ghana.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_gibraltar.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_gibraltar.imageset\flag_gibraltar.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_guatemala.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_guatemala.imageset\flag_guatemala.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_guinea.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_guinea.imageset\flag_guinea.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_guyana.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_guyana.imageset\flag_guyana.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_haiti.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_haiti.imageset\flag_haiti.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_honduras.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_honduras.imageset\flag_honduras.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_hong_kong.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_hong_kong.imageset\flag_hong_kong.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_hungary.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_hungary.imageset\flag_hungary.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_iceland.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_iceland.imageset\flag_iceland.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_india.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_india.imageset\flag_india.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_indonesia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_indonesia.imageset\flag_indonesia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_iran.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_iran.imageset\flag_iran.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_iraq.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_iraq.imageset\flag_iraq.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_israel.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_israel.imageset\flag_israel.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_jamaica.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_jamaica.imageset\flag_jamaica.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_japan.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_japan.imageset\flag_japan.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_jordan.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_jordan.imageset\flag_jordan.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_kazakhstan.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_kazakhstan.imageset\flag_kazakhstan.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_kenya.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_kenya.imageset\flag_kenya.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_kuwait.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_kuwait.imageset\flag_kuwait.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_laos.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_laos.imageset\flag_laos.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_latvia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_latvia.imageset\flag_latvia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_lebanon.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_lebanon.imageset\flag_lebanon.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_lesotho.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_lesotho.imageset\flag_lesotho.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_liberia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_liberia.imageset\flag_liberia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_libya.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_libya.imageset\flag_libya.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_lithuania.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_lithuania.imageset\flag_lithuania.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_macau.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_macau.imageset\flag_macau.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_macedonia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_macedonia.imageset\flag_macedonia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_malawi.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_malawi.imageset\flag_malawi.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_malaysia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_malaysia.imageset\flag_malaysia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_maldives.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_maldives.imageset\flag_maldives.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_mali.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_mali.imageset\flag_mali.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_malta.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_malta.imageset\flag_malta.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_mauritania.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_mauritania.imageset\flag_mauritania.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_mauritius.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_mauritius.imageset\flag_mauritius.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_mexico.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_mexico.imageset\flag_mexico.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_moldova.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_moldova.imageset\flag_moldova.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_mongolia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_mongolia.imageset\flag_mongolia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_morocco.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_morocco.imageset\flag_morocco.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_namibia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_namibia.imageset\flag_namibia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_nepal.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_nepal.imageset\flag_nepal.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_new_zealand.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_new_zealand.imageset\flag_new_zealand.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_nicaragua.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_nicaragua.imageset\flag_nicaragua.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_nigeria.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_nigeria.imageset\flag_nigeria.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_north_korea.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_north_korea.imageset\flag_north_korea.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_norway.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_norway.imageset\flag_norway.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_oman.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_oman.imageset\flag_oman.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_pakistan.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_pakistan.imageset\flag_pakistan.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_panama.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_panama.imageset\flag_panama.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_papua_new_guinea.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_papua_new_guinea.imageset\flag_papua_new_guinea.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_paraguay.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_paraguay.imageset\flag_paraguay.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_peru.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_peru.imageset\flag_peru.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_philippines.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_philippines.imageset\flag_philippines.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_poland.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_poland.imageset\flag_poland.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_qatar.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_qatar.imageset\flag_qatar.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_romania.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_romania.imageset\flag_romania.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_russia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_russia.imageset\flag_russia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_rwanda.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_rwanda.imageset\flag_rwanda.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_saint_helena.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_saint_helena.imageset\flag_saint_helena.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_samoa.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_samoa.imageset\flag_samoa.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_sao_tome_and_principe.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_sao_tome_and_principe.imageset\flag_sao_tome_and_principe.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_saudi_arabia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_saudi_arabia.imageset\flag_saudi_arabia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_seychelles.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_seychelles.imageset\flag_seychelles.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_sierra_leone.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_sierra_leone.imageset\flag_sierra_leone.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_singapore.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_singapore.imageset\flag_singapore.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_slovakia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_slovakia.imageset\flag_slovakia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_slovenia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_slovenia.imageset\flag_slovenia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_solomon_islands.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_solomon_islands.imageset\flag_solomon_islands.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_somalia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_somalia.imageset\flag_somalia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_south_africa.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_south_africa.imageset\flag_south_africa.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_south_korea.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_south_korea.imageset\flag_south_korea.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_sri_lanka.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_sri_lanka.imageset\flag_sri_lanka.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_sudan.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_sudan.imageset\flag_sudan.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_swaziland.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_swaziland.imageset\flag_swaziland.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_sweden.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_sweden.imageset\flag_sweden.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_switzerland.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_switzerland.imageset\flag_switzerland.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_syria.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_syria.imageset\flag_syria.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_taiwan.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_taiwan.imageset\flag_taiwan.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_tanzania.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_tanzania.imageset\flag_tanzania.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_thailand.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_thailand.imageset\flag_thailand.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_tonga.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_tonga.imageset\flag_tonga.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_trinidad_and_tobago.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_trinidad_and_tobago.imageset\flag_trinidad_and_tobago.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_tunisia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_tunisia.imageset\flag_tunisia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_turkey.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_turkey.imageset\flag_turkey.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_uganda.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_uganda.imageset\flag_uganda.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_ukraine.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_ukraine.imageset\flag_ukraine.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_united_arab_emirates.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_united_arab_emirates.imageset\flag_united_arab_emirates.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_united_kingdom.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_united_kingdom.imageset\flag_united_kingdom.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_uruguay.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_uruguay.imageset\flag_uruguay.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_usa.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_usa.imageset\flag_usa.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_vanuatu.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_vanuatu.imageset\flag_vanuatu.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_venezuela.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_venezuela.imageset\flag_venezuela.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_vietnam.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_vietnam.imageset\flag_vietnam.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_white.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_white.imageset\flag_white.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_yemen.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_yemen.imageset\flag_yemen.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_zambia.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_zambia.imageset\flag_zambia.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_zimbabwe.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Flags.xcassets\flag_zimbabwe.imageset\flag_zimbabwe.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-1024.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Icon-87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Media.xcassets\AppIcons.appiconset\" />
+    <Folder Include="Media.xcassets\LaunchImages.launchimage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

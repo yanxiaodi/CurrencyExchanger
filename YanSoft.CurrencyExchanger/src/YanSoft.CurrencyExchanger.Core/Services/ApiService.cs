@@ -17,9 +17,9 @@ namespace YanSoft.CurrencyExchanger.Core.Services
             _httpClientService = httpClientService;
         }
 
-        public async Task<ResponseInfo<CurrencyRatesResponse>> GetLatestRates(string sourceCode, string targetCodes)
+        public async Task<ResponseInfo<CurrencyRatesResponse>> GetLatestRates(string baseCode, string targetCodes)
         {
-            var url = $"{AppConfigurations.ApiUrl}GetLatestRates?sourceCode={sourceCode}&targetCodes={targetCodes}";
+            var url = $"{AppConfigurations.ApiUrl}GetLatestRates?baseCode={baseCode}&targetCodes={targetCodes}&api-version=1.0";
             var result = new ResponseInfo<CurrencyRatesResponse>();
             try
             {

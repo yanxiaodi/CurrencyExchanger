@@ -11,6 +11,7 @@ namespace YanSoft.CurrencyExchanger.Core.Common
     public class GlobalContext
     {
         public List<CurrencyItem> AllCurrencyItemList { get; set; }
+        public CurrencyExchangeBindableItem CurrentBaseCurrency { get; set; }
 
         public void Initialize()
         {

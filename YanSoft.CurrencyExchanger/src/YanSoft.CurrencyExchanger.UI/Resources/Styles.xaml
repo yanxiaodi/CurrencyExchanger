@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="YanSoft.CurrencyExchanger.UI.Resources.Styles"
+                    xmlns:local="clr-namespace:YanSoft.CurrencyExchanger.UI.Resources"
+                    xmlns:converters="clr-namespace:YanSoft.CurrencyExchanger.Core.Converters;assembly=YanSoft.CurrencyExchanger.Core"
+                    xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit">
+
+    <Style x:Key="myListItemTitleTextStyle" TargetType="Label" BaseResourceKey="ListItemTextStyle">
+        <Setter Property="FontSize" Value="Medium" />
+        <Setter Property="FontAttributes" Value="None" />
+    </Style>
+    <Style x:Key="myListItemDetailTextStyle" TargetType="Label" BaseResourceKey="ListItemDetailTextStyle">
+        <Setter Property="FontSize" Value="Small" />
+    </Style>
+
+    
+    <OnPlatform x:Key="FontAwesomeSolidString" x:TypeArguments="x:String">
+        <On Platform="iOS" Value="Font Awesome 5 Free" />
+        <On Platform="Android" Value="Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free Solid" />
+        <On Platform="UWP" Value="Assets/fonts/Font Awesome 5 Free-Solid-900.otf#Font Awesome 5 Free" />
+    </OnPlatform>
+    <Style x:Key="FontAwesomeSolidLabel" TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesomeSolidString}" />
+    </Style>
+    <Style x:Key="FontAwesomeSolidButton" TargetType="Button">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesomeSolidString}" />
+    </Style>
+
+
+    <OnPlatform x:Key="FontAwesomeRegularString" x:TypeArguments="x:String">
+        <On Platform="iOS" Value="Font Awesome 5 Free" />
+        <On Platform="Android" Value="Font Awesome 5 Free-Regular-400.otf#Font Awesome 5 Free Regular" />
+        <On Platform="UWP" Value="Assets/fonts/Font Awesome 5 Free-Regular-400.otf#Font Awesome 5 Free" />
+    </OnPlatform>
+    <Style x:Key="FontAwesomeRegularLabel" TargetType="Label">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesomeRegularString}" />
+    </Style>
+    <Style x:Key="FontAwesomeRegularButton" TargetType="Button">
+        <Setter Property="FontFamily" Value="{StaticResource FontAwesomeRegularString}" />
+    </Style>
+</ResourceDictionary>

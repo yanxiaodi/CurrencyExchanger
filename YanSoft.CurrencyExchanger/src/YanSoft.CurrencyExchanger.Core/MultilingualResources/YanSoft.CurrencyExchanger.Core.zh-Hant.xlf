@@ -662,6 +662,50 @@
           <source>Mozambican Metical</source>
           <target state="new">Mozambican Metical</target>
         </trans-unit>
+        <trans-unit id="AddCurrencies_SearchEntryPlaceholder" translate="yes" xml:space="preserve">
+          <source>currency code or currency name</source>
+          <target state="new">currency code or currency name</target>
+        </trans-unit>
+        <trans-unit id="About_Disclaimer_Content" translate="yes" xml:space="preserve">
+          <source>The exchange rate data of this app is from www.currencyconverterapi.com. Your use of this application and rely on the content of any risks and consequences should be on its own, this application and the developer does not take any legal responsibility.</source>
+          <target state="new">The exchange rate data of this app is from www.currencyconverterapi.com. Your use of this application and rely on the content of any risks and consequences should be on its own, this application and the developer does not take any legal responsibility.</target>
+        </trans-unit>
+        <trans-unit id="About_Disclaimer_Title" translate="yes" xml:space="preserve">
+          <source>Disclaimer</source>
+          <target state="new">Disclaimer</target>
+        </trans-unit>
+        <trans-unit id="About_Feedback" translate="yes" xml:space="preserve">
+          <source>feedback</source>
+          <target state="new">feedback</target>
+        </trans-unit>
+        <trans-unit id="About_LikeMe" translate="yes" xml:space="preserve">
+          <source>like me!</source>
+          <target state="new">like me!</target>
+        </trans-unit>
+        <trans-unit id="About_Share" translate="yes" xml:space="preserve">
+          <source>share</source>
+          <target state="new">share</target>
+        </trans-unit>
+        <trans-unit id="About_Share_Content" translate="yes" xml:space="preserve">
+          <source>I recommend Currency Exchanger to get latest currency rates.</source>
+          <target state="new">I recommend Currency Exchanger to get latest currency rates.</target>
+        </trans-unit>
+        <trans-unit id="Toast_NetworkError" translate="yes" xml:space="preserve">
+          <source>Network unavailable.</source>
+          <target state="new">Network unavailable.</target>
+        </trans-unit>
+        <trans-unit id="Toast_Title_Error" translate="yes" xml:space="preserve">
+          <source>Error</source>
+          <target state="new">Error</target>
+        </trans-unit>
+        <trans-unit id="Toast_Title_Info" translate="yes" xml:space="preserve">
+          <source>Info</source>
+          <target state="new">Info</target>
+        </trans-unit>
+        <trans-unit id="Toast_Title_Warning" translate="yes" xml:space="preserve">
+          <source>Warning</source>
+          <target state="new">Warning</target>
+        </trans-unit>
       </group>
     </body>
   </file>

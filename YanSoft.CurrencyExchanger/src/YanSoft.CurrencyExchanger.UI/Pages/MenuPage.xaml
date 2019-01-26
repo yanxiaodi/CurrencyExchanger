@@ -8,10 +8,11 @@
                       xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
                       x:Name="MainContent"
                       xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
-                      Icon="hamburger.png">
+                      Icon="hamburger.png"
+                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core">
     <ContentPage.Content>
         <StackLayout>
-            <StackLayout HeightRequest="40">
+            <StackLayout Orientation="Horizontal" Padding="20,20,20,10">
                 <StackLayout.IsVisible>
                     <OnPlatform x:TypeArguments="x:Boolean">
                         <On Platform="Android, iOS" Value="True" />
@@ -23,9 +24,11 @@
                         <On Platform="iOS" Value="0,20,0,0" />
                     </OnPlatform>
                 </StackLayout.Margin>
-                <Label Text="Currency Exchanger" Margin="10" VerticalOptions="Center" FontSize="Large"></Label>
+                <Image Source="{ext:ImageResource YanSoft.CurrencyExchanger.Core.Assets.images.StoreLogo.png}"
+                   WidthRequest="30" HeightRequest="30" VerticalOptions="CenterAndExpand"></Image>
+                <Label Text="Currency Exchanger" Margin="10,0,0,0" VerticalOptions="CenterAndExpand" FontSize="Large"></Label>
             </StackLayout>
-            <ListView ItemsSource="{Binding MenuItemList}" 
+            <!--<ListView ItemsSource="{Binding MenuItemList}" 
                       SelectedItem="{Binding SelectedMenuItem, Mode=TwoWay}">
                 <ListView.Behaviors>
                     <behaviors:EventHandlerBehavior EventName="ItemSelected">
@@ -44,27 +47,28 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>
-            <!--<ListView ItemsSource="{Binding MenuItemList}">
+            </ListView>-->
+            <ListView ItemsSource="{Binding MenuItemList}" SelectionMode="None">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        -->
-            <!--<TextCell Text="{Binding}" Command="{Binding BindingContext.DataContext.ShowDetailPageAsyncCommand, Source={x:Reference MainContent}}" CommandParameter="{Binding}"></TextCell>-->
-            <!--<ViewCell>
-                            <StackLayout Padding="10">
+                        <ViewCell>
+                            <StackLayout Padding="12" Orientation="Horizontal" BackgroundColor="Transparent">
                                 <StackLayout.GestureRecognizers>
-                                    <TapGestureRecognizer 
-                                        Command="{Binding BindingContext.DataContext.ShowDetailPageAsyncCommand, Source={x:Reference MainContent}}"
+                                    <TapGestureRecognizer Command="{Binding BindingContext.DataContext.ShowDetailPageAsyncCommand, Source={x:Reference MainContent}}"
                                         CommandParameter="{Binding}">
                                     </TapGestureRecognizer>
                                 </StackLayout.GestureRecognizers>
-                                <Label Text="{Binding}" VerticalOptions="Center"></Label>
+                                <Label Text="{Binding Icon}" FontAttributes="Bold" 
+                                       WidthRequest="30" HorizontalOptions="Start" 
+                                       HorizontalTextAlignment="Center" VerticalOptions="Center"
+                                       Style="{StaticResource FontAwesomeSolidLabel}">
+                                </Label>
+                                <Label Text="{Binding Name}" VerticalOptions="Center"></Label>
                             </StackLayout>
-                        </ViewCell>-->
-            <!--
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView>-->
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </views:MvxContentPage>

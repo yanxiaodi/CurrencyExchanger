@@ -15,17 +15,28 @@
     <Warning Text="$(MSBuildProjectFile) is Multilingual build enabled, but the Multilingual App Toolkit is unavailable during the build. If building with Visual Studio, please check to ensure that toolkit is properly installed." />
   </Target>
   <ItemGroup>
+    <None Remove="Assets\images\StoreLogo.png" />
+    <None Remove="MultilingualResources\YanSoft.CurrencyExchanger.Core.en-US.xlf" />
     <None Remove="MultilingualResources\YanSoft.CurrencyExchanger.Core.zh-Hans.xlf" />
     <None Remove="MultilingualResources\YanSoft.CurrencyExchanger.Core.zh-Hant.xlf" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Assets\images\StoreLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AppCenter.Analytics" Version="1.12.0" />
+    <PackageReference Include="Microsoft.AppCenter.Crashes" Version="1.12.0" />
+    <PackageReference Include="Microsoft.AppCenter.Push" Version="1.12.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="2.2.0" />
     <PackageReference Include="MvvmCross" Version="6.2.2" />
     <PackageReference Include="MvvmCross.CodeAnalysis" Version="6.2.2" />
     <PackageReference Include="Plugin.Multilingual" Version="1.1.6-beta" />
+    <PackageReference Include="Toasts.Forms.Plugin" Version="3.3.2" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.0.1" />
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
   </ItemGroup>
   <ItemGroup>
+    <XliffResource Include="MultilingualResources\YanSoft.CurrencyExchanger.Core.en-US.xlf" />
     <XliffResource Include="MultilingualResources\YanSoft.CurrencyExchanger.Core.zh-Hans.xlf" />
     <XliffResource Include="MultilingualResources\YanSoft.CurrencyExchanger.Core.zh-Hant.xlf" />
   </ItemGroup>
@@ -43,7 +54,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\" />
     <Folder Include="Exceptions\" />
   </ItemGroup>
 </Project>

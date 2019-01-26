@@ -12,7 +12,7 @@ using Xamarin.Forms.Xaml;
 namespace YanSoft.CurrencyExchanger.UI.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail, NoHistory = true, Title = "Currency Exchanger")]
+    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail, Title = "Currency Exchanger")]
     public partial class HomePage : MvxContentPage<HomeViewModel>
     {
         public HomePage()
@@ -29,6 +29,19 @@ namespace YanSoft.CurrencyExchanger.UI.Pages
                 navigationPage.BarTextColor = Color.White;
                 navigationPage.BarBackgroundColor = (Color)Application.Current.Resources["PrimaryColor"];
             }
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            if (BindingContext.DataContext is HomeViewModel vm)
+            {
+                if (vm.IsCalculatorDialogVisible)
+                {
+                    vm.IsCalculatorDialogVisible = false;
+                    return true;
+                }
+            }
+            return base.OnBackButtonPressed();
         }
     }
 }

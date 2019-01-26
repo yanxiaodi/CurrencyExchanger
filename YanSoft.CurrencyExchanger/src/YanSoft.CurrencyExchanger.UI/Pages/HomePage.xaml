@@ -7,12 +7,159 @@
     xmlns:local="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
     x:Class="YanSoft.CurrencyExchanger.UI.Pages.HomePage"
     xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels.Home;assembly=YanSoft.CurrencyExchanger.Core"
->
+                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+                      xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+                      x:Name="MainContent"
+                      xmlns:animation="clr-namespace:YanSoft.CurrencyExchanger.Core.AnimationHelper;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:controlHelper="clr-namespace:YanSoft.CurrencyExchanger.Core.ControlHelper;assembly=YanSoft.CurrencyExchanger.Core"
+                      xmlns:controls="clr-namespace:YanSoft.CurrencyExchanger.Core.Controls;assembly=YanSoft.CurrencyExchanger.Core">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add Currency" Order="Primary"  Priority="0" Command="{Binding NavigateToAddCurrenciesAsyncCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="outline_add_black_48dp.png" />
+                    <On Platform="Android" Value="outline_add_white_48dp.png"/>
+                    <On Platform="UWP" Value="Assets/icons/outline_add_black_48dp.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+        <ToolbarItem Text="Edit" Order="Primary"  Priority="0" Command="{Binding NavigateToEditListAsyncCommand}">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="outline_list_black_36dp.png" />
+                    <On Platform="Android" Value="outline_list_white_48dp.png"/>
+                    <On Platform="UWP" Value="Assets/icons/outline_list_black_48dp.png" />
+                </OnPlatform>
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout>
-            <Button Text="Refresh" Command="{Binding GetLatestRatesAsyncCommand}"></Button>
-            <ListView ItemsSource="{Binding CurrencyList}" ItemTemplate="{StaticResource CurrencyListItemDataTemplate}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <ListView Grid.Row="0" ItemsSource="{Binding CurrencyList}" 
+                      controlHelper:ListViewIsPullToRefreshEnabled.Enabled="{Binding IsPullToRefreshEnabled}" 
+                      RefreshCommand="{Binding GetLatestRatesAsyncCommand}"
+                      controlHelper:ListViewIsRefreshing.IsRefreshing="{Binding IsRefreshing}">
+                <ListView.Margin>
+                    <OnPlatform UWP="20" Android="6" iOS="6" ></OnPlatform>
+                </ListView.Margin>
+                <ListView.RowHeight>
+                    <OnPlatform Android="60" iOS="60" ></OnPlatform>
+                </ListView.RowHeight>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem CommandParameter="{Binding}" Command="{Binding BindingContext.DataContext.DeleteCurrencyAsyncCommand, Source={x:Reference MainContent}}"
+               Text="Delete" IsDestructive="True" >
+                                </MenuItem>
+                            </ViewCell.ContextActions>
+                            <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                                <StackLayout.Padding>
+                                    <OnPlatform x:TypeArguments="Thickness">
+                                        <On Platform="iOS, Android" Value="4" />
+                                        <On Platform="UWP" Value="10" />
+                                    </OnPlatform>
+                                </StackLayout.Padding>
+                                
+                                <Image Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.DataContext.SetBaseCurrencyAsyncCommand, Source={x:Reference MainContent}}"
+                                                          CommandParameter="{Binding}"></TapGestureRecognizer>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                                <StackLayout Orientation="Vertical" Spacing="0" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Padding="6,0,6,0">
+                                    <StackLayout.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.DataContext.ShowCalculatorCommand, Source={x:Reference MainContent}}"
+                                                          CommandParameter="{Binding}">
+                                        </TapGestureRecognizer>
+                                    </StackLayout.GestureRecognizers>
+                                    <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+                                        <Label Text="{Binding TargetCode}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}" ></Label>
+                                        <Label Text="{Binding AmountText}" HorizontalOptions="EndAndExpand" Style="{StaticResource myListItemTitleTextStyle}" ></Label>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
+                                        <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                        <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="EndAndExpand"
+                                                     IsVisible="{Binding IsBaseCurrency, Converter={StaticResource BaseCurrencyVisibleConverter}}">
+                                            <Label Text="1" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                            <Label Text="{Binding BaseCode}" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                            <Label Text="=" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                            <Label Text="{Binding Rate}" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                            <Label Text="{Binding TargetCode}" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
             </ListView>
-        </StackLayout>
+            <StackLayout Grid.Row="0" Grid.RowSpan="2" Spacing="0" animation:IsVisibleFadeInAndOutAnimation.IsVisible="{Binding IsCalculatorDialogVisible}"
+                  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <StackLayout VerticalOptions="FillAndExpand" Spacing="0" BackgroundColor="Black" Opacity="0.5"></StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="0">
+                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" BackgroundColor="Black" Opacity="0.5"></StackLayout>
+                    <!--<ContentView BackgroundColor="Black" Opacity="0.5" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"></ContentView>-->
+                    <Grid HorizontalOptions="Center" VerticalOptions="Center" Padding="6" BackgroundColor="White" WidthRequest="300">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Spacing="2" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                            <Label Text="{Binding CalcExpression}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" Style="{DynamicResource BodyStyle}"/>
+                            <Label Text="{Binding CalcResult}" HorizontalOptions="EndAndExpand" HorizontalTextAlignment="End" Style="{DynamicResource SubtitleStyle}"/>
+                        </StackLayout>
+                        <Button x:Name="btnClear"       Text="C" FontSize="25" Grid.Row="1" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Command="{Binding ClearCalcExpressionCommand}"/>
+                        <Button x:Name="btnBack"        Text="←" FontSize="25" Grid.Row="1" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Grid.ColumnSpan="2"  Command="{Binding BackspaceCommand}"/>
+                        <Button x:Name="btnDivide"      Text="/" FontSize="25" Grid.Row="1" Grid.Column="3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="/"/>
+                        <Button x:Name="btnMultiply"    Text="*" FontSize="25" Grid.Row="2" Grid.Column="3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="*"/>
+                        <Button x:Name="btn7"           Text="7" FontSize="25" Grid.Row="2" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="7"/>
+                        <Button x:Name="btn8"           Text="8" FontSize="25" Grid.Row="2" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="8"/>
+                        <Button x:Name="btn9"           Text="9" FontSize="25" Grid.Row="2" Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="9"/>
+                        <Button x:Name="btnSubtract"    Text="-" FontSize="25" Grid.Row="3" Grid.Column="3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="-"/>
+                        <Button x:Name="btn4"           Text="4" FontSize="25" Grid.Row="3" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="4"/>
+                        <Button x:Name="btn5"           Text="5" FontSize="25" Grid.Row="3" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="5"/>
+                        <Button x:Name="btn6"           Text="6" FontSize="25" Grid.Row="3" Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="6"/>
+                        <Button x:Name="btnAdd"         Text="+" FontSize="25" Grid.Row="4" Grid.Column="3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="+"/>
+                        <Button x:Name="btn1"           Text="1" FontSize="25" Grid.Row="4" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="1"/>
+                        <Button x:Name="btn2"           Text="2" FontSize="25" Grid.Row="4" Grid.Column="1" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="2"/>
+                        <Button x:Name="btn3"           Text="3" FontSize="25" Grid.Row="4" Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="3"/>
+                        <Button x:Name="btnEqual"       Text="=" FontSize="25" Grid.Row="5" Grid.Column="3" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding ComputeAnswerCommand}"/>
+                        <Button x:Name="btn0"           Text="0" FontSize="25" Grid.Row="5" Grid.Column="0" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Grid.ColumnSpan="2" Command="{Binding AppendCalculatorTextCommand}" CommandParameter="0"/>
+                        <Button x:Name="btnPoint"       Text="." FontSize="25" Grid.Row="5" Grid.Column="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  Command="{Binding AppendCalculatorTextCommand}" CommandParameter="."/>
+                        <Grid Grid.Row="6"              Grid.ColumnSpan="4">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Button Text="Cancel" HorizontalOptions="FillAndExpand" Grid.Column="0" Command="{Binding CancelCalculatorCommand}" />
+                            <Button Text="Accept" HorizontalOptions="FillAndExpand" Grid.Column="1" Command="{Binding SetCurrencyAmountAsyncCommand}"/>
+
+                        </Grid>
+                    </Grid>
+                    <StackLayout HorizontalOptions="FillAndExpand" Spacing="0" BackgroundColor="Black" Opacity="0.5"></StackLayout>
+
+                </StackLayout>
+                <StackLayout VerticalOptions="FillAndExpand" Spacing="0" BackgroundColor="Black" Opacity="0.5"></StackLayout>
+
+            </StackLayout>
+            <controls:AdBanner Grid.Row="1"/>
+        </Grid>
     </ContentPage.Content>
 </views:MvxContentPage>

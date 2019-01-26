@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="0ed6a415-edb3-484f-ab7f-c35c8f584c3e" Publisher="CN=YourNameHere" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="0ed6a415-edb3-484f-ab7f-c35c8f584c3e" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="4715YanXiaodi.51204F4D4DA1D" Publisher="CN=87490C71-920B-4DD3-ABC0-601F2F581DB3" Version="3.1.9.0" />
+  <mp:PhoneIdentity PhoneProductId="2c51921f-6320-4da0-a6cc-52bbfd15d005" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>APPNAME</DisplayName>
-    <PublisherDisplayName>YourNameHere</PublisherDisplayName>
+    <DisplayName>Currency Exchanger</DisplayName>
+    <PublisherDisplayName>YanXiaodi</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>

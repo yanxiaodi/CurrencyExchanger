@@ -22,7 +22,11 @@ namespace YanSoft.CurrencyExchanger.Core.MarkupExtensions
         {
             if (Source == null)
                 return null;
-
+            //var assembly = typeof(ImageResourceExtension).GetTypeInfo().Assembly;
+            //foreach (var res in assembly.GetManifestResourceNames())
+            //{
+            //    System.Diagnostics.Debug.WriteLine("found resource: " + res);
+            //}
             // Do your translation lookup here, using whatever method you require
             var imageSource = ImageSource.FromResource(Source, typeof(ImageResourceExtension).GetTypeInfo().Assembly);
 

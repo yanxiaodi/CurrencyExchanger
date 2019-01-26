@@ -9,7 +9,10 @@
     <PackageReference Include="MvvmCross" Version="6.2.2" />
     <PackageReference Include="MvvmCross.CodeAnalysis" Version="6.2.2" />
     <PackageReference Include="MvvmCross.Forms" Version="6.2.2" />
+    <PackageReference Include="Syncfusion.Xamarin.SfChart" Version="16.4.0.47" />
+    <PackageReference Include="Syncfusion.Xamarin.SfListView" Version="16.4.0.47" />
     <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xamarin.Forms.InputKit" Version="2.3.5" />
   </ItemGroup>
   
   <ItemGroup>
@@ -20,8 +23,14 @@
     <Compile Update="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Pages\AddCurrenciesPage.xaml.cs">
+      <DependentUpon>AddCurrenciesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Pages\HomePage.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Resources\Styles.xaml.cs">
+      <DependentUpon>Styles.xaml</DependentUpon>
     </Compile>
     <Compile Update="Resources\CustomDataTemplates.xaml.cs">
       <DependentUpon>CustomDataTemplates.xaml</DependentUpon>
@@ -32,13 +41,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Pages\CurrencyExchangeItemListPage.xaml">
+    <EmbeddedResource Update="Pages\AboutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\AddCurrenciesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\EditListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\MasterDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Pages\MenuPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Pages\SettingsPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

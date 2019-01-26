@@ -3,34 +3,60 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                     x:Class="YanSoft.CurrencyExchanger.UI.Resources.CustomDataTemplates"
                     xmlns:local="clr-namespace:YanSoft.CurrencyExchanger.UI.Resources"
-                    xmlns:converters="clr-namespace:YanSoft.CurrencyExchanger.Core.Converters;assembly=YanSoft.CurrencyExchanger.Core">
+                    xmlns:converters="clr-namespace:YanSoft.CurrencyExchanger.Core.Converters;assembly=YanSoft.CurrencyExchanger.Core"
+                    xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit">
 
     <converters:FlagConverter x:Key="FlagConverter" />
-
-    <DataTemplate x:Key="CurrencyListItemDataTemplate">
+    <converters:BaseCurrencyVisibleConverter x:Key="BaseCurrencyVisibleConverter" />
+    <DataTemplate x:Key="CurrencyExchangeItemDataTemplate">
         <ViewCell>
-            <StackLayout BackgroundColor="#eee" Orientation="Horizontal">
-                <Image WidthRequest="100" HeightRequest="80"
-                                       Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
+            <StackLayout Orientation="Horizontal" Padding="4">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding BindingContext.DataContext.ShowCalculatorCommand, Source={x:Reference MainContent}}">
+                    </TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+                <Image HeightRequest="90" Source="{Binding TargetCurrency.Image, Converter={StaticResource FlagConverter}}">
                 </Image>
                 <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="{Binding TargetCode}" HorizontalOptions="Start"></Label>
-                        <Label Text="{Binding AmountText}" HorizontalOptions="EndAndExpand"></Label>
+                        <Label Text="{Binding TargetCode}" HorizontalOptions="Start" Style="{DynamicResource ListItemTextStyle}" ></Label>
+                        <Label Text="{Binding AmountText}" HorizontalOptions="EndAndExpand" Style="{DynamicResource ListItemTextStyle}" ></Label>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start"></Label>
+                        <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
                         <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
-                            <Label Text="1"></Label>
-                            <Label Text="{Binding SourceCode}"></Label>
-                            <Label Text="="></Label>
-                            <Label Text="{Binding Rate}"></Label>
-                            <Label Text="{Binding TargetCode}"></Label>
+                            <Label Text="1" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                            <Label Text="{Binding SourceCode}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                            <Label Text="=" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                            <Label Text="{Binding Rate}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                            <Label Text="{Binding TargetCode}" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
                         </StackLayout>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
         </ViewCell>
     </DataTemplate>
+    <!--<DataTemplate x:Key="CurrencySelectableItemDataTemplate">
+        <ViewCell>
+            <StackLayout Orientation="Horizontal" Padding="4">
+                <StackLayout.GestureRecognizers>
+                    <TapGestureRecognizer 
+                        Command="{Binding BindingContext.DataContext.SelectItemCommand, Source={x:Reference MainContent}}"
+                        CommandParameter="{Binding}">
+                    </TapGestureRecognizer>
+                </StackLayout.GestureRecognizers>
+                <input:CheckBox Text="" Type="Material"  IsChecked="{Binding IsSelected, Mode=TwoWay}"/>
+                <Image HeightRequest="90"
+                       Source="{Binding CurrencyItem.Image, Converter={StaticResource FlagConverter}}">
+                </Image>
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <Label Text="{Binding CurrencyItem.Code}" HorizontalOptions="Start" Style="{DynamicResource ListItemTextStyle}"></Label>
+                    <Label Text="{Binding CurrencyItem.Name}" HorizontalOptions="Start" Style="{DynamicResource ListItemDetailTextStyle}"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ViewCell>
+    </DataTemplate>-->
 
+    
+    
 </ResourceDictionary>
