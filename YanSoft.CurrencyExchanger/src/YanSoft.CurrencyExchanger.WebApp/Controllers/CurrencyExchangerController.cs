@@ -89,6 +89,57 @@ namespace YanSoft.CurrencyExchanger.WebApp.Controllers
             }
         }
 
+
+        [Produces("application/json")]
+        [HttpGet]
+        [ProducesResponseType(200)]
+        public async Task<ActionResult<ResponseInfo<CurrencyRatesHistoryResponse>>> GetHistoryRates(string baseCode, string targetCode, int? timestampStart, int? timestampEnd, string interval)
+        {
+            if (string.IsNullOrEmpty(baseCode) || string.IsNullOrEmpty(targetCode))
+            {
+                return new ResponseInfo<CurrencyRatesHistoryResponse>
+                {
+                    Message = "Unexpected params. 'baseCode' and 'targetCode' should not be null."
+                };
+            }
+            if(!timestampStart.HasValue || !timestampEnd.HasValue)
+            {
+                return new ResponseInfo<CurrencyRatesHistoryResponse>
+                {
+                    Message = "Unexpected params. 'timestampStart' and 'timestampEnd' should not be null."
+                };
+            }
+            if (string.IsNullOrEmpty(interval))
+            {
+                return new ResponseInfo<CurrencyRatesHistoryResponse>
+                {
+                    Message = "Unexpected params. 'interval' should not be null."
+                };
+            }
+            CurrencyRatesHistoryResponse response = await apiService.GetHistoryRates(baseCode, targetCode, timestampStart.Value, timestampEnd.Value, interval);
+            if (!response.Items.Any())
+            {
+                return new ResponseInfo<CurrencyRatesHistoryResponse>
+                {
+                    Message = "Service unavailable."
+                };
+            }
+            else
+            {
+                var result = new ResponseInfo<CurrencyRatesHistoryResponse>
+                {
+                    IsSuccess = true,
+                    Result = response
+                };
+                return result;
+            }
+        }
+
+
+
+
+
+
         // GET: api/CurrencyExchangerApi
         //[HttpGet]
         //public IEnumerable<string> Get()

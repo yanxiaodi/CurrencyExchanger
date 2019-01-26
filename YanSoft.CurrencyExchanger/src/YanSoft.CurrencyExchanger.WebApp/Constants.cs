@@ -14,5 +14,13 @@ namespace YanSoft.CurrencyExchanger.WebApp
 
 
         public const string CurrencyConverterHttpClientName = "CurrencyConverter";
+
+        public const string YahooFinanceHttpClinetName = "YahooFinance";
+
+
+        
+
+        
+
     }
 }
