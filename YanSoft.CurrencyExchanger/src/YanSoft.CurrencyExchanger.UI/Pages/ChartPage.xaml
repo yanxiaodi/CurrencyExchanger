@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YanSoft.CurrencyExchanger.UI.Pages.ChartPage"
+             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                      xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
+                      x:TypeArguments="viewModels:ChartViewModel"
+                      xmlns:syncfusionButtons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+                <syncfusionButtons:SfSegmentedControl
+                    x:Name="segmentedControl"
+    CornerRadius="15"
+    BorderColor="#2C7BBC"
+    SelectionTextColor="White"
+    Color="White"
+    FontColor="#3F3F3F"
+    VisibleSegmentsCount="5"
+                    DisplayMode="Text" ItemsSource="{Binding RangeList}"
+                                                  SelectedIndex="{Binding SelectedRangeIndex, Mode=TwoWay}"/>
+        </Grid>
+    </ContentPage.Content>
+</views:MvxContentPage>

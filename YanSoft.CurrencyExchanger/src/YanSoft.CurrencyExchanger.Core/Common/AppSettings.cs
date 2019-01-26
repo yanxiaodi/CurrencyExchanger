@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Xamarin.Essentials;
+using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Utils;
 
 namespace YanSoft.CurrencyExchanger.Core.Common
@@ -96,6 +97,16 @@ namespace YanSoft.CurrencyExchanger.Core.Common
         {
             get => Preferences.Get(IsAutoInitializeToZeroEnabledKeyName, IsAutoInitializeToZeroEnabledDefault);
             set => Preferences.Set(IsAutoInitializeToZeroEnabledKeyName, value);
+        }
+        #endregion
+
+        #region DefaultChartRange
+        const string DefaultChartRangeKeyName = "DefaultChartRange";
+        const string DefaultChartRangeDefault = HistoryRange.RangeOneMonth;
+        public string DefaultChartRange
+        {
+            get => Preferences.Get(DefaultChartRangeKeyName, DefaultChartRangeDefault);
+            set => Preferences.Set(DefaultChartRangeKeyName, value);
         }
         #endregion
 

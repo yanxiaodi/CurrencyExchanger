@@ -64,7 +64,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                     await _navigationService.Navigate<HomeViewModel>();
                     break;
                 case "Charts":
-                    await _navigationService.Navigate<HomeViewModel>();
+                    await _navigationService.Navigate<ChartViewModel, CurrencyExchangeBindableItem>(new CurrencyExchangeBindableItem());
                     break;
                 case "Settings":
                     await _navigationService.Navigate<SettingsViewModel>();

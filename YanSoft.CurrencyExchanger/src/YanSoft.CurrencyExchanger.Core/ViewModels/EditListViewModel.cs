@@ -16,7 +16,6 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         private readonly IMvxNavigationService _navigationService;
         private readonly ICurrencyService _currencyService;
         private readonly GlobalContext _globalContext;
-        private readonly IDataService<CurrencyExchangeItem> _dataService;
         public EditListViewModel(IMvxNavigationService navigationService,
             ICurrencyService currencyService, GlobalContext globalContext,
             IDataService<CurrencyExchangeItem> dataService)
@@ -24,7 +23,6 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             _navigationService = navigationService;
             _currencyService = currencyService;
             _globalContext = globalContext;
-            _dataService = dataService;
         }
 
         #region Properties
