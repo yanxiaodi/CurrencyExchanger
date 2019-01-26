@@ -1,7 +1,5 @@
 # CurrencyExchanger
 
-CurrencyExchanger.WebApi [![Build status](https://dev.azure.com/xiaodiyan/YanSoft.CurrencyExchanger/_apis/build/status/CurrencyExchanger-CI-WebApi)](https://dev.azure.com/xiaodiyan/YanSoft.CurrencyExchanger/_build/latest?definitionId=39)
-
 CurrencyExchanger.UWP [![Build status](https://dev.azure.com/xiaodiyan/YanSoft.CurrencyExchanger/_apis/build/status/CurrencyExchanger-Universal%20Windows%20Platform-CI)](https://dev.azure.com/xiaodiyan/YanSoft.CurrencyExchanger/_build/latest?definitionId=41)
 
 CurrencyExchanger.Droid [![Build status](https://dev.azure.com/xiaodiyan/YanSoft.CurrencyExchanger/_apis/build/status/CurrencyExchanger-Xamarin.Android-CI)](https://dev.azure.com/xiaodiyan/YanSoft.CurrencyExchanger/_build/latest?definitionId=42)
