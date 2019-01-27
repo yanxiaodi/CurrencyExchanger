@@ -1,6 +1,7 @@
 using Foundation;
 using MvvmCross.Forms.Platforms.Ios.Core;
 using Syncfusion.ListView.XForms.iOS;
+using Syncfusion.XForms.iOS.Buttons;
 using UIKit;
 
 namespace YanSoft.CurrencyExchanger.iOS
@@ -11,6 +12,7 @@ namespace YanSoft.CurrencyExchanger.iOS
         public override bool FinishedLaunching(UIApplication uiApplication, NSDictionary launchOptions)
         {
             SfListViewRenderer.Init();
+            SfSegmentedControlRenderer.Init();
             return base.FinishedLaunching(uiApplication, launchOptions);
         }
     }

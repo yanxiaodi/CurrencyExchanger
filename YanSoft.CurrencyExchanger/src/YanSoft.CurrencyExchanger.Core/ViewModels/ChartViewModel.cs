@@ -93,16 +93,17 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         #region Lifecycle
         public override async void Prepare(CurrencyExchangeBindableItem parameter)
         {
-            CurrencyList = new ObservableCollection<CurrencyItem>(_globalContext.AllCurrencyItemList);
+            var list = await _currencyService.GetAllCurreciesAsync();
+            CurrencyList = new ObservableCollection<CurrencyItem>(list.Where(x => !x.IsBaseCurrency).OrderBy(x => x.SortOrder).Select(x => x.ToCurrencyExchangeBindableItem().TargetCurrency));
             if (!string.IsNullOrEmpty(parameter.BaseCode) && !string.IsNullOrEmpty(parameter.TargetCode))
             {
-                BaseCurrency = CurrencyList.FirstOrDefault(x => x.Code == parameter.BaseCode);
+                BaseCurrency = _globalContext.CurrentBaseCurrency.BaseCurrency;
                 TargetCurrency = CurrencyList.FirstOrDefault(x => x.Code == parameter.TargetCode);
             }
             else
             {
                 BaseCurrency = _globalContext.CurrentBaseCurrency.BaseCurrency;
-                TargetCurrency = (await _currencyService.GetAllCurreciesAsync()).FirstOrDefault(x => !x.IsBaseCurrency).ToCurrencyExchangeBindableItem().TargetCurrency;
+                TargetCurrency = CurrencyList.FirstOrDefault();
             }
 
             RangeList = new ObservableCollection<string>

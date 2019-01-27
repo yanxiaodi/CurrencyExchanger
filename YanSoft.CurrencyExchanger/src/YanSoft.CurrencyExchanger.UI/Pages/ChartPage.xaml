@@ -8,22 +8,55 @@
                       xmlns:syncfusionButtons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms">
     <ContentPage.Content>
         <Grid>
+            <Grid.Margin>
+                <OnPlatform UWP="20,0,20,0" Android="0" iOS="0" ></OnPlatform>
+            </Grid.Margin>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-
-                <syncfusionButtons:SfSegmentedControl
-                    x:Name="segmentedControl"
-    CornerRadius="15"
-    BorderColor="#2C7BBC"
-    SelectionTextColor="White"
-    Color="White"
-    FontColor="#3F3F3F"
-    VisibleSegmentsCount="5"
-                    DisplayMode="Text" ItemsSource="{Binding RangeList}"
-                                                  SelectedIndex="{Binding SelectedRangeIndex, Mode=TwoWay}"/>
+            <StackLayout Orientation="Horizontal" Grid.Row="0">
+                <Label HorizontalOptions="Start" VerticalOptions="Center" Text="{Binding BaseCurrency.Code}"></Label>
+                <Picker x:Name="picker" Title=""
+                                        HorizontalOptions="EndAndExpand"
+                                        VerticalOptions="Center" ItemsSource="{Binding CurrencyList}"
+                                        SelectedItem="{Binding TargetCurrency}"
+                                        ItemDisplayBinding="{Binding Name}"></Picker>
+            </StackLayout>
+            <!--<TableView Intent="Settings" Grid.Row="0">
+                <TableView.Margin>
+                    <OnPlatform UWP="20,0,20,0" Android="0" iOS="0" ></OnPlatform>
+                </TableView.Margin>
+                <TableRoot>
+                    <TableSection Title="Select Currency">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                                <Label Text="Base currency" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label HorizontalOptions="EndAndExpand" VerticalOptions="Center" Text="{Binding BaseCurrency.Code}"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                                <Label Text="Target currency" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Picker x:Name="picker" Title="Select a currency"
+                                        HorizontalOptions="EndAndExpand"
+                                        VerticalOptions="Center" ItemsSource="{Binding CurrencyList}"
+                                        SelectedItem="{Binding TargetCurrency}"
+                                        ItemDisplayBinding="{Binding Name}"></Picker>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+                </TableView>-->
+                <syncfusionButtons:SfSegmentedControl x:Name="segmentedControl" Grid.Row="1"
+                CornerRadius="5" VisibleSegmentsCount="6" DisplayMode="Text" VerticalOptions="Start"
+                ItemsSource="{Binding RangeList}" SelectedIndex="{Binding SelectedRangeIndex, Mode=TwoWay}">
+                <syncfusionButtons:SfSegmentedControl.SelectionIndicatorSettings>
+                    <syncfusionButtons:SelectionIndicatorSettings Position="Top">
+                    </syncfusionButtons:SelectionIndicatorSettings>
+                </syncfusionButtons:SfSegmentedControl.SelectionIndicatorSettings>
+            </syncfusionButtons:SfSegmentedControl>
         </Grid>
     </ContentPage.Content>
 </views:MvxContentPage>
