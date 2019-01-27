@@ -5,25 +5,56 @@
              xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
                       xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
                       x:TypeArguments="viewModels:ChartViewModel"
-                      xmlns:syncfusionButtons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms">
+                      xmlns:syncfusionButtons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+                      xmlns:syncfusionCombobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms">
     <ContentPage.Content>
         <Grid>
             <Grid.Margin>
-                <OnPlatform UWP="20,0,20,0" Android="0" iOS="0" ></OnPlatform>
+                <OnPlatform UWP="20,20,20,0" Android="0" iOS="0" ></OnPlatform>
             </Grid.Margin>
             <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <StackLayout Orientation="Horizontal" Grid.Row="0">
-                <Label HorizontalOptions="Start" VerticalOptions="Center" Text="{Binding BaseCurrency.Code}"></Label>
-                <Picker x:Name="picker" Title=""
+                <Label HorizontalOptions="Start" VerticalOptions="Center" Text="Base currency"></Label>
+                <Label HorizontalOptions="EndAndExpand" VerticalOptions="Center" Text="{Binding BaseCurrency.Code}"></Label>
+                <!--<Picker x:Name="picker" Title=""
                                         HorizontalOptions="EndAndExpand"
                                         VerticalOptions="Center" ItemsSource="{Binding CurrencyList}"
                                         SelectedItem="{Binding TargetCurrency}"
-                                        ItemDisplayBinding="{Binding Name}"></Picker>
+                                        ItemDisplayBinding="{Binding Name}"></Picker>-->
             </StackLayout>
+
+                <syncfusionCombobox:SfComboBox HorizontalOptions="Start" Grid.Row="1"
+                                               VerticalOptions="Center" IsEditableMode="False"
+                                           DisplayMemberPath="Name" DropDownItemHeight="80"
+                                               DataSource="{Binding CurrencyList}"
+                                               SelectedItem="{Binding TargetCurrency, Mode=TwoWay}">
+                    <syncfusionCombobox:SfComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="4" BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                                <!--<StackLayout.Padding>
+                                <OnPlatform x:TypeArguments="Thickness">
+                                    <On Platform="iOS, Android" Value="4" />
+                                    <On Platform="UWP" Value="10" />
+                                </OnPlatform>
+                            </StackLayout.Padding>-->
+                                <Image Margin="0"
+                                       Source="{Binding Image, Converter={StaticResource FlagConverter}}">
+                                </Image>
+                                <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Center" Padding="6,0,6,0" HorizontalOptions="FillAndExpand">
+                                    <Label Text="{Binding Code}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}"></Label>
+                                    <Label Text="{Binding Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}" ></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </DataTemplate>
+                    </syncfusionCombobox:SfComboBox.ItemTemplate>
+                </syncfusionCombobox:SfComboBox>
+
+
             <!--<TableView Intent="Settings" Grid.Row="0">
                 <TableView.Margin>
                     <OnPlatform UWP="20,0,20,0" Android="0" iOS="0" ></OnPlatform>
@@ -49,7 +80,7 @@
                     </TableSection>
                 </TableRoot>
                 </TableView>-->
-                <syncfusionButtons:SfSegmentedControl x:Name="segmentedControl" Grid.Row="1"
+                <syncfusionButtons:SfSegmentedControl x:Name="segmentedControl" Grid.Row="2"
                 CornerRadius="5" VisibleSegmentsCount="6" DisplayMode="Text" VerticalOptions="Start"
                 ItemsSource="{Binding RangeList}" SelectedIndex="{Binding SelectedRangeIndex, Mode=TwoWay}">
                 <syncfusionButtons:SfSegmentedControl.SelectionIndicatorSettings>

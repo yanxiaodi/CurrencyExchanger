@@ -140,6 +140,9 @@
     <PackageReference Include="Syncfusion.Xamarin.SfChart">
       <Version>16.4.0.47</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
+      <Version>16.4.0.48</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfListView">
       <Version>16.4.0.47</Version>
     </PackageReference>
