@@ -13,6 +13,8 @@ namespace YanSoft.CurrencyExchanger.Core.Common
         public List<CurrencyItem> AllCurrencyItemList { get; set; }
         public CurrencyExchangeBindableItem CurrentBaseCurrency { get; set; }
 
+        public Dictionary<string, string> HistoryRangeIntervalSetting { get; set; }
+
         public void Initialize()
         {
             AllCurrencyItemList = new List<CurrencyItem>()
@@ -184,6 +186,20 @@ namespace YanSoft.CurrencyExchanger.Core.Common
                 new CurrencyItem{Code = "ZMK", Name = AppResources.Currency_ZMK, Image="flag_zambia", CultureName=""},
                 new CurrencyItem{Code = "ZMW", Name = AppResources.Currency_ZMW, Image="flag_white", CultureName=""}
             };
+
+            HistoryRangeIntervalSetting = new Dictionary<string, string>
+            {
+                { HistoryRange.RangeOneDay, HistoryInterval.FiveMinutes },
+                { HistoryRange.RangeFiveDays, HistoryInterval.ThirtyMinutes },
+                { HistoryRange.RangeOneMonth, HistoryInterval.OneHour },
+                { HistoryRange.RangeThreeMonths, HistoryInterval.OneDay },
+                { HistoryRange.RangeSixMonths, HistoryInterval.OneDay },
+                { HistoryRange.RangeOneYear, HistoryInterval.OneDay },
+                { HistoryRange.RangeTwoYears, HistoryInterval.OneDay },
+                { HistoryRange.RangeFiveYears, HistoryInterval.OneDay },
+                { HistoryRange.RangeTenYears, HistoryInterval.FiveDays }
+            };
+
         }
     }
 }

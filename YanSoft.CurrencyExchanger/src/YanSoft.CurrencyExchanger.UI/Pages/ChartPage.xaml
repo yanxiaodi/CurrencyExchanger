@@ -5,8 +5,9 @@
              xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
                       xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
                       x:TypeArguments="viewModels:ChartViewModel"
-                      xmlns:syncfusionButtons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-                      xmlns:syncfusionCombobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms">
+                      xmlns:sfButtons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+                      xmlns:sfCombobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+                      xmlns:sfChart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms">
     <ContentPage.Content>
         <Grid>
             <Grid.Margin>
@@ -23,12 +24,12 @@
                 <Label HorizontalOptions="EndAndExpand" VerticalOptions="Center" Text="{Binding BaseCurrency.Code}"></Label>
             </StackLayout>
 
-                <syncfusionCombobox:SfComboBox HorizontalOptions="Start" Grid.Row="1"
+                <sfCombobox:SfComboBox HorizontalOptions="Start" Grid.Row="1"
                                                VerticalOptions="Center" IsEditableMode="False"
                                            DisplayMemberPath="Name" DropDownItemHeight="80"
                                                DataSource="{Binding CurrencyList}"
                                                SelectedItem="{Binding TargetCurrency, Mode=TwoWay}">
-                    <syncfusionCombobox:SfComboBox.ItemTemplate>
+                    <sfCombobox:SfComboBox.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Padding="4" BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
                                 <Image Margin="0"
@@ -40,9 +41,37 @@
                                 </StackLayout>
                             </StackLayout>
                         </DataTemplate>
-                    </syncfusionCombobox:SfComboBox.ItemTemplate>
-                </syncfusionCombobox:SfComboBox>
-
+                    </sfCombobox:SfComboBox.ItemTemplate>
+                </sfCombobox:SfComboBox>
+            <sfButtons:SfSegmentedControl x:Name="segmentedControl" Grid.Row="2"
+                                           HeightRequest="80"
+                CornerRadius="5" VisibleSegmentsCount="6" DisplayMode="Text" VerticalOptions="Start"
+                ItemsSource="{Binding RangeList}" SelectedIndex="{Binding SelectedRangeIndex, Mode=TwoWay}">
+                <sfButtons:SfSegmentedControl.SelectionIndicatorSettings>
+                    <sfButtons:SelectionIndicatorSettings Position="Top">
+                    </sfButtons:SelectionIndicatorSettings>
+                </sfButtons:SfSegmentedControl.SelectionIndicatorSettings>
+            </sfButtons:SfSegmentedControl>
+            <sfChart:SfChart Grid.Row="3">
+                <sfChart:SfChart.PrimaryAxis>
+                    <sfChart:DateTimeAxis>
+                    </sfChart:DateTimeAxis>
+                </sfChart:SfChart.PrimaryAxis>
+                <sfChart:SfChart.SecondaryAxis>
+                    <sfChart:NumericalAxis Interval="0.01" Minimum="0.65">
+                    </sfChart:NumericalAxis>
+                </sfChart:SfChart.SecondaryAxis>
+                <!--<sfChart:SfChart.Series>
+                    <sfChart:ColumnSeries ItemsSource="{Binding CurrencyRateHistoryItemList}"
+                                          XBindingPath="DateTime" YBindingPath="Close"/>
+                </sfChart:SfChart.Series>-->
+                <sfChart:SfChart.Series>
+                    <sfChart:HiLoOpenCloseSeries Name="OHLC" ItemsSource="{Binding CurrencyRateHistoryItemList}" XBindingPath="DateTime" Open="Open" High="High" Low="Low" Close="Close"/>
+                </sfChart:SfChart.Series>
+                <sfChart:SfChart.TechnicalIndicators>
+                    <sfChart:AccumulationDistributionIndicator SeriesName="OHLC"/>
+                </sfChart:SfChart.TechnicalIndicators>
+            </sfChart:SfChart>
 
             <!--<TableView Intent="Settings" Grid.Row="0">
                 <TableView.Margin>
@@ -69,14 +98,7 @@
                     </TableSection>
                 </TableRoot>
                 </TableView>-->
-                <syncfusionButtons:SfSegmentedControl x:Name="segmentedControl" Grid.Row="2"
-                CornerRadius="5" VisibleSegmentsCount="6" DisplayMode="Text" VerticalOptions="Start"
-                ItemsSource="{Binding RangeList}" SelectedIndex="{Binding SelectedRangeIndex, Mode=TwoWay}">
-                <syncfusionButtons:SfSegmentedControl.SelectionIndicatorSettings>
-                    <syncfusionButtons:SelectionIndicatorSettings Position="Top">
-                    </syncfusionButtons:SelectionIndicatorSettings>
-                </syncfusionButtons:SfSegmentedControl.SelectionIndicatorSettings>
-            </syncfusionButtons:SfSegmentedControl>
+                
         </Grid>
     </ContentPage.Content>
 </views:MvxContentPage>

@@ -7,6 +7,8 @@ using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Services;
 using System.Linq;
 using System.Threading.Tasks;
+using YanSoft.CurrencyExchanger.Core.Models.Dto;
+using YanSoft.CurrencyExchanger.Core.Utils;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels
 {
@@ -24,6 +26,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             _globalContext = globalContext;
             _appSettings = appSettings;
             CurrencyList = new ObservableCollection<CurrencyItem>();
+            CurrencyRateHistoryItemList = new ObservableCollection<CurrencyRateHistoryItem>();
         }
 
         
@@ -59,18 +62,6 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         }
         #endregion
 
-
-
-        //#region SelectedRange;
-        //private string _selectedRange;
-        //public string SelectedRange
-        //{
-        //    get => _selectedRange;
-        //    set => SetProperty(ref _selectedRange, value);
-        //}
-        //#endregion
-
-
         #region SelectedRangeIndex;
         private int _selectedRangeIndex;
         public int SelectedRangeIndex
@@ -88,6 +79,18 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             set => SetProperty(ref _rangeList, value);
         }
         #endregion
+
+
+
+        #region CurrencyRateHistoryItemList;
+        private ObservableCollection<CurrencyRateHistoryItem> _currencyRateHistoryItemList;
+        public ObservableCollection<CurrencyRateHistoryItem> CurrencyRateHistoryItemList
+        {
+            get => _currencyRateHistoryItemList;
+            set => SetProperty(ref _currencyRateHistoryItemList, value);
+        }
+        #endregion
+
         #endregion
 
 
@@ -129,6 +132,12 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         public override async Task Initialize()
         {
             await base.Initialize();
+            var list = await _currencyService.GetCurrencyRatesHistoryAsync(BaseCurrency, TargetCurrency, RangeList[SelectedRangeIndex]);
+            list.ForEach(x =>
+            {
+                x.DateTime = DateTimeHelper.ConvertTimestampToDateTime(x.Timestamp);
+                CurrencyRateHistoryItemList.Add(x);
+            });
 
         }
         #endregion

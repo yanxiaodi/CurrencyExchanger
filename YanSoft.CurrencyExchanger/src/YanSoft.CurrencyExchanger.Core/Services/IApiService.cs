@@ -8,6 +8,8 @@ namespace YanSoft.CurrencyExchanger.Core.Services
 {
     public interface IApiService
     {
-        Task<ResponseInfo<CurrencyRatesResponse>> GetLatestRates(string sourceCode, string targetCodes);
+        Task<ResponseInfo<CurrencyRatesResponse>> GetLatestRates(string baseCode, string targetCodes);
+
+        Task<ResponseInfo<CurrencyRatesHistoryResponse>> GetRatesHistoryByRange(string baseCode, string targetCode, string range, string interval);
     }
 }
