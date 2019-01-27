@@ -19,6 +19,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Syncfusion.XForms.UWP.ComboBox;
+using Syncfusion.SfChart.XForms.UWP;
 
 namespace YanSoft.CurrencyExchanger.UWP
 {
@@ -35,11 +36,11 @@ namespace YanSoft.CurrencyExchanger.UWP
             // you'll need to add `using System.Reflection;`
             var assembliesToInclude = new List<Assembly>
             {
-
                 //Now, add all the assemblies your app uses
                 typeof(SfListViewRenderer).GetTypeInfo().Assembly,
                 typeof(SfSegmentedControlRenderer).GetTypeInfo().Assembly,
-                typeof(SfComboBoxRenderer).GetTypeInfo().Assembly
+                typeof(SfComboBoxRenderer).GetTypeInfo().Assembly,
+                typeof(SfChartRenderer).GetTypeInfo().Assembly
             };
 
             // replaces Xamarin.Forms.Forms.Init(e);        

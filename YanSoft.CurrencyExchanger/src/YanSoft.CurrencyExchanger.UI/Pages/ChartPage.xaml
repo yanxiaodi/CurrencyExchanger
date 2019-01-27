@@ -21,11 +21,6 @@
             <StackLayout Orientation="Horizontal" Grid.Row="0">
                 <Label HorizontalOptions="Start" VerticalOptions="Center" Text="Base currency"></Label>
                 <Label HorizontalOptions="EndAndExpand" VerticalOptions="Center" Text="{Binding BaseCurrency.Code}"></Label>
-                <!--<Picker x:Name="picker" Title=""
-                                        HorizontalOptions="EndAndExpand"
-                                        VerticalOptions="Center" ItemsSource="{Binding CurrencyList}"
-                                        SelectedItem="{Binding TargetCurrency}"
-                                        ItemDisplayBinding="{Binding Name}"></Picker>-->
             </StackLayout>
 
                 <syncfusionCombobox:SfComboBox HorizontalOptions="Start" Grid.Row="1"
@@ -36,12 +31,6 @@
                     <syncfusionCombobox:SfComboBox.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Padding="4" BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
-                                <!--<StackLayout.Padding>
-                                <OnPlatform x:TypeArguments="Thickness">
-                                    <On Platform="iOS, Android" Value="4" />
-                                    <On Platform="UWP" Value="10" />
-                                </OnPlatform>
-                            </StackLayout.Padding>-->
                                 <Image Margin="0"
                                        Source="{Binding Image, Converter={StaticResource FlagConverter}}">
                                 </Image>
