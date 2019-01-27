@@ -9,6 +9,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using YanSoft.CurrencyExchanger.Core.Models.Dto;
 using YanSoft.CurrencyExchanger.Core.Utils;
+using MvvmCross.Commands;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels
 {
@@ -91,11 +92,31 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         }
         #endregion
 
+
         #endregion
 
 
         #region Lifecycle
         public override async void Prepare(CurrencyExchangeBindableItem parameter)
+        {
+            await SetCurrenciesAsync(parameter);
+
+            RangeList = new ObservableCollection<string>
+            {
+                HistoryRange.RangeOneDay,
+                HistoryRange.RangeFiveDays,
+                HistoryRange.RangeOneMonth,
+                HistoryRange.RangeThreeMonths,
+                HistoryRange.RangeSixMonths,
+                HistoryRange.RangeOneYear,
+                HistoryRange.RangeTwoYears,
+                HistoryRange.RangeFiveYears
+            };
+            //SelectedRange = _appSettings.DefaultChartRange;
+            SelectedRangeIndex = RangeList.IndexOf(_appSettings.DefaultChartRange);
+        }
+
+        private async Task SetCurrenciesAsync(CurrencyExchangeBindableItem parameter)
         {
             var list = await _currencyService.GetAllCurreciesAsync();
             list.Where(x => !x.IsBaseCurrency).ToList().ForEach(x =>
@@ -112,34 +133,52 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                 BaseCurrency = _globalContext.CurrentBaseCurrency.BaseCurrency;
                 TargetCurrency = CurrencyList.FirstOrDefault();
             }
-
-            RangeList = new ObservableCollection<string>
-            {
-                HistoryRange.RangeOneDay,
-                HistoryRange.RangeFiveDays,
-                HistoryRange.RangeOneMonth,
-                HistoryRange.RangeThreeMonths,
-                HistoryRange.RangeSixMonths,
-                HistoryRange.RangeOneYear,
-                HistoryRange.RangeTwoYears,
-                HistoryRange.RangeFiveYears,
-                HistoryRange.RangeTenYears
-            };
-            //SelectedRange = _appSettings.DefaultChartRange;
-            SelectedRangeIndex = RangeList.IndexOf(_appSettings.DefaultChartRange);
         }
 
         public override async Task Initialize()
         {
             await base.Initialize();
+            await GetHistoryRatesAsync();
+
+        }
+
+        private async Task GetHistoryRatesAsync()
+        {
+            if (CurrencyRateHistoryItemList.Any())
+            {
+                CurrencyRateHistoryItemList.Clear();
+            }
             var list = await _currencyService.GetCurrencyRatesHistoryAsync(BaseCurrency, TargetCurrency, RangeList[SelectedRangeIndex]);
             list.ForEach(x =>
             {
-                x.DateTime = DateTimeHelper.ConvertTimestampToDateTime(x.Timestamp);
-                CurrencyRateHistoryItemList.Add(x);
+                if (x.High != 0 && x.Low != 0 && x.Open != 0 && x.Close != 0)
+                {
+                    x.DateTime = DateTimeHelper.ConvertTimestampToDateTime(x.Timestamp);
+                    CurrencyRateHistoryItemList.Add(x);
+                }
             });
-
         }
+        #endregion
+
+
+        #region Commands
+
+        #region UpdateHistoryRangeAsyncCommand;
+        private IMvxAsyncCommand _updateHistoryRangeAsyncCommand;
+        public IMvxAsyncCommand UpdateHistoryRangeAsyncCommand
+        {
+            get
+            {
+                _updateHistoryRangeAsyncCommand = _updateHistoryRangeAsyncCommand ?? new MvxAsyncCommand(UpdateHistoryRangeAsync);
+                return _updateHistoryRangeAsyncCommand;
+            }
+        }
+        private async Task UpdateHistoryRangeAsync()
+        {
+            // Implement your logic here.
+            await GetHistoryRatesAsync();
+        }
+        #endregion
         #endregion
     }
 }

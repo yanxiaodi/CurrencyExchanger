@@ -14,6 +14,5 @@ namespace YanSoft.CurrencyExchanger.Core.Models
         public const string RangeOneYear = "1y";
         public const string RangeTwoYears = "2y";
         public const string RangeFiveYears = "5y";
-        public const string RangeTenYears = "10y";
     }
 }

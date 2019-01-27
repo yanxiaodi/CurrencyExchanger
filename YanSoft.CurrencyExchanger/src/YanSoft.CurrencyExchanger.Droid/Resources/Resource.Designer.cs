@@ -6229,6 +6229,1304 @@ namespace YanSoft.CurrencyExchanger.Droid
 			global::Plugin.InputKit.Resource.Styleable.ViewStubCompat_android_id = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewStubCompat_android_id;
 			global::Plugin.InputKit.Resource.Styleable.ViewStubCompat_android_inflatedId = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
 			global::Plugin.InputKit.Resource.Styleable.ViewStubCompat_android_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewStubCompat_android_layout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.abc_fade_in = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.abc_fade_in;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.abc_fade_out = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.abc_fade_out;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.abc_grow_fade_in_from_bottom = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.abc_popup_enter = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.abc_popup_enter;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.abc_popup_exit = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.abc_popup_exit;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.abc_shrink_fade_out_from_bottom = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.abc_slide_in_bottom = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.abc_slide_in_top = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.abc_slide_in_top;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.abc_slide_out_bottom = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.abc_slide_out_top = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.abc_slide_out_top;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_indeterminate_to_checked_box_inner_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_indeterminate_to_checked_box_inner_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_indeterminate_to_checked_box_outer_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_indeterminate_to_checked_box_outer_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_indeterminate_to_checked_icon_null_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_indeterminate_to_checked_icon_null_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_checked_box_inner_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_checked_box_outer_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_checked_icon_null_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_checked_icon_null_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_indeterminate_from_checked_box_inner_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_indeterminate_from_checked_box_inner_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_indeterminate_from_checked_icon_null_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_indeterminate_from_checked_icon_null_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_indeterminate_from_unchecked_box_inner_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_indeterminate_from_unchecked_box_inner_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_indeterminate_from_unchecked_box_outer_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_indeterminate_from_unchecked_box_outer_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_indeterminate_from_unchecked_icon_null_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_indeterminate_from_unchecked_icon_null_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_unchecked_box_inner_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_unchecked_check_path_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_unchecked_from_indeterminate_box_inner_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_unchecked_from_indeterminate_box_inner_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_unchecked_from_indeterminate_check_path_merged_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_unchecked_from_indeterminate_check_path_merged_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_unchecked_from_indeterminate_icon_null_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_unchecked_from_indeterminate_icon_null_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.btn_checkbox_to_unchecked_icon_null_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarDivider = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarDivider;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarItemBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarPopupTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarSize = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarSize;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarSplitStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarTabBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarTabStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarTabTextStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionBarWidgetTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionDropDownStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionMenuTextAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionMenuTextColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeCloseButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeCloseDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeCopyDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeCutDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeFindDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModePasteDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModePopupWindowStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeSelectAllDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeShareDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeSplitBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionModeWebSearchDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionOverflowButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionOverflowMenuStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionProviderClass = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionProviderClass;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.actionViewClass = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.actionViewClass;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.activityChooserViewStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.alertDialogButtonGroupStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.alertDialogCenterButtons = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.alertDialogStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.alertDialogStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.alertDialogTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.alertDialogTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.allowStacking = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.allowStacking;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.arrowHeadLength = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.arrowHeadLength;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.arrowShaftLength = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.arrowShaftLength;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.autoCompleteTextViewStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.background = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.background;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.backgroundSplit = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.backgroundSplit;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.backgroundStacked = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.backgroundStacked;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.backgroundTint = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.backgroundTint;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.backgroundTintMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.backgroundTintMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.barLength = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.barLength;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.borderlessButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.buttonBarButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.buttonBarNegativeButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.buttonBarNeutralButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.buttonBarPositiveButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.buttonBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.buttonBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.buttonPanelSideLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.buttonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.buttonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.buttonStyleSmall = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.buttonTint = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.buttonTint;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.buttonTintMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.buttonTintMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.checkboxStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.checkboxStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.@checked = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.@checked;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.checkedTextViewStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.closeIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.closeIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.closeItemLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.closeItemLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.collapseContentDescription = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.collapseContentDescription;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.collapseIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.collapseIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.color = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.color;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.colorAccent = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.colorAccent;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.colorButtonNormal = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.colorButtonNormal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.colorControlActivated = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.colorControlActivated;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.colorControlHighlight = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.colorControlHighlight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.colorControlNormal = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.colorControlNormal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.colorPrimary = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.colorPrimary;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.colorPrimaryDark = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.colorSwitchThumbNormal = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.commitIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.commitIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.contentInsetEnd = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.contentInsetEnd;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.contentInsetLeft = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.contentInsetLeft;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.contentInsetRight = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.contentInsetRight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.contentInsetStart = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.contentInsetStart;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.controlBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.controlBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.cornerradius = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.cornerradius;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.customNavigationLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.customNavigationLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.defaultQueryHint = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.defaultQueryHint;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.dialogPreferredPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.dialogTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.dialogTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.displayOptions = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.displayOptions;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.divider = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.divider;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.dividerHorizontal = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.dividerHorizontal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.dividerPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.dividerPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.dividerVertical = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.dividerVertical;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.drawableSize = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.drawableSize;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.drawerArrowStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.dropDownListViewStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.dropdownListPreferredItemHeight = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.editTextBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.editTextBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.editTextColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.editTextColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.editTextStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.editTextStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.elevation = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.elevation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.expandActivityOverflowButtonDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.gapBetweenBars = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.gapBetweenBars;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.goIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.goIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.height = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.height;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.hideOnContentScroll = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.homeAsUpIndicator = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.homeLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.homeLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.icon = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.icon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.iconifiedByDefault = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.imageButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.imageButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.indeterminateProgressStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.initialActivityCount = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.initialActivityCount;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.isLightTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.isLightTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.isthreestate = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.isthreestate;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.itemPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.itemPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.layout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.listChoiceBackgroundIndicator = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.listDividerAlertDialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.listItemLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.listItemLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.listLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.listLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.listPopupWindowStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.listPreferredItemHeight = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.listPreferredItemHeightLarge = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.listPreferredItemHeightSmall = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.listPreferredItemPaddingLeft = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.listPreferredItemPaddingRight = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.logo = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.logo;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.logoDescription = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.logoDescription;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.maxButtonHeight = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.maxButtonHeight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.measureWithLargestChild = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.multiChoiceItemLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.navigationContentDescription = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.navigationContentDescription;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.navigationIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.navigationIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.navigationMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.navigationMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.overlapAnchor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.overlapAnchor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.paddingEnd = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.paddingEnd;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.paddingStart = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.paddingStart;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.panelBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.panelBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.panelMenuListTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.panelMenuListWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.popupMenuStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.popupMenuStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.popupTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.popupTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.popupWindowStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.popupWindowStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.preserveIconSpacing = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.progressBarPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.progressBarPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.progressBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.progressBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.queryBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.queryBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.queryHint = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.queryHint;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.radioButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.radioButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.ratingBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.ratingBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.ratingBarStyleIndicator = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.ratingBarStyleSmall = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.searchHintIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.searchHintIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.searchIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.searchIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.searchViewStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.searchViewStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.seekBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.seekBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentBackColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentBackColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentBorderColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentBorderColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentBorderThickness = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentBorderThickness;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentCornerRadius = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentCornerRadius;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentDisplayMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentDisplayMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentPosition = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentPosition;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentSelectedIndex = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentSelectedIndex;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentStrokeThickness = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentStrokeThickness;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentedHeight = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentedHeight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentedPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentedPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.segmentedWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.segmentedWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.selectableItemBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.selectableItemBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.selectableItemBackgroundBorderless = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.showAsAction = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.showAsAction;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.showDividers = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.showDividers;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.showText = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.showText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.singleChoiceItemLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.spinBars = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.spinBars;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.spinnerDropDownItemStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.spinnerStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.spinnerStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.splitTrack = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.splitTrack;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.srcCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.srcCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.state_above_anchor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.state_above_anchor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.state_indeterminate = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.state_indeterminate;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.submitBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.submitBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.subtitleTextAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.subtitleTextColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.subtitleTextColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.subtitleTextStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.suggestionRowLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.switchMinWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.switchMinWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.switchPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.switchPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.switchStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.switchStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.switchTextAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.switchTextAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.textAllCaps = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.textAllCaps;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.textAppearanceLargePopupMenu = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.textAppearanceListItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.textAppearanceListItemSmall = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.textAppearanceSearchResultSubtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.textAppearanceSearchResultTitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.textAppearanceSmallPopupMenu = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.textColorAlertDialogListItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.textColorSearchUrl = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.theme = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.theme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.thickness = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.thickness;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.thumbTextPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.thumbTextPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.title = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.titleMarginBottom = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.titleMarginBottom;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.titleMarginEnd = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.titleMarginEnd;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.titleMarginStart = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.titleMarginStart;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.titleMarginTop = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.titleMarginTop;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.titleMargins = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.titleMargins;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.titleTextAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.titleTextAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.titleTextColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.titleTextColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.titleTextStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.titleTextStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.toolbarNavigationButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.toolbarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.toolbarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.track = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.track;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.voiceIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.voiceIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.windowActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.windowActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.windowActionBarOverlay = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.windowActionModeOverlay = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.windowFixedHeightMajor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.windowFixedHeightMinor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.windowFixedWidthMajor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.windowFixedWidthMinor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.windowMinWidthMajor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.windowMinWidthMinor = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Attribute.windowNoTitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.windowNoTitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Boolean.abc_action_bar_embed_tabs = global::YanSoft.CurrencyExchanger.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Boolean.abc_allow_stacked_button_bar = global::YanSoft.CurrencyExchanger.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::YanSoft.CurrencyExchanger.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::YanSoft.CurrencyExchanger.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::YanSoft.CurrencyExchanger.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_background_cache_hint_selector_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_background_cache_hint_selector_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_color_highlight_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_color_highlight_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_input_method_navigation_guard = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_primary_text_disable_only_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_primary_text_disable_only_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_primary_text_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_primary_text_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_search_url_text = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_search_url_text;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_search_url_text_normal = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_search_url_text_pressed = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_search_url_text_selected = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_secondary_text_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.abc_secondary_text_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.accent_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.accent_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.accent_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.accent_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.background_floating_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.background_floating_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.background_floating_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.background_floating_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.background_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.background_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.background_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.background_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.bright_foreground_disabled_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.bright_foreground_disabled_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.bright_foreground_inverse_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.bright_foreground_inverse_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.bright_foreground_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.bright_foreground_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.bright_foreground_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.button_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.button_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.button_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.button_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.control_checkable_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.control_checkable_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.dim_foreground_disabled_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.dim_foreground_disabled_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.dim_foreground_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.dim_foreground_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.dim_foreground_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.foreground_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.foreground_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.foreground_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.foreground_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.highlighted_text_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.highlighted_text_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.highlighted_text_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_blue_grey_800 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_blue_grey_800;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_blue_grey_900 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_blue_grey_900;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_blue_grey_950 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_blue_grey_950;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_deep_teal_200 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_deep_teal_200;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_deep_teal_500 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_deep_teal_500;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_grey_100 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_grey_100;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_grey_300 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_grey_300;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_grey_50 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_grey_50;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_grey_600 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_grey_600;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_grey_800 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_grey_800;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_grey_850 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_grey_850;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.material_grey_900 = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.material_grey_900;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.primary_dark_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.primary_dark_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.primary_dark_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.primary_dark_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.primary_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.primary_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.primary_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.primary_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.primary_text_default_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.primary_text_default_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.primary_text_default_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.primary_text_disabled_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.primary_text_disabled_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.ripple_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.ripple_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.ripple_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.ripple_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.secondary_text_default_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.secondary_text_default_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.secondary_text_disabled_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.secondary_text_disabled_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.switch_thumb_disabled_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.switch_thumb_disabled_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.switch_thumb_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.switch_thumb_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.switch_thumb_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.switch_thumb_normal_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Color.switch_thumb_normal_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_content_inset_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_default_height_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_default_padding_end_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_default_padding_start_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_progress_bar_size = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_stacked_max_height = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_button_min_height_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_button_min_width_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_action_button_min_width_overflow_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_alert_dialog_button_bar_height = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_button_inset_horizontal_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_button_inset_vertical_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_button_padding_horizontal_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_button_padding_vertical_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_config_prefDialogWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_control_corner_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_control_inset_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_control_padding_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dialog_fixed_height_major = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dialog_fixed_height_minor = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dialog_fixed_width_major = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dialog_fixed_width_minor = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dialog_min_width_major = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dialog_min_width_minor = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dialog_padding_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dialog_padding_top_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_disabled_alpha_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_disabled_alpha_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dropdownitem_icon_width = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dropdownitem_text_padding_left = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_dropdownitem_text_padding_right = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_edit_text_inset_bottom_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_edit_text_inset_top_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_floating_window_z = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_list_item_padding_horizontal_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_panel_menu_list_width = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_search_view_preferred_width = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_seekbar_track_background_height_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_seekbar_track_progress_height_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_select_dialog_padding_start_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_switch_padding = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_switch_padding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_body_1_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_body_2_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_button_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_caption_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_display_1_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_display_2_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_display_3_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_display_4_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_headline_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_large_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_medium_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_menu_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_small_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_subhead_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_title_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.abc_text_size_title_material_toolbar = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.disabledAlpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.disabledAlpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.disabled_alpha_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.disabled_alpha_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.highlight_alpha_material_colored = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.highlight_alpha_material_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.highlight_alpha_material_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.notification_large_icon_height = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.notification_large_icon_width = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Dimension.notification_subtext_size = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.notification_subtext_size;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_action_bar_item_background_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_borderless_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_check_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_colored_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_default_mtrl_shape = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_radio_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_cab_background_internal_bg = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_cab_background_top_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_control_background_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_control_background_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_edit_text_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ic_star_black_16dp = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ic_star_black_36dp = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ic_star_half_black_16dp = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ic_star_half_black_36dp = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_item_background_holo_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_item_background_holo_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_divider_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_focused_holo = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_longpressed_holo = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_pressed_holo_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_pressed_holo_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_selector_disabled_holo_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_selector_holo_dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_list_selector_holo_light = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_popup_background_mtrl_mult = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ratingbar_indicator_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_ratingbar_small_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_seekbar_thumb_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_seekbar_track_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_spinner_textfield_background_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_switch_thumb_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_switch_track_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_tab_indicator_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_text_cursor_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.abc_textfield_search_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.btn_checkbox = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.btn_checkbox;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.btn_checkbox_checked = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.btn_checkbox_checked;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.btn_checkbox_checked_to_indeterminate_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.btn_checkbox_checked_to_indeterminate_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.btn_checkbox_checked_to_unchecked_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.btn_checkbox_checked_to_unchecked_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.btn_checkbox_indeterminate = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.btn_checkbox_indeterminate;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.btn_checkbox_indeterminate_to_checked_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.btn_checkbox_indeterminate_to_checked_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.btn_checkbox_indeterminate_to_unchecked_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.btn_checkbox_indeterminate_to_unchecked_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.btn_checkbox_unchecked = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.btn_checkbox_unchecked;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.btn_checkbox_unchecked_to_checked_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.btn_checkbox_unchecked_to_checked_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.btn_checkbox_unchecked_to_indeterminate_animation = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.btn_checkbox_unchecked_to_indeterminate_animation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.inputlayout_togglecollapseicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.inputlayout_togglevisibleicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Drawable.notification_template_icon_bg = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action0 = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action0;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_bar = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_bar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_bar_activity_content = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_bar_activity_content;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_bar_container = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_bar_container;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_bar_root = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_bar_root;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_bar_spinner = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_bar_spinner;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_bar_subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_bar_subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_bar_title = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_bar_title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_context_bar = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_context_bar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_divider = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_divider;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_menu_divider = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_menu_divider;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_menu_presenter = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_menu_presenter;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_mode_bar = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_mode_bar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_mode_bar_stub = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_mode_bar_stub;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.action_mode_close_button = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.action_mode_close_button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.activity_chooser_view_content = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.activity_chooser_view_content;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.alertTitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.alertTitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.always = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.always;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.beginning = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.beginning;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.border = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.border;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.bottom = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.bottom;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.buttonPanel = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.buttonPanel;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.cancel_action = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.cancel_action;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.checkbox = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.checkbox;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.@checked = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.@checked;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.chronometer = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.chronometer;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.collapseActionView = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.collapseActionView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.contentPanel = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.contentPanel;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.custom = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.custom;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.customPanel = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.customPanel;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.decor_content_parent = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.decor_content_parent;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.default_activity_button = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.default_activity_button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.disableHome = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.disableHome;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.edit_query = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.edit_query;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.end = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.end;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.end_padder = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.end_padder;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.expand_activities_button = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.expand_activities_button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.expanded_menu = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.expanded_menu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.fill = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.fill;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.home = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.home;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.homeAsUp = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.homeAsUp;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.icon = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.icon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.ifRoom = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.ifRoom;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.image = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.image;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.imagewithtext = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.imagewithtext;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.indeterminate = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.indeterminate;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.info = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.info;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.line1 = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.line1;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.line3 = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.line3;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.listMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.listMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.list_item = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.list_item;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.media_actions = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.media_actions;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.middle = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.middle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.multiply = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.multiply;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.never = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.never;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.none = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.none;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.normal = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.normal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.parentPanel = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.parentPanel;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.progress_circular = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.progress_circular;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.progress_horizontal = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.progress_horizontal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.radio = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.radio;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.screen = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.screen;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.scrollIndicatorDown = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.scrollIndicatorDown;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.scrollIndicatorUp = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.scrollIndicatorUp;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.scrollView = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.scrollView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.search_badge = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.search_badge;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.search_bar = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.search_bar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.search_button = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.search_button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.search_close_btn = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.search_close_btn;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.search_edit_frame = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.search_edit_frame;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.search_go_btn = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.search_go_btn;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.search_mag_icon = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.search_mag_icon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.search_plate = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.search_plate;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.search_src_text = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.search_src_text;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.search_voice_btn = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.search_voice_btn;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.select_dialog_listview = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.select_dialog_listview;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.shortcut = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.shortcut;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.showCustom = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.showCustom;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.showHome = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.showHome;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.showTitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.showTitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.spacer = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.spacer;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.split_action_bar = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.split_action_bar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.src_atop = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.src_atop;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.src_in = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.src_in;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.src_over = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.src_over;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.status_bar_latest_event_content = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.submit_area = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.submit_area;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.tabMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.tabMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.text = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.text;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.text2 = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.text2;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.textSpacerNoButtons = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.textSpacerNoButtons;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.time = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.time;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.title = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.title_template = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.title_template;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.top = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.top;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.topPanel = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.topPanel;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.@unchecked = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.@unchecked;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.up = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.up;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.useLogo = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.useLogo;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.withText = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.withText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Id.wrap_content = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.wrap_content;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Integer.abc_config_activityDefaultDur = global::YanSoft.CurrencyExchanger.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Integer.abc_config_activityShortDur = global::YanSoft.CurrencyExchanger.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Integer.cancel_button_image_alpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Integer.status_bar_notification_info_maxnum = global::YanSoft.CurrencyExchanger.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Interpolator.btn_checkbox_checked_animation_interpolator_0 = global::YanSoft.CurrencyExchanger.Droid.Resource.Interpolator.btn_checkbox_checked_animation_interpolator_0;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Interpolator.btn_checkbox_checked_animation_interpolator_1 = global::YanSoft.CurrencyExchanger.Droid.Resource.Interpolator.btn_checkbox_checked_animation_interpolator_1;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Interpolator.btn_checkbox_indeterminate_animation_interpolator_1 = global::YanSoft.CurrencyExchanger.Droid.Resource.Interpolator.btn_checkbox_indeterminate_animation_interpolator_1;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Interpolator.btn_checkbox_unchecked_animation_interpolator_0 = global::YanSoft.CurrencyExchanger.Droid.Resource.Interpolator.btn_checkbox_unchecked_animation_interpolator_0;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Interpolator.btn_checkbox_unchecked_animation_interpolator_1 = global::YanSoft.CurrencyExchanger.Droid.Resource.Interpolator.btn_checkbox_unchecked_animation_interpolator_1;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_action_bar_title_item = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_action_bar_up_container = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_action_menu_item_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_action_menu_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_action_mode_bar = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_action_mode_close_item_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_activity_chooser_view = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_activity_chooser_view_list_item = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_alert_dialog_button_bar_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_alert_dialog_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_dialog_title_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_expanded_menu_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_list_menu_item_checkbox = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_list_menu_item_icon = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_list_menu_item_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_list_menu_item_radio = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_popup_menu_item_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_screen_content_include = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_screen_content_include;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_screen_simple = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_screen_simple;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_screen_simple_overlay_action_mode = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_screen_toolbar = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_search_dropdown_item_icons_2line = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_search_view = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_search_view;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.abc_select_dialog_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.notification_media_action = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.notification_media_action;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.notification_media_cancel_action = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.notification_template_big_media = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.notification_template_big_media;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.notification_template_big_media_narrow = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.notification_template_media = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.notification_template_media;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.notification_template_part_chronometer = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.notification_template_part_time = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.notification_template_part_time;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.select_dialog_item_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.select_dialog_item_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.select_dialog_multichoice_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.select_dialog_singlechoice_material = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Layout.support_simple_spinner_dropdown_item = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_action_bar_home_description = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_action_bar_home_description;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_action_bar_up_description = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_action_bar_up_description;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_action_menu_overflow_description = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_action_mode_done = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_action_mode_done;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_activity_chooser_view_see_all = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_activitychooserview_choose_application = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_capital_off = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_capital_off;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_capital_on = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_capital_on;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_search_hint = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_search_hint;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_searchview_description_clear = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_searchview_description_clear;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_searchview_description_query = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_searchview_description_query;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_searchview_description_search = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_searchview_description_search;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_searchview_description_submit = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_searchview_description_submit;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_searchview_description_voice = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_searchview_description_voice;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_shareactionprovider_share_with = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_shareactionprovider_share_with_application = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.abc_toolbar_collapse_description = global::YanSoft.CurrencyExchanger.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Syncfusion.Buttons.XForms.Android.Resource.String.status_bar_notification_info_overflow = global::YanSoft.CurrencyExchanger.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.AlertDialog_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.AlertDialog_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Animation_AppCompat_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Animation_AppCompat_DropDownUp = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_AlertDialog_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_AlertDialog_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Animation_AppCompat_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_DialogWindowTitle_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Button = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Large = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Small = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_ThemeOverlay_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V21_Theme_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V21_Theme_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V22_Theme_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V22_Theme_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V23_Theme_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V23_Theme_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V7_Theme_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V7_Theme_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActionMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Button_Small = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_EditText = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ImageButton = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ListView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_SearchView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_SeekBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Spinner = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Toolbar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Platform_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Platform_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Platform_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Platform_V11_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Platform_V11_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Platform_V14_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Platform_V14_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Platform_Widget_AppCompat_Spinner = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Body1 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Body2 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Button = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Caption = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Display1 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Display2 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Display3 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Display4 = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Headline = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Large = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Medium = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Menu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Small = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Subhead = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_CompactMenu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_DayNight = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_Dialog_Alert = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_Light_Dialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Theme_AppCompat_NoActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.ThemeOverlay_AppCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.ThemeOverlay_AppCompat_Dark = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.ThemeOverlay_AppCompat_Light = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ActionButton = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ActionMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ActivityChooserView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Button = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Button_Borderless = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Button_Colored = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Button_Small = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ButtonBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_EditText = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ImageButton = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_SearchView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ListPopupWindow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ListView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ListView_DropDown = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ListView_Menu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_PopupMenu = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_PopupWindow = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ProgressBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_RatingBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_RatingBar_Small = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_SearchView = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_SeekBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Spinner = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Toolbar = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::YanSoft.CurrencyExchanger.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_background = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_background;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_backgroundSplit = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_backgroundStacked = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_contentInsetEnd = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_contentInsetLeft = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_contentInsetRight = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_contentInsetStart = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_customNavigationLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_displayOptions = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_divider = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_divider;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_elevation = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_height = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_height;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_hideOnContentScroll = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_homeAsUpIndicator = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_homeLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_icon = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_icon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_itemPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_logo = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_logo;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_navigationMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_popupTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_progressBarPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_progressBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_subtitleTextStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_title = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBar_titleTextStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBarLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBarLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionMenuItemView = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionMenuItemView_android_minWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionMenuView = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionMenuView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionMode_background = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionMode_background;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionMode_backgroundSplit = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionMode_closeItemLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionMode_height = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionMode_height;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionMode_subtitleTextStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActionMode_titleTextStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActivityChooserView = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActivityChooserView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ActivityChooserView_initialActivityCount = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AlertDialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AlertDialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AlertDialog_android_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AlertDialog_listItemLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AlertDialog_listLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatImageView = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatImageView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatImageView_android_src = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatImageView_srcCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTextView = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTextView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTextView_android_textAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTextView_textAllCaps = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarDivider = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarSize = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_buttonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_checkboxStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_colorAccent = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_colorControlActivated = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_colorControlNormal = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_colorPrimary = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_controlBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_dialogTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_dividerVertical = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_editTextBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_editTextColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_editTextStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_panelBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_searchViewStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_seekBarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_spinnerStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_switchStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_toolbarStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_windowActionBar = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.AppCompatTheme_windowNoTitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ButtonBarLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ButtonBarLayout_allowStacking = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.CompoundButton = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.CompoundButton;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.CompoundButton_android_button = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.CompoundButton_buttonTint = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.CompoundButton_buttonTintMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawableStates = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawableStates;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawableStates_state_indeterminate = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawableStates_state_indeterminate;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawerArrowToggle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawerArrowToggle_barLength = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawerArrowToggle_color = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawerArrowToggle_drawableSize = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawerArrowToggle_spinBars = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.DrawerArrowToggle_thickness = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_android_gravity = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_android_orientation = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_divider = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_showDividers = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_Layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ListPopupWindow = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ListPopupWindow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuGroup = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuGroup;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuGroup_android_checkableBehavior = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuGroup_android_enabled = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuGroup_android_id = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuGroup_android_menuCategory = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuGroup_android_orderInCategory = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuGroup_android_visible = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_actionLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_actionProviderClass = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_actionViewClass = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_checkable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_checked = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_enabled = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_icon = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_id = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_menuCategory = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_numericShortcut = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_onClick = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_orderInCategory = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_title = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_titleCondensed = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_android_visible = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuItem_showAsAction = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuView = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuView_android_headerBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuView_android_horizontalDivider = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuView_android_itemBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuView_android_itemTextAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuView_android_verticalDivider = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuView_android_windowAnimationStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.MenuView_preserveIconSpacing = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.PopupWindow = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.PopupWindow;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.PopupWindow_android_popupBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.PopupWindow_overlapAnchor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.PopupWindowBackgroundState = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_android_focusable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_android_imeOptions = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_android_inputType = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_android_maxWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_closeIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_commitIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_defaultQueryHint = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_goIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_iconifiedByDefault = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_layout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_queryBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_queryHint = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_searchHintIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_searchIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_submitBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_suggestionRowLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SearchView_voiceIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfCheckBox = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfCheckBox;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfCheckBox_checked = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfCheckBox_checked;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfCheckBox_cornerradius = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfCheckBox_cornerradius;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfCheckBox_isthreestate = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfCheckBox_isthreestate;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentBackColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentBackColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentBorderColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentBorderColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentBorderThickness = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentBorderThickness;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentCornerRadius = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentCornerRadius;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentDisplayMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentDisplayMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentPosition = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentPosition;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentSelectedIndex = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentSelectedIndex;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentStrokeThickness = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentStrokeThickness;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentedHeight = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentedHeight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentedPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentedPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SfSegmentedControl_segmentedWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SfSegmentedControl_segmentedWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Spinner = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Spinner;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Spinner_android_dropDownWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Spinner_android_entries = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Spinner_android_popupBackground = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Spinner_android_prompt = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Spinner_popupTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat_android_textOff = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat_android_textOn = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat_android_thumb = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat_showText = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat_splitTrack = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat_switchMinWidth = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat_switchPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat_switchTextAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat_thumbTextPadding = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.SwitchCompat_track = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.TextAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.TextAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.TextAppearance_android_shadowColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.TextAppearance_android_shadowDx = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.TextAppearance_android_shadowDy = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.TextAppearance_android_shadowRadius = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.TextAppearance_android_textColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.TextAppearance_android_textSize = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.TextAppearance_android_textStyle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.TextAppearance_android_typeface = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.TextAppearance_textAllCaps = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_android_gravity = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_android_minHeight = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_collapseContentDescription = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_collapseIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_contentInsetEnd = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_contentInsetLeft = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_contentInsetRight = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_contentInsetStart = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_logo = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_logo;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_logoDescription = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_maxButtonHeight = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_navigationContentDescription = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_navigationIcon = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_popupTheme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_subtitle = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_subtitleTextAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_subtitleTextColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_title = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_title;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_titleMarginBottom = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_titleMarginEnd = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_titleMarginStart = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_titleMarginTop = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_titleMargins = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_titleTextAppearance = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.Toolbar_titleTextColor = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.View = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.View;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.View_android_focusable = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.View_android_focusable;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.View_android_theme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.View_android_theme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.View_paddingEnd = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.View_paddingEnd;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.View_paddingStart = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.View_paddingStart;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.View_theme = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.View_theme;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ViewBackgroundHelper = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ViewBackgroundHelper_android_background = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ViewStubCompat = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewStubCompat;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ViewStubCompat_android_id = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ViewStubCompat_android_inflatedId = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Syncfusion.Buttons.XForms.Android.Resource.Styleable.ViewStubCompat_android_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglecollapseicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
 			global::Syncfusion.XForms.Android.Core.Resource.Drawable.inputlayout_togglevisibleicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.Animation.SfChart_Fade_In = global::YanSoft.CurrencyExchanger.Droid.Resource.Animation.SfChart_Fade_In;
@@ -6273,6 +7571,29 @@ namespace YanSoft.CurrencyExchanger.Droid
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.sfchart_others_label = global::YanSoft.CurrencyExchanger.Droid.Resource.String.sfchart_others_label;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.w = global::YanSoft.CurrencyExchanger.Droid.Resource.String.w;
 			global::Syncfusion.SfChart.XForms.Droid.Resource.String.week = global::YanSoft.CurrencyExchanger.Droid.Resource.String.week;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.layoutManager = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.layoutManager;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.reverseLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.reverseLayout;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.spanCount = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.spanCount;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Attribute.stackFromEnd = global::YanSoft.CurrencyExchanger.Droid.Resource.Attribute.stackFromEnd;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::YanSoft.CurrencyExchanger.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Drawable.dropdownbuttonimage = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.dropdownbuttonimage;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Drawable.inputlayout_togglecollapseicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Drawable.inputlayout_togglevisibleicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.Itemname = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.Itemname;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.icon = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.icon;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Id.item_touch_helper_previous_elevation = global::YanSoft.CurrencyExchanger.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Layout.CustomizedImageView = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.CustomizedImageView;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Layout.CustomizedView = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.CustomizedView;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Layout.sfcomboBox_layout = global::YanSoft.CurrencyExchanger.Droid.Resource.Layout.sfcomboBox_layout;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.RecyclerView;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_android_descendantFocusability = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_android_orientation = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_layoutManager = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_reverseLayout = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_spanCount = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Syncfusion.XForms.Android.ComboBox.Resource.Styleable.RecyclerView_stackFromEnd = global::YanSoft.CurrencyExchanger.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
 			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.inputlayout_togglecollapseicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglecollapseicon;
 			global::Syncfusion.ListView.XForms.Android.Resource.Drawable.inputlayout_togglevisibleicon = global::YanSoft.CurrencyExchanger.Droid.Resource.Drawable.inputlayout_togglevisibleicon;
 			global::Syncfusion.ListView.XForms.Android.Resource.String.ApplicationName = global::YanSoft.CurrencyExchanger.Droid.Resource.String.ApplicationName;
@@ -7825,34 +9146,85 @@ namespace YanSoft.CurrencyExchanger.Droid
 			public const int abc_slide_out_top = 2131034121;
 			
 			// aapt resource value: 0x7f05000a
-			public const int design_bottom_sheet_slide_in = 2131034122;
+			public const int btn_checkbox_indeterminate_to_checked_box_inner_merged_animation = 2131034122;
 			
 			// aapt resource value: 0x7f05000b
-			public const int design_bottom_sheet_slide_out = 2131034123;
+			public const int btn_checkbox_indeterminate_to_checked_box_outer_merged_animation = 2131034123;
 			
 			// aapt resource value: 0x7f05000c
-			public const int design_snackbar_in = 2131034124;
+			public const int btn_checkbox_indeterminate_to_checked_icon_null_animation = 2131034124;
 			
 			// aapt resource value: 0x7f05000d
-			public const int design_snackbar_out = 2131034125;
+			public const int btn_checkbox_to_checked_box_inner_merged_animation = 2131034125;
 			
 			// aapt resource value: 0x7f05000e
-			public const int SfChart_Fade_In = 2131034126;
+			public const int btn_checkbox_to_checked_box_outer_merged_animation = 2131034126;
 			
 			// aapt resource value: 0x7f05000f
-			public const int SfChart_Fade_Out = 2131034127;
+			public const int btn_checkbox_to_checked_icon_null_animation = 2131034127;
 			
 			// aapt resource value: 0x7f050010
-			public const int SfChart_Scale_In = 2131034128;
+			public const int btn_checkbox_to_indeterminate_from_checked_box_inner_merged_animation = 2131034128;
 			
 			// aapt resource value: 0x7f050011
-			public const int SfChart_Scale_Out = 2131034129;
+			public const int btn_checkbox_to_indeterminate_from_checked_icon_null_animation = 2131034129;
 			
 			// aapt resource value: 0x7f050012
-			public const int tooltip_enter = 2131034130;
+			public const int btn_checkbox_to_indeterminate_from_unchecked_box_inner_merged_animation = 2131034130;
 			
 			// aapt resource value: 0x7f050013
-			public const int tooltip_exit = 2131034131;
+			public const int btn_checkbox_to_indeterminate_from_unchecked_box_outer_merged_animation = 2131034131;
+			
+			// aapt resource value: 0x7f050014
+			public const int btn_checkbox_to_indeterminate_from_unchecked_icon_null_animation = 2131034132;
+			
+			// aapt resource value: 0x7f050015
+			public const int btn_checkbox_to_unchecked_box_inner_merged_animation = 2131034133;
+			
+			// aapt resource value: 0x7f050016
+			public const int btn_checkbox_to_unchecked_check_path_merged_animation = 2131034134;
+			
+			// aapt resource value: 0x7f050017
+			public const int btn_checkbox_to_unchecked_from_indeterminate_box_inner_merged_animation = 2131034135;
+			
+			// aapt resource value: 0x7f050018
+			public const int btn_checkbox_to_unchecked_from_indeterminate_check_path_merged_animation = 2131034136;
+			
+			// aapt resource value: 0x7f050019
+			public const int btn_checkbox_to_unchecked_from_indeterminate_icon_null_animation = 2131034137;
+			
+			// aapt resource value: 0x7f05001a
+			public const int btn_checkbox_to_unchecked_icon_null_animation = 2131034138;
+			
+			// aapt resource value: 0x7f05001b
+			public const int design_bottom_sheet_slide_in = 2131034139;
+			
+			// aapt resource value: 0x7f05001c
+			public const int design_bottom_sheet_slide_out = 2131034140;
+			
+			// aapt resource value: 0x7f05001d
+			public const int design_snackbar_in = 2131034141;
+			
+			// aapt resource value: 0x7f05001e
+			public const int design_snackbar_out = 2131034142;
+			
+			// aapt resource value: 0x7f05001f
+			public const int SfChart_Fade_In = 2131034143;
+			
+			// aapt resource value: 0x7f050020
+			public const int SfChart_Fade_Out = 2131034144;
+			
+			// aapt resource value: 0x7f050021
+			public const int SfChart_Scale_In = 2131034145;
+			
+			// aapt resource value: 0x7f050022
+			public const int SfChart_Scale_Out = 2131034146;
+			
+			// aapt resource value: 0x7f050023
+			public const int tooltip_enter = 2131034147;
+			
+			// aapt resource value: 0x7f050024
+			public const int tooltip_exit = 2131034148;
 			
 			static Animation()
 			{
@@ -7883,23 +9255,23 @@ namespace YanSoft.CurrencyExchanger.Droid
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010176
-			public const int MvxBind = 2130772342;
+			// aapt resource value: 0x7f010186
+			public const int MvxBind = 2130772358;
 			
-			// aapt resource value: 0x7f01017a
-			public const int MvxDropDownItemTemplate = 2130772346;
+			// aapt resource value: 0x7f01018a
+			public const int MvxDropDownItemTemplate = 2130772362;
 			
-			// aapt resource value: 0x7f01017b
-			public const int MvxGroupItemTemplate = 2130772347;
+			// aapt resource value: 0x7f01018b
+			public const int MvxGroupItemTemplate = 2130772363;
 			
-			// aapt resource value: 0x7f010179
-			public const int MvxItemTemplate = 2130772345;
+			// aapt resource value: 0x7f010189
+			public const int MvxItemTemplate = 2130772361;
 			
-			// aapt resource value: 0x7f010177
-			public const int MvxLang = 2130772343;
+			// aapt resource value: 0x7f010187
+			public const int MvxLang = 2130772359;
 			
-			// aapt resource value: 0x7f010178
-			public const int MvxTemplate = 2130772344;
+			// aapt resource value: 0x7f010188
+			public const int MvxTemplate = 2130772360;
 			
 			// aapt resource value: 0x7f01006e
 			public const int actionBarDivider = 2130772078;
@@ -8156,6 +9528,9 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0100c0
 			public const int checkboxStyle = 2130772160;
 			
+			// aapt resource value: 0x7f010179
+			public const int @checked = 2130772345;
+			
 			// aapt resource value: 0x7f0100c1
 			public const int checkedTextViewStyle = 2130772161;
 			
@@ -8254,6 +9629,9 @@ namespace YanSoft.CurrencyExchanger.Droid
 			
 			// aapt resource value: 0x7f0100b3
 			public const int controlBackground = 2130772147;
+			
+			// aapt resource value: 0x7f010178
+			public const int cornerradius = 2130772344;
 			
 			// aapt resource value: 0x7f010163
 			public const int counterEnabled = 2130772323;
@@ -8461,6 +9839,9 @@ namespace YanSoft.CurrencyExchanger.Droid
 			
 			// aapt resource value: 0x7f010027
 			public const int isLightTheme = 2130772007;
+			
+			// aapt resource value: 0x7f010177
+			public const int isthreestate = 2130772343;
 			
 			// aapt resource value: 0x7f010149
 			public const int itemBackground = 2130772297;
@@ -8723,6 +10104,42 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0100c7
 			public const int seekBarStyle = 2130772167;
 			
+			// aapt resource value: 0x7f01017b
+			public const int segmentBackColor = 2130772347;
+			
+			// aapt resource value: 0x7f01017c
+			public const int segmentBorderColor = 2130772348;
+			
+			// aapt resource value: 0x7f01017d
+			public const int segmentBorderThickness = 2130772349;
+			
+			// aapt resource value: 0x7f01017e
+			public const int segmentColor = 2130772350;
+			
+			// aapt resource value: 0x7f010183
+			public const int segmentCornerRadius = 2130772355;
+			
+			// aapt resource value: 0x7f010185
+			public const int segmentDisplayMode = 2130772357;
+			
+			// aapt resource value: 0x7f010184
+			public const int segmentPosition = 2130772356;
+			
+			// aapt resource value: 0x7f01017a
+			public const int segmentSelectedIndex = 2130772346;
+			
+			// aapt resource value: 0x7f010182
+			public const int segmentStrokeThickness = 2130772354;
+			
+			// aapt resource value: 0x7f010180
+			public const int segmentedHeight = 2130772352;
+			
+			// aapt resource value: 0x7f01017f
+			public const int segmentedPadding = 2130772351;
+			
+			// aapt resource value: 0x7f010181
+			public const int segmentedWidth = 2130772353;
+			
 			// aapt resource value: 0x7f01008c
 			public const int selectableItemBackground = 2130772108;
 			
@@ -8773,6 +10190,9 @@ namespace YanSoft.CurrencyExchanger.Droid
 			
 			// aapt resource value: 0x7f01011d
 			public const int state_collapsible = 2130772253;
+			
+			// aapt resource value: 0x7f010176
+			public const int state_indeterminate = 2130772342;
 			
 			// aapt resource value: 0x7f010135
 			public const int statusBarBackground = 2130772277;
@@ -9199,11 +10619,14 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0e0003
 			public const int cardview_shadow_start_color = 2131623939;
 			
+			// aapt resource value: 0x7f0e0068
+			public const int control_checkable_material = 2131624040;
+			
 			// aapt resource value: 0x7f0e0040
 			public const int design_bottom_navigation_shadow_color = 2131624000;
 			
-			// aapt resource value: 0x7f0e0068
-			public const int design_error = 2131624040;
+			// aapt resource value: 0x7f0e0069
+			public const int design_error = 2131624041;
 			
 			// aapt resource value: 0x7f0e0041
 			public const int design_fab_shadow_end_color = 2131624001;
@@ -9229,8 +10652,8 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0e0048
 			public const int design_snackbar_background_color = 2131624008;
 			
-			// aapt resource value: 0x7f0e0069
-			public const int design_tint_password_toggle = 2131624041;
+			// aapt resource value: 0x7f0e006a
+			public const int design_tint_password_toggle = 2131624042;
 			
 			// aapt resource value: 0x7f0e0016
 			public const int dim_foreground_disabled_material_dark = 2131623958;
@@ -9370,11 +10793,11 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0e003a
 			public const int switch_thumb_disabled_material_light = 2131623994;
 			
-			// aapt resource value: 0x7f0e006a
-			public const int switch_thumb_material_dark = 2131624042;
-			
 			// aapt resource value: 0x7f0e006b
-			public const int switch_thumb_material_light = 2131624043;
+			public const int switch_thumb_material_dark = 2131624043;
+			
+			// aapt resource value: 0x7f0e006c
+			public const int switch_thumb_material_light = 2131624044;
 			
 			// aapt resource value: 0x7f0e003b
 			public const int switch_thumb_normal_material_dark = 2131623995;
@@ -9761,6 +11184,9 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0c008f
 			public const int design_tab_text_size_2line = 2131493007;
 			
+			// aapt resource value: 0x7f0c00a4
+			public const int disabledAlpha = 2131493028;
+			
 			// aapt resource value: 0x7f0c0059
 			public const int disabled_alpha_material_dark = 2131492953;
 			
@@ -9806,20 +11232,20 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0c0005
 			public const int item_touch_helper_swipe_escape_velocity = 2131492869;
 			
+			// aapt resource value: 0x7f0c00a9
+			public const int margin_huge = 2131493033;
+			
 			// aapt resource value: 0x7f0c00a8
-			public const int margin_huge = 2131493032;
+			public const int margin_large = 2131493032;
 			
 			// aapt resource value: 0x7f0c00a7
-			public const int margin_large = 2131493031;
+			public const int margin_medium = 2131493031;
 			
 			// aapt resource value: 0x7f0c00a6
-			public const int margin_medium = 2131493030;
+			public const int margin_small = 2131493030;
 			
 			// aapt resource value: 0x7f0c00a5
-			public const int margin_small = 2131493029;
-			
-			// aapt resource value: 0x7f0c00a4
-			public const int margin_tiny = 2131493028;
+			public const int margin_tiny = 2131493029;
 			
 			// aapt resource value: 0x7f0c0006
 			public const int mr_controller_volume_group_list_item_height = 2131492870;
@@ -10176,1151 +11602,1184 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f0201cd
-			public const int avd_hide_password_1 = 2130837965;
+			// aapt resource value: 0x7f0201d8
+			public const int avd_hide_password_1 = 2130837976;
 			
-			// aapt resource value: 0x7f0201ce
-			public const int avd_hide_password_2 = 2130837966;
+			// aapt resource value: 0x7f0201d9
+			public const int avd_hide_password_2 = 2130837977;
 			
-			// aapt resource value: 0x7f0201cf
-			public const int avd_hide_password_3 = 2130837967;
+			// aapt resource value: 0x7f0201da
+			public const int avd_hide_password_3 = 2130837978;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f0201d0
-			public const int avd_show_password_1 = 2130837968;
+			// aapt resource value: 0x7f0201db
+			public const int avd_show_password_1 = 2130837979;
 			
-			// aapt resource value: 0x7f0201d1
-			public const int avd_show_password_2 = 2130837969;
+			// aapt resource value: 0x7f0201dc
+			public const int avd_show_password_2 = 2130837980;
 			
-			// aapt resource value: 0x7f0201d2
-			public const int avd_show_password_3 = 2130837970;
+			// aapt resource value: 0x7f0201dd
+			public const int avd_show_password_3 = 2130837981;
 			
 			// aapt resource value: 0x7f020056
-			public const int design_bottom_navigation_item_background = 2130837590;
+			public const int btn_checkbox = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int design_fab_background = 2130837591;
+			public const int btn_checkbox_checked = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int design_ic_visibility = 2130837592;
+			public const int btn_checkbox_checked_to_indeterminate_animation = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_ic_visibility_off = 2130837593;
+			public const int btn_checkbox_checked_to_unchecked_animation = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_password_eye = 2130837594;
+			public const int btn_checkbox_indeterminate = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int design_snackbar_background = 2130837595;
+			public const int btn_checkbox_indeterminate_to_checked_animation = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int flag_albania = 2130837596;
+			public const int btn_checkbox_indeterminate_to_unchecked_animation = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int flag_algeria = 2130837597;
+			public const int btn_checkbox_unchecked = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int flag_argentina = 2130837598;
+			public const int btn_checkbox_unchecked_to_checked_animation = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int flag_aruba = 2130837599;
+			public const int btn_checkbox_unchecked_to_indeterminate_animation = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int flag_australia = 2130837600;
+			public const int design_bottom_navigation_item_background = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int flag_bahamas = 2130837601;
+			public const int design_fab_background = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int flag_bahrain = 2130837602;
+			public const int design_ic_visibility = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int flag_bangladesh = 2130837603;
+			public const int design_ic_visibility_off = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int flag_barbados = 2130837604;
+			public const int design_password_eye = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int flag_belarus = 2130837605;
+			public const int design_snackbar_background = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int flag_belize = 2130837606;
+			public const int dropdownbuttonimage = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int flag_bermuda = 2130837607;
+			public const int flag_albania = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int flag_bhutan = 2130837608;
+			public const int flag_algeria = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int flag_bolivia = 2130837609;
+			public const int flag_argentina = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int flag_botswana = 2130837610;
+			public const int flag_aruba = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int flag_brazil = 2130837611;
+			public const int flag_australia = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int flag_brunei = 2130837612;
+			public const int flag_bahamas = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int flag_bulgaria = 2130837613;
+			public const int flag_bahrain = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int flag_burma = 2130837614;
+			public const int flag_bangladesh = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int flag_burundi = 2130837615;
+			public const int flag_barbados = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int flag_cambodia = 2130837616;
+			public const int flag_belarus = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int flag_cameroon = 2130837617;
+			public const int flag_belize = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int flag_canada = 2130837618;
+			public const int flag_bermuda = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int flag_cape_verde = 2130837619;
+			public const int flag_bhutan = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int flag_cayman_islands = 2130837620;
+			public const int flag_bolivia = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int flag_chile = 2130837621;
+			public const int flag_botswana = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int flag_china = 2130837622;
+			public const int flag_brazil = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int flag_colombia = 2130837623;
+			public const int flag_brunei = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int flag_comoros = 2130837624;
+			public const int flag_bulgaria = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int flag_costa_rica = 2130837625;
+			public const int flag_burma = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int flag_croatia = 2130837626;
+			public const int flag_burundi = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int flag_cuba = 2130837627;
+			public const int flag_cambodia = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int flag_czech_republic = 2130837628;
+			public const int flag_cameroon = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int flag_denmark = 2130837629;
+			public const int flag_canada = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int flag_djibouti = 2130837630;
+			public const int flag_cape_verde = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int flag_dominica = 2130837631;
+			public const int flag_cayman_islands = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int flag_ecuador = 2130837632;
+			public const int flag_chile = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int flag_egypt = 2130837633;
+			public const int flag_china = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int flag_el_salvador = 2130837634;
+			public const int flag_colombia = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int flag_eritrea = 2130837635;
+			public const int flag_comoros = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int flag_estonia = 2130837636;
+			public const int flag_costa_rica = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int flag_ethiopia = 2130837637;
+			public const int flag_croatia = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int flag_eu = 2130837638;
+			public const int flag_cuba = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int flag_falkland_islands = 2130837639;
+			public const int flag_czech_republic = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int flag_fiji = 2130837640;
+			public const int flag_denmark = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int flag_french_polynesia = 2130837641;
+			public const int flag_djibouti = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int flag_gambia = 2130837642;
+			public const int flag_dominica = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int flag_ghana = 2130837643;
+			public const int flag_ecuador = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int flag_gibraltar = 2130837644;
+			public const int flag_egypt = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int flag_guatemala = 2130837645;
+			public const int flag_el_salvador = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int flag_guinea = 2130837646;
+			public const int flag_eritrea = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int flag_guyana = 2130837647;
+			public const int flag_estonia = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int flag_haiti = 2130837648;
+			public const int flag_ethiopia = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int flag_honduras = 2130837649;
+			public const int flag_eu = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int flag_hong_kong = 2130837650;
+			public const int flag_falkland_islands = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int flag_hungary = 2130837651;
+			public const int flag_fiji = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int flag_iceland = 2130837652;
+			public const int flag_french_polynesia = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int flag_india = 2130837653;
+			public const int flag_gambia = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int flag_indonesia = 2130837654;
+			public const int flag_ghana = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int flag_iran = 2130837655;
+			public const int flag_gibraltar = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int flag_iraq = 2130837656;
+			public const int flag_guatemala = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int flag_israel = 2130837657;
+			public const int flag_guinea = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int flag_jamaica = 2130837658;
+			public const int flag_guyana = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int flag_japan = 2130837659;
+			public const int flag_haiti = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int flag_jordan = 2130837660;
+			public const int flag_honduras = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int flag_kazakhstan = 2130837661;
+			public const int flag_hong_kong = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int flag_kenya = 2130837662;
+			public const int flag_hungary = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int flag_kuwait = 2130837663;
+			public const int flag_iceland = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int flag_laos = 2130837664;
+			public const int flag_india = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int flag_latvia = 2130837665;
+			public const int flag_indonesia = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int flag_lebanon = 2130837666;
+			public const int flag_iran = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int flag_lesotho = 2130837667;
+			public const int flag_iraq = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int flag_liberia = 2130837668;
+			public const int flag_israel = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int flag_libya = 2130837669;
+			public const int flag_jamaica = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int flag_lithuania = 2130837670;
+			public const int flag_japan = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int flag_macau = 2130837671;
+			public const int flag_jordan = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int flag_macedonia = 2130837672;
+			public const int flag_kazakhstan = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int flag_malawi = 2130837673;
+			public const int flag_kenya = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int flag_malaysia = 2130837674;
+			public const int flag_kuwait = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int flag_maldives = 2130837675;
+			public const int flag_laos = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int flag_mali = 2130837676;
+			public const int flag_latvia = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int flag_malta = 2130837677;
+			public const int flag_lebanon = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int flag_mauritania = 2130837678;
+			public const int flag_lesotho = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int flag_mauritius = 2130837679;
+			public const int flag_liberia = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int flag_mexico = 2130837680;
+			public const int flag_libya = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int flag_moldova = 2130837681;
+			public const int flag_lithuania = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int flag_mongolia = 2130837682;
+			public const int flag_macau = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int flag_morocco = 2130837683;
+			public const int flag_macedonia = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int flag_namibia = 2130837684;
+			public const int flag_malawi = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int flag_nepal = 2130837685;
+			public const int flag_malaysia = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int flag_new_zealand = 2130837686;
+			public const int flag_maldives = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int flag_nicaragua = 2130837687;
+			public const int flag_mali = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int flag_nigeria = 2130837688;
+			public const int flag_malta = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int flag_north_korea = 2130837689;
+			public const int flag_mauritania = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int flag_norway = 2130837690;
+			public const int flag_mauritius = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int flag_oman = 2130837691;
+			public const int flag_mexico = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int flag_pakistan = 2130837692;
+			public const int flag_moldova = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int flag_panama = 2130837693;
+			public const int flag_mongolia = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int flag_papua_new_guinea = 2130837694;
+			public const int flag_morocco = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int flag_paraguay = 2130837695;
+			public const int flag_namibia = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int flag_peru = 2130837696;
+			public const int flag_nepal = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int flag_philippines = 2130837697;
+			public const int flag_new_zealand = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int flag_poland = 2130837698;
+			public const int flag_nicaragua = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int flag_qatar = 2130837699;
+			public const int flag_nigeria = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int flag_romania = 2130837700;
+			public const int flag_north_korea = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int flag_russia = 2130837701;
+			public const int flag_norway = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int flag_rwanda = 2130837702;
+			public const int flag_oman = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int flag_saint_helena = 2130837703;
+			public const int flag_pakistan = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int flag_samoa = 2130837704;
+			public const int flag_panama = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int flag_sao_tome_and_principe = 2130837705;
+			public const int flag_papua_new_guinea = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int flag_saudi_arabia = 2130837706;
+			public const int flag_paraguay = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int flag_seychelles = 2130837707;
+			public const int flag_peru = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int flag_sierra_leone = 2130837708;
+			public const int flag_philippines = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int flag_singapore = 2130837709;
+			public const int flag_poland = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int flag_slovakia = 2130837710;
+			public const int flag_qatar = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int flag_slovenia = 2130837711;
+			public const int flag_romania = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int flag_solomon_islands = 2130837712;
+			public const int flag_russia = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int flag_somalia = 2130837713;
+			public const int flag_rwanda = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int flag_south_africa = 2130837714;
+			public const int flag_saint_helena = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int flag_south_korea = 2130837715;
+			public const int flag_samoa = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int flag_sri_lanka = 2130837716;
+			public const int flag_sao_tome_and_principe = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int flag_sudan = 2130837717;
+			public const int flag_saudi_arabia = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int flag_swaziland = 2130837718;
+			public const int flag_seychelles = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int flag_sweden = 2130837719;
+			public const int flag_sierra_leone = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int flag_switzerland = 2130837720;
+			public const int flag_singapore = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int flag_syria = 2130837721;
+			public const int flag_slovakia = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int flag_taiwan = 2130837722;
+			public const int flag_slovenia = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int flag_tanzania = 2130837723;
+			public const int flag_solomon_islands = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int flag_thailand = 2130837724;
+			public const int flag_somalia = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int flag_tonga = 2130837725;
+			public const int flag_south_africa = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int flag_trinidad_and_tobago = 2130837726;
+			public const int flag_south_korea = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int flag_tunisia = 2130837727;
+			public const int flag_sri_lanka = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int flag_turkey = 2130837728;
+			public const int flag_sudan = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int flag_uganda = 2130837729;
+			public const int flag_swaziland = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int flag_ukraine = 2130837730;
+			public const int flag_sweden = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int flag_united_arab_emirates = 2130837731;
+			public const int flag_switzerland = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int flag_united_kingdom = 2130837732;
+			public const int flag_syria = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int flag_uruguay = 2130837733;
+			public const int flag_taiwan = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int flag_usa = 2130837734;
+			public const int flag_tanzania = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int flag_vanuatu = 2130837735;
+			public const int flag_thailand = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int flag_venezuela = 2130837736;
+			public const int flag_tonga = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int flag_vietnam = 2130837737;
+			public const int flag_trinidad_and_tobago = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int flag_white = 2130837738;
+			public const int flag_tunisia = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int flag_yemen = 2130837739;
+			public const int flag_turkey = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int flag_zambia = 2130837740;
+			public const int flag_uganda = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int flag_zimbabwe = 2130837741;
+			public const int flag_ukraine = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_audiotrack_dark = 2130837742;
+			public const int flag_united_arab_emirates = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_audiotrack_light = 2130837743;
+			public const int flag_united_kingdom = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_dialog_close_dark = 2130837744;
+			public const int flag_uruguay = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_dialog_close_light = 2130837745;
+			public const int flag_usa = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_group_collapse_00 = 2130837746;
+			public const int flag_vanuatu = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_group_collapse_01 = 2130837747;
+			public const int flag_venezuela = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int ic_group_collapse_02 = 2130837748;
+			public const int flag_vietnam = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int ic_group_collapse_03 = 2130837749;
+			public const int flag_white = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int ic_group_collapse_04 = 2130837750;
+			public const int flag_yemen = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int ic_group_collapse_05 = 2130837751;
+			public const int flag_zambia = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int ic_group_collapse_06 = 2130837752;
+			public const int flag_zimbabwe = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int ic_group_collapse_07 = 2130837753;
+			public const int ic_audiotrack_dark = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int ic_group_collapse_08 = 2130837754;
+			public const int ic_audiotrack_light = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int ic_group_collapse_09 = 2130837755;
+			public const int ic_dialog_close_dark = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int ic_group_collapse_10 = 2130837756;
+			public const int ic_dialog_close_light = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int ic_group_collapse_11 = 2130837757;
+			public const int ic_group_collapse_00 = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int ic_group_collapse_12 = 2130837758;
+			public const int ic_group_collapse_01 = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int ic_group_collapse_13 = 2130837759;
+			public const int ic_group_collapse_02 = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int ic_group_collapse_14 = 2130837760;
+			public const int ic_group_collapse_03 = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int ic_group_collapse_15 = 2130837761;
+			public const int ic_group_collapse_04 = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int ic_group_expand_00 = 2130837762;
+			public const int ic_group_collapse_05 = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int ic_group_expand_01 = 2130837763;
+			public const int ic_group_collapse_06 = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int ic_group_expand_02 = 2130837764;
+			public const int ic_group_collapse_07 = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int ic_group_expand_03 = 2130837765;
+			public const int ic_group_collapse_08 = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int ic_group_expand_04 = 2130837766;
+			public const int ic_group_collapse_09 = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int ic_group_expand_05 = 2130837767;
+			public const int ic_group_collapse_10 = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int ic_group_expand_06 = 2130837768;
+			public const int ic_group_collapse_11 = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int ic_group_expand_07 = 2130837769;
+			public const int ic_group_collapse_12 = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int ic_group_expand_08 = 2130837770;
+			public const int ic_group_collapse_13 = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int ic_group_expand_09 = 2130837771;
+			public const int ic_group_collapse_14 = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int ic_group_expand_10 = 2130837772;
+			public const int ic_group_collapse_15 = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int ic_group_expand_11 = 2130837773;
+			public const int ic_group_expand_00 = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int ic_group_expand_12 = 2130837774;
+			public const int ic_group_expand_01 = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int ic_group_expand_13 = 2130837775;
+			public const int ic_group_expand_02 = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int ic_group_expand_14 = 2130837776;
+			public const int ic_group_expand_03 = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int ic_group_expand_15 = 2130837777;
+			public const int ic_group_expand_04 = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int ic_launcher_foreground = 2130837778;
+			public const int ic_group_expand_05 = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int ic_media_pause_dark = 2130837779;
+			public const int ic_group_expand_06 = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int ic_media_pause_light = 2130837780;
+			public const int ic_group_expand_07 = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int ic_media_play_dark = 2130837781;
+			public const int ic_group_expand_08 = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int ic_media_play_light = 2130837782;
+			public const int ic_group_expand_09 = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int ic_media_stop_dark = 2130837783;
+			public const int ic_group_expand_10 = 2130837783;
 			
 			// aapt resource value: 0x7f020118
-			public const int ic_media_stop_light = 2130837784;
+			public const int ic_group_expand_11 = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int ic_mr_button_connected_00_dark = 2130837785;
+			public const int ic_group_expand_12 = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int ic_mr_button_connected_00_light = 2130837786;
+			public const int ic_group_expand_13 = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int ic_mr_button_connected_01_dark = 2130837787;
+			public const int ic_group_expand_14 = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int ic_mr_button_connected_01_light = 2130837788;
+			public const int ic_group_expand_15 = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int ic_mr_button_connected_02_dark = 2130837789;
+			public const int ic_launcher_foreground = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int ic_mr_button_connected_02_light = 2130837790;
+			public const int ic_media_pause_dark = 2130837790;
 			
 			// aapt resource value: 0x7f02011f
-			public const int ic_mr_button_connected_03_dark = 2130837791;
+			public const int ic_media_pause_light = 2130837791;
 			
 			// aapt resource value: 0x7f020120
-			public const int ic_mr_button_connected_03_light = 2130837792;
+			public const int ic_media_play_dark = 2130837792;
 			
 			// aapt resource value: 0x7f020121
-			public const int ic_mr_button_connected_04_dark = 2130837793;
+			public const int ic_media_play_light = 2130837793;
 			
 			// aapt resource value: 0x7f020122
-			public const int ic_mr_button_connected_04_light = 2130837794;
+			public const int ic_media_stop_dark = 2130837794;
 			
 			// aapt resource value: 0x7f020123
-			public const int ic_mr_button_connected_05_dark = 2130837795;
+			public const int ic_media_stop_light = 2130837795;
 			
 			// aapt resource value: 0x7f020124
-			public const int ic_mr_button_connected_05_light = 2130837796;
+			public const int ic_mr_button_connected_00_dark = 2130837796;
 			
 			// aapt resource value: 0x7f020125
-			public const int ic_mr_button_connected_06_dark = 2130837797;
+			public const int ic_mr_button_connected_00_light = 2130837797;
 			
 			// aapt resource value: 0x7f020126
-			public const int ic_mr_button_connected_06_light = 2130837798;
+			public const int ic_mr_button_connected_01_dark = 2130837798;
 			
 			// aapt resource value: 0x7f020127
-			public const int ic_mr_button_connected_07_dark = 2130837799;
+			public const int ic_mr_button_connected_01_light = 2130837799;
 			
 			// aapt resource value: 0x7f020128
-			public const int ic_mr_button_connected_07_light = 2130837800;
+			public const int ic_mr_button_connected_02_dark = 2130837800;
 			
 			// aapt resource value: 0x7f020129
-			public const int ic_mr_button_connected_08_dark = 2130837801;
+			public const int ic_mr_button_connected_02_light = 2130837801;
 			
 			// aapt resource value: 0x7f02012a
-			public const int ic_mr_button_connected_08_light = 2130837802;
+			public const int ic_mr_button_connected_03_dark = 2130837802;
 			
 			// aapt resource value: 0x7f02012b
-			public const int ic_mr_button_connected_09_dark = 2130837803;
+			public const int ic_mr_button_connected_03_light = 2130837803;
 			
 			// aapt resource value: 0x7f02012c
-			public const int ic_mr_button_connected_09_light = 2130837804;
+			public const int ic_mr_button_connected_04_dark = 2130837804;
 			
 			// aapt resource value: 0x7f02012d
-			public const int ic_mr_button_connected_10_dark = 2130837805;
+			public const int ic_mr_button_connected_04_light = 2130837805;
 			
 			// aapt resource value: 0x7f02012e
-			public const int ic_mr_button_connected_10_light = 2130837806;
+			public const int ic_mr_button_connected_05_dark = 2130837806;
 			
 			// aapt resource value: 0x7f02012f
-			public const int ic_mr_button_connected_11_dark = 2130837807;
+			public const int ic_mr_button_connected_05_light = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int ic_mr_button_connected_11_light = 2130837808;
+			public const int ic_mr_button_connected_06_dark = 2130837808;
 			
 			// aapt resource value: 0x7f020131
-			public const int ic_mr_button_connected_12_dark = 2130837809;
+			public const int ic_mr_button_connected_06_light = 2130837809;
 			
 			// aapt resource value: 0x7f020132
-			public const int ic_mr_button_connected_12_light = 2130837810;
+			public const int ic_mr_button_connected_07_dark = 2130837810;
 			
 			// aapt resource value: 0x7f020133
-			public const int ic_mr_button_connected_13_dark = 2130837811;
+			public const int ic_mr_button_connected_07_light = 2130837811;
 			
 			// aapt resource value: 0x7f020134
-			public const int ic_mr_button_connected_13_light = 2130837812;
+			public const int ic_mr_button_connected_08_dark = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int ic_mr_button_connected_14_dark = 2130837813;
+			public const int ic_mr_button_connected_08_light = 2130837813;
 			
 			// aapt resource value: 0x7f020136
-			public const int ic_mr_button_connected_14_light = 2130837814;
+			public const int ic_mr_button_connected_09_dark = 2130837814;
 			
 			// aapt resource value: 0x7f020137
-			public const int ic_mr_button_connected_15_dark = 2130837815;
+			public const int ic_mr_button_connected_09_light = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int ic_mr_button_connected_15_light = 2130837816;
+			public const int ic_mr_button_connected_10_dark = 2130837816;
 			
 			// aapt resource value: 0x7f020139
-			public const int ic_mr_button_connected_16_dark = 2130837817;
+			public const int ic_mr_button_connected_10_light = 2130837817;
 			
 			// aapt resource value: 0x7f02013a
-			public const int ic_mr_button_connected_16_light = 2130837818;
+			public const int ic_mr_button_connected_11_dark = 2130837818;
 			
 			// aapt resource value: 0x7f02013b
-			public const int ic_mr_button_connected_17_dark = 2130837819;
+			public const int ic_mr_button_connected_11_light = 2130837819;
 			
 			// aapt resource value: 0x7f02013c
-			public const int ic_mr_button_connected_17_light = 2130837820;
+			public const int ic_mr_button_connected_12_dark = 2130837820;
 			
 			// aapt resource value: 0x7f02013d
-			public const int ic_mr_button_connected_18_dark = 2130837821;
+			public const int ic_mr_button_connected_12_light = 2130837821;
 			
 			// aapt resource value: 0x7f02013e
-			public const int ic_mr_button_connected_18_light = 2130837822;
+			public const int ic_mr_button_connected_13_dark = 2130837822;
 			
 			// aapt resource value: 0x7f02013f
-			public const int ic_mr_button_connected_19_dark = 2130837823;
+			public const int ic_mr_button_connected_13_light = 2130837823;
 			
 			// aapt resource value: 0x7f020140
-			public const int ic_mr_button_connected_19_light = 2130837824;
+			public const int ic_mr_button_connected_14_dark = 2130837824;
 			
 			// aapt resource value: 0x7f020141
-			public const int ic_mr_button_connected_20_dark = 2130837825;
+			public const int ic_mr_button_connected_14_light = 2130837825;
 			
 			// aapt resource value: 0x7f020142
-			public const int ic_mr_button_connected_20_light = 2130837826;
+			public const int ic_mr_button_connected_15_dark = 2130837826;
 			
 			// aapt resource value: 0x7f020143
-			public const int ic_mr_button_connected_21_dark = 2130837827;
+			public const int ic_mr_button_connected_15_light = 2130837827;
 			
 			// aapt resource value: 0x7f020144
-			public const int ic_mr_button_connected_21_light = 2130837828;
+			public const int ic_mr_button_connected_16_dark = 2130837828;
 			
 			// aapt resource value: 0x7f020145
-			public const int ic_mr_button_connected_22_dark = 2130837829;
+			public const int ic_mr_button_connected_16_light = 2130837829;
 			
 			// aapt resource value: 0x7f020146
-			public const int ic_mr_button_connected_22_light = 2130837830;
+			public const int ic_mr_button_connected_17_dark = 2130837830;
 			
 			// aapt resource value: 0x7f020147
-			public const int ic_mr_button_connected_23_dark = 2130837831;
+			public const int ic_mr_button_connected_17_light = 2130837831;
 			
 			// aapt resource value: 0x7f020148
-			public const int ic_mr_button_connected_23_light = 2130837832;
+			public const int ic_mr_button_connected_18_dark = 2130837832;
 			
 			// aapt resource value: 0x7f020149
-			public const int ic_mr_button_connected_24_dark = 2130837833;
+			public const int ic_mr_button_connected_18_light = 2130837833;
 			
 			// aapt resource value: 0x7f02014a
-			public const int ic_mr_button_connected_24_light = 2130837834;
+			public const int ic_mr_button_connected_19_dark = 2130837834;
 			
 			// aapt resource value: 0x7f02014b
-			public const int ic_mr_button_connected_25_dark = 2130837835;
+			public const int ic_mr_button_connected_19_light = 2130837835;
 			
 			// aapt resource value: 0x7f02014c
-			public const int ic_mr_button_connected_25_light = 2130837836;
+			public const int ic_mr_button_connected_20_dark = 2130837836;
 			
 			// aapt resource value: 0x7f02014d
-			public const int ic_mr_button_connected_26_dark = 2130837837;
+			public const int ic_mr_button_connected_20_light = 2130837837;
 			
 			// aapt resource value: 0x7f02014e
-			public const int ic_mr_button_connected_26_light = 2130837838;
+			public const int ic_mr_button_connected_21_dark = 2130837838;
 			
 			// aapt resource value: 0x7f02014f
-			public const int ic_mr_button_connected_27_dark = 2130837839;
+			public const int ic_mr_button_connected_21_light = 2130837839;
 			
 			// aapt resource value: 0x7f020150
-			public const int ic_mr_button_connected_27_light = 2130837840;
+			public const int ic_mr_button_connected_22_dark = 2130837840;
 			
 			// aapt resource value: 0x7f020151
-			public const int ic_mr_button_connected_28_dark = 2130837841;
+			public const int ic_mr_button_connected_22_light = 2130837841;
 			
 			// aapt resource value: 0x7f020152
-			public const int ic_mr_button_connected_28_light = 2130837842;
+			public const int ic_mr_button_connected_23_dark = 2130837842;
 			
 			// aapt resource value: 0x7f020153
-			public const int ic_mr_button_connected_29_dark = 2130837843;
+			public const int ic_mr_button_connected_23_light = 2130837843;
 			
 			// aapt resource value: 0x7f020154
-			public const int ic_mr_button_connected_29_light = 2130837844;
+			public const int ic_mr_button_connected_24_dark = 2130837844;
 			
 			// aapt resource value: 0x7f020155
-			public const int ic_mr_button_connected_30_dark = 2130837845;
+			public const int ic_mr_button_connected_24_light = 2130837845;
 			
 			// aapt resource value: 0x7f020156
-			public const int ic_mr_button_connected_30_light = 2130837846;
+			public const int ic_mr_button_connected_25_dark = 2130837846;
 			
 			// aapt resource value: 0x7f020157
-			public const int ic_mr_button_connecting_00_dark = 2130837847;
+			public const int ic_mr_button_connected_25_light = 2130837847;
 			
 			// aapt resource value: 0x7f020158
-			public const int ic_mr_button_connecting_00_light = 2130837848;
+			public const int ic_mr_button_connected_26_dark = 2130837848;
 			
 			// aapt resource value: 0x7f020159
-			public const int ic_mr_button_connecting_01_dark = 2130837849;
+			public const int ic_mr_button_connected_26_light = 2130837849;
 			
 			// aapt resource value: 0x7f02015a
-			public const int ic_mr_button_connecting_01_light = 2130837850;
+			public const int ic_mr_button_connected_27_dark = 2130837850;
 			
 			// aapt resource value: 0x7f02015b
-			public const int ic_mr_button_connecting_02_dark = 2130837851;
+			public const int ic_mr_button_connected_27_light = 2130837851;
 			
 			// aapt resource value: 0x7f02015c
-			public const int ic_mr_button_connecting_02_light = 2130837852;
+			public const int ic_mr_button_connected_28_dark = 2130837852;
 			
 			// aapt resource value: 0x7f02015d
-			public const int ic_mr_button_connecting_03_dark = 2130837853;
+			public const int ic_mr_button_connected_28_light = 2130837853;
 			
 			// aapt resource value: 0x7f02015e
-			public const int ic_mr_button_connecting_03_light = 2130837854;
+			public const int ic_mr_button_connected_29_dark = 2130837854;
 			
 			// aapt resource value: 0x7f02015f
-			public const int ic_mr_button_connecting_04_dark = 2130837855;
+			public const int ic_mr_button_connected_29_light = 2130837855;
 			
 			// aapt resource value: 0x7f020160
-			public const int ic_mr_button_connecting_04_light = 2130837856;
+			public const int ic_mr_button_connected_30_dark = 2130837856;
 			
 			// aapt resource value: 0x7f020161
-			public const int ic_mr_button_connecting_05_dark = 2130837857;
+			public const int ic_mr_button_connected_30_light = 2130837857;
 			
 			// aapt resource value: 0x7f020162
-			public const int ic_mr_button_connecting_05_light = 2130837858;
+			public const int ic_mr_button_connecting_00_dark = 2130837858;
 			
 			// aapt resource value: 0x7f020163
-			public const int ic_mr_button_connecting_06_dark = 2130837859;
+			public const int ic_mr_button_connecting_00_light = 2130837859;
 			
 			// aapt resource value: 0x7f020164
-			public const int ic_mr_button_connecting_06_light = 2130837860;
+			public const int ic_mr_button_connecting_01_dark = 2130837860;
 			
 			// aapt resource value: 0x7f020165
-			public const int ic_mr_button_connecting_07_dark = 2130837861;
+			public const int ic_mr_button_connecting_01_light = 2130837861;
 			
 			// aapt resource value: 0x7f020166
-			public const int ic_mr_button_connecting_07_light = 2130837862;
+			public const int ic_mr_button_connecting_02_dark = 2130837862;
 			
 			// aapt resource value: 0x7f020167
-			public const int ic_mr_button_connecting_08_dark = 2130837863;
+			public const int ic_mr_button_connecting_02_light = 2130837863;
 			
 			// aapt resource value: 0x7f020168
-			public const int ic_mr_button_connecting_08_light = 2130837864;
+			public const int ic_mr_button_connecting_03_dark = 2130837864;
 			
 			// aapt resource value: 0x7f020169
-			public const int ic_mr_button_connecting_09_dark = 2130837865;
+			public const int ic_mr_button_connecting_03_light = 2130837865;
 			
 			// aapt resource value: 0x7f02016a
-			public const int ic_mr_button_connecting_09_light = 2130837866;
+			public const int ic_mr_button_connecting_04_dark = 2130837866;
 			
 			// aapt resource value: 0x7f02016b
-			public const int ic_mr_button_connecting_10_dark = 2130837867;
+			public const int ic_mr_button_connecting_04_light = 2130837867;
 			
 			// aapt resource value: 0x7f02016c
-			public const int ic_mr_button_connecting_10_light = 2130837868;
+			public const int ic_mr_button_connecting_05_dark = 2130837868;
 			
 			// aapt resource value: 0x7f02016d
-			public const int ic_mr_button_connecting_11_dark = 2130837869;
+			public const int ic_mr_button_connecting_05_light = 2130837869;
 			
 			// aapt resource value: 0x7f02016e
-			public const int ic_mr_button_connecting_11_light = 2130837870;
+			public const int ic_mr_button_connecting_06_dark = 2130837870;
 			
 			// aapt resource value: 0x7f02016f
-			public const int ic_mr_button_connecting_12_dark = 2130837871;
+			public const int ic_mr_button_connecting_06_light = 2130837871;
 			
 			// aapt resource value: 0x7f020170
-			public const int ic_mr_button_connecting_12_light = 2130837872;
+			public const int ic_mr_button_connecting_07_dark = 2130837872;
 			
 			// aapt resource value: 0x7f020171
-			public const int ic_mr_button_connecting_13_dark = 2130837873;
+			public const int ic_mr_button_connecting_07_light = 2130837873;
 			
 			// aapt resource value: 0x7f020172
-			public const int ic_mr_button_connecting_13_light = 2130837874;
+			public const int ic_mr_button_connecting_08_dark = 2130837874;
 			
 			// aapt resource value: 0x7f020173
-			public const int ic_mr_button_connecting_14_dark = 2130837875;
+			public const int ic_mr_button_connecting_08_light = 2130837875;
 			
 			// aapt resource value: 0x7f020174
-			public const int ic_mr_button_connecting_14_light = 2130837876;
+			public const int ic_mr_button_connecting_09_dark = 2130837876;
 			
 			// aapt resource value: 0x7f020175
-			public const int ic_mr_button_connecting_15_dark = 2130837877;
+			public const int ic_mr_button_connecting_09_light = 2130837877;
 			
 			// aapt resource value: 0x7f020176
-			public const int ic_mr_button_connecting_15_light = 2130837878;
+			public const int ic_mr_button_connecting_10_dark = 2130837878;
 			
 			// aapt resource value: 0x7f020177
-			public const int ic_mr_button_connecting_16_dark = 2130837879;
+			public const int ic_mr_button_connecting_10_light = 2130837879;
 			
 			// aapt resource value: 0x7f020178
-			public const int ic_mr_button_connecting_16_light = 2130837880;
+			public const int ic_mr_button_connecting_11_dark = 2130837880;
 			
 			// aapt resource value: 0x7f020179
-			public const int ic_mr_button_connecting_17_dark = 2130837881;
+			public const int ic_mr_button_connecting_11_light = 2130837881;
 			
 			// aapt resource value: 0x7f02017a
-			public const int ic_mr_button_connecting_17_light = 2130837882;
+			public const int ic_mr_button_connecting_12_dark = 2130837882;
 			
 			// aapt resource value: 0x7f02017b
-			public const int ic_mr_button_connecting_18_dark = 2130837883;
+			public const int ic_mr_button_connecting_12_light = 2130837883;
 			
 			// aapt resource value: 0x7f02017c
-			public const int ic_mr_button_connecting_18_light = 2130837884;
+			public const int ic_mr_button_connecting_13_dark = 2130837884;
 			
 			// aapt resource value: 0x7f02017d
-			public const int ic_mr_button_connecting_19_dark = 2130837885;
+			public const int ic_mr_button_connecting_13_light = 2130837885;
 			
 			// aapt resource value: 0x7f02017e
-			public const int ic_mr_button_connecting_19_light = 2130837886;
+			public const int ic_mr_button_connecting_14_dark = 2130837886;
 			
 			// aapt resource value: 0x7f02017f
-			public const int ic_mr_button_connecting_20_dark = 2130837887;
+			public const int ic_mr_button_connecting_14_light = 2130837887;
 			
 			// aapt resource value: 0x7f020180
-			public const int ic_mr_button_connecting_20_light = 2130837888;
+			public const int ic_mr_button_connecting_15_dark = 2130837888;
 			
 			// aapt resource value: 0x7f020181
-			public const int ic_mr_button_connecting_21_dark = 2130837889;
+			public const int ic_mr_button_connecting_15_light = 2130837889;
 			
 			// aapt resource value: 0x7f020182
-			public const int ic_mr_button_connecting_21_light = 2130837890;
+			public const int ic_mr_button_connecting_16_dark = 2130837890;
 			
 			// aapt resource value: 0x7f020183
-			public const int ic_mr_button_connecting_22_dark = 2130837891;
+			public const int ic_mr_button_connecting_16_light = 2130837891;
 			
 			// aapt resource value: 0x7f020184
-			public const int ic_mr_button_connecting_22_light = 2130837892;
+			public const int ic_mr_button_connecting_17_dark = 2130837892;
 			
 			// aapt resource value: 0x7f020185
-			public const int ic_mr_button_connecting_23_dark = 2130837893;
+			public const int ic_mr_button_connecting_17_light = 2130837893;
 			
 			// aapt resource value: 0x7f020186
-			public const int ic_mr_button_connecting_23_light = 2130837894;
+			public const int ic_mr_button_connecting_18_dark = 2130837894;
 			
 			// aapt resource value: 0x7f020187
-			public const int ic_mr_button_connecting_24_dark = 2130837895;
+			public const int ic_mr_button_connecting_18_light = 2130837895;
 			
 			// aapt resource value: 0x7f020188
-			public const int ic_mr_button_connecting_24_light = 2130837896;
+			public const int ic_mr_button_connecting_19_dark = 2130837896;
 			
 			// aapt resource value: 0x7f020189
-			public const int ic_mr_button_connecting_25_dark = 2130837897;
+			public const int ic_mr_button_connecting_19_light = 2130837897;
 			
 			// aapt resource value: 0x7f02018a
-			public const int ic_mr_button_connecting_25_light = 2130837898;
+			public const int ic_mr_button_connecting_20_dark = 2130837898;
 			
 			// aapt resource value: 0x7f02018b
-			public const int ic_mr_button_connecting_26_dark = 2130837899;
+			public const int ic_mr_button_connecting_20_light = 2130837899;
 			
 			// aapt resource value: 0x7f02018c
-			public const int ic_mr_button_connecting_26_light = 2130837900;
+			public const int ic_mr_button_connecting_21_dark = 2130837900;
 			
 			// aapt resource value: 0x7f02018d
-			public const int ic_mr_button_connecting_27_dark = 2130837901;
+			public const int ic_mr_button_connecting_21_light = 2130837901;
 			
 			// aapt resource value: 0x7f02018e
-			public const int ic_mr_button_connecting_27_light = 2130837902;
+			public const int ic_mr_button_connecting_22_dark = 2130837902;
 			
 			// aapt resource value: 0x7f02018f
-			public const int ic_mr_button_connecting_28_dark = 2130837903;
+			public const int ic_mr_button_connecting_22_light = 2130837903;
 			
 			// aapt resource value: 0x7f020190
-			public const int ic_mr_button_connecting_28_light = 2130837904;
+			public const int ic_mr_button_connecting_23_dark = 2130837904;
 			
 			// aapt resource value: 0x7f020191
-			public const int ic_mr_button_connecting_29_dark = 2130837905;
+			public const int ic_mr_button_connecting_23_light = 2130837905;
 			
 			// aapt resource value: 0x7f020192
-			public const int ic_mr_button_connecting_29_light = 2130837906;
+			public const int ic_mr_button_connecting_24_dark = 2130837906;
 			
 			// aapt resource value: 0x7f020193
-			public const int ic_mr_button_connecting_30_dark = 2130837907;
+			public const int ic_mr_button_connecting_24_light = 2130837907;
 			
 			// aapt resource value: 0x7f020194
-			public const int ic_mr_button_connecting_30_light = 2130837908;
+			public const int ic_mr_button_connecting_25_dark = 2130837908;
 			
 			// aapt resource value: 0x7f020195
-			public const int ic_mr_button_disabled_dark = 2130837909;
+			public const int ic_mr_button_connecting_25_light = 2130837909;
 			
 			// aapt resource value: 0x7f020196
-			public const int ic_mr_button_disabled_light = 2130837910;
+			public const int ic_mr_button_connecting_26_dark = 2130837910;
 			
 			// aapt resource value: 0x7f020197
-			public const int ic_mr_button_disconnected_dark = 2130837911;
+			public const int ic_mr_button_connecting_26_light = 2130837911;
 			
 			// aapt resource value: 0x7f020198
-			public const int ic_mr_button_disconnected_light = 2130837912;
+			public const int ic_mr_button_connecting_27_dark = 2130837912;
 			
 			// aapt resource value: 0x7f020199
-			public const int ic_mr_button_grey = 2130837913;
+			public const int ic_mr_button_connecting_27_light = 2130837913;
 			
 			// aapt resource value: 0x7f02019a
-			public const int ic_mvvmcross_logo = 2130837914;
+			public const int ic_mr_button_connecting_28_dark = 2130837914;
 			
 			// aapt resource value: 0x7f02019b
-			public const int ic_stat_notify_dot = 2130837915;
+			public const int ic_mr_button_connecting_28_light = 2130837915;
 			
 			// aapt resource value: 0x7f02019c
-			public const int ic_vol_type_speaker_dark = 2130837916;
+			public const int ic_mr_button_connecting_29_dark = 2130837916;
 			
 			// aapt resource value: 0x7f02019d
-			public const int ic_vol_type_speaker_group_dark = 2130837917;
+			public const int ic_mr_button_connecting_29_light = 2130837917;
 			
 			// aapt resource value: 0x7f02019e
-			public const int ic_vol_type_speaker_group_light = 2130837918;
+			public const int ic_mr_button_connecting_30_dark = 2130837918;
 			
 			// aapt resource value: 0x7f02019f
-			public const int ic_vol_type_speaker_light = 2130837919;
+			public const int ic_mr_button_connecting_30_light = 2130837919;
 			
 			// aapt resource value: 0x7f0201a0
-			public const int ic_vol_type_tv_dark = 2130837920;
+			public const int ic_mr_button_disabled_dark = 2130837920;
 			
 			// aapt resource value: 0x7f0201a1
-			public const int ic_vol_type_tv_light = 2130837921;
+			public const int ic_mr_button_disabled_light = 2130837921;
 			
 			// aapt resource value: 0x7f0201a2
-			public const int inputlayout_togglecollapseicon = 2130837922;
+			public const int ic_mr_button_disconnected_dark = 2130837922;
 			
 			// aapt resource value: 0x7f0201a3
-			public const int inputlayout_togglevisibleicon = 2130837923;
+			public const int ic_mr_button_disconnected_light = 2130837923;
 			
 			// aapt resource value: 0x7f0201a4
-			public const int mr_button_connected_dark = 2130837924;
+			public const int ic_mr_button_grey = 2130837924;
 			
 			// aapt resource value: 0x7f0201a5
-			public const int mr_button_connected_light = 2130837925;
+			public const int ic_mvvmcross_logo = 2130837925;
 			
 			// aapt resource value: 0x7f0201a6
-			public const int mr_button_connecting_dark = 2130837926;
+			public const int ic_stat_notify_dot = 2130837926;
 			
 			// aapt resource value: 0x7f0201a7
-			public const int mr_button_connecting_light = 2130837927;
+			public const int ic_vol_type_speaker_dark = 2130837927;
 			
 			// aapt resource value: 0x7f0201a8
-			public const int mr_button_dark = 2130837928;
+			public const int ic_vol_type_speaker_group_dark = 2130837928;
 			
 			// aapt resource value: 0x7f0201a9
-			public const int mr_button_light = 2130837929;
+			public const int ic_vol_type_speaker_group_light = 2130837929;
 			
 			// aapt resource value: 0x7f0201aa
-			public const int mr_dialog_close_dark = 2130837930;
+			public const int ic_vol_type_speaker_light = 2130837930;
 			
 			// aapt resource value: 0x7f0201ab
-			public const int mr_dialog_close_light = 2130837931;
+			public const int ic_vol_type_tv_dark = 2130837931;
 			
 			// aapt resource value: 0x7f0201ac
-			public const int mr_dialog_material_background_dark = 2130837932;
+			public const int ic_vol_type_tv_light = 2130837932;
 			
 			// aapt resource value: 0x7f0201ad
-			public const int mr_dialog_material_background_light = 2130837933;
+			public const int inputlayout_togglecollapseicon = 2130837933;
 			
 			// aapt resource value: 0x7f0201ae
-			public const int mr_group_collapse = 2130837934;
+			public const int inputlayout_togglevisibleicon = 2130837934;
 			
 			// aapt resource value: 0x7f0201af
-			public const int mr_group_expand = 2130837935;
+			public const int mr_button_connected_dark = 2130837935;
 			
 			// aapt resource value: 0x7f0201b0
-			public const int mr_media_pause_dark = 2130837936;
+			public const int mr_button_connected_light = 2130837936;
 			
 			// aapt resource value: 0x7f0201b1
-			public const int mr_media_pause_light = 2130837937;
+			public const int mr_button_connecting_dark = 2130837937;
 			
 			// aapt resource value: 0x7f0201b2
-			public const int mr_media_play_dark = 2130837938;
+			public const int mr_button_connecting_light = 2130837938;
 			
 			// aapt resource value: 0x7f0201b3
-			public const int mr_media_play_light = 2130837939;
+			public const int mr_button_dark = 2130837939;
 			
 			// aapt resource value: 0x7f0201b4
-			public const int mr_media_stop_dark = 2130837940;
+			public const int mr_button_light = 2130837940;
 			
 			// aapt resource value: 0x7f0201b5
-			public const int mr_media_stop_light = 2130837941;
+			public const int mr_dialog_close_dark = 2130837941;
 			
 			// aapt resource value: 0x7f0201b6
-			public const int mr_vol_type_audiotrack_dark = 2130837942;
+			public const int mr_dialog_close_light = 2130837942;
 			
 			// aapt resource value: 0x7f0201b7
-			public const int mr_vol_type_audiotrack_light = 2130837943;
+			public const int mr_dialog_material_background_dark = 2130837943;
 			
 			// aapt resource value: 0x7f0201b8
-			public const int navigation_empty_icon = 2130837944;
+			public const int mr_dialog_material_background_light = 2130837944;
 			
 			// aapt resource value: 0x7f0201b9
-			public const int notification_action_background = 2130837945;
+			public const int mr_group_collapse = 2130837945;
 			
 			// aapt resource value: 0x7f0201ba
-			public const int notification_bg = 2130837946;
+			public const int mr_group_expand = 2130837946;
 			
 			// aapt resource value: 0x7f0201bb
-			public const int notification_bg_low = 2130837947;
+			public const int mr_media_pause_dark = 2130837947;
 			
 			// aapt resource value: 0x7f0201bc
-			public const int notification_bg_low_normal = 2130837948;
+			public const int mr_media_pause_light = 2130837948;
 			
 			// aapt resource value: 0x7f0201bd
-			public const int notification_bg_low_pressed = 2130837949;
+			public const int mr_media_play_dark = 2130837949;
 			
 			// aapt resource value: 0x7f0201be
-			public const int notification_bg_normal = 2130837950;
+			public const int mr_media_play_light = 2130837950;
 			
 			// aapt resource value: 0x7f0201bf
-			public const int notification_bg_normal_pressed = 2130837951;
+			public const int mr_media_stop_dark = 2130837951;
 			
 			// aapt resource value: 0x7f0201c0
-			public const int notification_icon_background = 2130837952;
-			
-			// aapt resource value: 0x7f0201cb
-			public const int notification_template_icon_bg = 2130837963;
-			
-			// aapt resource value: 0x7f0201cc
-			public const int notification_template_icon_low_bg = 2130837964;
+			public const int mr_media_stop_light = 2130837952;
 			
 			// aapt resource value: 0x7f0201c1
-			public const int notification_tile_bg = 2130837953;
+			public const int mr_vol_type_audiotrack_dark = 2130837953;
 			
 			// aapt resource value: 0x7f0201c2
-			public const int notify_panel_notification_icon_bg = 2130837954;
+			public const int mr_vol_type_audiotrack_light = 2130837954;
 			
 			// aapt resource value: 0x7f0201c3
-			public const int outline_add_black_48dp = 2130837955;
+			public const int navigation_empty_icon = 2130837955;
 			
 			// aapt resource value: 0x7f0201c4
-			public const int outline_add_white_48dp = 2130837956;
+			public const int notification_action_background = 2130837956;
 			
 			// aapt resource value: 0x7f0201c5
-			public const int outline_done_black_48dp = 2130837957;
+			public const int notification_bg = 2130837957;
 			
 			// aapt resource value: 0x7f0201c6
-			public const int outline_done_white_48dp = 2130837958;
+			public const int notification_bg_low = 2130837958;
 			
 			// aapt resource value: 0x7f0201c7
-			public const int outline_list_white_48dp = 2130837959;
+			public const int notification_bg_low_normal = 2130837959;
 			
 			// aapt resource value: 0x7f0201c8
-			public const int splash_screen = 2130837960;
+			public const int notification_bg_low_pressed = 2130837960;
 			
 			// aapt resource value: 0x7f0201c9
-			public const int tooltip_frame_dark = 2130837961;
+			public const int notification_bg_normal = 2130837961;
 			
 			// aapt resource value: 0x7f0201ca
-			public const int tooltip_frame_light = 2130837962;
+			public const int notification_bg_normal_pressed = 2130837962;
+			
+			// aapt resource value: 0x7f0201cb
+			public const int notification_icon_background = 2130837963;
+			
+			// aapt resource value: 0x7f0201d6
+			public const int notification_template_icon_bg = 2130837974;
+			
+			// aapt resource value: 0x7f0201d7
+			public const int notification_template_icon_low_bg = 2130837975;
+			
+			// aapt resource value: 0x7f0201cc
+			public const int notification_tile_bg = 2130837964;
+			
+			// aapt resource value: 0x7f0201cd
+			public const int notify_panel_notification_icon_bg = 2130837965;
+			
+			// aapt resource value: 0x7f0201ce
+			public const int outline_add_black_48dp = 2130837966;
+			
+			// aapt resource value: 0x7f0201cf
+			public const int outline_add_white_48dp = 2130837967;
+			
+			// aapt resource value: 0x7f0201d0
+			public const int outline_done_black_48dp = 2130837968;
+			
+			// aapt resource value: 0x7f0201d1
+			public const int outline_done_white_48dp = 2130837969;
+			
+			// aapt resource value: 0x7f0201d2
+			public const int outline_list_white_48dp = 2130837970;
+			
+			// aapt resource value: 0x7f0201d3
+			public const int splash_screen = 2130837971;
+			
+			// aapt resource value: 0x7f0201d4
+			public const int tooltip_frame_dark = 2130837972;
+			
+			// aapt resource value: 0x7f0201d5
+			public const int tooltip_frame_light = 2130837973;
 			
 			static Drawable()
 			{
@@ -11344,6 +12803,9 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0036
 			public const int FUNCTION = 2131558454;
 			
+			// aapt resource value: 0x7f0d00a4
+			public const int Itemname = 2131558564;
+			
 			// aapt resource value: 0x7f0d0037
 			public const int META = 2131558455;
 			
@@ -11359,41 +12821,41 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0039
 			public const int SYM = 2131558457;
 			
-			// aapt resource value: 0x7f0d00ca
-			public const int action0 = 2131558602;
+			// aapt resource value: 0x7f0d00d0
+			public const int action0 = 2131558608;
 			
-			// aapt resource value: 0x7f0d007e
-			public const int action_bar = 2131558526;
+			// aapt resource value: 0x7f0d0083
+			public const int action_bar = 2131558531;
 			
 			// aapt resource value: 0x7f0d0001
 			public const int action_bar_activity_content = 2131558401;
 			
-			// aapt resource value: 0x7f0d007d
-			public const int action_bar_container = 2131558525;
+			// aapt resource value: 0x7f0d0082
+			public const int action_bar_container = 2131558530;
 			
-			// aapt resource value: 0x7f0d0079
-			public const int action_bar_root = 2131558521;
+			// aapt resource value: 0x7f0d007e
+			public const int action_bar_root = 2131558526;
 			
 			// aapt resource value: 0x7f0d0002
 			public const int action_bar_spinner = 2131558402;
 			
-			// aapt resource value: 0x7f0d005d
-			public const int action_bar_subtitle = 2131558493;
+			// aapt resource value: 0x7f0d0063
+			public const int action_bar_subtitle = 2131558499;
 			
-			// aapt resource value: 0x7f0d005c
-			public const int action_bar_title = 2131558492;
+			// aapt resource value: 0x7f0d0062
+			public const int action_bar_title = 2131558498;
 			
-			// aapt resource value: 0x7f0d00c7
-			public const int action_container = 2131558599;
+			// aapt resource value: 0x7f0d00cd
+			public const int action_container = 2131558605;
 			
-			// aapt resource value: 0x7f0d007f
-			public const int action_context_bar = 2131558527;
+			// aapt resource value: 0x7f0d0084
+			public const int action_context_bar = 2131558532;
+			
+			// aapt resource value: 0x7f0d00d4
+			public const int action_divider = 2131558612;
 			
 			// aapt resource value: 0x7f0d00ce
-			public const int action_divider = 2131558606;
-			
-			// aapt resource value: 0x7f0d00c8
-			public const int action_image = 2131558600;
+			public const int action_image = 2131558606;
 			
 			// aapt resource value: 0x7f0d0003
 			public const int action_menu_divider = 2131558403;
@@ -11401,29 +12863,29 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0004
 			public const int action_menu_presenter = 2131558404;
 			
-			// aapt resource value: 0x7f0d007b
-			public const int action_mode_bar = 2131558523;
+			// aapt resource value: 0x7f0d0080
+			public const int action_mode_bar = 2131558528;
 			
-			// aapt resource value: 0x7f0d007a
-			public const int action_mode_bar_stub = 2131558522;
+			// aapt resource value: 0x7f0d007f
+			public const int action_mode_bar_stub = 2131558527;
 			
-			// aapt resource value: 0x7f0d005e
-			public const int action_mode_close_button = 2131558494;
+			// aapt resource value: 0x7f0d0064
+			public const int action_mode_close_button = 2131558500;
 			
-			// aapt resource value: 0x7f0d00c9
-			public const int action_text = 2131558601;
+			// aapt resource value: 0x7f0d00cf
+			public const int action_text = 2131558607;
 			
-			// aapt resource value: 0x7f0d00d7
-			public const int actions = 2131558615;
+			// aapt resource value: 0x7f0d00dd
+			public const int actions = 2131558621;
 			
-			// aapt resource value: 0x7f0d005f
-			public const int activity_chooser_view_content = 2131558495;
+			// aapt resource value: 0x7f0d0065
+			public const int activity_chooser_view_content = 2131558501;
 			
 			// aapt resource value: 0x7f0d0029
 			public const int add = 2131558441;
 			
-			// aapt resource value: 0x7f0d0072
-			public const int alertTitle = 2131558514;
+			// aapt resource value: 0x7f0d0077
+			public const int alertTitle = 2131558519;
 			
 			// aapt resource value: 0x7f0d0054
 			public const int all = 2131558484;
@@ -11431,8 +12893,8 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d003a
 			public const int always = 2131558458;
 			
-			// aapt resource value: 0x7f0d0097
-			public const int annotationLayout = 2131558551;
+			// aapt resource value: 0x7f0d009c
+			public const int annotationLayout = 2131558556;
 			
 			// aapt resource value: 0x7f0d0058
 			public const int async = 2131558488;
@@ -11440,8 +12902,8 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0046
 			public const int auto = 2131558470;
 			
-			// aapt resource value: 0x7f0d0094
-			public const int axisLayout = 2131558548;
+			// aapt resource value: 0x7f0d0099
+			public const int axisLayout = 2131558553;
 			
 			// aapt resource value: 0x7f0d0031
 			public const int beginning = 2131558449;
@@ -11449,17 +12911,20 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0059
 			public const int blocking = 2131558489;
 			
+			// aapt resource value: 0x7f0d005f
+			public const int border = 2131558495;
+			
 			// aapt resource value: 0x7f0d003f
 			public const int bottom = 2131558463;
 			
-			// aapt resource value: 0x7f0d00db
-			public const int bottom_labels = 2131558619;
+			// aapt resource value: 0x7f0d00e1
+			public const int bottom_labels = 2131558625;
 			
-			// aapt resource value: 0x7f0d0065
-			public const int buttonPanel = 2131558501;
+			// aapt resource value: 0x7f0d006a
+			public const int buttonPanel = 2131558506;
 			
-			// aapt resource value: 0x7f0d00cb
-			public const int cancel_action = 2131558603;
+			// aapt resource value: 0x7f0d00d1
+			public const int cancel_action = 2131558609;
 			
 			// aapt resource value: 0x7f0d0047
 			public const int center = 2131558471;
@@ -11470,17 +12935,20 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0049
 			public const int center_vertical = 2131558473;
 			
-			// aapt resource value: 0x7f0d0096
-			public const int chartBehaviorLayout = 2131558550;
+			// aapt resource value: 0x7f0d009b
+			public const int chartBehaviorLayout = 2131558555;
 			
-			// aapt resource value: 0x7f0d009a
-			public const int chartLegendScrollView = 2131558554;
+			// aapt resource value: 0x7f0d009f
+			public const int chartLegendScrollView = 2131558559;
 			
-			// aapt resource value: 0x7f0d0075
-			public const int checkbox = 2131558517;
+			// aapt resource value: 0x7f0d007a
+			public const int checkbox = 2131558522;
 			
-			// aapt resource value: 0x7f0d00d3
-			public const int chronometer = 2131558611;
+			// aapt resource value: 0x7f0d005c
+			public const int @checked = 2131558492;
+			
+			// aapt resource value: 0x7f0d00d9
+			public const int chronometer = 2131558617;
 			
 			// aapt resource value: 0x7f0d0050
 			public const int clip_horizontal = 2131558480;
@@ -11491,59 +12959,59 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d003b
 			public const int collapseActionView = 2131558459;
 			
-			// aapt resource value: 0x7f0d00a1
-			public const int container = 2131558561;
+			// aapt resource value: 0x7f0d00a7
+			public const int container = 2131558567;
 			
-			// aapt resource value: 0x7f0d00dc
-			public const int content = 2131558620;
+			// aapt resource value: 0x7f0d00e2
+			public const int content = 2131558626;
 			
-			// aapt resource value: 0x7f0d0068
-			public const int contentPanel = 2131558504;
-			
-			// aapt resource value: 0x7f0d00a2
-			public const int coordinator = 2131558562;
-			
-			// aapt resource value: 0x7f0d006f
-			public const int custom = 2131558511;
-			
-			// aapt resource value: 0x7f0d006e
-			public const int customPanel = 2131558510;
-			
-			// aapt resource value: 0x7f0d0092
-			public const int dataMarkerLayout = 2131558546;
-			
-			// aapt resource value: 0x7f0d007c
-			public const int decor_content_parent = 2131558524;
-			
-			// aapt resource value: 0x7f0d0062
-			public const int default_activity_button = 2131558498;
-			
-			// aapt resource value: 0x7f0d00a4
-			public const int design_bottom_sheet = 2131558564;
-			
-			// aapt resource value: 0x7f0d00ab
-			public const int design_menu_item_action_area = 2131558571;
-			
-			// aapt resource value: 0x7f0d00aa
-			public const int design_menu_item_action_area_stub = 2131558570;
-			
-			// aapt resource value: 0x7f0d00a9
-			public const int design_menu_item_text = 2131558569;
+			// aapt resource value: 0x7f0d006d
+			public const int contentPanel = 2131558509;
 			
 			// aapt resource value: 0x7f0d00a8
-			public const int design_navigation_view = 2131558568;
+			public const int coordinator = 2131558568;
+			
+			// aapt resource value: 0x7f0d0074
+			public const int custom = 2131558516;
+			
+			// aapt resource value: 0x7f0d0073
+			public const int customPanel = 2131558515;
+			
+			// aapt resource value: 0x7f0d0097
+			public const int dataMarkerLayout = 2131558551;
+			
+			// aapt resource value: 0x7f0d0081
+			public const int decor_content_parent = 2131558529;
+			
+			// aapt resource value: 0x7f0d0067
+			public const int default_activity_button = 2131558503;
+			
+			// aapt resource value: 0x7f0d00aa
+			public const int design_bottom_sheet = 2131558570;
+			
+			// aapt resource value: 0x7f0d00b1
+			public const int design_menu_item_action_area = 2131558577;
+			
+			// aapt resource value: 0x7f0d00b0
+			public const int design_menu_item_action_area_stub = 2131558576;
+			
+			// aapt resource value: 0x7f0d00af
+			public const int design_menu_item_text = 2131558575;
+			
+			// aapt resource value: 0x7f0d00ae
+			public const int design_navigation_view = 2131558574;
 			
 			// aapt resource value: 0x7f0d0022
 			public const int disableHome = 2131558434;
 			
-			// aapt resource value: 0x7f0d0080
-			public const int edit_query = 2131558528;
+			// aapt resource value: 0x7f0d0085
+			public const int edit_query = 2131558533;
 			
 			// aapt resource value: 0x7f0d0032
 			public const int end = 2131558450;
 			
-			// aapt resource value: 0x7f0d00d9
-			public const int end_padder = 2131558617;
+			// aapt resource value: 0x7f0d00df
+			public const int end_padder = 2131558623;
 			
 			// aapt resource value: 0x7f0d0041
 			public const int enterAlways = 2131558465;
@@ -11554,11 +13022,11 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0043
 			public const int exitUntilCollapsed = 2131558467;
 			
-			// aapt resource value: 0x7f0d0060
-			public const int expand_activities_button = 2131558496;
+			// aapt resource value: 0x7f0d0066
+			public const int expand_activities_button = 2131558502;
 			
-			// aapt resource value: 0x7f0d0074
-			public const int expanded_menu = 2131558516;
+			// aapt resource value: 0x7f0d0079
+			public const int expanded_menu = 2131558521;
 			
 			// aapt resource value: 0x7f0d0052
 			public const int fill = 2131558482;
@@ -11578,11 +13046,11 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d000a
 			public const int ghost_view = 2131558410;
 			
-			// aapt resource value: 0x7f0d008f
-			public const int gridLineLayout = 2131558543;
+			// aapt resource value: 0x7f0d0094
+			public const int gridLineLayout = 2131558548;
 			
-			// aapt resource value: 0x7f0d00dd
-			public const int gridLinesLayout = 2131558621;
+			// aapt resource value: 0x7f0d00e3
+			public const int gridLinesLayout = 2131558627;
 			
 			// aapt resource value: 0x7f0d0005
 			public const int home = 2131558405;
@@ -11590,23 +13058,29 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0023
 			public const int homeAsUp = 2131558435;
 			
-			// aapt resource value: 0x7f0d0064
-			public const int icon = 2131558500;
+			// aapt resource value: 0x7f0d0069
+			public const int icon = 2131558505;
 			
-			// aapt resource value: 0x7f0d009d
-			public const int iconView = 2131558557;
+			// aapt resource value: 0x7f0d00a2
+			public const int iconView = 2131558562;
 			
-			// aapt resource value: 0x7f0d00d8
-			public const int icon_group = 2131558616;
+			// aapt resource value: 0x7f0d00de
+			public const int icon_group = 2131558622;
 			
 			// aapt resource value: 0x7f0d003c
 			public const int ifRoom = 2131558460;
 			
-			// aapt resource value: 0x7f0d0061
-			public const int image = 2131558497;
+			// aapt resource value: 0x7f0d0060
+			public const int image = 2131558496;
 			
-			// aapt resource value: 0x7f0d00d4
-			public const int info = 2131558612;
+			// aapt resource value: 0x7f0d0061
+			public const int imagewithtext = 2131558497;
+			
+			// aapt resource value: 0x7f0d005d
+			public const int indeterminate = 2131558493;
+			
+			// aapt resource value: 0x7f0d00da
+			public const int info = 2131558618;
 			
 			// aapt resource value: 0x7f0d005b
 			public const int italic = 2131558491;
@@ -11614,29 +13088,29 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0000
 			public const int item_touch_helper_previous_elevation = 2131558400;
 			
-			// aapt resource value: 0x7f0d009e
-			public const int label = 2131558558;
+			// aapt resource value: 0x7f0d00a3
+			public const int label = 2131558563;
 			
-			// aapt resource value: 0x7f0d00a0
-			public const int largeLabel = 2131558560;
+			// aapt resource value: 0x7f0d00a6
+			public const int largeLabel = 2131558566;
 			
 			// aapt resource value: 0x7f0d004b
 			public const int left = 2131558475;
 			
-			// aapt resource value: 0x7f0d0099
-			public const int legendHeader = 2131558553;
+			// aapt resource value: 0x7f0d009e
+			public const int legendHeader = 2131558558;
 			
-			// aapt resource value: 0x7f0d009c
-			public const int legendItemsLayout = 2131558556;
+			// aapt resource value: 0x7f0d00a1
+			public const int legendItemsLayout = 2131558561;
 			
-			// aapt resource value: 0x7f0d0095
-			public const int legendLayout = 2131558549;
+			// aapt resource value: 0x7f0d009a
+			public const int legendLayout = 2131558554;
 			
-			// aapt resource value: 0x7f0d009b
-			public const int legendScrollView = 2131558555;
+			// aapt resource value: 0x7f0d00a0
+			public const int legendScrollView = 2131558560;
 			
-			// aapt resource value: 0x7f0d0098
-			public const int legendViewGroup = 2131558552;
+			// aapt resource value: 0x7f0d009d
+			public const int legendViewGroup = 2131558557;
 			
 			// aapt resource value: 0x7f0d0017
 			public const int line1 = 2131558423;
@@ -11647,17 +13121,17 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d001f
 			public const int listMode = 2131558431;
 			
-			// aapt resource value: 0x7f0d0063
-			public const int list_item = 2131558499;
+			// aapt resource value: 0x7f0d0068
+			public const int list_item = 2131558504;
 			
-			// aapt resource value: 0x7f0d00e3
-			public const int masked = 2131558627;
+			// aapt resource value: 0x7f0d00e9
+			public const int masked = 2131558633;
 			
-			// aapt resource value: 0x7f0d00cd
-			public const int media_actions = 2131558605;
+			// aapt resource value: 0x7f0d00d3
+			public const int media_actions = 2131558611;
 			
-			// aapt resource value: 0x7f0d00e1
-			public const int message = 2131558625;
+			// aapt resource value: 0x7f0d00e7
+			public const int message = 2131558631;
 			
 			// aapt resource value: 0x7f0d0033
 			public const int middle = 2131558451;
@@ -11665,86 +13139,86 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0055
 			public const int mini = 2131558485;
 			
-			// aapt resource value: 0x7f0d00b9
-			public const int mr_art = 2131558585;
-			
-			// aapt resource value: 0x7f0d00ae
-			public const int mr_chooser_list = 2131558574;
-			
-			// aapt resource value: 0x7f0d00b1
-			public const int mr_chooser_route_desc = 2131558577;
-			
-			// aapt resource value: 0x7f0d00af
-			public const int mr_chooser_route_icon = 2131558575;
-			
-			// aapt resource value: 0x7f0d00b0
-			public const int mr_chooser_route_name = 2131558576;
-			
-			// aapt resource value: 0x7f0d00ad
-			public const int mr_chooser_title = 2131558573;
-			
-			// aapt resource value: 0x7f0d00b6
-			public const int mr_close = 2131558582;
-			
-			// aapt resource value: 0x7f0d00bc
-			public const int mr_control_divider = 2131558588;
-			
-			// aapt resource value: 0x7f0d00c2
-			public const int mr_control_playback_ctrl = 2131558594;
-			
-			// aapt resource value: 0x7f0d00c5
-			public const int mr_control_subtitle = 2131558597;
-			
-			// aapt resource value: 0x7f0d00c4
-			public const int mr_control_title = 2131558596;
-			
-			// aapt resource value: 0x7f0d00c3
-			public const int mr_control_title_container = 2131558595;
-			
-			// aapt resource value: 0x7f0d00b7
-			public const int mr_custom_control = 2131558583;
-			
-			// aapt resource value: 0x7f0d00b8
-			public const int mr_default_control = 2131558584;
-			
-			// aapt resource value: 0x7f0d00b3
-			public const int mr_dialog_area = 2131558579;
-			
-			// aapt resource value: 0x7f0d00b2
-			public const int mr_expandable_area = 2131558578;
-			
-			// aapt resource value: 0x7f0d00c6
-			public const int mr_group_expand_collapse = 2131558598;
-			
-			// aapt resource value: 0x7f0d00ba
-			public const int mr_media_main_control = 2131558586;
-			
-			// aapt resource value: 0x7f0d00b5
-			public const int mr_name = 2131558581;
-			
-			// aapt resource value: 0x7f0d00bb
-			public const int mr_playback_control = 2131558587;
+			// aapt resource value: 0x7f0d00bf
+			public const int mr_art = 2131558591;
 			
 			// aapt resource value: 0x7f0d00b4
-			public const int mr_title_bar = 2131558580;
+			public const int mr_chooser_list = 2131558580;
+			
+			// aapt resource value: 0x7f0d00b7
+			public const int mr_chooser_route_desc = 2131558583;
+			
+			// aapt resource value: 0x7f0d00b5
+			public const int mr_chooser_route_icon = 2131558581;
+			
+			// aapt resource value: 0x7f0d00b6
+			public const int mr_chooser_route_name = 2131558582;
+			
+			// aapt resource value: 0x7f0d00b3
+			public const int mr_chooser_title = 2131558579;
+			
+			// aapt resource value: 0x7f0d00bc
+			public const int mr_close = 2131558588;
+			
+			// aapt resource value: 0x7f0d00c2
+			public const int mr_control_divider = 2131558594;
+			
+			// aapt resource value: 0x7f0d00c8
+			public const int mr_control_playback_ctrl = 2131558600;
+			
+			// aapt resource value: 0x7f0d00cb
+			public const int mr_control_subtitle = 2131558603;
+			
+			// aapt resource value: 0x7f0d00ca
+			public const int mr_control_title = 2131558602;
+			
+			// aapt resource value: 0x7f0d00c9
+			public const int mr_control_title_container = 2131558601;
 			
 			// aapt resource value: 0x7f0d00bd
-			public const int mr_volume_control = 2131558589;
+			public const int mr_custom_control = 2131558589;
 			
 			// aapt resource value: 0x7f0d00be
-			public const int mr_volume_group_list = 2131558590;
+			public const int mr_default_control = 2131558590;
+			
+			// aapt resource value: 0x7f0d00b9
+			public const int mr_dialog_area = 2131558585;
+			
+			// aapt resource value: 0x7f0d00b8
+			public const int mr_expandable_area = 2131558584;
+			
+			// aapt resource value: 0x7f0d00cc
+			public const int mr_group_expand_collapse = 2131558604;
 			
 			// aapt resource value: 0x7f0d00c0
-			public const int mr_volume_item_icon = 2131558592;
+			public const int mr_media_main_control = 2131558592;
+			
+			// aapt resource value: 0x7f0d00bb
+			public const int mr_name = 2131558587;
 			
 			// aapt resource value: 0x7f0d00c1
-			public const int mr_volume_slider = 2131558593;
+			public const int mr_playback_control = 2131558593;
+			
+			// aapt resource value: 0x7f0d00ba
+			public const int mr_title_bar = 2131558586;
+			
+			// aapt resource value: 0x7f0d00c3
+			public const int mr_volume_control = 2131558595;
+			
+			// aapt resource value: 0x7f0d00c4
+			public const int mr_volume_group_list = 2131558596;
+			
+			// aapt resource value: 0x7f0d00c6
+			public const int mr_volume_item_icon = 2131558598;
+			
+			// aapt resource value: 0x7f0d00c7
+			public const int mr_volume_slider = 2131558599;
 			
 			// aapt resource value: 0x7f0d002a
 			public const int multiply = 2131558442;
 			
-			// aapt resource value: 0x7f0d00a7
-			public const int navigation_header_container = 2131558567;
+			// aapt resource value: 0x7f0d00ad
+			public const int navigation_header_container = 2131558573;
 			
 			// aapt resource value: 0x7f0d003d
 			public const int never = 2131558461;
@@ -11755,20 +13229,20 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0020
 			public const int normal = 2131558432;
 			
+			// aapt resource value: 0x7f0d00dc
+			public const int notification_background = 2131558620;
+			
 			// aapt resource value: 0x7f0d00d6
-			public const int notification_background = 2131558614;
+			public const int notification_main_column = 2131558614;
 			
-			// aapt resource value: 0x7f0d00d0
-			public const int notification_main_column = 2131558608;
-			
-			// aapt resource value: 0x7f0d00cf
-			public const int notification_main_column_container = 2131558607;
+			// aapt resource value: 0x7f0d00d5
+			public const int notification_main_column_container = 2131558613;
 			
 			// aapt resource value: 0x7f0d004e
 			public const int parallax = 2131558478;
 			
-			// aapt resource value: 0x7f0d0067
-			public const int parentPanel = 2131558503;
+			// aapt resource value: 0x7f0d006c
+			public const int parentPanel = 2131558508;
 			
 			// aapt resource value: 0x7f0d000b
 			public const int parent_matrix = 2131558411;
@@ -11782,20 +13256,20 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0007
 			public const int progress_horizontal = 2131558407;
 			
-			// aapt resource value: 0x7f0d0077
-			public const int radio = 2131558519;
+			// aapt resource value: 0x7f0d007c
+			public const int radio = 2131558524;
 			
 			// aapt resource value: 0x7f0d004c
 			public const int right = 2131558476;
 			
-			// aapt resource value: 0x7f0d00d5
-			public const int right_icon = 2131558613;
+			// aapt resource value: 0x7f0d00db
+			public const int right_icon = 2131558619;
 			
-			// aapt resource value: 0x7f0d00d1
-			public const int right_side = 2131558609;
+			// aapt resource value: 0x7f0d00d7
+			public const int right_side = 2131558615;
 			
-			// aapt resource value: 0x7f0d008d
-			public const int rootLayout = 2131558541;
+			// aapt resource value: 0x7f0d0092
+			public const int rootLayout = 2131558546;
 			
 			// aapt resource value: 0x7f0d000c
 			public const int save_image_matrix = 2131558412;
@@ -11812,56 +13286,56 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0044
 			public const int scroll = 2131558468;
 			
-			// aapt resource value: 0x7f0d006d
-			public const int scrollIndicatorDown = 2131558509;
+			// aapt resource value: 0x7f0d0072
+			public const int scrollIndicatorDown = 2131558514;
 			
-			// aapt resource value: 0x7f0d0069
-			public const int scrollIndicatorUp = 2131558505;
+			// aapt resource value: 0x7f0d006e
+			public const int scrollIndicatorUp = 2131558510;
 			
-			// aapt resource value: 0x7f0d006a
-			public const int scrollView = 2131558506;
+			// aapt resource value: 0x7f0d006f
+			public const int scrollView = 2131558511;
 			
 			// aapt resource value: 0x7f0d0057
 			public const int scrollable = 2131558487;
 			
-			// aapt resource value: 0x7f0d0082
-			public const int search_badge = 2131558530;
-			
-			// aapt resource value: 0x7f0d0081
-			public const int search_bar = 2131558529;
-			
-			// aapt resource value: 0x7f0d0083
-			public const int search_button = 2131558531;
-			
-			// aapt resource value: 0x7f0d0088
-			public const int search_close_btn = 2131558536;
-			
-			// aapt resource value: 0x7f0d0084
-			public const int search_edit_frame = 2131558532;
-			
-			// aapt resource value: 0x7f0d008a
-			public const int search_go_btn = 2131558538;
-			
-			// aapt resource value: 0x7f0d0085
-			public const int search_mag_icon = 2131558533;
+			// aapt resource value: 0x7f0d0087
+			public const int search_badge = 2131558535;
 			
 			// aapt resource value: 0x7f0d0086
-			public const int search_plate = 2131558534;
+			public const int search_bar = 2131558534;
 			
-			// aapt resource value: 0x7f0d0087
-			public const int search_src_text = 2131558535;
+			// aapt resource value: 0x7f0d0088
+			public const int search_button = 2131558536;
+			
+			// aapt resource value: 0x7f0d008d
+			public const int search_close_btn = 2131558541;
+			
+			// aapt resource value: 0x7f0d0089
+			public const int search_edit_frame = 2131558537;
+			
+			// aapt resource value: 0x7f0d008f
+			public const int search_go_btn = 2131558543;
+			
+			// aapt resource value: 0x7f0d008a
+			public const int search_mag_icon = 2131558538;
 			
 			// aapt resource value: 0x7f0d008b
-			public const int search_voice_btn = 2131558539;
+			public const int search_plate = 2131558539;
 			
 			// aapt resource value: 0x7f0d008c
-			public const int select_dialog_listview = 2131558540;
+			public const int search_src_text = 2131558540;
+			
+			// aapt resource value: 0x7f0d0090
+			public const int search_voice_btn = 2131558544;
 			
 			// aapt resource value: 0x7f0d0091
-			public const int seriesLayout = 2131558545;
+			public const int select_dialog_listview = 2131558545;
 			
-			// aapt resource value: 0x7f0d0076
-			public const int shortcut = 2131558518;
+			// aapt resource value: 0x7f0d0096
+			public const int seriesLayout = 2131558550;
+			
+			// aapt resource value: 0x7f0d007b
+			public const int shortcut = 2131558523;
 			
 			// aapt resource value: 0x7f0d0025
 			public const int showCustom = 2131558437;
@@ -11872,23 +13346,23 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0027
 			public const int showTitle = 2131558439;
 			
-			// aapt resource value: 0x7f0d00df
-			public const int sliding_tabs = 2131558623;
-			
-			// aapt resource value: 0x7f0d009f
-			public const int smallLabel = 2131558559;
-			
-			// aapt resource value: 0x7f0d00a6
-			public const int snackbar_action = 2131558566;
+			// aapt resource value: 0x7f0d00e5
+			public const int sliding_tabs = 2131558629;
 			
 			// aapt resource value: 0x7f0d00a5
-			public const int snackbar_text = 2131558565;
+			public const int smallLabel = 2131558565;
+			
+			// aapt resource value: 0x7f0d00ac
+			public const int snackbar_action = 2131558572;
+			
+			// aapt resource value: 0x7f0d00ab
+			public const int snackbar_text = 2131558571;
 			
 			// aapt resource value: 0x7f0d0045
 			public const int snap = 2131558469;
 			
-			// aapt resource value: 0x7f0d0066
-			public const int spacer = 2131558502;
+			// aapt resource value: 0x7f0d006b
+			public const int spacer = 2131558507;
 			
 			// aapt resource value: 0x7f0d0008
 			public const int split_action_bar = 2131558408;
@@ -11905,17 +13379,17 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d004d
 			public const int start = 2131558477;
 			
-			// aapt resource value: 0x7f0d00cc
-			public const int status_bar_latest_event_content = 2131558604;
+			// aapt resource value: 0x7f0d00d2
+			public const int status_bar_latest_event_content = 2131558610;
 			
-			// aapt resource value: 0x7f0d0090
-			public const int stripLinesLayout = 2131558544;
+			// aapt resource value: 0x7f0d0095
+			public const int stripLinesLayout = 2131558549;
 			
-			// aapt resource value: 0x7f0d0078
-			public const int submenuarrow = 2131558520;
+			// aapt resource value: 0x7f0d007d
+			public const int submenuarrow = 2131558525;
 			
-			// aapt resource value: 0x7f0d0089
-			public const int submit_area = 2131558537;
+			// aapt resource value: 0x7f0d008e
+			public const int submit_area = 2131558542;
 			
 			// aapt resource value: 0x7f0d0021
 			public const int tabMode = 2131558433;
@@ -11923,8 +13397,8 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0019
 			public const int tag_transition_group = 2131558425;
 			
-			// aapt resource value: 0x7f0d0093
-			public const int technicalIndicatorLayout = 2131558547;
+			// aapt resource value: 0x7f0d0098
+			public const int technicalIndicatorLayout = 2131558552;
 			
 			// aapt resource value: 0x7f0d001a
 			public const int text = 2131558426;
@@ -11932,14 +13406,14 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d001b
 			public const int text2 = 2131558427;
 			
-			// aapt resource value: 0x7f0d006c
-			public const int textSpacerNoButtons = 2131558508;
+			// aapt resource value: 0x7f0d0071
+			public const int textSpacerNoButtons = 2131558513;
 			
-			// aapt resource value: 0x7f0d006b
-			public const int textSpacerNoTitle = 2131558507;
+			// aapt resource value: 0x7f0d0070
+			public const int textSpacerNoTitle = 2131558512;
 			
-			// aapt resource value: 0x7f0d00ac
-			public const int text_input_password_toggle = 2131558572;
+			// aapt resource value: 0x7f0d00b2
+			public const int text_input_password_toggle = 2131558578;
 			
 			// aapt resource value: 0x7f0d0014
 			public const int textinput_counter = 2131558420;
@@ -11947,38 +13421,38 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0015
 			public const int textinput_error = 2131558421;
 			
-			// aapt resource value: 0x7f0d00de
-			public const int thumbLayout = 2131558622;
+			// aapt resource value: 0x7f0d00e4
+			public const int thumbLayout = 2131558628;
 			
-			// aapt resource value: 0x7f0d00d2
-			public const int time = 2131558610;
+			// aapt resource value: 0x7f0d00d8
+			public const int time = 2131558616;
 			
 			// aapt resource value: 0x7f0d001c
 			public const int title = 2131558428;
 			
-			// aapt resource value: 0x7f0d0073
-			public const int titleDividerNoCustom = 2131558515;
+			// aapt resource value: 0x7f0d0078
+			public const int titleDividerNoCustom = 2131558520;
 			
-			// aapt resource value: 0x7f0d008e
-			public const int titleLayout = 2131558542;
+			// aapt resource value: 0x7f0d0093
+			public const int titleLayout = 2131558547;
 			
-			// aapt resource value: 0x7f0d0071
-			public const int title_template = 2131558513;
+			// aapt resource value: 0x7f0d0076
+			public const int title_template = 2131558518;
 			
-			// aapt resource value: 0x7f0d00e0
-			public const int toolbar = 2131558624;
+			// aapt resource value: 0x7f0d00e6
+			public const int toolbar = 2131558630;
 			
 			// aapt resource value: 0x7f0d0040
 			public const int top = 2131558464;
 			
-			// aapt resource value: 0x7f0d0070
-			public const int topPanel = 2131558512;
+			// aapt resource value: 0x7f0d0075
+			public const int topPanel = 2131558517;
 			
-			// aapt resource value: 0x7f0d00da
-			public const int top_labels = 2131558618;
+			// aapt resource value: 0x7f0d00e0
+			public const int top_labels = 2131558624;
 			
-			// aapt resource value: 0x7f0d00a3
-			public const int touch_outside = 2131558563;
+			// aapt resource value: 0x7f0d00a9
+			public const int touch_outside = 2131558569;
 			
 			// aapt resource value: 0x7f0d000f
 			public const int transition_current_scene = 2131558415;
@@ -11995,6 +13469,9 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0013
 			public const int transition_transform = 2131558419;
 			
+			// aapt resource value: 0x7f0d005e
+			public const int @unchecked = 2131558494;
+			
 			// aapt resource value: 0x7f0d002f
 			public const int uniform = 2131558447;
 			
@@ -12007,11 +13484,11 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0d0016
 			public const int view_offset_helper = 2131558422;
 			
-			// aapt resource value: 0x7f0d00e2
-			public const int visible = 2131558626;
+			// aapt resource value: 0x7f0d00e8
+			public const int visible = 2131558632;
 			
-			// aapt resource value: 0x7f0d00bf
-			public const int volume_item_container = 2131558591;
+			// aapt resource value: 0x7f0d00c5
+			public const int volume_item_container = 2131558597;
 			
 			// aapt resource value: 0x7f0d003e
 			public const int withText = 2131558462;
@@ -12088,10 +13565,25 @@ namespace YanSoft.CurrencyExchanger.Droid
 		{
 			
 			// aapt resource value: 0x7f070000
-			public const int mr_fast_out_slow_in = 2131165184;
+			public const int btn_checkbox_checked_animation_interpolator_0 = 2131165184;
 			
 			// aapt resource value: 0x7f070001
-			public const int mr_linear_out_slow_in = 2131165185;
+			public const int btn_checkbox_checked_animation_interpolator_1 = 2131165185;
+			
+			// aapt resource value: 0x7f070002
+			public const int btn_checkbox_indeterminate_animation_interpolator_1 = 2131165186;
+			
+			// aapt resource value: 0x7f070003
+			public const int btn_checkbox_unchecked_animation_interpolator_0 = 2131165187;
+			
+			// aapt resource value: 0x7f070004
+			public const int btn_checkbox_unchecked_animation_interpolator_1 = 2131165188;
+			
+			// aapt resource value: 0x7f070005
+			public const int mr_fast_out_slow_in = 2131165189;
+			
+			// aapt resource value: 0x7f070006
+			public const int mr_linear_out_slow_in = 2131165190;
 			
 			static Interpolator()
 			{
@@ -12194,133 +13686,142 @@ namespace YanSoft.CurrencyExchanger.Droid
 			public const int chart_legend_item = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int design_bottom_navigation_item = 2130968605;
+			public const int CustomizedImageView = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int design_bottom_sheet_dialog = 2130968606;
+			public const int CustomizedView = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int design_layout_snackbar = 2130968607;
+			public const int design_bottom_navigation_item = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int design_layout_snackbar_include = 2130968608;
+			public const int design_bottom_sheet_dialog = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int design_layout_tab_icon = 2130968609;
+			public const int design_layout_snackbar = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int design_layout_tab_text = 2130968610;
+			public const int design_layout_snackbar_include = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int design_menu_item_action_area = 2130968611;
+			public const int design_layout_tab_icon = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int design_navigation_item = 2130968612;
+			public const int design_layout_tab_text = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int design_navigation_item_header = 2130968613;
+			public const int design_menu_item_action_area = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int design_navigation_item_separator = 2130968614;
+			public const int design_navigation_item = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int design_navigation_item_subheader = 2130968615;
+			public const int design_navigation_item_header = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int design_navigation_menu = 2130968616;
+			public const int design_navigation_item_separator = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int design_navigation_menu_item = 2130968617;
+			public const int design_navigation_item_subheader = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int design_text_input_password_icon = 2130968618;
+			public const int design_navigation_menu = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int mr_chooser_dialog = 2130968619;
+			public const int design_navigation_menu_item = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int mr_chooser_list_item = 2130968620;
+			public const int design_text_input_password_icon = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int mr_controller_material_dialog_b = 2130968621;
+			public const int mr_chooser_dialog = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int mr_controller_volume_item = 2130968622;
+			public const int mr_chooser_list_item = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int mr_playback_control = 2130968623;
+			public const int mr_controller_material_dialog_b = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int mr_volume_control = 2130968624;
+			public const int mr_controller_volume_item = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_action = 2130968625;
+			public const int mr_playback_control = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_action_tombstone = 2130968626;
+			public const int mr_volume_control = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_media_action = 2130968627;
+			public const int notification_action = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_media_cancel_action = 2130968628;
+			public const int notification_action_tombstone = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_big_media = 2130968629;
+			public const int notification_media_action = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_big_media_custom = 2130968630;
+			public const int notification_media_cancel_action = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_big_media_narrow = 2130968631;
+			public const int notification_template_big_media = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_big_media_narrow_custom = 2130968632;
+			public const int notification_template_big_media_custom = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_template_custom_big = 2130968633;
+			public const int notification_template_big_media_narrow = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int notification_template_icon_group = 2130968634;
+			public const int notification_template_big_media_narrow_custom = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int notification_template_lines_media = 2130968635;
+			public const int notification_template_custom_big = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int notification_template_media = 2130968636;
+			public const int notification_template_icon_group = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int notification_template_media_custom = 2130968637;
+			public const int notification_template_lines_media = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int notification_template_part_chronometer = 2130968638;
+			public const int notification_template_media = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int notification_template_part_time = 2130968639;
+			public const int notification_template_media_custom = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int range_navigator_layout = 2130968640;
+			public const int notification_template_part_chronometer = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int select_dialog_item_material = 2130968641;
+			public const int notification_template_part_time = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int select_dialog_multichoice_material = 2130968642;
+			public const int range_navigator_layout = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int select_dialog_singlechoice_material = 2130968643;
+			public const int select_dialog_item_material = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int support_simple_spinner_dropdown_item = 2130968644;
+			public const int select_dialog_multichoice_material = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int Tabbar = 2130968645;
+			public const int select_dialog_singlechoice_material = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int Toolbar = 2130968646;
+			public const int sfcomboBox_layout = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int tooltip = 2130968647;
+			public const int support_simple_spinner_dropdown_item = 2130968647;
+			
+			// aapt resource value: 0x7f040048
+			public const int Tabbar = 2130968648;
+			
+			// aapt resource value: 0x7f040049
+			public const int Toolbar = 2130968649;
+			
+			// aapt resource value: 0x7f04004a
+			public const int tooltip = 2130968650;
 			
 			static Layout()
 			{
@@ -14955,6 +16456,12 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 2
 			public const int DesignTheme_textColorError = 2;
 			
+			public static int[] DrawableStates = new int[] {
+					2130772342};
+			
+			// aapt resource value: 0
+			public const int DrawableStates_state_indeterminate = 0;
+			
 			public static int[] DrawerArrowToggle = new int[] {
 					2130772178,
 					2130772179,
@@ -15338,8 +16845,8 @@ namespace YanSoft.CurrencyExchanger.Droid
 			public const int MenuView_subMenuArrow = 8;
 			
 			public static int[] MvxBinding = new int[] {
-					2130772342,
-					2130772343};
+					2130772358,
+					2130772359};
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -15348,20 +16855,20 @@ namespace YanSoft.CurrencyExchanger.Droid
 			public const int MvxBinding_MvxLang = 1;
 			
 			public static int[] MvxControl = new int[] {
-					2130772344};
+					2130772360};
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
 			public static int[] MvxExpandableListView = new int[] {
-					2130772347};
+					2130772363};
 			
 			// aapt resource value: 0
 			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
 			public static int[] MvxListView = new int[] {
-					2130772345,
-					2130772346};
+					2130772361,
+					2130772362};
 			
 			// aapt resource value: 1
 			public const int MvxListView_MvxDropDownItemTemplate = 1;
@@ -15568,6 +17075,70 @@ namespace YanSoft.CurrencyExchanger.Droid
 			
 			// aapt resource value: 12
 			public const int SearchView_voiceIcon = 12;
+			
+			public static int[] SfCheckBox = new int[] {
+					2130772343,
+					2130772344,
+					2130772345};
+			
+			// aapt resource value: 2
+			public const int SfCheckBox_checked = 2;
+			
+			// aapt resource value: 1
+			public const int SfCheckBox_cornerradius = 1;
+			
+			// aapt resource value: 0
+			public const int SfCheckBox_isthreestate = 0;
+			
+			public static int[] SfSegmentedControl = new int[] {
+					2130772346,
+					2130772347,
+					2130772348,
+					2130772349,
+					2130772350,
+					2130772351,
+					2130772352,
+					2130772353,
+					2130772354,
+					2130772355,
+					2130772356,
+					2130772357};
+			
+			// aapt resource value: 1
+			public const int SfSegmentedControl_segmentBackColor = 1;
+			
+			// aapt resource value: 2
+			public const int SfSegmentedControl_segmentBorderColor = 2;
+			
+			// aapt resource value: 3
+			public const int SfSegmentedControl_segmentBorderThickness = 3;
+			
+			// aapt resource value: 4
+			public const int SfSegmentedControl_segmentColor = 4;
+			
+			// aapt resource value: 9
+			public const int SfSegmentedControl_segmentCornerRadius = 9;
+			
+			// aapt resource value: 11
+			public const int SfSegmentedControl_segmentDisplayMode = 11;
+			
+			// aapt resource value: 10
+			public const int SfSegmentedControl_segmentPosition = 10;
+			
+			// aapt resource value: 0
+			public const int SfSegmentedControl_segmentSelectedIndex = 0;
+			
+			// aapt resource value: 8
+			public const int SfSegmentedControl_segmentStrokeThickness = 8;
+			
+			// aapt resource value: 6
+			public const int SfSegmentedControl_segmentedHeight = 6;
+			
+			// aapt resource value: 5
+			public const int SfSegmentedControl_segmentedPadding = 5;
+			
+			// aapt resource value: 7
+			public const int SfSegmentedControl_segmentedWidth = 7;
 			
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
