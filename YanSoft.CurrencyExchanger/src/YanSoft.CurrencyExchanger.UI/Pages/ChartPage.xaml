@@ -31,6 +31,13 @@
                                            DisplayMemberPath="Name" DropDownItemHeight="80"
                                                DataSource="{Binding CurrencyList}"
                                                SelectedItem="{Binding TargetCurrency, Mode=TwoWay}">
+                <sfCombobox:SfComboBox.Behaviors>
+                    <behaviors:EventHandlerBehavior EventName="SelectionChanged">
+                        <behaviors:InvokeCommandAction 
+                            Command="{Binding BindingContext.DataContext.UpdateTargetCurrencyAsyncCommand, 
+                            Source={x:Reference MainContent}}"></behaviors:InvokeCommandAction>
+                    </behaviors:EventHandlerBehavior>
+                </sfCombobox:SfComboBox.Behaviors>
                     <sfCombobox:SfComboBox.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Padding="4" BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">

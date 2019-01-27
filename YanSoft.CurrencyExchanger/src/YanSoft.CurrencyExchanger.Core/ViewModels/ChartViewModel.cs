@@ -179,6 +179,24 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             await GetHistoryRatesAsync();
         }
         #endregion
+
+
+        #region UpdateTargetCurrencyAsyncCommand;
+        private IMvxAsyncCommand _updateTargetCurrencyAsyncCommand;
+        public IMvxAsyncCommand UpdateTargetCurrencyAsyncCommand
+        {
+            get
+            {
+                _updateTargetCurrencyAsyncCommand = _updateTargetCurrencyAsyncCommand ?? new MvxAsyncCommand(UpdateTargetCurrencyAsync);
+                return _updateTargetCurrencyAsyncCommand;
+            }
+        }
+        private async Task UpdateTargetCurrencyAsync()
+        {
+            // Implement your logic here.
+            await GetHistoryRatesAsync();
+        }
+        #endregion
         #endregion
     }
 }
