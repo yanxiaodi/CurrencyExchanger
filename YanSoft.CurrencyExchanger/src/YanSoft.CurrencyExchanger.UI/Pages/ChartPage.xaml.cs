@@ -7,6 +7,8 @@ using MvvmCross.Forms.Presenters.Attributes;
 using MvvmCross.Forms.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using YanSoft.CurrencyExchanger.Core.Models.Dto;
+using YanSoft.CurrencyExchanger.Core.Utils;
 using YanSoft.CurrencyExchanger.Core.ViewModels;
 
 namespace YanSoft.CurrencyExchanger.UI.Pages
@@ -18,6 +20,29 @@ namespace YanSoft.CurrencyExchanger.UI.Pages
         public ChartPage()
         {
             InitializeComponent();
+        }
+
+        private void SfChart_TrackballCreated(object sender, Syncfusion.SfChart.XForms.ChartTrackballCreatedEventArgs e)
+        {
+            if (BindingContext.DataContext is ChartViewModel vm)
+            {
+                if (e.ChartPointsInfo.FirstOrDefault().DataPoint is CurrencyRateHistoryItem selectedItem)
+                {
+                    vm.SelectedItemClose = $"Close: {CurrencyHelper.FormatCurrencyAmount(selectedItem.Close, vm.TargetCurrency.CultureName)}";
+                    vm.SelectedItemDateTime = selectedItem.DateTime.ToString("yyyy-MM-dd HH:mm:ss");
+                    vm.SelectedItemHigh = $"High: {CurrencyHelper.FormatCurrencyAmount(selectedItem.High, vm.TargetCurrency.CultureName)}";
+                    vm.SelectedItemLow = $"Low: {CurrencyHelper.FormatCurrencyAmount(selectedItem.Low, vm.TargetCurrency.CultureName)}";
+                    vm.SelectedItemOpen = $"Open: {CurrencyHelper.FormatCurrencyAmount(selectedItem.Open, vm.TargetCurrency.CultureName)}";
+                }
+                else
+                {
+                    vm.SelectedItemClose = string.Empty;
+                    vm.SelectedItemDateTime = string.Empty;
+                    vm.SelectedItemHigh = string.Empty;
+                    vm.SelectedItemLow = string.Empty;
+                    vm.SelectedItemOpen = string.Empty;
+                }
+            }
         }
     }
 }

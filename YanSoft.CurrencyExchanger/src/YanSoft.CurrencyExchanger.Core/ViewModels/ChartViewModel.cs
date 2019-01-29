@@ -93,6 +93,55 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         #endregion
 
 
+        #region SelectedItemOpen;
+        private string _selectedItemOpen;
+        public string SelectedItemOpen
+        {
+            get => _selectedItemOpen;
+            set => SetProperty(ref _selectedItemOpen, value);
+        }
+        #endregion
+
+
+        #region SelectedItemClose;
+        private string _selectedItemClose;
+        public string SelectedItemClose
+        {
+            get => _selectedItemClose;
+            set => SetProperty(ref _selectedItemClose, value);
+        }
+        #endregion
+
+
+        #region SelectedItemHigh;
+        private string _selectedItemHigh;
+        public string SelectedItemHigh
+        {
+            get => _selectedItemHigh;
+            set => SetProperty(ref _selectedItemHigh, value);
+        }
+        #endregion
+
+
+        #region SelectedItemLow;
+        private string _selectedItemLow;
+        public string SelectedItemLow
+        {
+            get => _selectedItemLow;
+            set => SetProperty(ref _selectedItemLow, value);
+        }
+        #endregion
+
+
+        #region SelectedItemDateTime;
+        private string _selectedItemDateTime;
+        public string SelectedItemDateTime
+        {
+            get => _selectedItemDateTime;
+            set => SetProperty(ref _selectedItemDateTime, value);
+        }
+        #endregion
+
         #endregion
 
 
@@ -109,8 +158,8 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                 HistoryRange.RangeThreeMonths,
                 HistoryRange.RangeSixMonths,
                 HistoryRange.RangeOneYear,
-                HistoryRange.RangeTwoYears,
-                HistoryRange.RangeFiveYears
+                HistoryRange.RangeTwoYears
+                //HistoryRange.RangeFiveYears
             };
             //SelectedRange = _appSettings.DefaultChartRange;
             SelectedRangeIndex = RangeList.IndexOf(_appSettings.DefaultChartRange);
@@ -148,6 +197,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             {
                 CurrencyRateHistoryItemList.Clear();
             }
+            SelectedItemClose = SelectedItemDateTime = SelectedItemHigh = SelectedItemLow = SelectedItemOpen = string.Empty;
             var list = await _currencyService.GetCurrencyRatesHistoryAsync(BaseCurrency, TargetCurrency, RangeList[SelectedRangeIndex]);
             list.ForEach(x =>
             {

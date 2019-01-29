@@ -196,7 +196,6 @@ namespace YanSoft.CurrencyExchanger.Core.Common
                 { HistoryRange.RangeSixMonths, HistoryInterval.OneDay },
                 { HistoryRange.RangeOneYear, HistoryInterval.OneDay },
                 { HistoryRange.RangeTwoYears, HistoryInterval.OneDay },
-                { HistoryRange.RangeFiveYears, HistoryInterval.OneWeek }
             };
 
         }

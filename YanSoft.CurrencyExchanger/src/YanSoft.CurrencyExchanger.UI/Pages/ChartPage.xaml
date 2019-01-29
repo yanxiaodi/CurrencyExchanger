@@ -19,6 +19,7 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <StackLayout Orientation="Horizontal" Grid.Row="0">
@@ -71,7 +72,18 @@
                     </sfButtons:SelectionIndicatorSettings>
                 </sfButtons:SfSegmentedControl.SelectionIndicatorSettings>
             </sfButtons:SfSegmentedControl>
-            <sfChart:SfChart Grid.Row="3">
+            <StackLayout Grid.Row="3" Orientation="Vertical">
+                <Label Text="{Binding SelectedItemDateTime}" HorizontalOptions="Center" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Label Text="{Binding SelectedItemOpen}" HorizontalOptions="Start"></Label>
+                    <Label Text="{Binding SelectedItemClose}" HorizontalOptions="EndAndExpand"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Label Text="{Binding SelectedItemHigh}" HorizontalOptions="Start"></Label>
+                    <Label Text="{Binding SelectedItemLow}" HorizontalOptions="EndAndExpand"></Label>
+                </StackLayout>
+            </StackLayout>
+            <sfChart:SfChart Grid.Row="4" TrackballCreated="SfChart_TrackballCreated">
                 <sfChart:SfChart.PrimaryAxis>
                     <sfChart:DateTimeAxis>
                     </sfChart:DateTimeAxis>
@@ -86,12 +98,16 @@
                 </sfChart:SfChart.Series>-->
                 <sfChart:SfChart.Series>
                     <sfChart:HiLoOpenCloseSeries Name="OHLC" ItemsSource="{Binding CurrencyRateHistoryItemList}" XBindingPath="DateTime" Open="Open" High="High" Low="Low" Close="Close"/>
+                    <!--<sfChart:SplineSeries ItemsSource ="{Binding CurrencyRateHistoryItemList}" XBindingPath="DateTime"
+	  					YBindingPath="Close" SplineType="Cardinal" />-->
                 </sfChart:SfChart.Series>
+                
                 <sfChart:SfChart.TechnicalIndicators>
                     <sfChart:AccumulationDistributionIndicator SeriesName="OHLC"/>
                 </sfChart:SfChart.TechnicalIndicators>
                 <sfChart:SfChart.ChartBehaviors>
-                    <sfChart:ChartTrackballBehavior LabelDisplayMode="FloatAllPoints" ShowLabel="True" ShowLine="True"/>
+                    <sfChart:ChartTrackballBehavior LabelDisplayMode="FloatAllPoints" 
+                                                    ShowLabel="True" ShowLine="True"/>
                 </sfChart:SfChart.ChartBehaviors>
             </sfChart:SfChart>
 
