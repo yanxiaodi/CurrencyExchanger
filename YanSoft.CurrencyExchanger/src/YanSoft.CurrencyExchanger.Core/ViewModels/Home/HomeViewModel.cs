@@ -368,6 +368,28 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         }
         #endregion
 
+
+
+        #region NavigateToChartAsyncCommand;
+        private IMvxAsyncCommand<CurrencyExchangeBindableItem> _navigateToChartAsyncCommand;
+        public IMvxAsyncCommand<CurrencyExchangeBindableItem> NavigateToChartAsyncCommand
+        {
+            get
+            {
+                _navigateToChartAsyncCommand = _navigateToChartAsyncCommand ?? new MvxAsyncCommand<CurrencyExchangeBindableItem>(NavigateToChartAsync);
+                return _navigateToChartAsyncCommand;
+            }
+        }
+        private async Task NavigateToChartAsync(CurrencyExchangeBindableItem param)
+        {
+            // Implement your logic here.
+            if (!param.IsBaseCurrency)
+            {
+                await _navigationService.Navigate<ChartViewModel, CurrencyExchangeBindableItem>(param);
+            }
+        }
+        #endregion
+
         #region Calculator
 
 

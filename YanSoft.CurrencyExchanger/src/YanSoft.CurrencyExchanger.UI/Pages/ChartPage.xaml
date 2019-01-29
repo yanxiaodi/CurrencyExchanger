@@ -90,6 +90,9 @@
                 <sfChart:SfChart.TechnicalIndicators>
                     <sfChart:AccumulationDistributionIndicator SeriesName="OHLC"/>
                 </sfChart:SfChart.TechnicalIndicators>
+                <sfChart:SfChart.ChartBehaviors>
+                    <sfChart:ChartTrackballBehavior LabelDisplayMode="FloatAllPoints" ShowLabel="True" ShowLine="True"/>
+                </sfChart:SfChart.ChartBehaviors>
             </sfChart:SfChart>
 
             <!--<TableView Intent="Settings" Grid.Row="0">
