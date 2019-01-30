@@ -180,7 +180,10 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             else
             {
                 BaseCurrency = _globalContext.CurrentBaseCurrency.BaseCurrency;
-                TargetCurrency = CurrencyList.FirstOrDefault();
+                if (CurrencyList.Any())
+                {
+                    TargetCurrency = CurrencyList.FirstOrDefault();
+                }
             }
         }
 
@@ -197,16 +200,19 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             {
                 CurrencyRateHistoryItemList.Clear();
             }
-            SelectedItemClose = SelectedItemDateTime = SelectedItemHigh = SelectedItemLow = SelectedItemOpen = string.Empty;
-            var list = await _currencyService.GetCurrencyRatesHistoryAsync(BaseCurrency, TargetCurrency, RangeList[SelectedRangeIndex]);
-            list.ForEach(x =>
+            if (TargetCurrency != null)
             {
-                if (x.High != 0 && x.Low != 0 && x.Open != 0 && x.Close != 0)
+                SelectedItemClose = SelectedItemDateTime = SelectedItemHigh = SelectedItemLow = SelectedItemOpen = string.Empty;
+                var list = await _currencyService.GetCurrencyRatesHistoryAsync(BaseCurrency, TargetCurrency, RangeList[SelectedRangeIndex]);
+                list.ForEach(x =>
                 {
-                    x.DateTime = DateTimeHelper.ConvertTimestampToDateTime(x.Timestamp);
-                    CurrencyRateHistoryItemList.Add(x);
-                }
-            });
+                    if (x.High != 0 && x.Low != 0 && x.Open != 0 && x.Close != 0)
+                    {
+                        x.DateTime = DateTimeHelper.ConvertTimestampToDateTime(x.Timestamp);
+                        CurrencyRateHistoryItemList.Add(x);
+                    }
+                });
+            }
         }
         #endregion
 
