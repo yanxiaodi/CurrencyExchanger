@@ -4,6 +4,8 @@ using MvvmCross.Plugin;
 using MvvmCross.ViewModels;
 using Plugin.Toasts;
 using Plugin.Toasts.UWP;
+using YanSoft.CurrencyExchanger.Core.Services;
+using YanSoft.CurrencyExchanger.UWP.Services;
 
 namespace YanSoft.CurrencyExchanger.UWP
 {
@@ -15,6 +17,7 @@ namespace YanSoft.CurrencyExchanger.UWP
             
             base.InitializeIoC();
             Mvx.IoCProvider.RegisterType<IToastNotificator, ToastNotification>();
+            Mvx.IoCProvider.RegisterSingleton<IToastService>(new ToastService());
             ToastNotification.Init();
         }
 

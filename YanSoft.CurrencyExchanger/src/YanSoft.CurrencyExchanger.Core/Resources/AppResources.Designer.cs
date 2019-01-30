@@ -1654,11 +1654,29 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cannot delete the base currency..
+        /// </summary>
+        internal static string Toast_Can_Not_Delete_Base_Currency {
+            get {
+                return ResourceManager.GetString("Toast_Can_Not_Delete_Base_Currency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Network unavailable..
         /// </summary>
         internal static string Toast_NetworkError {
             get {
                 return ResourceManager.GetString("Toast_NetworkError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No chart available for base currency..
+        /// </summary>
+        internal static string Toast_No_Chart_Available_For_Base_Currency {
+            get {
+                return ResourceManager.GetString("Toast_No_Chart_Available_For_Base_Currency", resourceCulture);
             }
         }
         

@@ -660,4 +660,10 @@
   <data name="Button_OK" xml:space="preserve">
     <value>OK</value>
   </data>
+  <data name="Toast_Can_Not_Delete_Base_Currency" xml:space="preserve">
+    <value>Cannot delete the base currency.</value>
+  </data>
+  <data name="Toast_No_Chart_Available_For_Base_Currency" xml:space="preserve">
+    <value>No chart available for base currency.</value>
+  </data>
 </root>

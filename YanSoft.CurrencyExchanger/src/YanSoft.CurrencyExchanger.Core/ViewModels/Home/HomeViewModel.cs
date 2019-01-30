@@ -24,17 +24,17 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         //private readonly IDataService<CurrencyExchangeItem> _dataService;
         private readonly AppSettings _appSettings;
         private readonly GlobalContext _globalContext;
-        private readonly IToastNotificator _toastNotificator;
+        private readonly IToastService _toastService;
         public HomeViewModel(IMvxNavigationService navigationService,
             ICurrencyService currencyService, AppSettings appSettings,
-            GlobalContext globalContext, IToastNotificator toastNotificator)
+            GlobalContext globalContext, IToastService toastService)
         {
             _currencyService = currencyService;
             _navigationService = navigationService;
             //_dataService = dataService;
             _appSettings = appSettings;
             _globalContext = globalContext;
-            _toastNotificator = toastNotificator;
+            _toastService = toastService;
             IsPullToRefreshEnabled = false;
             IsRefreshing = false;
         }
@@ -219,7 +219,8 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             }
             else
             {
-                await _toastNotificator.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+                //await _toastService.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+                _toastService.ShowToast(Resources.AppResources.Toast_NetworkError);
             }
         }
 
@@ -340,7 +341,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             }
             else
             {
-                await _toastNotificator.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+                //await _toastService.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+                _toastService.ShowToast(Resources.AppResources.Toast_NetworkError);
+
             }
         }
         #endregion
@@ -365,6 +368,11 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             {
                 await _currencyService.DeleteCurrencyAsync(CurrencyList, param);
             }
+            else
+            {
+                _toastService.ShowToast(Resources.AppResources.Toast_Can_Not_Delete_Base_Currency);
+
+            }
         }
         #endregion
 
@@ -386,6 +394,10 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             if (!param.IsBaseCurrency)
             {
                 await _navigationService.Navigate<ChartViewModel, CurrencyExchangeBindableItem>(param);
+            }
+            else
+            {
+                _toastService.ShowToast(Resources.AppResources.Toast_No_Chart_Available_For_Base_Currency);
             }
         }
         #endregion

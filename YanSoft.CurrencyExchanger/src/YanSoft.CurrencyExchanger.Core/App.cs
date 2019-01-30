@@ -21,7 +21,7 @@ namespace YanSoft.CurrencyExchanger.Core
     {
         public override async void Initialize()
         {
-            CreatableTypes()
+             CreatableTypes()
                 .EndingWith("Service")
                 .AsInterfaces()
                 .RegisterAsLazySingleton();

@@ -730,6 +730,14 @@
           <source>OK</source>
           <target state="new">OK</target>
         </trans-unit>
+        <trans-unit id="Toast_Can_Not_Delete_Base_Currency" translate="yes" xml:space="preserve">
+          <source>Cannot delete the base currency.</source>
+          <target state="new">Cannot delete the base currency.</target>
+        </trans-unit>
+        <trans-unit id="Toast_No_Chart_Available_For_Base_Currency" translate="yes" xml:space="preserve">
+          <source>No chart available for base currency.</source>
+          <target state="new">No chart available for base currency.</target>
+        </trans-unit>
       </group>
     </body>
   </file>

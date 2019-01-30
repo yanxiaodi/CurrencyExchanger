@@ -71,6 +71,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Renderers\AdBannerRenderer.cs" />
+    <Compile Include="Services\ToastService.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="Styles\ColorPalette.cs" />
     <None Include="Entitlements.plist" />
