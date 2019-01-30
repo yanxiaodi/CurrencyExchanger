@@ -23,7 +23,7 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <StackLayout Padding="4" Grid.Row="0" BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
-                <Image Margin="0"
+                <Image Margin="0" HeightRequest="70"
                      Source="{Binding BaseCurrency.Image, Converter={StaticResource FlagConverter}}">
                 </Image>
                 <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Center" Padding="6,0,6,0" HorizontalOptions="FillAndExpand">
@@ -47,7 +47,7 @@
                     <sfCombobox:SfComboBox.ItemTemplate>
                         <DataTemplate>
                             <StackLayout Padding="4" BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
-                                <Image Margin="0"
+                                <Image Margin="0" HeightRequest="70"
                                        Source="{Binding Image, Converter={StaticResource FlagConverter}}">
                                 </Image>
                                 <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Center" Padding="6,0,6,0" HorizontalOptions="FillAndExpand">
@@ -88,7 +88,7 @@
                     <Label Text="{Binding SelectedItemLow}" HorizontalOptions="EndAndExpand"></Label>
                 </StackLayout>
             </StackLayout>
-            <sfChart:SfChart Grid.Row="4" TrackballCreated="SfChart_TrackballCreated">
+            <sfChart:SfChart Grid.Row="4" x:Name="HistoryChart" TrackballCreated="HistoryChart_TrackballCreated">
                 <sfChart:SfChart.PrimaryAxis>
                     <sfChart:DateTimeAxis>
                     </sfChart:DateTimeAxis>

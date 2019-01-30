@@ -13,7 +13,7 @@
         <ToolbarItem Text="Add" Order="Primary"  Priority="0" Command="{Binding AddCurrenciesAsyncCommand}">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="outline_done_black_48dp.png" />
+                    <On Platform="iOS" Value="outline_done_black_24pt.png" />
                     <On Platform="Android" Value="outline_done_white_48dp.png"/>
                     <On Platform="UWP" Value="Assets/icons/outline_done_black_48dp.png" />
                 </OnPlatform>
