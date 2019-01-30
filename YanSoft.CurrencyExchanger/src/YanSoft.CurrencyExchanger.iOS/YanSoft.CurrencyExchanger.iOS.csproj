@@ -80,22 +80,40 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
-    <ImageAsset Include="Icons.xcassets\outline_list_black_36dp.imageset\Contents.json">
+    <ImageAsset Include="Icons.xcassets\outline_add_black_24pt.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Icons.xcassets\outline_add_black_48dp.imageset\Contents.json">
+    <ImageAsset Include="Icons.xcassets\outline_add_black_24pt.imageset\outline_add_black_24pt_1x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Icons.xcassets\outline_add_black_48dp.imageset\outline_add_black_48pt_1x[2].png">
+    <ImageAsset Include="Icons.xcassets\outline_add_black_24pt.imageset\outline_add_black_24pt_2x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Icons.xcassets\outline_done_black_48dp.imageset\Contents.json">
+    <ImageAsset Include="Icons.xcassets\outline_add_black_24pt.imageset\outline_add_black_24pt_3x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Icons.xcassets\outline_done_black_48dp.imageset\outline_done_black_48dp.png">
+    <ImageAsset Include="Icons.xcassets\outline_done_black_24pt.imageset\outline_done_black_24pt_1x.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Icons.xcassets\outline_list_black_36dp.imageset\outline_list_black_36dp.png">
+    <ImageAsset Include="Icons.xcassets\outline_done_black_24pt.imageset\outline_done_black_24pt_2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_done_black_24pt.imageset\outline_done_black_24pt_3x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_list_black_24pt.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_done_black_24pt.imageset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_list_black_24pt.imageset\outline_list_black_24pt_1x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_list_black_24pt.imageset\outline_list_black_24pt_2x.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Icons.xcassets\outline_list_black_24pt.imageset\outline_list_black_24pt_3x.png">
       <Visible>false</Visible>
     </ImageAsset>
     <ImageAsset Include="Resources\Media.xcassets\AppIcons.appiconset\Contents.json">

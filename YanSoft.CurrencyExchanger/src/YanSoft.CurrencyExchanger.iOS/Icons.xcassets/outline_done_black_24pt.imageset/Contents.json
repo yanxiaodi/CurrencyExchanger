@@ -2,16 +2,18 @@
   "images": [
     {
       "scale": "2x",
-      "idiom": "universal"
+      "idiom": "universal",
+      "filename": "outline_done_black_24pt_2x.png"
     },
     {
       "scale": "3x",
-      "idiom": "universal"
+      "idiom": "universal",
+      "filename": "outline_done_black_24pt_3x.png"
     },
     {
       "scale": "1x",
       "idiom": "universal",
-      "filename": "outline_done_black_48dp.png"
+      "filename": "outline_done_black_24pt_1x.png"
     }
   ],
   "properties": {},
