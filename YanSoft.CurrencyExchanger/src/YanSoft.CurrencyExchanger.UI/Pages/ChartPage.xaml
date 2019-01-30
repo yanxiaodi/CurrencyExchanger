@@ -59,12 +59,14 @@
                     </sfCombobox:SfComboBox.ItemTemplate>
                 </sfCombobox:SfComboBox>
             <sfButtons:SfSegmentedControl x:Name="segmentedControl" Grid.Row="2"
-                                           HeightRequest="80" 
-                                          SelectionTextColor="#007CEE" Color="Transparent" 
+                                           HeightRequest="80" Color="Transparent" 
             BorderColor="#929292" FontColor="#929292"
             BackgroundColor="Transparent"
                 CornerRadius="5" VisibleSegmentsCount="6" DisplayMode="Text" VerticalOptions="Start"
                 ItemsSource="{Binding RangeList}" SelectedIndex="{Binding SelectedRangeIndex, Mode=TwoWay}">
+                <sfButtons:SfSegmentedControl.SelectionTextColor>
+                    <OnPlatform UWP="White" iOS="#007CEE" Android="#007CEE"></OnPlatform>
+                </sfButtons:SfSegmentedControl.SelectionTextColor>
                 <sfButtons:SfSegmentedControl.Behaviors>
                     <behaviors:EventHandlerBehavior EventName="SelectionChanged">
                         <behaviors:InvokeCommandAction 
@@ -111,8 +113,7 @@
                     <sfChart:AccumulationDistributionIndicator SeriesName="OHLC"/>
                 </sfChart:SfChart.TechnicalIndicators>
                 <sfChart:SfChart.ChartBehaviors>
-                    <sfChart:ChartTrackballBehavior LabelDisplayMode="FloatAllPoints" 
-                                                    ShowLabel="True" ShowLine="True"/>
+                    <sfChart:ChartTrackballBehavior />
                 </sfChart:SfChart.ChartBehaviors>
             </sfChart:SfChart>
 

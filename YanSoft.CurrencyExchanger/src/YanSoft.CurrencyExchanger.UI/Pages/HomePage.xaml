@@ -15,7 +15,7 @@
                       xmlns:controlHelper="clr-namespace:YanSoft.CurrencyExchanger.Core.ControlHelper;assembly=YanSoft.CurrencyExchanger.Core"
                       xmlns:controls="clr-namespace:YanSoft.CurrencyExchanger.Core.Controls;assembly=YanSoft.CurrencyExchanger.Core">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add Currency" Order="Primary" Priority="0" Command="{Binding NavigateToAddCurrenciesAsyncCommand}">
+        <ToolbarItem Text="{ext:Translate Button_Add_Currency}" Order="Primary" Priority="0" Command="{Binding NavigateToAddCurrenciesAsyncCommand}">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="outline_add_black_24pt.png" />
@@ -24,7 +24,7 @@
                 </OnPlatform>
             </ToolbarItem.Icon>
         </ToolbarItem>
-        <ToolbarItem Text="Edit" Order="Primary"  Priority="0" Command="{Binding NavigateToEditListAsyncCommand}">
+        <ToolbarItem Text="{ext:Translate Button_Edit_List}" Order="Primary"  Priority="0" Command="{Binding NavigateToEditListAsyncCommand}">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="outline_list_black_24pt.png" />
@@ -55,10 +55,10 @@
                         <ViewCell>
                             <ViewCell.ContextActions>
                                 <MenuItem CommandParameter="{Binding}" Command="{Binding BindingContext.DataContext.DeleteCurrencyAsyncCommand, Source={x:Reference MainContent}}"
-               Text="Delete" IsDestructive="True" >
+               Text="{ext:Translate Button_Delete}" IsDestructive="True" >
                                 </MenuItem>
                                 <MenuItem CommandParameter="{Binding}" Command="{Binding BindingContext.DataContext.NavigateToChartAsyncCommand, Source={x:Reference MainContent}}"
-               Text="Chart" IsDestructive="True" >
+               Text="{ext:Translate Button_Chart}" IsDestructive="True" >
                                 </MenuItem>
                             </ViewCell.ContextActions>
                             <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
@@ -151,8 +151,8 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Button Text="Cancel" HorizontalOptions="FillAndExpand" Grid.Column="0" Command="{Binding CancelCalculatorCommand}" />
-                            <Button Text="Accept" HorizontalOptions="FillAndExpand" Grid.Column="1" Command="{Binding SetCurrencyAmountAsyncCommand}"/>
+                            <Button Text="{ext:Translate Button_Cancel}" HorizontalOptions="FillAndExpand" Grid.Column="0" Command="{Binding CancelCalculatorCommand}" />
+                            <Button Text="{ext:Translate Button_OK}" HorizontalOptions="FillAndExpand" Grid.Column="1" Command="{Binding SetCurrencyAmountAsyncCommand}"/>
 
                         </Grid>
                     </Grid>

@@ -642,4 +642,22 @@
   <data name="Toast_Title_Warning" xml:space="preserve">
     <value>Warning</value>
   </data>
+  <data name="Button_Add_Currency" xml:space="preserve">
+    <value>Add Currency</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Button_Chart" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="Button_Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Button_Edit_List" xml:space="preserve">
+    <value>Edit List</value>
+  </data>
+  <data name="Button_OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
 </root>
