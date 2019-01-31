@@ -13,7 +13,7 @@
                    WidthRequest="50" HeightRequest="50"></Image>
             <Label Text="Currency Exchanger" Style="{DynamicResource SubtitleStyle}"
                    HorizontalOptions="Center"/>
-            <Label Text="V1.0" Style="{DynamicResource CaptionStyle}"
+                <Label Text="{Binding AppVersion}" Style="{DynamicResource CaptionStyle}"
                    HorizontalOptions="Center"/>
             <Label Text="{ext:Translate About_Disclaimer_Title}" 
                    Style="{DynamicResource SubtitleStyle}" 

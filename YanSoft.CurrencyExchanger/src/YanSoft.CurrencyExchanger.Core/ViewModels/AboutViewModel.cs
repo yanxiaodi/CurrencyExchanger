@@ -4,7 +4,9 @@ using System.Text;
 using System.Threading.Tasks;
 using MvvmCross.Commands;
 using Xamarin.Essentials;
+using YanSoft.CurrencyExchanger.Core.Configurations;
 using YanSoft.CurrencyExchanger.Core.Resources;
+using YanSoft.CurrencyExchanger.Core.Utils;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels
 {
@@ -12,11 +14,27 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
     {
         //TODO
         private string shareUrl = "";
-        private string feedbackEmail = "yan_xiaodi@hotmail.com";
-        public AboutViewModel()
+        private readonly IAppVersionHelper _appVersionHelper;
+        public AboutViewModel(IAppVersionHelper appVersionHelper)
         {
+            _appVersionHelper = appVersionHelper;
+            AppVersion = _appVersionHelper.GetBuildVersion();
+            System.Diagnostics.Debug.WriteLine(_appVersionHelper.GetBuildVersion());
+            System.Diagnostics.Debug.WriteLine(_appVersionHelper.GetBuildNumber());
 
         }
+
+        #region Properties
+
+        #region AppVersion;
+        private string _appVersion;
+        public string AppVersion
+        {
+            get => _appVersion;
+            set => SetProperty(ref _appVersion, value);
+        }
+        #endregion
+        #endregion
 
         #region Commands
 
@@ -39,7 +57,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                 {
                     Subject = "Currency Exchanger Feedback",
                     Body = "",
-                    To = new List<string> { feedbackEmail },
+                    To = new List<string> { AppConfigurations.FeedbackEmail },
                     //Cc = ccRecipients,
                     //Bcc = bccRecipients
                 };

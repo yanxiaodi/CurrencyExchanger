@@ -29,5 +29,7 @@ namespace YanSoft.CurrencyExchanger.Core.Configurations
 
         public const string MicrosoftAdTestAppId = "3f83fe91-d6be-434d-a0ae-7351c5a997f1";
         public const string MicrosoftAdTestAdUnitId = "test";
+
+        public const string FeedbackEmail = "yan_xiaodi@hotmail.com";
     }
 }
