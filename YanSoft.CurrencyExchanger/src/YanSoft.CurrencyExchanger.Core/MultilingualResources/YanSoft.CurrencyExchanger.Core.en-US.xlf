@@ -738,6 +738,38 @@
           <source>No chart available for base currency.</source>
           <target state="new">No chart available for base currency.</target>
         </trans-unit>
+        <trans-unit id="About_PageTitle" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="new">About</target>
+        </trans-unit>
+        <trans-unit id="AddCurrencies_PageTitle" translate="yes" xml:space="preserve">
+          <source>Add Currencies</source>
+          <target state="new">Add Currencies</target>
+        </trans-unit>
+        <trans-unit id="Chart_PageTitle" translate="yes" xml:space="preserve">
+          <source>Chart</source>
+          <target state="new">Chart</target>
+        </trans-unit>
+        <trans-unit id="EditList_PageTitle" translate="yes" xml:space="preserve">
+          <source>Edit List</source>
+          <target state="new">Edit List</target>
+        </trans-unit>
+        <trans-unit id="Home_PageTitle" translate="yes" xml:space="preserve">
+          <source>Currency Exchanger</source>
+          <target state="new">Currency Exchanger</target>
+        </trans-unit>
+        <trans-unit id="Settings_PageTitle" translate="yes" xml:space="preserve">
+          <source>Settings</source>
+          <target state="new">Settings</target>
+        </trans-unit>
+        <trans-unit id="Settings_Section_Common" translate="yes" xml:space="preserve">
+          <source>Common</source>
+          <target state="new">Common</target>
+        </trans-unit>
+        <trans-unit id="Settings_Section_Currencies" translate="yes" xml:space="preserve">
+          <source>Currencies</source>
+          <target state="new">Currencies</target>
+        </trans-unit>
       </group>
     </body>
   </file>

@@ -10,17 +10,20 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Services;
+using YanSoft.CurrencyExchanger.Core.Utils;
 using YanSoft.CurrencyExchanger.Core.ViewModels;
 
 namespace YanSoft.CurrencyExchanger.UI.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail, Title = "Edit List")]
+    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail)]
     public partial class EditListPage : MvxContentPage<EditListViewModel>
     {
         public EditListPage()
         {
             InitializeComponent();
+            Title = AppResourcesHelper.GetString("EditList_PageTitle");
+
         }
 
         private async void ListView_ItemDragging(object sender, Syncfusion.ListView.XForms.ItemDraggingEventArgs e)

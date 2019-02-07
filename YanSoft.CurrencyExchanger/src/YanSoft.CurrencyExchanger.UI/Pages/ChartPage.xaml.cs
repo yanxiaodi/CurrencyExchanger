@@ -14,12 +14,14 @@ using YanSoft.CurrencyExchanger.Core.ViewModels;
 namespace YanSoft.CurrencyExchanger.UI.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail, Title = "Chart")]
+    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail)]
     public partial class ChartPage : MvxContentPage<ChartViewModel>
     {
         public ChartPage()
         {
             InitializeComponent();
+            Title = AppResourcesHelper.GetString("Chart_PageTitle");
+
         }
 
 

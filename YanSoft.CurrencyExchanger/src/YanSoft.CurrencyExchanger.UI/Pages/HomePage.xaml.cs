@@ -8,16 +8,19 @@ using MvvmCross.Forms.Views;
 using YanSoft.CurrencyExchanger.Core.ViewModels.Home;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using YanSoft.CurrencyExchanger.Core.Utils;
 
 namespace YanSoft.CurrencyExchanger.UI.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail, Title = "Currency Exchanger")]
+    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail)]
     public partial class HomePage : MvxContentPage<HomeViewModel>
     {
         public HomePage()
         {
             InitializeComponent();
+            Title = AppResourcesHelper.GetString("Home_PageTitle");
+
         }
 
         protected override void OnAppearing()

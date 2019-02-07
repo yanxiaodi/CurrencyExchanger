@@ -97,6 +97,15 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string About_PageTitle {
+            get {
+                return ResourceManager.GetString("About_PageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to share.
         /// </summary>
         internal static string About_Share {
@@ -111,6 +120,15 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         internal static string About_Share_Content {
             get {
                 return ResourceManager.GetString("About_Share_Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Currencies.
+        /// </summary>
+        internal static string AddCurrencies_PageTitle {
+            get {
+                return ResourceManager.GetString("AddCurrencies_PageTitle", resourceCulture);
             }
         }
         
@@ -174,6 +192,15 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         internal static string Button_OK {
             get {
                 return ResourceManager.GetString("Button_OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chart.
+        /// </summary>
+        internal static string Chart_PageTitle {
+            get {
+                return ResourceManager.GetString("Chart_PageTitle", resourceCulture);
             }
         }
         
@@ -1650,6 +1677,51 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         internal static string Currency_ZMW {
             get {
                 return ResourceManager.GetString("Currency_ZMW", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit List.
+        /// </summary>
+        internal static string EditList_PageTitle {
+            get {
+                return ResourceManager.GetString("EditList_PageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Currency Exchanger.
+        /// </summary>
+        internal static string Home_PageTitle {
+            get {
+                return ResourceManager.GetString("Home_PageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string Settings_PageTitle {
+            get {
+                return ResourceManager.GetString("Settings_PageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Common.
+        /// </summary>
+        internal static string Settings_Section_Common {
+            get {
+                return ResourceManager.GetString("Settings_Section_Common", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Currencies.
+        /// </summary>
+        internal static string Settings_Section_Currencies {
+            get {
+                return ResourceManager.GetString("Settings_Section_Currencies", resourceCulture);
             }
         }
         

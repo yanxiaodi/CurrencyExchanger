@@ -4,14 +4,15 @@
              x:Class="YanSoft.CurrencyExchanger.UI.Pages.SettingsPage"
                       xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
                       xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
-                      x:TypeArguments="viewModels:SettingsViewModel" >
+                      x:TypeArguments="viewModels:SettingsViewModel"
+                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core">
     <ContentPage.Content>
         <TableView Intent="Settings">
             <TableView.Margin>
                 <OnPlatform UWP="20,0,20,0" Android="0" iOS="0" ></OnPlatform>
             </TableView.Margin>
             <TableRoot>
-                <TableSection Title="Common">
+                <TableSection Title="{ext:Translate Settings_Section_Common}">
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
                             <Label Text="Auto fefresh when app starts" HorizontalOptions="Start" VerticalOptions="Center"/>
@@ -36,7 +37,7 @@
                         </StackLayout>
                     </ViewCell>
                 </TableSection>
-                <TableSection Title="Currencies">
+                <TableSection Title="{ext:Translate Settings_Section_Currencies}">
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
                             <Label Text="Pin base currency to top" HorizontalOptions="Start" VerticalOptions="Center"/>
