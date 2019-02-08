@@ -30,8 +30,7 @@ namespace YanSoft.CurrencyExchanger.Core
             await Mvx.IoCProvider.Resolve<IDataService<CurrencyExchangeItem>>().InitializeDatabaseAsync();
 
             Mvx.IoCProvider.RegisterSingleton(new GlobalContext());
-            Mvx.IoCProvider.Resolve<GlobalContext>().InitializeAllCurrencyItemList();
-            Mvx.IoCProvider.Resolve<GlobalContext>().InitializeOthers();
+            
             Mvx.IoCProvider.RegisterSingleton(new AppSettings());
 
             RegisterAppStart<MasterDetailViewModel>();
@@ -43,6 +42,9 @@ namespace YanSoft.CurrencyExchanger.Core
                   "android=6b6af17f-9bfd-4c74-8ac4-fcfcef223bb2" +
                   "ios=cea8fbf3-310d-4f98-b77b-d22a02e6fac2",
                   typeof(Analytics), typeof(Crashes));
+
+            Mvx.IoCProvider.Resolve<GlobalContext>().InitializeAllCurrencyItemList();
+            Mvx.IoCProvider.Resolve<GlobalContext>().InitializeOthers();
 
             var settings = Mvx.IoCProvider.Resolve<AppSettings>();
             System.Globalization.CultureInfo.CurrentCulture = CrossMultilingual.Current.CurrentCultureInfo;

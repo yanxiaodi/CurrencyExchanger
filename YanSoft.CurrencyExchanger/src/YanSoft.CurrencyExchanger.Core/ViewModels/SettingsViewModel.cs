@@ -166,7 +166,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                     var culture = new CultureInfo(value.Code);
                     AppResources.Culture = culture;
                     CrossMultilingual.Current.CurrentCultureInfo = culture;
-                    _globalContext.InitializeAllCurrencyItemList();
+                    _globalContext.RefreshAllCurrencyItemList(culture);
                     _globalContext.CurrentBaseCurrency = _globalContext.CurrentBaseCurrency.ToCurrencyExchangeItem().ToCurrencyExchangeBindableItem();
                     var message = new UpdateLanguageMessage(this, value.Code);
                     _messenger.Publish(message);

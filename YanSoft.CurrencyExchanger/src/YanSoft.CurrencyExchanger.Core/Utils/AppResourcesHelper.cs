@@ -4,30 +4,32 @@ using System.Resources;
 using System.Text;
 using System.Reflection;
 using Plugin.Multilingual;
+using YanSoft.CurrencyExchanger.Core.Resources;
+using System.Globalization;
 
 namespace YanSoft.CurrencyExchanger.Core.Utils
 {
     public static class AppResourcesHelper
     {
-        const string ResourceId = "YanSoft.CurrencyExchanger.Core.Resources.AppResources";
 
-        static readonly Lazy<ResourceManager> ResManager = new Lazy<ResourceManager>(() => new ResourceManager(ResourceId, typeof(AppResourcesHelper).GetTypeInfo().Assembly));
-
-        public static string GetString(string key)
+        public static string GetString(string key, CultureInfo ci = null)
         {
             if (key == null)
                 return "";
-
-            var ci = CrossMultilingual.Current.CurrentCultureInfo;
-
-            var translation = ResManager.Value.GetString(key, ci);
+            if(ci == null)
+            {
+                ci = CrossMultilingual.Current.CurrentCultureInfo;
+            }
+            //System.Diagnostics.Debug.WriteLine(ci);
+            var translation = AppResources.ResourceManager.GetString(key, ci);
+            //System.Diagnostics.Debug.WriteLine(translation);
 
             if (translation == null)
             {
 
 #if DEBUG
                 throw new ArgumentException(
-                    String.Format("Key '{0}' was not found in resources '{1}' for culture '{2}'.", key, ResourceId, ci.Name),
+                    String.Format($"Key '{key}' was not found in resources for culture '{ci.Name}'."),
                     "Text");
 #else
 				translation = Text; // returns the key, which GETS DISPLAYED TO THE USER

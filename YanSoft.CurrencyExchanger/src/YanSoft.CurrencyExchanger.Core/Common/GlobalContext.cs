@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
 using YanSoft.CurrencyExchanger.Core.Models;
@@ -188,8 +189,6 @@ namespace YanSoft.CurrencyExchanger.Core.Common
                 new CurrencyItem{Code = "ZMK", Name = AppResources.Currency_ZMK, Image="flag_zambia", CultureName=""},
                 new CurrencyItem{Code = "ZMW", Name = AppResources.Currency_ZMW, Image="flag_white", CultureName=""}
             };
-
-            
         }
 
         public void InitializeOthers()
@@ -216,6 +215,16 @@ namespace YanSoft.CurrencyExchanger.Core.Common
                 new LanguageItem { DisplayName = "한국어 - Korean", Code = "ko" },
                 new LanguageItem { DisplayName = "Русский - Russian", Code = "ru" }
             };
+        }
+
+        public void RefreshAllCurrencyItemList(CultureInfo ci)
+        {
+            var test = AppResourcesHelper.GetString("Currency_AED", ci);
+            System.Diagnostics.Debug.WriteLine(test);
+            AllCurrencyItemList.ForEach(x =>
+            {
+                x.Name = AppResourcesHelper.GetString($"Currency_{x.Code}", ci);
+            });
         }
     }
 }
