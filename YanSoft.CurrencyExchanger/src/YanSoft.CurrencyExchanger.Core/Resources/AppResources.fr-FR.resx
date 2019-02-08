@@ -13,382 +13,382 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Currency_AUD" xml:space="preserve">
-    <value>Australian Dollar</value>
+    <value>Dollar australien</value>
   </data>
   <data name="Currency_AWG" xml:space="preserve">
-    <value>Aruba Florin</value>
+    <value>Florin d’Aruba</value>
   </data>
   <data name="Currency_BBD" xml:space="preserve">
-    <value>Barbados Dollar</value>
+    <value>Dollar de Barbade</value>
   </data>
   <data name="Currency_BDT" xml:space="preserve">
     <value>Bangladesh Taka</value>
   </data>
   <data name="Currency_BGN" xml:space="preserve">
-    <value>Bulgarian Lev</value>
+    <value>Lev bulgare</value>
   </data>
   <data name="Currency_BHD" xml:space="preserve">
-    <value>Bahraini Dinar</value>
+    <value>Dinar bahreïni</value>
   </data>
   <data name="Currency_BIF" xml:space="preserve">
-    <value>Burundi Franc</value>
+    <value>Franc du Burundi</value>
   </data>
   <data name="Currency_BND" xml:space="preserve">
-    <value>Brunei Dollar</value>
+    <value>Dollar de Brunéi</value>
   </data>
   <data name="Currency_BOB" xml:space="preserve">
-    <value>Bolivian Boliviano</value>
+    <value>Boliviano bolivien</value>
   </data>
   <data name="Currency_BRL" xml:space="preserve">
-    <value>Brazilian Real</value>
+    <value>Real brésilien</value>
   </data>
   <data name="Currency_BSD" xml:space="preserve">
-    <value>Bahamian Dollar</value>
+    <value>Dollar des Bahamas</value>
   </data>
   <data name="Currency_BTN" xml:space="preserve">
-    <value>Bhutan Ngultrum</value>
+    <value>Ngultrum du Bhoutan</value>
   </data>
   <data name="Currency_BWP" xml:space="preserve">
-    <value>Botswana Pula</value>
+    <value>Pula du Botswana</value>
   </data>
   <data name="Currency_BYR" xml:space="preserve">
-    <value>Belarus Ruble</value>
+    <value>Rouble Belarus</value>
   </data>
   <data name="Currency_BZD" xml:space="preserve">
-    <value>Belize Dollar</value>
+    <value>Dollar de Belize</value>
   </data>
   <data name="Currency_CAD" xml:space="preserve">
-    <value>Canadian Dollar</value>
+    <value>Dollar canadien</value>
   </data>
   <data name="Currency_CHF" xml:space="preserve">
-    <value>Swiss Franc</value>
+    <value>Franc suisse</value>
   </data>
   <data name="Currency_CLP" xml:space="preserve">
-    <value>Chilean Peso</value>
+    <value>Peso chilien</value>
   </data>
   <data name="Currency_CNY" xml:space="preserve">
-    <value>Chinese Yuan</value>
+    <value>Yuan chinois</value>
   </data>
   <data name="Currency_COP" xml:space="preserve">
-    <value>Colombian Peso</value>
+    <value>Peso colombien</value>
   </data>
   <data name="Currency_CRC" xml:space="preserve">
-    <value>Costa Rica Colon</value>
+    <value>Colon costaricain</value>
   </data>
   <data name="Currency_CUP" xml:space="preserve">
-    <value>Cuban Peso</value>
+    <value>Peso cubain</value>
   </data>
   <data name="Currency_AED" xml:space="preserve">
-    <value>UAE Dirham</value>
+    <value>Dirham des Émirats arabes Unis</value>
   </data>
   <data name="Currency_ALL" xml:space="preserve">
-    <value>Albanian Lek</value>
+    <value>Lek albanais</value>
   </data>
   <data name="Currency_ARS" xml:space="preserve">
-    <value>Argentine Peso</value>
+    <value>Peso argentin</value>
   </data>
   <data name="Currency_CVE" xml:space="preserve">
-    <value>Cape Verde Escudo</value>
+    <value>Escudo du Cap-Vert</value>
   </data>
   <data name="Currency_CZK" xml:space="preserve">
-    <value>Czech Koruna</value>
+    <value>Couronne tchèque</value>
   </data>
   <data name="Currency_DJF" xml:space="preserve">
     <value>Dijibouti Franc</value>
   </data>
   <data name="Currency_DKK" xml:space="preserve">
-    <value>Danish Krone</value>
+    <value>Couronne danoise</value>
   </data>
   <data name="Currency_DOP" xml:space="preserve">
-    <value>Dominican Peso</value>
+    <value>Peso dominicain</value>
   </data>
   <data name="Currency_DZD" xml:space="preserve">
-    <value>Algerian Dinar</value>
+    <value>Dinar algérien</value>
   </data>
   <data name="Currency_EGP" xml:space="preserve">
-    <value>Egyptian Pound</value>
+    <value>Livre égyptienne</value>
   </data>
   <data name="Currency_ERN" xml:space="preserve">
-    <value>Eritrea Nakfa</value>
+    <value>Érythrée - Nakfa</value>
   </data>
   <data name="Currency_ETB" xml:space="preserve">
-    <value>Ethiopian Birr</value>
+    <value>Birr éthiopien</value>
   </data>
   <data name="Currency_EUR" xml:space="preserve">
     <value>Euro</value>
   </data>
   <data name="Currency_FJD" xml:space="preserve">
-    <value>Fiji Dollar</value>
+    <value>Dollar fidjien</value>
   </data>
   <data name="Currency_FKP" xml:space="preserve">
-    <value>Falkland Islands Pound</value>
+    <value>Livre de Falkland</value>
   </data>
   <data name="Currency_GBP" xml:space="preserve">
-    <value>British Pound</value>
+    <value>La livre sterling</value>
   </data>
   <data name="Currency_GIP" xml:space="preserve">
-    <value>Gibraltar Pound</value>
+    <value>Livre de Gibraltar</value>
   </data>
   <data name="Currency_GMD" xml:space="preserve">
-    <value>Gambian Dalasi</value>
+    <value>Dalasi gambien</value>
   </data>
   <data name="Currency_GNF" xml:space="preserve">
-    <value>Guinea Franc</value>
+    <value>Franc guinéen</value>
   </data>
   <data name="Currency_GTQ" xml:space="preserve">
     <value>Guatemala Quetzal</value>
   </data>
   <data name="Currency_GYD" xml:space="preserve">
-    <value>Guyana Dollar</value>
+    <value>Dollar de Guyane</value>
   </data>
   <data name="Currency_HKD" xml:space="preserve">
-    <value>Hong Kong Dollar</value>
+    <value>Dollar de Hong-Kong</value>
   </data>
   <data name="Currency_HNL" xml:space="preserve">
-    <value>Honduras Lempira</value>
+    <value>Lempira hondurien</value>
   </data>
   <data name="Currency_HRK" xml:space="preserve">
-    <value>Croatian Kuna</value>
+    <value>Kuna</value>
   </data>
   <data name="Currency_HTG" xml:space="preserve">
-    <value>Haiti Gourde</value>
+    <value>Haïti - Gourde</value>
   </data>
   <data name="Currency_HUF" xml:space="preserve">
-    <value>Hungarian Forint</value>
+    <value>Forint hongrois</value>
   </data>
   <data name="Currency_IDR" xml:space="preserve">
-    <value>Indonesian Rupiah</value>
+    <value>Rupiah indonésienne</value>
   </data>
   <data name="Currency_ILS" xml:space="preserve">
-    <value>Israeli Shekel</value>
+    <value>Shekel israélien</value>
   </data>
   <data name="Currency_INR" xml:space="preserve">
-    <value>Indian Rupee</value>
+    <value>Roupie indienne</value>
   </data>
   <data name="Currency_IQD" xml:space="preserve">
-    <value>Iraqi Dinar</value>
+    <value>Dinar irakien</value>
   </data>
   <data name="Currency_IRR" xml:space="preserve">
-    <value>Iran Rial</value>
+    <value>L’Iran Rial</value>
   </data>
   <data name="Currency_ISK" xml:space="preserve">
-    <value>Iceland Krona</value>
+    <value>Couronne islandaise</value>
   </data>
   <data name="Currency_JMD" xml:space="preserve">
-    <value>Jamaican Dollar</value>
+    <value>Dollar jamaïcain</value>
   </data>
   <data name="Currency_JOD" xml:space="preserve">
-    <value>Jordanian Dinar</value>
+    <value>Dinar jordanien</value>
   </data>
   <data name="Currency_JPY" xml:space="preserve">
-    <value>Japanese Yen</value>
+    <value>Yen japonais</value>
   </data>
   <data name="Currency_KES" xml:space="preserve">
-    <value>Kenyan Shilling</value>
+    <value>Shilling du Kenya</value>
   </data>
   <data name="Currency_KHR" xml:space="preserve">
-    <value>Cambodia Riel</value>
+    <value>Cambodge Riel</value>
   </data>
   <data name="Currency_KMF" xml:space="preserve">
-    <value>Comoros Franc</value>
+    <value>Franc des Comores</value>
   </data>
   <data name="Currency_KPW" xml:space="preserve">
-    <value>North Korean Won</value>
+    <value>Won de Corée du Nord</value>
   </data>
   <data name="Currency_KRW" xml:space="preserve">
-    <value>South-Korean Won</value>
+    <value>Won sud-coréen</value>
   </data>
   <data name="Currency_KWD" xml:space="preserve">
-    <value>Kuwaiti Dinar</value>
+    <value>Dinar koweïtien</value>
   </data>
   <data name="Currency_KYD" xml:space="preserve">
-    <value>Cayman Islands Dollar</value>
+    <value>Dollar des Îles Caïman</value>
   </data>
   <data name="Currency_KZT" xml:space="preserve">
     <value>Kazakhstan Tenge</value>
   </data>
   <data name="Currency_LAK" xml:space="preserve">
-    <value>Lao Kip</value>
+    <value>Kip laotien</value>
   </data>
   <data name="Currency_LBP" xml:space="preserve">
-    <value>Lebanese Pound</value>
+    <value>Livre libanaise</value>
   </data>
   <data name="Currency_LKR" xml:space="preserve">
-    <value>Sri Lanka Rupee</value>
+    <value>Roupie de Sri Lanka</value>
   </data>
   <data name="Currency_LRD" xml:space="preserve">
-    <value>Liberian Dollar</value>
+    <value>Dollar libérien</value>
   </data>
   <data name="Currency_LSL" xml:space="preserve">
-    <value>Lesotho Loti</value>
+    <value>Loti du Lesotho</value>
   </data>
   <data name="Currency_LVL" xml:space="preserve">
-    <value>Latvian Lats</value>
+    <value>Lats letton</value>
   </data>
   <data name="Currency_LYD" xml:space="preserve">
-    <value>Libyan Dinar</value>
+    <value>Dinar libyen</value>
   </data>
   <data name="Currency_MAD" xml:space="preserve">
-    <value>Moroccan Dirham</value>
+    <value>Dirham marocain</value>
   </data>
   <data name="Currency_MDL" xml:space="preserve">
-    <value>Moldovan Leu</value>
+    <value>Leu de Moldovie</value>
   </data>
   <data name="Currency_MKD" xml:space="preserve">
-    <value>Macedonian Denar</value>
+    <value>Denar macédonien</value>
   </data>
   <data name="Currency_MMK" xml:space="preserve">
-    <value>Myanmar Kyat</value>
+    <value>Kyat de Myanmar</value>
   </data>
   <data name="Currency_MNT" xml:space="preserve">
-    <value>Mongolian Tugrik</value>
+    <value>Tugrik mongol</value>
   </data>
   <data name="Currency_MOP" xml:space="preserve">
-    <value>Macau Pataca</value>
+    <value>Macao Pataca</value>
   </data>
   <data name="Currency_MRO" xml:space="preserve">
-    <value>Mauritania Ougulya</value>
+    <value>La Mauritanie ouguiya</value>
   </data>
   <data name="Currency_MUR" xml:space="preserve">
-    <value>Mauritius Rupee</value>
+    <value>Roupie de Maurice</value>
   </data>
   <data name="Currency_MVR" xml:space="preserve">
-    <value>Maldives Rufiyaa</value>
+    <value>Rufiyaa des Maldives</value>
   </data>
   <data name="Currency_MWK" xml:space="preserve">
     <value>Malawi Kwacha</value>
   </data>
   <data name="Currency_MXN" xml:space="preserve">
-    <value>Mexican Peso</value>
+    <value>Peso mexicain</value>
   </data>
   <data name="Currency_MYR" xml:space="preserve">
-    <value>Malaysian Ringgit</value>
+    <value>Ringgit malaisien</value>
   </data>
   <data name="Currency_NAD" xml:space="preserve">
-    <value>Namibian Dollar</value>
+    <value>Dollar namibien</value>
   </data>
   <data name="Currency_NGN" xml:space="preserve">
-    <value>Nigerian Naira</value>
+    <value>Naire du Nigeria</value>
   </data>
   <data name="Currency_NIO" xml:space="preserve">
-    <value>Nicaragua Cordoba</value>
+    <value>Cordoba nicaraguayen</value>
   </data>
   <data name="Currency_NOK" xml:space="preserve">
-    <value>Norwegian Kroner</value>
+    <value>Couronne norvégienne</value>
   </data>
   <data name="Currency_NPR" xml:space="preserve">
-    <value>Nepalese Rupee</value>
+    <value>Roupie népalaise</value>
   </data>
   <data name="Currency_NZD" xml:space="preserve">
-    <value>New Zealand Dollar</value>
+    <value>Dollar néo-zélandais</value>
   </data>
   <data name="Currency_OMR" xml:space="preserve">
-    <value>Omani Rial</value>
+    <value>Rial omanais</value>
   </data>
   <data name="Currency_PAB" xml:space="preserve">
     <value>Panama Balboa</value>
   </data>
   <data name="Currency_PEN" xml:space="preserve">
-    <value>Peruvian Nuevo Sol</value>
+    <value>Nouveau sol péruvien</value>
   </data>
   <data name="Currency_PGK" xml:space="preserve">
-    <value>Papua New Guinea Kina</value>
+    <value>Papouasie-Nouvelle-Guinée - Kina</value>
   </data>
   <data name="Currency_PHP" xml:space="preserve">
-    <value>Philippine Peso</value>
+    <value>Peso philippin</value>
   </data>
   <data name="Currency_PKR" xml:space="preserve">
-    <value>Pakistani Rupee</value>
+    <value>Roupie pakistanaise</value>
   </data>
   <data name="Currency_PLN" xml:space="preserve">
-    <value>Polish Zloty</value>
+    <value>Zloty polonais</value>
   </data>
   <data name="Currency_PYG" xml:space="preserve">
-    <value>Paraguayan Guarani</value>
+    <value>Guarani paraguayen</value>
   </data>
   <data name="Currency_QAR" xml:space="preserve">
-    <value>Qatar Rial</value>
+    <value>Rial du Qatar</value>
   </data>
   <data name="Currency_RON" xml:space="preserve">
-    <value>Romanian New Leu</value>
+    <value>Nouveau Leu roumain</value>
   </data>
   <data name="Currency_RUB" xml:space="preserve">
-    <value>Russian Rouble</value>
+    <value>Rouble russe</value>
   </data>
   <data name="Currency_RWF" xml:space="preserve">
-    <value>Rwanda Franc</value>
+    <value>Franc du Rwanda</value>
   </data>
   <data name="Currency_SAR" xml:space="preserve">
-    <value>Saudi Arabian Riyal</value>
+    <value>Riyal saoudien</value>
   </data>
   <data name="Currency_SBD" xml:space="preserve">
-    <value>Solomon Islands Dollar</value>
+    <value>Dollar des Iles Salomon</value>
   </data>
   <data name="Currency_SCR" xml:space="preserve">
-    <value>Seychelles Rupee</value>
+    <value>Roupie des Seychelles</value>
   </data>
   <data name="Currency_SDG" xml:space="preserve">
-    <value>Sudanese Pound</value>
+    <value>Livre soudanaise</value>
   </data>
   <data name="Currency_SEK" xml:space="preserve">
-    <value>Swedish Krona</value>
+    <value>Couronne suédoise</value>
   </data>
   <data name="Currency_SGD" xml:space="preserve">
-    <value>Singapore Dollar</value>
+    <value>Dollar de Singapour</value>
   </data>
   <data name="Currency_SHP" xml:space="preserve">
     <value>St Helena Pound</value>
   </data>
   <data name="Currency_SLL" xml:space="preserve">
-    <value>Sierra Leone Leone</value>
+    <value>Leone de Sierra Leone</value>
   </data>
   <data name="Currency_SOS" xml:space="preserve">
-    <value>Somali Shilling</value>
+    <value>Schilling somalien</value>
   </data>
   <data name="Currency_STD" xml:space="preserve">
-    <value>Sao Tome Dobra</value>
+    <value>Dobra Santoméen</value>
   </data>
   <data name="Currency_SYP" xml:space="preserve">
-    <value>Syrian Pound</value>
+    <value>Livre syrienne</value>
   </data>
   <data name="Currency_SZL" xml:space="preserve">
     <value>Swaziland Lilageni</value>
   </data>
   <data name="Currency_THB" xml:space="preserve">
-    <value>Thai Baht</value>
+    <value>Baht thaïlandais</value>
   </data>
   <data name="Currency_TND" xml:space="preserve">
-    <value>Tunisian Dinar</value>
+    <value>Dinar tunisien</value>
   </data>
   <data name="Currency_TOP" xml:space="preserve">
     <value>Tonga Pa'anga</value>
   </data>
   <data name="Currency_TRY" xml:space="preserve">
-    <value>New Turkish Lira</value>
+    <value>Nouvelle livre turque</value>
   </data>
   <data name="Currency_TTD" xml:space="preserve">
-    <value>Trinidad&amp;Tobago Dollar</value>
+    <value>&amp;De Trinidad Tobago Dollar</value>
   </data>
   <data name="Currency_TWD" xml:space="preserve">
-    <value>New Taiwan Dollar</value>
+    <value>Nouveau Dollar de Taïwan</value>
   </data>
   <data name="Currency_TZS" xml:space="preserve">
-    <value>Tanzanian Shilling</value>
+    <value>Shilling tanzanien</value>
   </data>
   <data name="Currency_UAH" xml:space="preserve">
-    <value>Ukraine Hryvnia</value>
+    <value>Ukraine - Hryvnia</value>
   </data>
   <data name="Currency_UGX" xml:space="preserve">
-    <value>Ugandan Shilling</value>
+    <value>Shilling ougandais</value>
   </data>
   <data name="Currency_USD" xml:space="preserve">
-    <value>United States Dollar</value>
+    <value>Dollar des Etats-Unis</value>
   </data>
   <data name="Currency_UYU" xml:space="preserve">
-    <value>Uruguayan New Peso</value>
+    <value>Uruguayen nouveau Peso</value>
   </data>
   <data name="Currency_VEF" xml:space="preserve">
-    <value>Venezuelan Bolivar</value>
+    <value>Bolivar vénézuélien</value>
   </data>
   <data name="Currency_VND" xml:space="preserve">
     <value>Vietnam Dong</value>
@@ -400,222 +400,222 @@
     <value>Samoa Tala</value>
   </data>
   <data name="Currency_XAF" xml:space="preserve">
-    <value>CFA Franc BEAC</value>
+    <value>Franc CFA BEAC</value>
   </data>
   <data name="Currency_XAG" xml:space="preserve">
-    <value>Silver Ounces</value>
+    <value>Onces d’argent</value>
   </data>
   <data name="Currency_XAU" xml:space="preserve">
-    <value>Gold Ounces</value>
+    <value>Onces d’or</value>
   </data>
   <data name="Currency_XCD" xml:space="preserve">
-    <value>East Caribbean Dollar</value>
+    <value>Dollar des Caraïbes orientales</value>
   </data>
   <data name="Currency_XOF" xml:space="preserve">
-    <value>CFA Franc BCEAO</value>
+    <value>Franc CFA BCEAO</value>
   </data>
   <data name="Currency_XPF" xml:space="preserve">
-    <value>Pacific Franc</value>
+    <value>Franc Pacifique</value>
   </data>
   <data name="Currency_YER" xml:space="preserve">
-    <value>Yemen Riyal</value>
+    <value>L’Yémen Riyal</value>
   </data>
   <data name="Currency_ZAR" xml:space="preserve">
-    <value>South African Rand</value>
+    <value>Rand sud-africain</value>
   </data>
   <data name="Currency_AFN" xml:space="preserve">
-    <value>Afghan Afghani</value>
+    <value>Afghani afghan</value>
   </data>
   <data name="Currency_AMD" xml:space="preserve">
-    <value>Armenian Dram</value>
+    <value>Dram arménien</value>
   </data>
   <data name="Currency_ANG" xml:space="preserve">
     <value>Netherlands Antillean Gulden</value>
   </data>
   <data name="Currency_AOA" xml:space="preserve">
-    <value>Angolan Kwanza</value>
+    <value>Kwanza angolais</value>
   </data>
   <data name="Currency_AZN" xml:space="preserve">
-    <value>Azerbaijani Manat</value>
+    <value>Manat azéri</value>
   </data>
   <data name="Currency_BMD" xml:space="preserve">
-    <value>Bermuda Dollar</value>
+    <value>Dollar des Bermudes</value>
   </data>
   <data name="Currency_BTC" xml:space="preserve">
     <value>Bitcoin</value>
   </data>
   <data name="Currency_BYN" xml:space="preserve">
-    <value>New Belarusian Ruble</value>
+    <value>Nouveau rouble biélorusse</value>
   </data>
   <data name="Currency_CDF" xml:space="preserve">
-    <value>Congolese Franc</value>
+    <value>Franc congolais</value>
   </data>
   <data name="Currency_GEL" xml:space="preserve">
-    <value>Georgian Lari</value>
+    <value>Lari géorgien</value>
   </data>
   <data name="Currency_KGS" xml:space="preserve">
-    <value>Kyrgyzstani Som</value>
+    <value>Som kirghiz</value>
   </data>
   <data name="Currency_LTL" xml:space="preserve">
-    <value>Lithuanian Litas</value>
+    <value>Litas lituanien</value>
   </data>
   <data name="Currency_MGA" xml:space="preserve">
-    <value>Malagasy Ariary</value>
+    <value>Ariary malgache</value>
   </data>
   <data name="Currency_NZN" xml:space="preserve">
-    <value>Mozambican Metical</value>
+    <value>Mozambique Metical</value>
   </data>
   <data name="Currency_RSD" xml:space="preserve">
-    <value>Serbian Dinar</value>
+    <value>Dinar serbe</value>
   </data>
   <data name="Currency_SIT" xml:space="preserve">
-    <value>Slovenian Tolar</value>
+    <value>Tolar slovène</value>
   </data>
   <data name="Currency_SRD" xml:space="preserve">
-    <value>Surinamese Dollar</value>
+    <value>Dollar surinamien</value>
   </data>
   <data name="Currency_SVC" xml:space="preserve">
-    <value>El Salvador Colon</value>
+    <value>Colon du El Salvador</value>
   </data>
   <data name="Currency_TJS" xml:space="preserve">
-    <value>Tajikistani Somoni</value>
+    <value>Somoni du Tadjikistan</value>
   </data>
   <data name="Currency_TMT" xml:space="preserve">
-    <value>Turkmenistan Manat</value>
+    <value>Turkménistan - Manat</value>
   </data>
   <data name="Currency_UZS" xml:space="preserve">
-    <value>Uzbekistani Som</value>
+    <value>Som ouzbek</value>
   </data>
   <data name="Currency_XDR" xml:space="preserve">
-    <value>Special Drawing Rights</value>
+    <value>Droits de tirage spéciaux</value>
   </data>
   <data name="Currency_ZMK" xml:space="preserve">
-    <value>Zambian Kwacha</value>
+    <value>Kwacha zambien</value>
   </data>
   <data name="Currency_ZMW" xml:space="preserve">
-    <value>Zambian Kwacha</value>
+    <value>Kwacha zambien</value>
   </data>
   <data name="Currency_BAM" xml:space="preserve">
-    <value>Bosnia And Herzegovina Konvertibilna Marka</value>
+    <value>Bosnie-Herzégovine Konvertibilna Marka</value>
   </data>
   <data name="Currency_GHS" xml:space="preserve">
-    <value>Ghanaian Cedi</value>
+    <value>Cedi ghanéen</value>
   </data>
   <data name="Currency_MZN" xml:space="preserve">
-    <value>Mozambican Metical</value>
+    <value>Mozambique Metical</value>
   </data>
   <data name="AddCurrencies_SearchEntryPlaceholder" xml:space="preserve">
-    <value>currency code or currency name</value>
+    <value>code devise ou nom de la devise</value>
   </data>
   <data name="About_Disclaimer_Content" xml:space="preserve">
-    <value>The exchange rate data of this app is from www.currencyconverterapi.com. Your use of this application and rely on the content of any risks and consequences should be on its own, this application and the developer does not take any legal responsibility.</value>
+    <value>Les données de taux de change de ce soft sont de www.currencyconverterapi.com. Votre utilisation de cette application et s’appuient sur le contenu de tous les risques et conséquences devraient être sur sa propre, cette demande et le développeur ne prend pas de toute responsabilité juridique.</value>
   </data>
   <data name="About_Disclaimer_Title" xml:space="preserve">
-    <value>Disclaimer</value>
+    <value>Clause d'exclusion de responsabilité</value>
   </data>
   <data name="About_Feedback" xml:space="preserve">
-    <value>feedback</value>
+    <value>Commentaires</value>
   </data>
   <data name="About_LikeMe" xml:space="preserve">
-    <value>like me!</value>
+    <value>Comme moi !</value>
   </data>
   <data name="About_Share" xml:space="preserve">
-    <value>share</value>
+    <value>Partager</value>
   </data>
   <data name="About_Share_Content" xml:space="preserve">
-    <value>I recommend Currency Exchanger to get latest currency rates.</value>
+    <value>Je recommande échangeur de monnaie pour obtenir le derniers taux de change.</value>
   </data>
   <data name="Toast_NetworkError" xml:space="preserve">
-    <value>Network unavailable.</value>
+    <value>Réseau indisponible.</value>
   </data>
   <data name="Toast_Title_Error" xml:space="preserve">
-    <value>Error</value>
+    <value>Erreur</value>
   </data>
   <data name="Toast_Title_Info" xml:space="preserve">
     <value>Info</value>
   </data>
   <data name="Toast_Title_Warning" xml:space="preserve">
-    <value>Warning</value>
+    <value>Mise en garde</value>
   </data>
   <data name="Button_Add_Currency" xml:space="preserve">
-    <value>Add Currency</value>
+    <value>Ajouter la monnaie</value>
   </data>
   <data name="Button_Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuler</value>
   </data>
   <data name="Button_Chart" xml:space="preserve">
-    <value>Chart</value>
+    <value>Tableau</value>
   </data>
   <data name="Button_Delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Supprimer</value>
   </data>
   <data name="Button_Edit_List" xml:space="preserve">
-    <value>Edit List</value>
+    <value>Modifier la liste</value>
   </data>
   <data name="Button_OK" xml:space="preserve">
-    <value>OK</value>
+    <value>D'accord</value>
   </data>
   <data name="Toast_Can_Not_Delete_Base_Currency" xml:space="preserve">
-    <value>Cannot delete the base currency.</value>
+    <value>Impossible de supprimer la devise de base.</value>
   </data>
   <data name="Toast_No_Chart_Available_For_Base_Currency" xml:space="preserve">
-    <value>No chart available for base currency.</value>
+    <value>Aucun graphique disponible pour devise de base.</value>
   </data>
   <data name="About_PageTitle" xml:space="preserve">
-    <value>About</value>
+    <value>Sur</value>
   </data>
   <data name="AddCurrencies_PageTitle" xml:space="preserve">
-    <value>Add Currencies</value>
+    <value>Ajouter des devises</value>
   </data>
   <data name="Chart_PageTitle" xml:space="preserve">
-    <value>Chart</value>
+    <value>Tableau</value>
   </data>
   <data name="EditList_PageTitle" xml:space="preserve">
-    <value>Edit List</value>
+    <value>Modifier la liste</value>
   </data>
   <data name="Home_PageTitle" xml:space="preserve">
-    <value>Currency Exchanger</value>
+    <value>Échangeur de monnaie</value>
   </data>
   <data name="Settings_PageTitle" xml:space="preserve">
-    <value>Settings</value>
+    <value>Paramètres</value>
   </data>
   <data name="Settings_Section_Common" xml:space="preserve">
-    <value>Common</value>
+    <value>Commun</value>
   </data>
   <data name="Settings_Section_Currencies" xml:space="preserve">
-    <value>Currencies</value>
+    <value>Devises</value>
   </data>
   <data name="Menu_About" xml:space="preserve">
-    <value>About</value>
+    <value>Sur</value>
   </data>
   <data name="Menu_Chart" xml:space="preserve">
-    <value>Chart</value>
+    <value>Tableau</value>
   </data>
   <data name="Menu_Home" xml:space="preserve">
-    <value>Home</value>
+    <value>Accueil</value>
   </data>
   <data name="Menu_Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Paramètres</value>
   </data>
   <data name="Settings_AutoInitializeToZero" xml:space="preserve">
-    <value>Auto initialize to 0</value>
+    <value>Initialisation automatique à 0</value>
   </data>
   <data name="Settings_AutoRefresh" xml:space="preserve">
-    <value>Auto fefresh when app starts</value>
+    <value>Fefresh automatique au démarrage de app</value>
   </data>
   <data name="Settings_Decimals" xml:space="preserve">
-    <value>Decimals</value>
+    <value>Nombres décimaux</value>
   </data>
   <data name="Settings_Language" xml:space="preserve">
-    <value>Language</value>
+    <value>Langue</value>
   </data>
   <data name="Settings_LocalizeCurrencySymbol" xml:space="preserve">
-    <value>Localize currency symbol</value>
+    <value>Localiser le symbole monétaire</value>
   </data>
   <data name="Settings_PinBaseCurrencyToTop" xml:space="preserve">
-    <value>Pin base currency to top</value>
+    <value>Devise de base de goupille en haut</value>
   </data>
   <data name="Settings_PullToRefresh" xml:space="preserve">
-    <value>Pull to refresh (No UWP)</value>
+    <value>Tirez pour actualiser (N° UWP)</value>
   </data>
 </root>

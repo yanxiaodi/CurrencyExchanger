@@ -1,8 +1,15 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Globalization;
 using System.Text;
 using MvvmCross.Navigation;
+using MvvmCross.Plugin.Messenger;
+using Plugin.Multilingual;
 using YanSoft.CurrencyExchanger.Core.Common;
+using YanSoft.CurrencyExchanger.Core.Messengers;
+using YanSoft.CurrencyExchanger.Core.Models;
+using YanSoft.CurrencyExchanger.Core.Resources;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels
 {
@@ -10,10 +17,16 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
     {
         private readonly IMvxNavigationService _navigationService;
         private readonly AppSettings _appSettings;
-        public SettingsViewModel(IMvxNavigationService navigationService, AppSettings appSettings)
+        private readonly GlobalContext _globalContext;
+        private readonly IMvxMessenger _messenger;
+        public SettingsViewModel(IMvxNavigationService navigationService,
+            AppSettings appSettings, GlobalContext globalContext, IMvxMessenger messenger)
         {
             _navigationService = navigationService;
             _appSettings = appSettings;
+            _globalContext = globalContext;
+            _messenger = messenger;
+            LanguageItemList = new ObservableCollection<LanguageItem>(_globalContext.LanguageItemList);
         }
 
 
@@ -120,6 +133,44 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             {
                 SetProperty(ref _isEnableAutoInitializeToZero, value);
                 _appSettings.IsAutoInitializeToZeroEnabled = value;
+            }
+        }
+        #endregion
+
+
+        #region LanguageItemList;
+        private ObservableCollection<LanguageItem> _languageItemList;
+        public ObservableCollection<LanguageItem> LanguageItemList
+        {
+            get => _languageItemList;
+            set => SetProperty(ref _languageItemList, value);
+        }
+        #endregion
+
+
+        #region CurrentLanguageItem;
+        private LanguageItem _currentLanguageItem;
+        public LanguageItem CurrentLanguageItem
+        {
+            get
+            {
+                _currentLanguageItem = _globalContext.LanguageItemList.Find(x => x.Code == _appSettings.LanguageCode);
+                return _currentLanguageItem;
+            }
+            set
+            {
+                if (_appSettings.LanguageCode != value.Code)
+                {
+                    SetProperty(ref _currentLanguageItem, value);
+                    _appSettings.LanguageCode = value.Code;
+                    var culture = new CultureInfo(value.Code);
+                    AppResources.Culture = culture;
+                    CrossMultilingual.Current.CurrentCultureInfo = culture;
+                    _globalContext.InitializeAllCurrencyItemList();
+                    _globalContext.CurrentBaseCurrency = _globalContext.CurrentBaseCurrency.ToCurrencyExchangeItem().ToCurrencyExchangeBindableItem();
+                    var message = new UpdateLanguageMessage(this, value.Code);
+                    _messenger.Publish(message);
+                }
             }
         }
         #endregion

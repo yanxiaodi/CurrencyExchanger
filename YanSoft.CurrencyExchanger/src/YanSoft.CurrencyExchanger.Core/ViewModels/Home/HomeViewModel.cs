@@ -14,6 +14,8 @@ using MvvmCross.Navigation;
 using YanSoft.CurrencyExchanger.Core.Calculator.Parser;
 using Xamarin.Essentials;
 using Plugin.Toasts;
+using MvvmCross.Plugin.Messenger;
+using YanSoft.CurrencyExchanger.Core.Messengers;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
 {
@@ -25,9 +27,11 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         private readonly AppSettings _appSettings;
         private readonly GlobalContext _globalContext;
         private readonly IToastService _toastService;
+        private readonly MvxSubscriptionToken _token;
         public HomeViewModel(IMvxNavigationService navigationService,
             ICurrencyService currencyService, AppSettings appSettings,
-            GlobalContext globalContext, IToastService toastService)
+            GlobalContext globalContext, IToastService toastService,
+            IMvxMessenger messenger)
         {
             _currencyService = currencyService;
             _navigationService = navigationService;
@@ -37,6 +41,15 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             _toastService = toastService;
             IsPullToRefreshEnabled = false;
             IsRefreshing = false;
+            _token = messenger.Subscribe<UpdateLanguageMessage>(OnUpdateLanguageMessage);
+        }
+
+        private void OnUpdateLanguageMessage(MvxMessage obj)
+        {
+            foreach (var item in CurrencyList)
+            {
+                item.TargetCurrencyName = _globalContext.AllCurrencyItemList.Find(x => x.Code == item.TargetCode).Name;
+            }
         }
 
 

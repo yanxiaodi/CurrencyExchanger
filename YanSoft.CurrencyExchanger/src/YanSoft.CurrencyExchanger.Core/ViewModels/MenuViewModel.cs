@@ -5,9 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using MvvmCross.Commands;
 using MvvmCross.Navigation;
+using MvvmCross.Plugin.Messenger;
 using MvvmCross.ViewModels;
 using Xamarin.Forms;
+using YanSoft.CurrencyExchanger.Core.Messengers;
 using YanSoft.CurrencyExchanger.Core.Models;
+using YanSoft.CurrencyExchanger.Core.Resources;
+using YanSoft.CurrencyExchanger.Core.Utils;
 using YanSoft.CurrencyExchanger.Core.ViewModels.Home;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels
@@ -15,25 +19,51 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
     public class MenuViewModel : BaseViewModel
     {
         private readonly IMvxNavigationService _navigationService;
-
-        public MenuViewModel(IMvxNavigationService navigationService)
+        private readonly MvxSubscriptionToken _token;
+        public MenuViewModel(IMvxNavigationService navigationService, IMvxMessenger messenger)
         {
             _navigationService = navigationService;
+            _token = messenger.Subscribe<UpdateLanguageMessage>(OnUpdateLanguageMessage);
             MenuItemList = new MvxObservableCollection<CommonMenuItem>()
             {
-                new CommonMenuItem{Icon = "\uf015", Name = "Home" },
-                new CommonMenuItem{Icon = "\uf201", Name = "Charts" },
+                new CommonMenuItem{Icon = "\uf015", Code = "Home", Name = AppResources.Menu_Home },
+                new CommonMenuItem{Icon = "\uf201", Code = "Chart", Name = AppResources.Menu_Chart },
                 //new CommonMenuItem{Icon = "\uf03a", Name = "Edit"},
-                new CommonMenuItem{Icon = "\uf013", Name = "Settings" },
+                new CommonMenuItem{Icon = "\uf013", Code = "Settings", Name = AppResources.Menu_Settings },
                 //new CommonMenuItem{Icon = "\uf1e0", Name = "Share" },
                 //new CommonMenuItem{Icon = "\uf118", Name = "Like Me!" },
                 //new CommonMenuItem{Icon = "\uf0e0", Name = "Feedback" },
                 //new CommonMenuItem{Icon = "\uf4c4", Name = "Help" },
-                new CommonMenuItem{Icon = "\uf129", Name = "About" },
-
-
+                new CommonMenuItem{Icon = "\uf129", Code = "About", Name = AppResources.Menu_About },
             };
         }
+
+        private void OnUpdateLanguageMessage(UpdateLanguageMessage obj)
+        {
+            foreach (var item in MenuItemList)
+            {
+                switch (item.Code)
+                {
+                    case "Home":
+                        item.Name = AppResources.Menu_Home;
+                        break;
+                    case "Chart":
+                        item.Name = AppResources.Menu_Chart;
+                        break;
+                    case "Settings":
+                        item.Name = AppResources.Menu_Settings;
+                        break;
+                    case "About":
+                        item.Name = AppResources.Menu_About;
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+
+        #region Properties
 
         #region MenuItemList;
         private ObservableCollection<CommonMenuItem> _menuItemList;
@@ -43,6 +73,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             set => SetProperty(ref _menuItemList, value);
         }
         #endregion
+        #endregion
+
+        #region Commands
 
 
         #region ShowDetailPageAsyncCommand;
@@ -58,12 +91,12 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         private async Task ShowDetailPageAsync(CommonMenuItem param)
         {
             // Implement your logic here.
-            switch (param.Name)
+            switch (param.Code)
             {
                 case "Home":
                     await _navigationService.Navigate<HomeViewModel>();
                     break;
-                case "Charts":
+                case "Chart":
                     await _navigationService.Navigate<ChartViewModel, CurrencyExchangeBindableItem>(new CurrencyExchangeBindableItem());
                     break;
                 case "Settings":
@@ -85,6 +118,13 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                 nestedMasterDetail.IsPresented = false;
             }
         }
+        #endregion
+
+        #endregion
+
+
+        #region Lifecycle
+
         #endregion
 
         //#region ShowDetailPageAsyncCommand;

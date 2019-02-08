@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en" target-language="zh-Hans" original="YANSOFT.CURRENCYEXCHANGER.CORE/RESOURCES/APPRESOURCE.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
+  <file datatype="xml" source-language="en" target-language="zh-TW" original="YANSOFT.CURRENCYEXCHANGER.CORE/RESOURCES/APPRESOURCES.RESX" tool-id="MultilingualAppToolkit" product-name="n/a" product-version="n/a" build-num="n/a">
     <header>
-      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6900.0" tool-company="Microsoft" />
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="4.0.6901.0" tool-company="Microsoft" />
     </header>
     <body>
-      <group id="YANSOFT.CURRENCYEXCHANGER.CORE/RESOURCES/APPRESOURCES.RESX">
+      <group id="YANSOFT.CURRENCYEXCHANGER.CORE/RESOURCES/APPRESOURCES.RESX" datatype="resx">
         <trans-unit id="Currency_AUD" translate="yes" xml:space="preserve">
           <source>Australian Dollar</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">澳元</target>
         </trans-unit>
         <trans-unit id="Currency_AWG" translate="yes" xml:space="preserve">
           <source>Aruba Florin</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿鲁巴弗洛林</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿路巴弗洛林</target>
         </trans-unit>
         <trans-unit id="Currency_BBD" translate="yes" xml:space="preserve">
           <source>Barbados Dollar</source>
@@ -20,35 +20,35 @@
         </trans-unit>
         <trans-unit id="Currency_BDT" translate="yes" xml:space="preserve">
           <source>Bangladesh Taka</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">孟加拉国塔卡</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">孟加拉國塔卡</target>
         </trans-unit>
         <trans-unit id="Currency_BGN" translate="yes" xml:space="preserve">
           <source>Bulgarian Lev</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">保加利亚列夫</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">保加利亞列夫</target>
         </trans-unit>
         <trans-unit id="Currency_BHD" translate="yes" xml:space="preserve">
           <source>Bahraini Dinar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴林第纳尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴林第納爾</target>
         </trans-unit>
         <trans-unit id="Currency_BIF" translate="yes" xml:space="preserve">
           <source>Burundi Franc</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">布隆迪法郎</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">蒲隆地法郎</target>
         </trans-unit>
         <trans-unit id="Currency_BND" translate="yes" xml:space="preserve">
           <source>Brunei Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">文莱元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">汶萊元</target>
         </trans-unit>
         <trans-unit id="Currency_BOB" translate="yes" xml:space="preserve">
           <source>Bolivian Boliviano</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">玻利维亚玻利维亚诺</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">玻利維亞玻利維亞諾</target>
         </trans-unit>
         <trans-unit id="Currency_BRL" translate="yes" xml:space="preserve">
           <source>Brazilian Real</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴西雷亚尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴西雷亞爾</target>
         </trans-unit>
         <trans-unit id="Currency_BSD" translate="yes" xml:space="preserve">
           <source>Bahamian Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴哈马元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴哈馬元</target>
         </trans-unit>
         <trans-unit id="Currency_BTN" translate="yes" xml:space="preserve">
           <source>Bhutan Ngultrum</source>
@@ -56,15 +56,15 @@
         </trans-unit>
         <trans-unit id="Currency_BWP" translate="yes" xml:space="preserve">
           <source>Botswana Pula</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">博茨瓦纳普拉</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">博茨瓦納普拉</target>
         </trans-unit>
         <trans-unit id="Currency_BYR" translate="yes" xml:space="preserve">
           <source>Belarus Ruble</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">白俄罗斯卢布</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">白俄羅斯盧布</target>
         </trans-unit>
         <trans-unit id="Currency_BZD" translate="yes" xml:space="preserve">
           <source>Belize Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">伯利兹元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">貝里斯元</target>
         </trans-unit>
         <trans-unit id="Currency_CAD" translate="yes" xml:space="preserve">
           <source>Canadian Dollar</source>
@@ -80,15 +80,15 @@
         </trans-unit>
         <trans-unit id="Currency_CNY" translate="yes" xml:space="preserve">
           <source>Chinese Yuan</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">中国元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">中國元</target>
         </trans-unit>
         <trans-unit id="Currency_COP" translate="yes" xml:space="preserve">
           <source>Colombian Peso</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">哥伦比亚比索</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">哥倫比亞比索</target>
         </trans-unit>
         <trans-unit id="Currency_CRC" translate="yes" xml:space="preserve">
           <source>Costa Rica Colon</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">哥斯达黎加结肠</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">哥斯大黎加結腸</target>
         </trans-unit>
         <trans-unit id="Currency_CUP" translate="yes" xml:space="preserve">
           <source>Cuban Peso</source>
@@ -96,11 +96,11 @@
         </trans-unit>
         <trans-unit id="Currency_AED" translate="yes" xml:space="preserve">
           <source>UAE Dirham</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿联酋迪拉姆</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿聯酋迪拉姆</target>
         </trans-unit>
         <trans-unit id="Currency_ALL" translate="yes" xml:space="preserve">
           <source>Albanian Lek</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿尔巴尼亚列克</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿爾巴尼亞列克</target>
         </trans-unit>
         <trans-unit id="Currency_ARS" translate="yes" xml:space="preserve">
           <source>Argentine Peso</source>
@@ -108,7 +108,7 @@
         </trans-unit>
         <trans-unit id="Currency_CVE" translate="yes" xml:space="preserve">
           <source>Cape Verde Escudo</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">佛得角埃斯库多</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">維德角埃斯庫多</target>
         </trans-unit>
         <trans-unit id="Currency_CZK" translate="yes" xml:space="preserve">
           <source>Czech Koruna</source>
@@ -120,63 +120,63 @@
         </trans-unit>
         <trans-unit id="Currency_DKK" translate="yes" xml:space="preserve">
           <source>Danish Krone</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">丹麦克朗</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">丹麥克朗</target>
         </trans-unit>
         <trans-unit id="Currency_DOP" translate="yes" xml:space="preserve">
           <source>Dominican Peso</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">多米尼加比索</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">多明尼加比索</target>
         </trans-unit>
         <trans-unit id="Currency_DZD" translate="yes" xml:space="preserve">
           <source>Algerian Dinar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿尔及利亚第纳尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿爾及利亞第納爾</target>
         </trans-unit>
         <trans-unit id="Currency_EGP" translate="yes" xml:space="preserve">
           <source>Egyptian Pound</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">埃及镑</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">埃及鎊</target>
         </trans-unit>
         <trans-unit id="Currency_ERN" translate="yes" xml:space="preserve">
           <source>Eritrea Nakfa</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">厄立特里亚 nakfa</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">厄立特里亞 nakfa</target>
         </trans-unit>
         <trans-unit id="Currency_ETB" translate="yes" xml:space="preserve">
           <source>Ethiopian Birr</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">埃塞俄比亚比尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">埃塞俄比亞比爾</target>
         </trans-unit>
         <trans-unit id="Currency_EUR" translate="yes" xml:space="preserve">
           <source>Euro</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">欧元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">歐元</target>
         </trans-unit>
         <trans-unit id="Currency_FJD" translate="yes" xml:space="preserve">
           <source>Fiji Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">斐济元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">斐濟元</target>
         </trans-unit>
         <trans-unit id="Currency_FKP" translate="yes" xml:space="preserve">
           <source>Falkland Islands Pound</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">福克兰群岛镑</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">福克蘭群島鎊</target>
         </trans-unit>
         <trans-unit id="Currency_GBP" translate="yes" xml:space="preserve">
           <source>British Pound</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">英镑</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">英鎊</target>
         </trans-unit>
         <trans-unit id="Currency_GIP" translate="yes" xml:space="preserve">
           <source>Gibraltar Pound</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">直布罗陀镑</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">直布羅陀鎊</target>
         </trans-unit>
         <trans-unit id="Currency_GMD" translate="yes" xml:space="preserve">
           <source>Gambian Dalasi</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">冈比亚达拉西</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">岡比亞達拉西</target>
         </trans-unit>
         <trans-unit id="Currency_GNF" translate="yes" xml:space="preserve">
           <source>Guinea Franc</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">几内亚法郎</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">幾內亞法郎</target>
         </trans-unit>
         <trans-unit id="Currency_GTQ" translate="yes" xml:space="preserve">
           <source>Guatemala Quetzal</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">危地马拉·格查尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">瓜地馬拉·格查爾</target>
         </trans-unit>
         <trans-unit id="Currency_GYD" translate="yes" xml:space="preserve">
           <source>Guyana Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">圭亚那元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">蓋亞納元</target>
         </trans-unit>
         <trans-unit id="Currency_HKD" translate="yes" xml:space="preserve">
           <source>Hong Kong Dollar</source>
@@ -184,11 +184,11 @@
         </trans-unit>
         <trans-unit id="Currency_HNL" translate="yes" xml:space="preserve">
           <source>Honduras Lempira</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">洪都拉斯伦皮拉</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">宏都拉斯倫皮拉</target>
         </trans-unit>
         <trans-unit id="Currency_HRK" translate="yes" xml:space="preserve">
           <source>Croatian Kuna</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">克罗地亚语库纳</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">克羅地亞語庫納</target>
         </trans-unit>
         <trans-unit id="Currency_HTG" translate="yes" xml:space="preserve">
           <source>Haiti Gourde</source>
@@ -208,27 +208,27 @@
         </trans-unit>
         <trans-unit id="Currency_INR" translate="yes" xml:space="preserve">
           <source>Indian Rupee</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">印度卢比</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">印度盧比</target>
         </trans-unit>
         <trans-unit id="Currency_IQD" translate="yes" xml:space="preserve">
           <source>Iraqi Dinar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">伊拉克第纳尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">伊拉克第納爾</target>
         </trans-unit>
         <trans-unit id="Currency_IRR" translate="yes" xml:space="preserve">
           <source>Iran Rial</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">伊朗瑞尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">伊朗瑞爾</target>
         </trans-unit>
         <trans-unit id="Currency_ISK" translate="yes" xml:space="preserve">
           <source>Iceland Krona</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">冰岛克朗</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">冰島克朗</target>
         </trans-unit>
         <trans-unit id="Currency_JMD" translate="yes" xml:space="preserve">
           <source>Jamaican Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">牙买加元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">牙買加元</target>
         </trans-unit>
         <trans-unit id="Currency_JOD" translate="yes" xml:space="preserve">
           <source>Jordanian Dinar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">约旦第纳尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">約旦第納爾</target>
         </trans-unit>
         <trans-unit id="Currency_JPY" translate="yes" xml:space="preserve">
           <source>Japanese Yen</source>
@@ -236,35 +236,35 @@
         </trans-unit>
         <trans-unit id="Currency_KES" translate="yes" xml:space="preserve">
           <source>Kenyan Shilling</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">肯尼亚先令</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">肯雅先令</target>
         </trans-unit>
         <trans-unit id="Currency_KHR" translate="yes" xml:space="preserve">
           <source>Cambodia Riel</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">柬埔寨瑞尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">柬埔寨瑞爾</target>
         </trans-unit>
         <trans-unit id="Currency_KMF" translate="yes" xml:space="preserve">
           <source>Comoros Franc</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">科摩罗法郎</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">科摩羅法郎</target>
         </trans-unit>
         <trans-unit id="Currency_KPW" translate="yes" xml:space="preserve">
           <source>North Korean Won</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">朝鲜温</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">朝鮮溫</target>
         </trans-unit>
         <trans-unit id="Currency_KRW" translate="yes" xml:space="preserve">
           <source>South-Korean Won</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">韩元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">韓元</target>
         </trans-unit>
         <trans-unit id="Currency_KWD" translate="yes" xml:space="preserve">
           <source>Kuwaiti Dinar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">科威特第纳尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">科威特第納爾</target>
         </trans-unit>
         <trans-unit id="Currency_KYD" translate="yes" xml:space="preserve">
           <source>Cayman Islands Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">开曼群岛元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">開曼群島元</target>
         </trans-unit>
         <trans-unit id="Currency_KZT" translate="yes" xml:space="preserve">
           <source>Kazakhstan Tenge</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">哈萨克斯坦腾格</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">哈薩克斯坦騰格</target>
         </trans-unit>
         <trans-unit id="Currency_LAK" translate="yes" xml:space="preserve">
           <source>Lao Kip</source>
@@ -272,27 +272,27 @@
         </trans-unit>
         <trans-unit id="Currency_LBP" translate="yes" xml:space="preserve">
           <source>Lebanese Pound</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">黎巴嫩镑</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">黎巴嫩鎊</target>
         </trans-unit>
         <trans-unit id="Currency_LKR" translate="yes" xml:space="preserve">
           <source>Sri Lanka Rupee</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">斯里兰卡卢比</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">斯里蘭卡盧比</target>
         </trans-unit>
         <trans-unit id="Currency_LRD" translate="yes" xml:space="preserve">
           <source>Liberian Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">利比里亚元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">賴比瑞亞元</target>
         </trans-unit>
         <trans-unit id="Currency_LSL" translate="yes" xml:space="preserve">
           <source>Lesotho Loti</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">莱索托洛蒂</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">賴索托洛蒂</target>
         </trans-unit>
         <trans-unit id="Currency_LVL" translate="yes" xml:space="preserve">
           <source>Latvian Lats</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">拉脱维亚语拉特</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">拉脫維亞文拉特</target>
         </trans-unit>
         <trans-unit id="Currency_LYD" translate="yes" xml:space="preserve">
           <source>Libyan Dinar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">利比亚第纳尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">利比亞第納爾</target>
         </trans-unit>
         <trans-unit id="Currency_MAD" translate="yes" xml:space="preserve">
           <source>Moroccan Dirham</source>
@@ -300,39 +300,39 @@
         </trans-unit>
         <trans-unit id="Currency_MDL" translate="yes" xml:space="preserve">
           <source>Moldovan Leu</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">摩尔多瓦 leu</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">摩爾多瓦 leu</target>
         </trans-unit>
         <trans-unit id="Currency_MKD" translate="yes" xml:space="preserve">
           <source>Macedonian Denar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">马其顿德纳尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">馬其頓德納爾</target>
         </trans-unit>
         <trans-unit id="Currency_MMK" translate="yes" xml:space="preserve">
           <source>Myanmar Kyat</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">缅甸缅元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">緬甸緬元</target>
         </trans-unit>
         <trans-unit id="Currency_MNT" translate="yes" xml:space="preserve">
           <source>Mongolian Tugrik</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">蒙古图格里克</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">蒙古圖格裡克</target>
         </trans-unit>
         <trans-unit id="Currency_MOP" translate="yes" xml:space="preserve">
           <source>Macau Pataca</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">澳门帕塔卡</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">澳門帕塔卡</target>
         </trans-unit>
         <trans-unit id="Currency_MRO" translate="yes" xml:space="preserve">
           <source>Mauritania Ougulya</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">毛里塔尼亚 Ougulya</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">茅利塔尼亞 Ougulya</target>
         </trans-unit>
         <trans-unit id="Currency_MUR" translate="yes" xml:space="preserve">
           <source>Mauritius Rupee</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">毛里求斯卢比</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">模里西斯盧比</target>
         </trans-unit>
         <trans-unit id="Currency_MVR" translate="yes" xml:space="preserve">
           <source>Maldives Rufiyaa</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">马尔代夫鲁菲亚</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">馬爾地夫魯菲亞</target>
         </trans-unit>
         <trans-unit id="Currency_MWK" translate="yes" xml:space="preserve">
           <source>Malawi Kwacha</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">马拉维 kkacha</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">馬拉威 kkacha</target>
         </trans-unit>
         <trans-unit id="Currency_MXN" translate="yes" xml:space="preserve">
           <source>Mexican Peso</source>
@@ -340,19 +340,19 @@
         </trans-unit>
         <trans-unit id="Currency_MYR" translate="yes" xml:space="preserve">
           <source>Malaysian Ringgit</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">马来西亚林吉特</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">馬來西亞林吉特</target>
         </trans-unit>
         <trans-unit id="Currency_NAD" translate="yes" xml:space="preserve">
           <source>Namibian Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">纳米比亚元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">納米比亞元</target>
         </trans-unit>
         <trans-unit id="Currency_NGN" translate="yes" xml:space="preserve">
           <source>Nigerian Naira</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">尼日利亚奈拉</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">奈及利亞奈拉</target>
         </trans-unit>
         <trans-unit id="Currency_NIO" translate="yes" xml:space="preserve">
           <source>Nicaragua Cordoba</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">尼加拉瓜科尔多瓦</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">尼加拉瓜科爾多瓦</target>
         </trans-unit>
         <trans-unit id="Currency_NOK" translate="yes" xml:space="preserve">
           <source>Norwegian Kroner</source>
@@ -360,75 +360,75 @@
         </trans-unit>
         <trans-unit id="Currency_NPR" translate="yes" xml:space="preserve">
           <source>Nepalese Rupee</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">尼泊尔卢比</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">尼泊爾盧比</target>
         </trans-unit>
         <trans-unit id="Currency_NZD" translate="yes" xml:space="preserve">
           <source>New Zealand Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">新西兰元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">紐西蘭元</target>
         </trans-unit>
         <trans-unit id="Currency_OMR" translate="yes" xml:space="preserve">
           <source>Omani Rial</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿曼瑞尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿曼瑞爾</target>
         </trans-unit>
         <trans-unit id="Currency_PAB" translate="yes" xml:space="preserve">
           <source>Panama Balboa</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴拿马巴尔博亚</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴拿馬巴爾博亞</target>
         </trans-unit>
         <trans-unit id="Currency_PEN" translate="yes" xml:space="preserve">
           <source>Peruvian Nuevo Sol</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">秘鲁新索尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">秘魯新索爾</target>
         </trans-unit>
         <trans-unit id="Currency_PGK" translate="yes" xml:space="preserve">
           <source>Papua New Guinea Kina</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴布亚新几内亚 kina</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴布亞紐幾內亞 kina</target>
         </trans-unit>
         <trans-unit id="Currency_PHP" translate="yes" xml:space="preserve">
           <source>Philippine Peso</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">菲律宾比索</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">菲律賓比索</target>
         </trans-unit>
         <trans-unit id="Currency_PKR" translate="yes" xml:space="preserve">
           <source>Pakistani Rupee</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴基斯坦卢比</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴基斯坦盧比</target>
         </trans-unit>
         <trans-unit id="Currency_PLN" translate="yes" xml:space="preserve">
           <source>Polish Zloty</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">波兰兹罗提</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">波蘭茲羅提</target>
         </trans-unit>
         <trans-unit id="Currency_PYG" translate="yes" xml:space="preserve">
           <source>Paraguayan Guarani</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴拉圭瓜拉尼语</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴拉圭瓜拉尼語</target>
         </trans-unit>
         <trans-unit id="Currency_QAR" translate="yes" xml:space="preserve">
           <source>Qatar Rial</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">卡塔尔瑞尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">卡塔爾瑞爾</target>
         </trans-unit>
         <trans-unit id="Currency_RON" translate="yes" xml:space="preserve">
           <source>Romanian New Leu</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">罗马尼亚新列</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">羅馬尼亞新列</target>
         </trans-unit>
         <trans-unit id="Currency_RUB" translate="yes" xml:space="preserve">
           <source>Russian Rouble</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">俄罗斯卢布</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">俄羅斯盧布</target>
         </trans-unit>
         <trans-unit id="Currency_RWF" translate="yes" xml:space="preserve">
           <source>Rwanda Franc</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">卢旺达法郎</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">盧安達法郎</target>
         </trans-unit>
         <trans-unit id="Currency_SAR" translate="yes" xml:space="preserve">
           <source>Saudi Arabian Riyal</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">沙特阿拉伯里亚尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">沙烏地阿拉伯裡亞爾</target>
         </trans-unit>
         <trans-unit id="Currency_SBD" translate="yes" xml:space="preserve">
           <source>Solomon Islands Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">所罗门群岛元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">索羅門群島元</target>
         </trans-unit>
         <trans-unit id="Currency_SCR" translate="yes" xml:space="preserve">
           <source>Seychelles Rupee</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">塞舌尔卢比</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">塞席爾盧比</target>
         </trans-unit>
         <trans-unit id="Currency_SDG" translate="yes" xml:space="preserve">
           <source>Sudanese Pound</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">苏丹镑</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">蘇丹鎊</target>
         </trans-unit>
         <trans-unit id="Currency_SEK" translate="yes" xml:space="preserve">
           <source>Swedish Krona</source>
@@ -440,39 +440,39 @@
         </trans-unit>
         <trans-unit id="Currency_SHP" translate="yes" xml:space="preserve">
           <source>St Helena Pound</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">圣赫勒拿镑</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">聖赫勒拿鎊</target>
         </trans-unit>
         <trans-unit id="Currency_SLL" translate="yes" xml:space="preserve">
           <source>Sierra Leone Leone</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">1. 塞拉利昂</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">1. 塞拉里昂</target>
         </trans-unit>
         <trans-unit id="Currency_SOS" translate="yes" xml:space="preserve">
           <source>Somali Shilling</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">索马里先令</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">索馬里先令</target>
         </trans-unit>
         <trans-unit id="Currency_STD" translate="yes" xml:space="preserve">
           <source>Sao Tome Dobra</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">圣多美和普林西比多布拉</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">聖多美及普林西比島多布拉</target>
         </trans-unit>
         <trans-unit id="Currency_SYP" translate="yes" xml:space="preserve">
           <source>Syrian Pound</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">叙利亚镑</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">敘利亞鎊</target>
         </trans-unit>
         <trans-unit id="Currency_SZL" translate="yes" xml:space="preserve">
           <source>Swaziland Lilageni</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">斯威士兰 lilageni</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">史瓦濟蘭 lilageni</target>
         </trans-unit>
         <trans-unit id="Currency_THB" translate="yes" xml:space="preserve">
           <source>Thai Baht</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">泰铢</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">泰銖</target>
         </trans-unit>
         <trans-unit id="Currency_TND" translate="yes" xml:space="preserve">
           <source>Tunisian Dinar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">突尼斯第纳尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">突尼斯第納爾</target>
         </trans-unit>
         <trans-unit id="Currency_TOP" translate="yes" xml:space="preserve">
           <source>Tonga Pa'anga</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">汤加 pa ' anga</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">湯加 pa ' anga</target>
         </trans-unit>
         <trans-unit id="Currency_TRY" translate="yes" xml:space="preserve">
           <source>New Turkish Lira</source>
@@ -480,23 +480,23 @@
         </trans-unit>
         <trans-unit id="Currency_TTD" translate="yes" xml:space="preserve">
           <source>Trinidad&amp;Tobago Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">特立尼达和多巴哥元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">&amp;特立尼達和多巴哥元</target>
         </trans-unit>
         <trans-unit id="Currency_TWD" translate="yes" xml:space="preserve">
           <source>New Taiwan Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">新台币</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">新臺幣</target>
         </trans-unit>
         <trans-unit id="Currency_TZS" translate="yes" xml:space="preserve">
           <source>Tanzanian Shilling</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">坦桑尼亚先令</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">坦尚尼亞先令</target>
         </trans-unit>
         <trans-unit id="Currency_UAH" translate="yes" xml:space="preserve">
           <source>Ukraine Hryvnia</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">乌克兰格里夫纳</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">烏克蘭格裡夫納</target>
         </trans-unit>
         <trans-unit id="Currency_UGX" translate="yes" xml:space="preserve">
           <source>Ugandan Shilling</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">乌干达先令</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">烏干達先令</target>
         </trans-unit>
         <trans-unit id="Currency_USD" translate="yes" xml:space="preserve">
           <source>United States Dollar</source>
@@ -504,11 +504,11 @@
         </trans-unit>
         <trans-unit id="Currency_UYU" translate="yes" xml:space="preserve">
           <source>Uruguayan New Peso</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">乌拉圭新比索</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">烏拉圭新比索</target>
         </trans-unit>
         <trans-unit id="Currency_VEF" translate="yes" xml:space="preserve">
           <source>Venezuelan Bolivar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">委内瑞拉玻利瓦尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">委內瑞拉玻利瓦爾省</target>
         </trans-unit>
         <trans-unit id="Currency_VND" translate="yes" xml:space="preserve">
           <source>Vietnam Dong</source>
@@ -516,19 +516,19 @@
         </trans-unit>
         <trans-unit id="Currency_VUV" translate="yes" xml:space="preserve">
           <source>Vanuatu Vatu</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">瓦努阿图瓦图</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">瓦努阿圖瓦圖</target>
         </trans-unit>
         <trans-unit id="Currency_WST" translate="yes" xml:space="preserve">
           <source>Samoa Tala</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">萨摩亚塔拉</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">薩摩亞塔拉</target>
         </trans-unit>
         <trans-unit id="Currency_XAF" translate="yes" xml:space="preserve">
           <source>CFA Franc BEAC</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">非洲金融共同体法郎</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">非洲金融共同體法郎</target>
         </trans-unit>
         <trans-unit id="Currency_XAG" translate="yes" xml:space="preserve">
           <source>Silver Ounces</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">银盎司</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">銀盎司</target>
         </trans-unit>
         <trans-unit id="Currency_XAU" translate="yes" xml:space="preserve">
           <source>Gold Ounces</source>
@@ -536,11 +536,11 @@
         </trans-unit>
         <trans-unit id="Currency_XCD" translate="yes" xml:space="preserve">
           <source>East Caribbean Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">东加勒比海元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">東加勒比海元</target>
         </trans-unit>
         <trans-unit id="Currency_XOF" translate="yes" xml:space="preserve">
           <source>CFA Franc BCEAO</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">非洲金融共同体法郎</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">非洲金融共同體法郎</target>
         </trans-unit>
         <trans-unit id="Currency_XPF" translate="yes" xml:space="preserve">
           <source>Pacific Franc</source>
@@ -548,11 +548,11 @@
         </trans-unit>
         <trans-unit id="Currency_YER" translate="yes" xml:space="preserve">
           <source>Yemen Riyal</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">也门里亚尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">葉門裡亞爾</target>
         </trans-unit>
         <trans-unit id="Currency_ZAR" translate="yes" xml:space="preserve">
           <source>South African Rand</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">南非兰特</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">南非蘭特</target>
         </trans-unit>
         <trans-unit id="Currency_AFN" translate="yes" xml:space="preserve">
           <source>Afghan Afghani</source>
@@ -560,43 +560,43 @@
         </trans-unit>
         <trans-unit id="Currency_AMD" translate="yes" xml:space="preserve">
           <source>Armenian Dram</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">亚美尼亚德拉姆</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">亞美尼亞德拉姆</target>
         </trans-unit>
         <trans-unit id="Currency_ANG" translate="yes" xml:space="preserve">
           <source>Netherlands Antillean Gulden</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">荷属安的列斯群岛古尔登</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">荷屬安的列斯群島古爾登</target>
         </trans-unit>
         <trans-unit id="Currency_AOA" translate="yes" xml:space="preserve">
           <source>Angolan Kwanza</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">安哥拉宽扎</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">安哥拉寬紮</target>
         </trans-unit>
         <trans-unit id="Currency_AZN" translate="yes" xml:space="preserve">
           <source>Azerbaijani Manat</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">阿塞拜疆马拉特</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">亞塞拜然馬拉特</target>
         </trans-unit>
         <trans-unit id="Currency_BMD" translate="yes" xml:space="preserve">
           <source>Bermuda Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">百慕大元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">百慕達元</target>
         </trans-unit>
         <trans-unit id="Currency_BTC" translate="yes" xml:space="preserve">
           <source>Bitcoin</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">比特币</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">比特幣</target>
         </trans-unit>
         <trans-unit id="Currency_BYN" translate="yes" xml:space="preserve">
           <source>New Belarusian Ruble</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">新白俄罗斯卢布</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">新白俄羅斯盧布</target>
         </trans-unit>
         <trans-unit id="Currency_CDF" translate="yes" xml:space="preserve">
           <source>Congolese Franc</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">刚果法郎</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">剛果法郎</target>
         </trans-unit>
         <trans-unit id="Currency_GEL" translate="yes" xml:space="preserve">
           <source>Georgian Lari</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">格鲁吉亚拉里</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">格魯吉亞拉裡</target>
         </trans-unit>
         <trans-unit id="Currency_KGS" translate="yes" xml:space="preserve">
           <source>Kyrgyzstani Som</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">吉尔吉斯斯坦索姆</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">吉爾吉斯斯坦索姆</target>
         </trans-unit>
         <trans-unit id="Currency_LTL" translate="yes" xml:space="preserve">
           <source>Lithuanian Litas</source>
@@ -604,27 +604,27 @@
         </trans-unit>
         <trans-unit id="Currency_MGA" translate="yes" xml:space="preserve">
           <source>Malagasy Ariary</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">马达加斯加阿里亚里</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">馬達加斯加阿裡亞裡</target>
         </trans-unit>
         <trans-unit id="Currency_NZN" translate="yes" xml:space="preserve">
           <source>Mozambican Metical</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">莫桑比克墨西哥</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">莫三比克墨西哥</target>
         </trans-unit>
         <trans-unit id="Currency_RSD" translate="yes" xml:space="preserve">
           <source>Serbian Dinar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">塞尔维亚第纳尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">塞爾維亞第納爾</target>
         </trans-unit>
         <trans-unit id="Currency_SIT" translate="yes" xml:space="preserve">
           <source>Slovenian Tolar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">斯洛文尼亚托拉尔</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">斯洛維尼亞托拉爾</target>
         </trans-unit>
         <trans-unit id="Currency_SRD" translate="yes" xml:space="preserve">
           <source>Surinamese Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">苏里南元</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">蘇利南元</target>
         </trans-unit>
         <trans-unit id="Currency_SVC" translate="yes" xml:space="preserve">
           <source>El Salvador Colon</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">萨尔瓦多科龙</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">薩爾瓦多科龍</target>
         </trans-unit>
         <trans-unit id="Currency_TJS" translate="yes" xml:space="preserve">
           <source>Tajikistani Somoni</source>
@@ -632,75 +632,75 @@
         </trans-unit>
         <trans-unit id="Currency_TMT" translate="yes" xml:space="preserve">
           <source>Turkmenistan Manat</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">土库曼斯坦马拉特</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">土庫曼斯坦馬拉特</target>
         </trans-unit>
         <trans-unit id="Currency_UZS" translate="yes" xml:space="preserve">
           <source>Uzbekistani Som</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">乌兹别克索姆</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">烏茲別克索姆</target>
         </trans-unit>
         <trans-unit id="Currency_XDR" translate="yes" xml:space="preserve">
           <source>Special Drawing Rights</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">特别提款权</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">特別提款權</target>
         </trans-unit>
         <trans-unit id="Currency_ZMK" translate="yes" xml:space="preserve">
           <source>Zambian Kwacha</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">赞比亚克瓦查</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">尚比亞克瓦查</target>
         </trans-unit>
         <trans-unit id="Currency_ZMW" translate="yes" xml:space="preserve">
           <source>Zambian Kwacha</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">赞比亚克瓦查</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">尚比亞克瓦查</target>
         </trans-unit>
         <trans-unit id="Currency_BAM" translate="yes" xml:space="preserve">
           <source>Bosnia And Herzegovina Konvertibilna Marka</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">波斯尼亚和黑塞哥维那 konvertibilna marka</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">波士尼亞和黑塞哥維那 konvertibilna marka</target>
         </trans-unit>
         <trans-unit id="Currency_GHS" translate="yes" xml:space="preserve">
           <source>Ghanaian Cedi</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">加纳塞迪</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">加納塞迪</target>
         </trans-unit>
         <trans-unit id="Currency_MZN" translate="yes" xml:space="preserve">
           <source>Mozambican Metical</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">莫桑比克墨西哥</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">莫三比克墨西哥</target>
         </trans-unit>
         <trans-unit id="AddCurrencies_SearchEntryPlaceholder" translate="yes" xml:space="preserve">
           <source>currency code or currency name</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">币种代码或货币名称</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">幣種代碼或貨幣名稱</target>
         </trans-unit>
         <trans-unit id="About_Disclaimer_Content" translate="yes" xml:space="preserve">
           <source>The exchange rate data of this app is from www.currencyconverterapi.com. Your use of this application and rely on the content of any risks and consequences should be on its own, this application and the developer does not take any legal responsibility.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">此应用程序的汇率数据来自 www.currencyconverterapi.com。您使用本应用程序并依赖内容的任何风险和后果应自行承担, 此应用程序和开发人员不承担任何法律责任。</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">此應用程式的匯率資料來自 www.currencyconverterapi.com。您使用本應用程式並依賴內容的任何風險和後果應自行承擔, 此應用程式和開發人員不承擔任何法律責任。</target>
         </trans-unit>
         <trans-unit id="About_Disclaimer_Title" translate="yes" xml:space="preserve">
           <source>Disclaimer</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">免责 声明</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">免責 聲明</target>
         </trans-unit>
         <trans-unit id="About_Feedback" translate="yes" xml:space="preserve">
           <source>feedback</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">反馈</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">回饋</target>
         </trans-unit>
         <trans-unit id="About_LikeMe" translate="yes" xml:space="preserve">
           <source>like me!</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">就像我一样!</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">就像我一樣!</target>
         </trans-unit>
         <trans-unit id="About_Share" translate="yes" xml:space="preserve">
           <source>share</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">共享</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">共用</target>
         </trans-unit>
         <trans-unit id="About_Share_Content" translate="yes" xml:space="preserve">
           <source>I recommend Currency Exchanger to get latest currency rates.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">我建议货币交换器获取最新的货币汇率。</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">我建議貨幣交換器獲取最新的貨幣匯率。</target>
         </trans-unit>
         <trans-unit id="Toast_NetworkError" translate="yes" xml:space="preserve">
           <source>Network unavailable.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">网络不可用。</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">網路不可用。</target>
         </trans-unit>
         <trans-unit id="Toast_Title_Error" translate="yes" xml:space="preserve">
           <source>Error</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">错误</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">錯誤</target>
         </trans-unit>
         <trans-unit id="Toast_Title_Info" translate="yes" xml:space="preserve">
           <source>Info</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">信息</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">資訊</target>
         </trans-unit>
         <trans-unit id="Toast_Title_Warning" translate="yes" xml:space="preserve">
           <source>Warning</source>
@@ -708,7 +708,7 @@
         </trans-unit>
         <trans-unit id="Button_Add_Currency" translate="yes" xml:space="preserve">
           <source>Add Currency</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">添加货币</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">添加貨幣</target>
         </trans-unit>
         <trans-unit id="Button_Cancel" translate="yes" xml:space="preserve">
           <source>Cancel</source>
@@ -716,67 +716,67 @@
         </trans-unit>
         <trans-unit id="Button_Chart" translate="yes" xml:space="preserve">
           <source>Chart</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">图表</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">圖表</target>
         </trans-unit>
         <trans-unit id="Button_Delete" translate="yes" xml:space="preserve">
           <source>Delete</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">删除</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">刪除</target>
         </trans-unit>
         <trans-unit id="Button_Edit_List" translate="yes" xml:space="preserve">
           <source>Edit List</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">编辑列表</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">編輯清單</target>
         </trans-unit>
         <trans-unit id="Button_OK" translate="yes" xml:space="preserve">
           <source>OK</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">还行</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">還行</target>
         </trans-unit>
         <trans-unit id="Toast_Can_Not_Delete_Base_Currency" translate="yes" xml:space="preserve">
           <source>Cannot delete the base currency.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">无法删除基础货币。</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">無法刪除基礎貨幣。</target>
         </trans-unit>
         <trans-unit id="Toast_No_Chart_Available_For_Base_Currency" translate="yes" xml:space="preserve">
           <source>No chart available for base currency.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">没有可用于基础货币的图表。</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">沒有可用於基礎貨幣的圖表。</target>
         </trans-unit>
         <trans-unit id="About_PageTitle" translate="yes" xml:space="preserve">
           <source>About</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">关于</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">關於金龍</target>
         </trans-unit>
         <trans-unit id="AddCurrencies_PageTitle" translate="yes" xml:space="preserve">
           <source>Add Currencies</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">添加货币</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">添加貨幣</target>
         </trans-unit>
         <trans-unit id="Chart_PageTitle" translate="yes" xml:space="preserve">
           <source>Chart</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">图表</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">圖表</target>
         </trans-unit>
         <trans-unit id="EditList_PageTitle" translate="yes" xml:space="preserve">
           <source>Edit List</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">编辑列表</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">編輯清單</target>
         </trans-unit>
         <trans-unit id="Home_PageTitle" translate="yes" xml:space="preserve">
           <source>Currency Exchanger</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">货币交换器</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">貨幣交換器</target>
         </trans-unit>
         <trans-unit id="Settings_PageTitle" translate="yes" xml:space="preserve">
           <source>Settings</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">设置</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">設置</target>
         </trans-unit>
         <trans-unit id="Settings_Section_Common" translate="yes" xml:space="preserve">
           <source>Common</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">通用</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">常見</target>
         </trans-unit>
         <trans-unit id="Settings_Section_Currencies" translate="yes" xml:space="preserve">
           <source>Currencies</source>
-          <target state="needs-review-translation" state-qualifier="tm-suggestion">币种</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">貨幣</target>
         </trans-unit>
         <trans-unit id="Menu_About" translate="yes" xml:space="preserve">
           <source>About</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">关于金龙</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">關於金龍</target>
         </trans-unit>
         <trans-unit id="Menu_Chart" translate="yes" xml:space="preserve">
           <source>Chart</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">图表</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">圖表</target>
         </trans-unit>
         <trans-unit id="Menu_Home" translate="yes" xml:space="preserve">
           <source>Home</source>
@@ -784,36 +784,36 @@
         </trans-unit>
         <trans-unit id="Menu_Settings" translate="yes" xml:space="preserve">
           <source>Settings</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">设置</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">設置</target>
         </trans-unit>
         <trans-unit id="Settings_AutoInitializeToZero" translate="yes" xml:space="preserve">
           <source>Auto initialize to 0</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">自动初始化为0</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">自動初始化為0</target>
         </trans-unit>
         <trans-unit id="Settings_AutoRefresh" translate="yes" xml:space="preserve">
           <source>Auto fefresh when app starts</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">应用启动时的自动 fefresh</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">應用啟動時的自動 fefresh</target>
         </trans-unit>
         <trans-unit id="Settings_Decimals" translate="yes" xml:space="preserve">
           <source>Decimals</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">小数</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">小數</target>
         </trans-unit>
         <trans-unit id="Settings_Language" translate="yes" xml:space="preserve">
           <source>Language (Restart to apply )</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">语言</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">語言</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Settings_LocalizeCurrencySymbol" translate="yes" xml:space="preserve">
           <source>Localize currency symbol</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">本地化货币符号</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">當地語系化貨幣符號</target>
         </trans-unit>
         <trans-unit id="Settings_PinBaseCurrencyToTop" translate="yes" xml:space="preserve">
           <source>Pin base currency to top</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">将基础货币固定到顶部</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">將基礎貨幣固定到頂部</target>
         </trans-unit>
         <trans-unit id="Settings_PullToRefresh" translate="yes" xml:space="preserve">
           <source>Pull to refresh (No UWP)</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">拉刷新 (无 uwp)</target>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">拉刷新 (無 uwp)</target>
         </trans-unit>
       </group>
     </body>

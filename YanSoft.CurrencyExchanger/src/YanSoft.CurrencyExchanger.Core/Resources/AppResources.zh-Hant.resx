@@ -1,5 +1,110 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
   <resheader name="resmimetype">
     <value>text/microsoft-resx</value>
   </resheader>
@@ -12,4 +117,577 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="About_Disclaimer_Content" xml:space="preserve">
+    <value>此應用程式的匯率資料來自 www.currencyconverterapi.com。您使用本應用程式並依賴內容的任何風險和後果應自行承擔, 此應用程式和開發人員不承擔任何法律責任。</value>
+  </data>
+  <data name="About_Disclaimer_Title" xml:space="preserve">
+    <value>免責 聲明</value>
+  </data>
+  <data name="About_Feedback" xml:space="preserve">
+    <value>回饋</value>
+  </data>
+  <data name="About_LikeMe" xml:space="preserve">
+    <value>就像我一樣!</value>
+  </data>
+  <data name="About_PageTitle" xml:space="preserve">
+    <value>關於金龍</value>
+  </data>
+  <data name="About_Share" xml:space="preserve">
+    <value>共用</value>
+  </data>
+  <data name="About_Share_Content" xml:space="preserve">
+    <value>我建議貨幣交換器獲取最新的貨幣匯率。</value>
+  </data>
+  <data name="AddCurrencies_PageTitle" xml:space="preserve">
+    <value>添加貨幣</value>
+  </data>
+  <data name="AddCurrencies_SearchEntryPlaceholder" xml:space="preserve">
+    <value>幣種代碼或貨幣名稱</value>
+  </data>
+  <data name="Button_Add_Currency" xml:space="preserve">
+    <value>添加貨幣</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Button_Chart" xml:space="preserve">
+    <value>圖表</value>
+  </data>
+  <data name="Button_Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="Button_Edit_List" xml:space="preserve">
+    <value>編輯清單</value>
+  </data>
+  <data name="Button_OK" xml:space="preserve">
+    <value>還行</value>
+  </data>
+  <data name="Chart_PageTitle" xml:space="preserve">
+    <value>圖表</value>
+  </data>
+  <data name="Currency_AED" xml:space="preserve">
+    <value>阿聯酋迪拉姆</value>
+  </data>
+  <data name="Currency_AFN" xml:space="preserve">
+    <value>阿富汗尼</value>
+  </data>
+  <data name="Currency_ALL" xml:space="preserve">
+    <value>阿爾巴尼亞列克</value>
+  </data>
+  <data name="Currency_AMD" xml:space="preserve">
+    <value>亞美尼亞德拉姆</value>
+  </data>
+  <data name="Currency_ANG" xml:space="preserve">
+    <value>荷屬安的列斯群島古爾登</value>
+  </data>
+  <data name="Currency_AOA" xml:space="preserve">
+    <value>安哥拉寬紮</value>
+  </data>
+  <data name="Currency_ARS" xml:space="preserve">
+    <value>阿根廷比索</value>
+  </data>
+  <data name="Currency_AUD" xml:space="preserve">
+    <value>澳元</value>
+  </data>
+  <data name="Currency_AWG" xml:space="preserve">
+    <value>阿路巴弗洛林</value>
+  </data>
+  <data name="Currency_AZN" xml:space="preserve">
+    <value>亞塞拜然馬拉特</value>
+  </data>
+  <data name="Currency_BAM" xml:space="preserve">
+    <value>波士尼亞和黑塞哥維那 konvertibilna marka</value>
+  </data>
+  <data name="Currency_BBD" xml:space="preserve">
+    <value>巴巴多斯元</value>
+  </data>
+  <data name="Currency_BDT" xml:space="preserve">
+    <value>孟加拉國塔卡</value>
+  </data>
+  <data name="Currency_BGN" xml:space="preserve">
+    <value>保加利亞列夫</value>
+  </data>
+  <data name="Currency_BHD" xml:space="preserve">
+    <value>巴林第納爾</value>
+  </data>
+  <data name="Currency_BIF" xml:space="preserve">
+    <value>蒲隆地法郎</value>
+  </data>
+  <data name="Currency_BMD" xml:space="preserve">
+    <value>百慕達元</value>
+  </data>
+  <data name="Currency_BND" xml:space="preserve">
+    <value>汶萊元</value>
+  </data>
+  <data name="Currency_BOB" xml:space="preserve">
+    <value>玻利維亞玻利維亞諾</value>
+  </data>
+  <data name="Currency_BRL" xml:space="preserve">
+    <value>巴西雷亞爾</value>
+  </data>
+  <data name="Currency_BSD" xml:space="preserve">
+    <value>巴哈馬元</value>
+  </data>
+  <data name="Currency_BTC" xml:space="preserve">
+    <value>比特幣</value>
+  </data>
+  <data name="Currency_BTN" xml:space="preserve">
+    <value>不丹 ngsuperum</value>
+  </data>
+  <data name="Currency_BWP" xml:space="preserve">
+    <value>博茨瓦納普拉</value>
+  </data>
+  <data name="Currency_BYN" xml:space="preserve">
+    <value>新白俄羅斯盧布</value>
+  </data>
+  <data name="Currency_BYR" xml:space="preserve">
+    <value>白俄羅斯盧布</value>
+  </data>
+  <data name="Currency_BZD" xml:space="preserve">
+    <value>貝里斯元</value>
+  </data>
+  <data name="Currency_CAD" xml:space="preserve">
+    <value>加元</value>
+  </data>
+  <data name="Currency_CDF" xml:space="preserve">
+    <value>剛果法郎</value>
+  </data>
+  <data name="Currency_CHF" xml:space="preserve">
+    <value>瑞士法郎</value>
+  </data>
+  <data name="Currency_CLP" xml:space="preserve">
+    <value>智利比索</value>
+  </data>
+  <data name="Currency_CNY" xml:space="preserve">
+    <value>中國元</value>
+  </data>
+  <data name="Currency_COP" xml:space="preserve">
+    <value>哥倫比亞比索</value>
+  </data>
+  <data name="Currency_CRC" xml:space="preserve">
+    <value>哥斯大黎加結腸</value>
+  </data>
+  <data name="Currency_CUP" xml:space="preserve">
+    <value>古巴比索</value>
+  </data>
+  <data name="Currency_CVE" xml:space="preserve">
+    <value>維德角埃斯庫多</value>
+  </data>
+  <data name="Currency_CZK" xml:space="preserve">
+    <value>捷克克朗</value>
+  </data>
+  <data name="Currency_DJF" xml:space="preserve">
+    <value>dijiboti franc</value>
+  </data>
+  <data name="Currency_DKK" xml:space="preserve">
+    <value>丹麥克朗</value>
+  </data>
+  <data name="Currency_DOP" xml:space="preserve">
+    <value>多明尼加比索</value>
+  </data>
+  <data name="Currency_DZD" xml:space="preserve">
+    <value>阿爾及利亞第納爾</value>
+  </data>
+  <data name="Currency_EGP" xml:space="preserve">
+    <value>埃及鎊</value>
+  </data>
+  <data name="Currency_ERN" xml:space="preserve">
+    <value>厄立特里亞 nakfa</value>
+  </data>
+  <data name="Currency_ETB" xml:space="preserve">
+    <value>埃塞俄比亞比爾</value>
+  </data>
+  <data name="Currency_EUR" xml:space="preserve">
+    <value>歐元</value>
+  </data>
+  <data name="Currency_FJD" xml:space="preserve">
+    <value>斐濟元</value>
+  </data>
+  <data name="Currency_FKP" xml:space="preserve">
+    <value>福克蘭群島鎊</value>
+  </data>
+  <data name="Currency_GBP" xml:space="preserve">
+    <value>英鎊</value>
+  </data>
+  <data name="Currency_GEL" xml:space="preserve">
+    <value>格魯吉亞拉裡</value>
+  </data>
+  <data name="Currency_GHS" xml:space="preserve">
+    <value>加納塞迪</value>
+  </data>
+  <data name="Currency_GIP" xml:space="preserve">
+    <value>直布羅陀鎊</value>
+  </data>
+  <data name="Currency_GMD" xml:space="preserve">
+    <value>岡比亞達拉西</value>
+  </data>
+  <data name="Currency_GNF" xml:space="preserve">
+    <value>幾內亞法郎</value>
+  </data>
+  <data name="Currency_GTQ" xml:space="preserve">
+    <value>瓜地馬拉·格查爾</value>
+  </data>
+  <data name="Currency_GYD" xml:space="preserve">
+    <value>蓋亞納元</value>
+  </data>
+  <data name="Currency_HKD" xml:space="preserve">
+    <value>港元</value>
+  </data>
+  <data name="Currency_HNL" xml:space="preserve">
+    <value>宏都拉斯倫皮拉</value>
+  </data>
+  <data name="Currency_HRK" xml:space="preserve">
+    <value>克羅地亞語庫納</value>
+  </data>
+  <data name="Currency_HTG" xml:space="preserve">
+    <value>海地古德</value>
+  </data>
+  <data name="Currency_HUF" xml:space="preserve">
+    <value>匈牙利福林</value>
+  </data>
+  <data name="Currency_IDR" xml:space="preserve">
+    <value>印尼盾</value>
+  </data>
+  <data name="Currency_ILS" xml:space="preserve">
+    <value>以色列 shekel</value>
+  </data>
+  <data name="Currency_INR" xml:space="preserve">
+    <value>印度盧比</value>
+  </data>
+  <data name="Currency_IQD" xml:space="preserve">
+    <value>伊拉克第納爾</value>
+  </data>
+  <data name="Currency_IRR" xml:space="preserve">
+    <value>伊朗瑞爾</value>
+  </data>
+  <data name="Currency_ISK" xml:space="preserve">
+    <value>冰島克朗</value>
+  </data>
+  <data name="Currency_JMD" xml:space="preserve">
+    <value>牙買加元</value>
+  </data>
+  <data name="Currency_JOD" xml:space="preserve">
+    <value>約旦第納爾</value>
+  </data>
+  <data name="Currency_JPY" xml:space="preserve">
+    <value>日元</value>
+  </data>
+  <data name="Currency_KES" xml:space="preserve">
+    <value>肯雅先令</value>
+  </data>
+  <data name="Currency_KGS" xml:space="preserve">
+    <value>吉爾吉斯斯坦索姆</value>
+  </data>
+  <data name="Currency_KHR" xml:space="preserve">
+    <value>柬埔寨瑞爾</value>
+  </data>
+  <data name="Currency_KMF" xml:space="preserve">
+    <value>科摩羅法郎</value>
+  </data>
+  <data name="Currency_KPW" xml:space="preserve">
+    <value>朝鮮溫</value>
+  </data>
+  <data name="Currency_KRW" xml:space="preserve">
+    <value>韓元</value>
+  </data>
+  <data name="Currency_KWD" xml:space="preserve">
+    <value>科威特第納爾</value>
+  </data>
+  <data name="Currency_KYD" xml:space="preserve">
+    <value>開曼群島元</value>
+  </data>
+  <data name="Currency_KZT" xml:space="preserve">
+    <value>哈薩克斯坦騰格</value>
+  </data>
+  <data name="Currency_LAK" xml:space="preserve">
+    <value>老基普</value>
+  </data>
+  <data name="Currency_LBP" xml:space="preserve">
+    <value>黎巴嫩鎊</value>
+  </data>
+  <data name="Currency_LKR" xml:space="preserve">
+    <value>斯里蘭卡盧比</value>
+  </data>
+  <data name="Currency_LRD" xml:space="preserve">
+    <value>賴比瑞亞元</value>
+  </data>
+  <data name="Currency_LSL" xml:space="preserve">
+    <value>賴索托洛蒂</value>
+  </data>
+  <data name="Currency_LTL" xml:space="preserve">
+    <value>立陶宛立特</value>
+  </data>
+  <data name="Currency_LVL" xml:space="preserve">
+    <value>拉脫維亞文拉特</value>
+  </data>
+  <data name="Currency_LYD" xml:space="preserve">
+    <value>利比亞第納爾</value>
+  </data>
+  <data name="Currency_MAD" xml:space="preserve">
+    <value>摩洛哥迪拉姆</value>
+  </data>
+  <data name="Currency_MDL" xml:space="preserve">
+    <value>摩爾多瓦 leu</value>
+  </data>
+  <data name="Currency_MGA" xml:space="preserve">
+    <value>馬達加斯加阿裡亞裡</value>
+  </data>
+  <data name="Currency_MKD" xml:space="preserve">
+    <value>馬其頓德納爾</value>
+  </data>
+  <data name="Currency_MMK" xml:space="preserve">
+    <value>緬甸緬元</value>
+  </data>
+  <data name="Currency_MNT" xml:space="preserve">
+    <value>蒙古圖格裡克</value>
+  </data>
+  <data name="Currency_MOP" xml:space="preserve">
+    <value>澳門帕塔卡</value>
+  </data>
+  <data name="Currency_MRO" xml:space="preserve">
+    <value>茅利塔尼亞 Ougulya</value>
+  </data>
+  <data name="Currency_MUR" xml:space="preserve">
+    <value>模里西斯盧比</value>
+  </data>
+  <data name="Currency_MVR" xml:space="preserve">
+    <value>馬爾地夫魯菲亞</value>
+  </data>
+  <data name="Currency_MWK" xml:space="preserve">
+    <value>馬拉威 kkacha</value>
+  </data>
+  <data name="Currency_MXN" xml:space="preserve">
+    <value>墨西哥比索</value>
+  </data>
+  <data name="Currency_MYR" xml:space="preserve">
+    <value>馬來西亞林吉特</value>
+  </data>
+  <data name="Currency_MZN" xml:space="preserve">
+    <value>莫三比克墨西哥</value>
+  </data>
+  <data name="Currency_NAD" xml:space="preserve">
+    <value>納米比亞元</value>
+  </data>
+  <data name="Currency_NGN" xml:space="preserve">
+    <value>奈及利亞奈拉</value>
+  </data>
+  <data name="Currency_NIO" xml:space="preserve">
+    <value>尼加拉瓜科爾多瓦</value>
+  </data>
+  <data name="Currency_NOK" xml:space="preserve">
+    <value>挪威克朗</value>
+  </data>
+  <data name="Currency_NPR" xml:space="preserve">
+    <value>尼泊爾盧比</value>
+  </data>
+  <data name="Currency_NZD" xml:space="preserve">
+    <value>紐西蘭元</value>
+  </data>
+  <data name="Currency_NZN" xml:space="preserve">
+    <value>莫三比克墨西哥</value>
+  </data>
+  <data name="Currency_OMR" xml:space="preserve">
+    <value>阿曼瑞爾</value>
+  </data>
+  <data name="Currency_PAB" xml:space="preserve">
+    <value>巴拿馬巴爾博亞</value>
+  </data>
+  <data name="Currency_PEN" xml:space="preserve">
+    <value>秘魯新索爾</value>
+  </data>
+  <data name="Currency_PGK" xml:space="preserve">
+    <value>巴布亞紐幾內亞 kina</value>
+  </data>
+  <data name="Currency_PHP" xml:space="preserve">
+    <value>菲律賓比索</value>
+  </data>
+  <data name="Currency_PKR" xml:space="preserve">
+    <value>巴基斯坦盧比</value>
+  </data>
+  <data name="Currency_PLN" xml:space="preserve">
+    <value>波蘭茲羅提</value>
+  </data>
+  <data name="Currency_PYG" xml:space="preserve">
+    <value>巴拉圭瓜拉尼語</value>
+  </data>
+  <data name="Currency_QAR" xml:space="preserve">
+    <value>卡塔爾瑞爾</value>
+  </data>
+  <data name="Currency_RON" xml:space="preserve">
+    <value>羅馬尼亞新列</value>
+  </data>
+  <data name="Currency_RSD" xml:space="preserve">
+    <value>塞爾維亞第納爾</value>
+  </data>
+  <data name="Currency_RUB" xml:space="preserve">
+    <value>俄羅斯盧布</value>
+  </data>
+  <data name="Currency_RWF" xml:space="preserve">
+    <value>盧安達法郎</value>
+  </data>
+  <data name="Currency_SAR" xml:space="preserve">
+    <value>沙烏地阿拉伯裡亞爾</value>
+  </data>
+  <data name="Currency_SBD" xml:space="preserve">
+    <value>索羅門群島元</value>
+  </data>
+  <data name="Currency_SCR" xml:space="preserve">
+    <value>塞席爾盧比</value>
+  </data>
+  <data name="Currency_SDG" xml:space="preserve">
+    <value>蘇丹鎊</value>
+  </data>
+  <data name="Currency_SEK" xml:space="preserve">
+    <value>瑞典克朗</value>
+  </data>
+  <data name="Currency_SGD" xml:space="preserve">
+    <value>新加坡元</value>
+  </data>
+  <data name="Currency_SHP" xml:space="preserve">
+    <value>聖赫勒拿鎊</value>
+  </data>
+  <data name="Currency_SIT" xml:space="preserve">
+    <value>斯洛維尼亞托拉爾</value>
+  </data>
+  <data name="Currency_SLL" xml:space="preserve">
+    <value>1. 塞拉里昂</value>
+  </data>
+  <data name="Currency_SOS" xml:space="preserve">
+    <value>索馬里先令</value>
+  </data>
+  <data name="Currency_SRD" xml:space="preserve">
+    <value>蘇利南元</value>
+  </data>
+  <data name="Currency_STD" xml:space="preserve">
+    <value>聖多美及普林西比島多布拉</value>
+  </data>
+  <data name="Currency_SVC" xml:space="preserve">
+    <value>薩爾瓦多科龍</value>
+  </data>
+  <data name="Currency_SYP" xml:space="preserve">
+    <value>敘利亞鎊</value>
+  </data>
+  <data name="Currency_SZL" xml:space="preserve">
+    <value>史瓦濟蘭 lilageni</value>
+  </data>
+  <data name="Currency_THB" xml:space="preserve">
+    <value>泰銖</value>
+  </data>
+  <data name="Currency_TJS" xml:space="preserve">
+    <value>塔吉克斯坦索莫尼</value>
+  </data>
+  <data name="Currency_TMT" xml:space="preserve">
+    <value>土庫曼斯坦馬拉特</value>
+  </data>
+  <data name="Currency_TND" xml:space="preserve">
+    <value>突尼斯第納爾</value>
+  </data>
+  <data name="Currency_TOP" xml:space="preserve">
+    <value>湯加 pa ' anga</value>
+  </data>
+  <data name="Currency_TRY" xml:space="preserve">
+    <value>新土耳其里拉</value>
+  </data>
+  <data name="Currency_TTD" xml:space="preserve">
+    <value>&amp;特立尼達和多巴哥元</value>
+  </data>
+  <data name="Currency_TWD" xml:space="preserve">
+    <value>新臺幣</value>
+  </data>
+  <data name="Currency_TZS" xml:space="preserve">
+    <value>坦尚尼亞先令</value>
+  </data>
+  <data name="Currency_UAH" xml:space="preserve">
+    <value>烏克蘭格裡夫納</value>
+  </data>
+  <data name="Currency_UGX" xml:space="preserve">
+    <value>烏干達先令</value>
+  </data>
+  <data name="Currency_USD" xml:space="preserve">
+    <value>美元 (美元)</value>
+  </data>
+  <data name="Currency_UYU" xml:space="preserve">
+    <value>烏拉圭新比索</value>
+  </data>
+  <data name="Currency_UZS" xml:space="preserve">
+    <value>烏茲別克索姆</value>
+  </data>
+  <data name="Currency_VEF" xml:space="preserve">
+    <value>委內瑞拉玻利瓦爾省</value>
+  </data>
+  <data name="Currency_VND" xml:space="preserve">
+    <value>董越南</value>
+  </data>
+  <data name="Currency_VUV" xml:space="preserve">
+    <value>瓦努阿圖瓦圖</value>
+  </data>
+  <data name="Currency_WST" xml:space="preserve">
+    <value>薩摩亞塔拉</value>
+  </data>
+  <data name="Currency_XAF" xml:space="preserve">
+    <value>非洲金融共同體法郎</value>
+  </data>
+  <data name="Currency_XAG" xml:space="preserve">
+    <value>銀盎司</value>
+  </data>
+  <data name="Currency_XAU" xml:space="preserve">
+    <value>金盎司</value>
+  </data>
+  <data name="Currency_XCD" xml:space="preserve">
+    <value>東加勒比海元</value>
+  </data>
+  <data name="Currency_XDR" xml:space="preserve">
+    <value>特別提款權</value>
+  </data>
+  <data name="Currency_XOF" xml:space="preserve">
+    <value>非洲金融共同體法郎</value>
+  </data>
+  <data name="Currency_XPF" xml:space="preserve">
+    <value>太平洋法郎</value>
+  </data>
+  <data name="Currency_YER" xml:space="preserve">
+    <value>葉門裡亞爾</value>
+  </data>
+  <data name="Currency_ZAR" xml:space="preserve">
+    <value>南非蘭特</value>
+  </data>
+  <data name="Currency_ZMK" xml:space="preserve">
+    <value>尚比亞克瓦查</value>
+  </data>
+  <data name="Currency_ZMW" xml:space="preserve">
+    <value>尚比亞克瓦查</value>
+  </data>
+  <data name="EditList_PageTitle" xml:space="preserve">
+    <value>編輯清單</value>
+  </data>
+  <data name="Home_PageTitle" xml:space="preserve">
+    <value>貨幣交換器</value>
+  </data>
+  <data name="Settings_PageTitle" xml:space="preserve">
+    <value>設置</value>
+  </data>
+  <data name="Settings_Section_Common" xml:space="preserve">
+    <value>常見</value>
+  </data>
+  <data name="Settings_Section_Currencies" xml:space="preserve">
+    <value>貨幣</value>
+  </data>
+  <data name="Toast_Can_Not_Delete_Base_Currency" xml:space="preserve">
+    <value>無法刪除基礎貨幣。</value>
+  </data>
+  <data name="Toast_NetworkError" xml:space="preserve">
+    <value>網路不可用。</value>
+  </data>
+  <data name="Toast_No_Chart_Available_For_Base_Currency" xml:space="preserve">
+    <value>沒有可用於基礎貨幣的圖表。</value>
+  </data>
+  <data name="Toast_Title_Error" xml:space="preserve">
+    <value>錯誤</value>
+  </data>
+  <data name="Toast_Title_Info" xml:space="preserve">
+    <value>資訊</value>
+  </data>
+  <data name="Toast_Title_Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
 </root>

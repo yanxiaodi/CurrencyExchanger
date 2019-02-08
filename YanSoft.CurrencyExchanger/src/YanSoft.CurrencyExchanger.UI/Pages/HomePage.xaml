@@ -86,7 +86,7 @@
                                         <Label Text="{Binding AmountText}" HorizontalOptions="EndAndExpand" Style="{StaticResource myListItemTitleTextStyle}" ></Label>
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="FillAndExpand">
-                                        <Label Text="{Binding TargetCurrency.Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}"></Label>
+                                        <Label Text="{Binding TargetCurrencyName}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}"></Label>
                                         <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="EndAndExpand"
                                                      IsVisible="{Binding IsBaseCurrency, Converter={StaticResource BaseCurrencyVisibleConverter}}">
                                             <Label Text="1" Style="{StaticResource myListItemDetailTextStyle}"></Label>

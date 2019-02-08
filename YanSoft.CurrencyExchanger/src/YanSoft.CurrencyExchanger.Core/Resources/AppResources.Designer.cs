@@ -1699,11 +1699,110 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string Menu_About {
+            get {
+                return ResourceManager.GetString("Menu_About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chart.
+        /// </summary>
+        internal static string Menu_Chart {
+            get {
+                return ResourceManager.GetString("Menu_Chart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        internal static string Menu_Home {
+            get {
+                return ResourceManager.GetString("Menu_Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string Menu_Settings {
+            get {
+                return ResourceManager.GetString("Menu_Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto initialize to 0.
+        /// </summary>
+        internal static string Settings_AutoInitializeToZero {
+            get {
+                return ResourceManager.GetString("Settings_AutoInitializeToZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto fefresh when app starts.
+        /// </summary>
+        internal static string Settings_AutoRefresh {
+            get {
+                return ResourceManager.GetString("Settings_AutoRefresh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Decimals.
+        /// </summary>
+        internal static string Settings_Decimals {
+            get {
+                return ResourceManager.GetString("Settings_Decimals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language (Restart to apply ).
+        /// </summary>
+        internal static string Settings_Language {
+            get {
+                return ResourceManager.GetString("Settings_Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Localize currency symbol.
+        /// </summary>
+        internal static string Settings_LocalizeCurrencySymbol {
+            get {
+                return ResourceManager.GetString("Settings_LocalizeCurrencySymbol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Settings.
         /// </summary>
         internal static string Settings_PageTitle {
             get {
                 return ResourceManager.GetString("Settings_PageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pin base currency to top.
+        /// </summary>
+        internal static string Settings_PinBaseCurrencyToTop {
+            get {
+                return ResourceManager.GetString("Settings_PinBaseCurrencyToTop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pull to refresh (No UWP).
+        /// </summary>
+        internal static string Settings_PullToRefresh {
+            get {
+                return ResourceManager.GetString("Settings_PullToRefresh", resourceCulture);
             }
         }
         

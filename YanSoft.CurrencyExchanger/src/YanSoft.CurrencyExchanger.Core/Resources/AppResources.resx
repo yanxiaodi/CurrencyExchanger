@@ -690,4 +690,37 @@
   <data name="Settings_Section_Currencies" xml:space="preserve">
     <value>Currencies</value>
   </data>
+  <data name="Menu_About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Menu_Chart" xml:space="preserve">
+    <value>Chart</value>
+  </data>
+  <data name="Menu_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Menu_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Settings_AutoInitializeToZero" xml:space="preserve">
+    <value>Auto initialize to 0</value>
+  </data>
+  <data name="Settings_AutoRefresh" xml:space="preserve">
+    <value>Auto fefresh when app starts</value>
+  </data>
+  <data name="Settings_Decimals" xml:space="preserve">
+    <value>Decimals</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Language (Restart to apply )</value>
+  </data>
+  <data name="Settings_LocalizeCurrencySymbol" xml:space="preserve">
+    <value>Localize currency symbol</value>
+  </data>
+  <data name="Settings_PinBaseCurrencyToTop" xml:space="preserve">
+    <value>Pin base currency to top</value>
+  </data>
+  <data name="Settings_PullToRefresh" xml:space="preserve">
+    <value>Pull to refresh (No UWP)</value>
+  </data>
 </root>

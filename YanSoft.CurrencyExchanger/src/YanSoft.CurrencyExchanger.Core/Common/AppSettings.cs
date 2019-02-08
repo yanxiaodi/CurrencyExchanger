@@ -112,7 +112,7 @@ namespace YanSoft.CurrencyExchanger.Core.Common
 
         #region LanguageCode
         const string LanguageCodeKeyName = "LanguageCode";
-        const string LanguageCodeDefault = "";
+        const string LanguageCodeDefault = "en-US";
         public string LanguageCode
         {
             get => Preferences.Get(LanguageCodeKeyName, LanguageCodeDefault);

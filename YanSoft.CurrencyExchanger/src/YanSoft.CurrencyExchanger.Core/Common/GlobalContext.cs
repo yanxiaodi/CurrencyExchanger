@@ -15,7 +15,9 @@ namespace YanSoft.CurrencyExchanger.Core.Common
 
         public Dictionary<string, string> HistoryRangeIntervalSetting { get; set; }
 
-        public void Initialize()
+        public List<LanguageItem> LanguageItemList { get; set; }
+
+        public void InitializeAllCurrencyItemList()
         {
             AllCurrencyItemList = new List<CurrencyItem>()
             {
@@ -187,6 +189,11 @@ namespace YanSoft.CurrencyExchanger.Core.Common
                 new CurrencyItem{Code = "ZMW", Name = AppResources.Currency_ZMW, Image="flag_white", CultureName=""}
             };
 
+            
+        }
+
+        public void InitializeOthers()
+        {
             HistoryRangeIntervalSetting = new Dictionary<string, string>
             {
                 { HistoryRange.RangeOneDay, HistoryInterval.FiveMinutes },
@@ -198,6 +205,17 @@ namespace YanSoft.CurrencyExchanger.Core.Common
                 { HistoryRange.RangeTwoYears, HistoryInterval.OneDay },
             };
 
+            LanguageItemList = new List<LanguageItem>
+            {
+                new LanguageItem { DisplayName = "中文简体 - Chinese (simplified)", Code = "zh-Hans"},
+                new LanguageItem { DisplayName = "中文繁体 - Chinese (Traditional)", Code = "zh-Hant"},
+                new LanguageItem { DisplayName = "English", Code = "en" },
+                new LanguageItem { DisplayName = "Français - French", Code = "fr" },
+                new LanguageItem { DisplayName = "Deutsche - German", Code = "de" },
+                new LanguageItem { DisplayName = "日本語 - Japanese", Code = "ja" },
+                new LanguageItem { DisplayName = "한국어 - Korean", Code = "ko" },
+                new LanguageItem { DisplayName = "Русский - Russian", Code = "ru" }
+            };
         }
     }
 }

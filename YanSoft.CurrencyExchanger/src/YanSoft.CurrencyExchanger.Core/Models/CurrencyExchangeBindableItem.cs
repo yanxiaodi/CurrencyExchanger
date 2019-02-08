@@ -30,6 +30,15 @@ namespace YanSoft.CurrencyExchanger.Core.Models
         #endregion
 
 
+        #region BaseCurrencyName;
+        private string _baseCurrencyName;
+        public string BaseCurrencyName
+        {
+            get => _baseCurrencyName;
+            set => SetProperty(ref _baseCurrencyName, value);
+        }
+        #endregion
+
         #region TargetCurrency;
         private CurrencyItem _targetCurrency;
         public CurrencyItem TargetCurrency
@@ -46,6 +55,15 @@ namespace YanSoft.CurrencyExchanger.Core.Models
         {
             get => _targetCode;
             set => SetProperty(ref _targetCode, value);
+        }
+        #endregion
+
+        #region TargetCurrencyName;
+        private string _targetCurrencyName;
+        public string TargetCurrencyName
+        {
+            get => _targetCurrencyName;
+            set => SetProperty(ref _targetCurrencyName, value);
         }
         #endregion
 
