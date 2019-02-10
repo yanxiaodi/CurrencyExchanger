@@ -19,7 +19,6 @@ namespace YanSoft.CurrencyExchanger.UI.Pages
 		public AboutPage ()
 		{
 			InitializeComponent ();
-            Title = AppResourcesHelper.GetString("About_PageTitle");
 		}
 	}
 }

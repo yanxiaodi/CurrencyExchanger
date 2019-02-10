@@ -88,6 +88,24 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Click the flag image of the currency item to set the base currency. Click the right area of the currency item to input number. Right-click (UWP) or long-press(Android and iOS) currency item to delete and view the chart..
+        /// </summary>
+        internal static string About_Help_Content {
+            get {
+                return ResourceManager.GetString("About_Help_Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Help.
+        /// </summary>
+        internal static string About_Help_Title {
+            get {
+                return ResourceManager.GetString("About_Help_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to like me!.
         /// </summary>
         internal static string About_LikeMe {
@@ -1744,7 +1762,7 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Auto fefresh when app starts.
+        ///   Looks up a localized string similar to Auto refresh when app starts.
         /// </summary>
         internal static string Settings_AutoRefresh {
             get {

@@ -618,4 +618,10 @@
   <data name="Settings_PullToRefresh" xml:space="preserve">
     <value>Ziehen (Nr. UWP) aktualisieren</value>
   </data>
+  <data name="About_Help_Content" xml:space="preserve">
+    <value>Klicken Sie auf die Flagge der Währung-Element, das die Basiswährung festgelegt. Klicken Sie im rechten Bereich der Währung Artikel Nummer eingeben. Mit der rechten Maustaste (UWP) oder lang-Press(Android and iOS) Währung Element zu löschen, und das Diagramm anzeigen lassen.</value>
+  </data>
+  <data name="About_Help_Title" xml:space="preserve">
+    <value>Hilfe</value>
+  </data>
 </root>

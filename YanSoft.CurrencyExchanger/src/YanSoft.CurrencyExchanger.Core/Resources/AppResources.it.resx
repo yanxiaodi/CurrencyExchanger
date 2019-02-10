@@ -618,4 +618,10 @@
   <data name="Settings_PullToRefresh" xml:space="preserve">
     <value>Tirare per aggiornare (No UWP)</value>
   </data>
+  <data name="About_Help_Content" xml:space="preserve">
+    <value>Clicca sull'immagine della bandiera dell'elemento valuta per impostare la valuta di base. Fare clic su zona a destra dell'elemento valuta al numero di input. Tasto destro del mouse (UWP) o long-press(Android and iOS) valuta elemento eliminare e visualizzare il grafico.</value>
+  </data>
+  <data name="About_Help_Title" xml:space="preserve">
+    <value>aiuto</value>
+  </data>
 </root>

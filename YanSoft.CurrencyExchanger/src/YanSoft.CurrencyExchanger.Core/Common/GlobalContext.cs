@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
+using MvvmCross;
 using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Resources;
+using YanSoft.CurrencyExchanger.Core.Services;
 using YanSoft.CurrencyExchanger.Core.Utils;
 
 namespace YanSoft.CurrencyExchanger.Core.Common
 {
     public class GlobalContext
     {
+
+
         public List<CurrencyItem> AllCurrencyItemList { get; set; }
         public CurrencyExchangeBindableItem CurrentBaseCurrency { get; set; }
 
@@ -219,11 +223,9 @@ namespace YanSoft.CurrencyExchanger.Core.Common
 
         public void RefreshAllCurrencyItemList(CultureInfo ci)
         {
-            var test = AppResourcesHelper.GetString("Currency_AED", ci);
-            System.Diagnostics.Debug.WriteLine(test);
             AllCurrencyItemList.ForEach(x =>
             {
-                x.Name = AppResourcesHelper.GetString($"Currency_{x.Code}", ci);
+                x.Name = Mvx.IoCProvider.Resolve<IAppResourcesService>().GetString($"Currency_{x.Code}", ci);
             });
         }
     }

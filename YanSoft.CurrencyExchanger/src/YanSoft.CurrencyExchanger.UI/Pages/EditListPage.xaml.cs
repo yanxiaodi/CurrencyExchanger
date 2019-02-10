@@ -22,7 +22,6 @@ namespace YanSoft.CurrencyExchanger.UI.Pages
         public EditListPage()
         {
             InitializeComponent();
-            Title = AppResourcesHelper.GetString("EditList_PageTitle");
 
         }
 

@@ -791,8 +791,9 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">自動初始化為0</target>
         </trans-unit>
         <trans-unit id="Settings_AutoRefresh" translate="yes" xml:space="preserve">
-          <source>Auto fefresh when app starts</source>
+          <source>Auto refresh when app starts</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">應用啟動時的自動 fefresh</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Settings_Decimals" translate="yes" xml:space="preserve">
           <source>Decimals</source>
@@ -814,6 +815,14 @@
         <trans-unit id="Settings_PullToRefresh" translate="yes" xml:space="preserve">
           <source>Pull to refresh (No UWP)</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">下拉刷新 (無 uwp)</target>
+        </trans-unit>
+        <trans-unit id="About_Help_Content" translate="yes" xml:space="preserve">
+          <source>Click the flag image of the currency item to set the base currency. Click the right area of the currency item to input number. Right-click (UWP) or long-press(Android and iOS) currency item to delete and view the chart.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">按一下貨幣項的標誌圖像以設置基礎貨幣。按一下貨幣專案的右側區域以輸入編號。按右鍵 (uwp) 或長按 (android 和 ios) 貨幣專案以刪除和查看圖表。</target>
+        </trans-unit>
+        <trans-unit id="About_Help_Title" translate="yes" xml:space="preserve">
+          <source>Help</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">説明</target>
         </trans-unit>
       </group>
     </body>

@@ -20,8 +20,6 @@ namespace YanSoft.CurrencyExchanger.UI.Pages
         public ChartPage()
         {
             InitializeComponent();
-            Title = AppResourcesHelper.GetString("Chart_PageTitle");
-
         }
 
 

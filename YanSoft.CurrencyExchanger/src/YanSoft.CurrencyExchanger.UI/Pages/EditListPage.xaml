@@ -6,7 +6,9 @@
              xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
             x:TypeArguments="viewModels:EditListViewModel" 
                       x:Name="MainContent"
-             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
+                      Title="{ext:Translate EditList_PageTitle}">
     <ContentPage.Content>
         <StackLayout>
             <StackLayout.Margin>

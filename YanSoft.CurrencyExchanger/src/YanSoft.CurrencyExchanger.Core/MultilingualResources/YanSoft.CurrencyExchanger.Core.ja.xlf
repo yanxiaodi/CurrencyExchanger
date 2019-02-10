@@ -791,8 +791,9 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">0 自動初期化</target>
         </trans-unit>
         <trans-unit id="Settings_AutoRefresh" translate="yes" xml:space="preserve">
-          <source>Auto fefresh when app starts</source>
+          <source>Auto refresh when app starts</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">アプリの起動時の自動 fefresh</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Settings_Decimals" translate="yes" xml:space="preserve">
           <source>Decimals</source>
@@ -814,6 +815,14 @@
         <trans-unit id="Settings_PullToRefresh" translate="yes" xml:space="preserve">
           <source>Pull to refresh (No UWP)</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">(いいえ UWP) をリフレッシュするプル</target>
+        </trans-unit>
+        <trans-unit id="About_Help_Content" translate="yes" xml:space="preserve">
+          <source>Click the flag image of the currency item to set the base currency. Click the right area of the currency item to input number. Right-click (UWP) or long-press(Android and iOS) currency item to delete and view the chart.</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">基本通貨を設定する通貨アイテムのフラグ画像をクリックします。番号を入力する通貨アイテムの右側の領域をクリックします。右クリック (UWP) または長い press(Android and iOS) 通貨項目削除してグラフを表示します。</target>
+        </trans-unit>
+        <trans-unit id="About_Help_Title" translate="yes" xml:space="preserve">
+          <source>Help</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">ヘルプ</target>
         </trans-unit>
       </group>
     </body>

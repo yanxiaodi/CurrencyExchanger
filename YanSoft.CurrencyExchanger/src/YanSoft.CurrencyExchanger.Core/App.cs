@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Threading.Tasks;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
@@ -32,7 +33,6 @@ namespace YanSoft.CurrencyExchanger.Core
             Mvx.IoCProvider.RegisterSingleton(new GlobalContext());
             
             Mvx.IoCProvider.RegisterSingleton(new AppSettings());
-
             RegisterAppStart<MasterDetailViewModel>();
         }
 
@@ -47,8 +47,7 @@ namespace YanSoft.CurrencyExchanger.Core
             Mvx.IoCProvider.Resolve<GlobalContext>().InitializeOthers();
 
             var settings = Mvx.IoCProvider.Resolve<AppSettings>();
-            System.Globalization.CultureInfo.CurrentCulture = CrossMultilingual.Current.CurrentCultureInfo;
-            CrossMultilingual.Current.CurrentCultureInfo = new System.Globalization.CultureInfo(settings.LanguageCode);
+            CrossMultilingual.Current.CurrentCultureInfo = new CultureInfo(settings.LanguageCode);
             AppResources.Culture = CrossMultilingual.Current.CurrentCultureInfo;
 
             return base.Startup();

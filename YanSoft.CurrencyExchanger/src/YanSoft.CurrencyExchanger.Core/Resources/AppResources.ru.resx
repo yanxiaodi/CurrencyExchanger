@@ -618,4 +618,10 @@
   <data name="Settings_PullToRefresh" xml:space="preserve">
     <value>Потяните, чтобы обновить (No UWP)</value>
   </data>
+  <data name="About_Help_Content" xml:space="preserve">
+    <value>Нажмите на изображение флага валюты пункта установить базовую валюту. Щелкните в правой области элемента валюты для ввода числа. Щелкните правой кнопкой мыши (UWP) или элемент валюты Лонг press(Android and iOS) для удаления и просмотра диаграммы.</value>
+  </data>
+  <data name="About_Help_Title" xml:space="preserve">
+    <value>Справка</value>
+  </data>
 </root>

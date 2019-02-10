@@ -618,4 +618,10 @@
   <data name="Settings_PullToRefresh" xml:space="preserve">
     <value>Vyžádané aktualizace (ne UWP)</value>
   </data>
+  <data name="About_Help_Content" xml:space="preserve">
+    <value>Klepněte na obrázek vlajky měna položky k nastavení základní měny. Klepněte na správnou oblast, měna položky, zadejte číslo. Klepněte pravým tlačítkem (UWP) nebo dlouho press(Android and iOS) měna položky odstranit a zobrazit graf.</value>
+  </data>
+  <data name="About_Help_Title" xml:space="preserve">
+    <value>Pomoc</value>
+  </data>
 </root>

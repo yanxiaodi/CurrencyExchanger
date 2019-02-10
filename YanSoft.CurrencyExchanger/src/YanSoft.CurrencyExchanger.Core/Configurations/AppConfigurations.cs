@@ -24,8 +24,8 @@ namespace YanSoft.CurrencyExchanger.Core.Configurations
         public const string AdMobIosBannerTestAdUnitId = "ca-app-pub-3940256099942544/2934735716";
 
 
-        public const string MsAdAppId = "9wzdncrdq91s";
-        public const string MsAdAdUnitId = "1100038490";
+        public const string MicrosoftAdAppId = "9wzdncrdq91s";
+        public const string MicrosoftAdUnitId = "1100038490";
 
         public const string MicrosoftAdTestAppId = "3f83fe91-d6be-434d-a0ae-7351c5a997f1";
         public const string MicrosoftAdTestAdUnitId = "test";

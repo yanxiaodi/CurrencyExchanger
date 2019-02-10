@@ -19,7 +19,6 @@ namespace YanSoft.CurrencyExchanger.UI.Pages
 		public AddCurrenciesPage()
 		{
 			InitializeComponent ();
-            Title = AppResourcesHelper.GetString("AddCurrencies_PageTitle");
 
         }
 

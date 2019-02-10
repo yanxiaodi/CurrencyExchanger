@@ -9,7 +9,9 @@
                       xmlns:sfCombobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
                       xmlns:sfChart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
                       xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
-                      x:Name="MainContent">
+                      x:Name="MainContent"
+                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
+                      Title="{ext:Translate Chart_PageTitle}">
     <ContentPage.Content>
         <Grid>
             <Grid.Margin>

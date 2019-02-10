@@ -10,6 +10,7 @@ using YanSoft.CurrencyExchanger.Core.Common;
 using YanSoft.CurrencyExchanger.Core.Messengers;
 using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Resources;
+using YanSoft.CurrencyExchanger.Core.Services;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels
 {
@@ -19,13 +20,16 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         private readonly AppSettings _appSettings;
         private readonly GlobalContext _globalContext;
         private readonly IMvxMessenger _messenger;
+        private readonly IAppResourcesService _appResourcesService;
         public SettingsViewModel(IMvxNavigationService navigationService,
-            AppSettings appSettings, GlobalContext globalContext, IMvxMessenger messenger)
+            AppSettings appSettings, GlobalContext globalContext,
+            IMvxMessenger messenger, IAppResourcesService appResourcesService)
         {
             _navigationService = navigationService;
             _appSettings = appSettings;
             _globalContext = globalContext;
             _messenger = messenger;
+            _appResourcesService = appResourcesService;
             LanguageItemList = new ObservableCollection<LanguageItem>(_globalContext.LanguageItemList);
         }
 
@@ -164,8 +168,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
                     SetProperty(ref _currentLanguageItem, value);
                     _appSettings.LanguageCode = value.Code;
                     var culture = new CultureInfo(value.Code);
-                    AppResources.Culture = culture;
                     CrossMultilingual.Current.CurrentCultureInfo = culture;
+                    AppResources.Culture = culture;
+                    _appResourcesService.Refresh();
                     _globalContext.RefreshAllCurrencyItemList(culture);
                     _globalContext.CurrentBaseCurrency = _globalContext.CurrentBaseCurrency.ToCurrencyExchangeItem().ToCurrencyExchangeBindableItem();
                     var message = new UpdateLanguageMessage(this, value.Code);

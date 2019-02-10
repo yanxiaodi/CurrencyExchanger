@@ -58,7 +58,7 @@ namespace YanSoft.CurrencyExchanger.UWP.Renderers
 #endif
 #if !DEBUG
                     ApplicationId = AppConfigurations.MicrosoftAdAppId,
-                    AdUnitId = AppConfigurations.MicrosoftAdAdUnitId
+                    AdUnitId = AppConfigurations.MicrosoftAdUnitId
 #endif
             };
             Tuple<int, int> initSize = GetAdSize();

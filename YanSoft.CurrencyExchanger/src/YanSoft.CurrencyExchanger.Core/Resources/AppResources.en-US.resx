@@ -618,4 +618,10 @@
   <data name="Settings_PullToRefresh" xml:space="preserve">
     <value>Pull to refresh (No UWP)</value>
   </data>
+  <data name="About_Help_Content" xml:space="preserve">
+    <value>Click the flag image of the currency item to set the base currency. Click the right area of the currency item to input number. Right-click (UWP) or long-press(Android and iOS) currency item to delete and view the chart.</value>
+  </data>
+  <data name="About_Help_Title" xml:space="preserve">
+    <value>Help</value>
+  </data>
 </root>

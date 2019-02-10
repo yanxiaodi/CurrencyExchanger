@@ -13,13 +13,12 @@ using YanSoft.CurrencyExchanger.Core.Utils;
 namespace YanSoft.CurrencyExchanger.UI.Pages
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail)]
+    [MvxMasterDetailPagePresentation(Position = MasterDetailPosition.Detail, Title = "Currency Exchanger")]
     public partial class HomePage : MvxContentPage<HomeViewModel>
     {
         public HomePage()
         {
             InitializeComponent();
-            Title = AppResourcesHelper.GetString("Home_PageTitle");
 
         }
 
