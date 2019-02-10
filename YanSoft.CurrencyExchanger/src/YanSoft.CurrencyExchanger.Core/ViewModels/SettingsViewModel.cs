@@ -31,6 +31,8 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             _messenger = messenger;
             _appResourcesService = appResourcesService;
             LanguageItemList = new ObservableCollection<LanguageItem>(_globalContext.LanguageItemList);
+            CurrentLanguageItem = _globalContext.LanguageItemList.Find(x => x.Code == _appSettings.LanguageCode);
+
         }
 
 
@@ -163,7 +165,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             }
             set
             {
-                if (_appSettings.LanguageCode != value.Code)
+                if (value != null && _appSettings.LanguageCode != value.Code)
                 {
                     SetProperty(ref _currentLanguageItem, value);
                     _appSettings.LanguageCode = value.Code;
