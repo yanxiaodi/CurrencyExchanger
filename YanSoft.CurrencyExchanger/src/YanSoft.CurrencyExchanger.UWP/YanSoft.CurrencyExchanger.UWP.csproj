@@ -87,7 +87,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
-    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+    <UseDotNetNativeToolchain>false</UseDotNetNativeToolchain>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -98,7 +98,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderers\AdBannerRenderer.cs" />
+    <Compile Include="Services\ToastService.cs" />
     <Compile Include="Setup.cs" />
+    <Compile Include="Utils\AppVersionHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -339,7 +341,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.Advertising.XAML">
-      <Version>10.1805.7001</Version>
+      <Version>10.1811.22001</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.2</Version>
@@ -356,11 +358,17 @@
     <PackageReference Include="NETStandard.Library">
       <Version>2.0.3</Version>
     </PackageReference>
+    <PackageReference Include="Plugin.Multilingual">
+      <Version>1.1.6-beta</Version>
+    </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfChart">
-      <Version>16.4.0.47</Version>
+      <Version>16.4.0.52</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfComboBox">
+      <Version>16.4.0.52</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.SfListView">
-      <Version>16.4.0.47</Version>
+      <Version>16.4.0.52</Version>
     </PackageReference>
     <PackageReference Include="Toasts.Forms.Plugin">
       <Version>3.3.2</Version>

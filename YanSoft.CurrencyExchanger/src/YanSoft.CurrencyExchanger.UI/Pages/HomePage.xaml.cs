@@ -8,6 +8,7 @@ using MvvmCross.Forms.Views;
 using YanSoft.CurrencyExchanger.Core.ViewModels.Home;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using YanSoft.CurrencyExchanger.Core.Utils;
 
 namespace YanSoft.CurrencyExchanger.UI.Pages
 {
@@ -18,6 +19,7 @@ namespace YanSoft.CurrencyExchanger.UI.Pages
         public HomePage()
         {
             InitializeComponent();
+
         }
 
         protected override void OnAppearing()

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using YanSoft.CurrencyExchanger.Core.Models;
 using System.Linq;
 using YanSoft.CurrencyExchanger.Core.Utils;
+using YanSoft.CurrencyExchanger.Core.Common;
+using YanSoft.CurrencyExchanger.Core.Models.Dto;
 
 namespace YanSoft.CurrencyExchanger.Core.Services
 {
@@ -13,11 +15,13 @@ namespace YanSoft.CurrencyExchanger.Core.Services
     {
         private readonly IApiService _apiService;
         private readonly IDataService<CurrencyExchangeItem> _dataService;
+        private readonly GlobalContext _globalContext;
 
-        public CurrencyService(IApiService apiService, IDataService<CurrencyExchangeItem> dataService)
+        public CurrencyService(IApiService apiService, IDataService<CurrencyExchangeItem> dataService, GlobalContext globalContext)
         {
             _apiService = apiService;
             _dataService = dataService;
+            _globalContext = globalContext;
         }
 
         public async Task<List<CurrencyExchangeItem>> GetAllCurreciesAsync()
@@ -77,9 +81,9 @@ namespace YanSoft.CurrencyExchanger.Core.Services
 
         public async Task<bool> GetCurrencyRatesAsync(ObservableCollection<CurrencyExchangeBindableItem> list)
         {
-            var sourceCode = list.First().BaseCode;
+            var baseCode = list.First().BaseCode;
             var targetCodes = string.Join(",", list.Where(x => !x.IsBaseCurrency).Select(x => x.TargetCode).ToList());
-            var response = await _apiService.GetLatestRates(sourceCode, targetCodes);
+            var response = await _apiService.GetLatestRates(baseCode, targetCodes);
             if (response.IsSuccess)
             {
                 foreach (var item in list)
@@ -97,6 +101,23 @@ namespace YanSoft.CurrencyExchanger.Core.Services
                 return false;
             }
         }
+
+        public async Task<List<CurrencyRateHistoryItem>> GetCurrencyRatesHistoryAsync(CurrencyItem baseCurrency, CurrencyItem targetCurrency, string range)
+        {
+            var baseCode = baseCurrency.Code;
+            var targetCode = targetCurrency.Code;
+            var interval = _globalContext.HistoryRangeIntervalSetting[range];
+            var response = await _apiService.GetRatesHistoryByRange(baseCode, targetCode, range, interval);
+            if (response.IsSuccess)
+            {
+                return response.Result.Items;
+            }
+            else
+            {
+                return new List<CurrencyRateHistoryItem>();
+            }
+        }
+
 
         public async Task DeleteCurrencyAsync(ObservableCollection<CurrencyExchangeBindableItem> list, CurrencyExchangeBindableItem item)
         {

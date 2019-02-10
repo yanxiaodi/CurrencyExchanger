@@ -88,11 +88,38 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Click the flag image of the currency item to set the base currency. Click the right area of the currency item to input number. Right-click (UWP) or long-press(Android and iOS) currency item to delete and view the chart..
+        /// </summary>
+        internal static string About_Help_Content {
+            get {
+                return ResourceManager.GetString("About_Help_Content", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Help.
+        /// </summary>
+        internal static string About_Help_Title {
+            get {
+                return ResourceManager.GetString("About_Help_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to like me!.
         /// </summary>
         internal static string About_LikeMe {
             get {
                 return ResourceManager.GetString("About_LikeMe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string About_PageTitle {
+            get {
+                return ResourceManager.GetString("About_PageTitle", resourceCulture);
             }
         }
         
@@ -115,11 +142,83 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Currencies.
+        /// </summary>
+        internal static string AddCurrencies_PageTitle {
+            get {
+                return ResourceManager.GetString("AddCurrencies_PageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to currency code or currency name.
         /// </summary>
         internal static string AddCurrencies_SearchEntryPlaceholder {
             get {
                 return ResourceManager.GetString("AddCurrencies_SearchEntryPlaceholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add Currency.
+        /// </summary>
+        internal static string Button_Add_Currency {
+            get {
+                return ResourceManager.GetString("Button_Add_Currency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string Button_Cancel {
+            get {
+                return ResourceManager.GetString("Button_Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chart.
+        /// </summary>
+        internal static string Button_Chart {
+            get {
+                return ResourceManager.GetString("Button_Chart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string Button_Delete {
+            get {
+                return ResourceManager.GetString("Button_Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit List.
+        /// </summary>
+        internal static string Button_Edit_List {
+            get {
+                return ResourceManager.GetString("Button_Edit_List", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string Button_OK {
+            get {
+                return ResourceManager.GetString("Button_OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chart.
+        /// </summary>
+        internal static string Chart_PageTitle {
+            get {
+                return ResourceManager.GetString("Chart_PageTitle", resourceCulture);
             }
         }
         
@@ -1600,11 +1699,173 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit List.
+        /// </summary>
+        internal static string EditList_PageTitle {
+            get {
+                return ResourceManager.GetString("EditList_PageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Currency Exchanger.
+        /// </summary>
+        internal static string Home_PageTitle {
+            get {
+                return ResourceManager.GetString("Home_PageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string Menu_About {
+            get {
+                return ResourceManager.GetString("Menu_About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chart.
+        /// </summary>
+        internal static string Menu_Chart {
+            get {
+                return ResourceManager.GetString("Menu_Chart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        internal static string Menu_Home {
+            get {
+                return ResourceManager.GetString("Menu_Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string Menu_Settings {
+            get {
+                return ResourceManager.GetString("Menu_Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto initialize to 0.
+        /// </summary>
+        internal static string Settings_AutoInitializeToZero {
+            get {
+                return ResourceManager.GetString("Settings_AutoInitializeToZero", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Auto refresh when app starts.
+        /// </summary>
+        internal static string Settings_AutoRefresh {
+            get {
+                return ResourceManager.GetString("Settings_AutoRefresh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Decimals.
+        /// </summary>
+        internal static string Settings_Decimals {
+            get {
+                return ResourceManager.GetString("Settings_Decimals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Language (Restart to apply ).
+        /// </summary>
+        internal static string Settings_Language {
+            get {
+                return ResourceManager.GetString("Settings_Language", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Localize currency symbol.
+        /// </summary>
+        internal static string Settings_LocalizeCurrencySymbol {
+            get {
+                return ResourceManager.GetString("Settings_LocalizeCurrencySymbol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Settings.
+        /// </summary>
+        internal static string Settings_PageTitle {
+            get {
+                return ResourceManager.GetString("Settings_PageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pin base currency to top.
+        /// </summary>
+        internal static string Settings_PinBaseCurrencyToTop {
+            get {
+                return ResourceManager.GetString("Settings_PinBaseCurrencyToTop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pull to refresh (No UWP).
+        /// </summary>
+        internal static string Settings_PullToRefresh {
+            get {
+                return ResourceManager.GetString("Settings_PullToRefresh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Common.
+        /// </summary>
+        internal static string Settings_Section_Common {
+            get {
+                return ResourceManager.GetString("Settings_Section_Common", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Currencies.
+        /// </summary>
+        internal static string Settings_Section_Currencies {
+            get {
+                return ResourceManager.GetString("Settings_Section_Currencies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot delete the base currency..
+        /// </summary>
+        internal static string Toast_Can_Not_Delete_Base_Currency {
+            get {
+                return ResourceManager.GetString("Toast_Can_Not_Delete_Base_Currency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Network unavailable..
         /// </summary>
         internal static string Toast_NetworkError {
             get {
                 return ResourceManager.GetString("Toast_NetworkError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No chart available for base currency..
+        /// </summary>
+        internal static string Toast_No_Chart_Available_For_Base_Currency {
+            get {
+                return ResourceManager.GetString("Toast_No_Chart_Available_For_Base_Currency", resourceCulture);
             }
         }
         

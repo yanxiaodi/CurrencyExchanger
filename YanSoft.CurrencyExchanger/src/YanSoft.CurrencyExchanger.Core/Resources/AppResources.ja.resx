@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Currency_AUD" xml:space="preserve">
+    <value>オーストラリア ・ ドル</value>
+  </data>
+  <data name="Currency_AWG" xml:space="preserve">
+    <value>アルバ フローリン</value>
+  </data>
+  <data name="Currency_BBD" xml:space="preserve">
+    <value>バルバドス ドル</value>
+  </data>
+  <data name="Currency_BDT" xml:space="preserve">
+    <value>バングラデシュ タカ</value>
+  </data>
+  <data name="Currency_BGN" xml:space="preserve">
+    <value>ブルガリア新レフ</value>
+  </data>
+  <data name="Currency_BHD" xml:space="preserve">
+    <value>バーレーンディナール</value>
+  </data>
+  <data name="Currency_BIF" xml:space="preserve">
+    <value>ブルンジ フラン</value>
+  </data>
+  <data name="Currency_BND" xml:space="preserve">
+    <value>ブルネイ ドル</value>
+  </data>
+  <data name="Currency_BOB" xml:space="preserve">
+    <value>ボリビア ボリビアーノ</value>
+  </data>
+  <data name="Currency_BRL" xml:space="preserve">
+    <value>ブラジル レアール</value>
+  </data>
+  <data name="Currency_BSD" xml:space="preserve">
+    <value>バハマ ・ ドル</value>
+  </data>
+  <data name="Currency_BTN" xml:space="preserve">
+    <value>ブータン ヌルタム</value>
+  </data>
+  <data name="Currency_BWP" xml:space="preserve">
+    <value>ボツワナ プラ</value>
+  </data>
+  <data name="Currency_BYR" xml:space="preserve">
+    <value>ベラルーシ ルーブル</value>
+  </data>
+  <data name="Currency_BZD" xml:space="preserve">
+    <value>ベリーズ ・ ドル</value>
+  </data>
+  <data name="Currency_CAD" xml:space="preserve">
+    <value>カナダ ドル</value>
+  </data>
+  <data name="Currency_CHF" xml:space="preserve">
+    <value>スイス ・ フラン</value>
+  </data>
+  <data name="Currency_CLP" xml:space="preserve">
+    <value>チリ ・ ペソ</value>
+  </data>
+  <data name="Currency_CNY" xml:space="preserve">
+    <value>中国 元</value>
+  </data>
+  <data name="Currency_COP" xml:space="preserve">
+    <value>コロンビアペソ</value>
+  </data>
+  <data name="Currency_CRC" xml:space="preserve">
+    <value>コスタリカ コスタリカ コロン</value>
+  </data>
+  <data name="Currency_CUP" xml:space="preserve">
+    <value>キューバ ・ ペソ</value>
+  </data>
+  <data name="Currency_AED" xml:space="preserve">
+    <value>アラブ首長国連邦ディルハム</value>
+  </data>
+  <data name="Currency_ALL" xml:space="preserve">
+    <value>アルバニア レク</value>
+  </data>
+  <data name="Currency_ARS" xml:space="preserve">
+    <value>アルゼンチン ・ ペソ</value>
+  </data>
+  <data name="Currency_CVE" xml:space="preserve">
+    <value>カーボベルデ エスクード</value>
+  </data>
+  <data name="Currency_CZK" xml:space="preserve">
+    <value>チェコ コルナ</value>
+  </data>
+  <data name="Currency_DJF" xml:space="preserve">
+    <value>Dijibouti フラン</value>
+  </data>
+  <data name="Currency_DKK" xml:space="preserve">
+    <value>デンマーク クローネ</value>
+  </data>
+  <data name="Currency_DOP" xml:space="preserve">
+    <value>ドミニカ共和国ペソ</value>
+  </data>
+  <data name="Currency_DZD" xml:space="preserve">
+    <value>アルジェリア ディナール</value>
+  </data>
+  <data name="Currency_EGP" xml:space="preserve">
+    <value>エジプト ポンド</value>
+  </data>
+  <data name="Currency_ERN" xml:space="preserve">
+    <value>エリトリア ナクファ</value>
+  </data>
+  <data name="Currency_ETB" xml:space="preserve">
+    <value>エチオピア ブル</value>
+  </data>
+  <data name="Currency_EUR" xml:space="preserve">
+    <value>ユーロ</value>
+  </data>
+  <data name="Currency_FJD" xml:space="preserve">
+    <value>フィジー諸島ドル</value>
+  </data>
+  <data name="Currency_FKP" xml:space="preserve">
+    <value>フォークランド諸島ポンド</value>
+  </data>
+  <data name="Currency_GBP" xml:space="preserve">
+    <value>英国ポンド</value>
+  </data>
+  <data name="Currency_GIP" xml:space="preserve">
+    <value>ジブラルタル ポンド</value>
+  </data>
+  <data name="Currency_GMD" xml:space="preserve">
+    <value>ガンビア ダラシ</value>
+  </data>
+  <data name="Currency_GNF" xml:space="preserve">
+    <value>ギニア フラン</value>
+  </data>
+  <data name="Currency_GTQ" xml:space="preserve">
+    <value>グアテマラ ケツァール</value>
+  </data>
+  <data name="Currency_GYD" xml:space="preserve">
+    <value>ガイアナ ドル</value>
+  </data>
+  <data name="Currency_HKD" xml:space="preserve">
+    <value>香港ドル</value>
+  </data>
+  <data name="Currency_HNL" xml:space="preserve">
+    <value>ホンジュラス レンピラ</value>
+  </data>
+  <data name="Currency_HRK" xml:space="preserve">
+    <value>クロアチア ・ クーナ</value>
+  </data>
+  <data name="Currency_HTG" xml:space="preserve">
+    <value>ハイチ グールド</value>
+  </data>
+  <data name="Currency_HUF" xml:space="preserve">
+    <value>ハンガリー ・ フォリント</value>
+  </data>
+  <data name="Currency_IDR" xml:space="preserve">
+    <value>インドネシア ・ ルピア</value>
+  </data>
+  <data name="Currency_ILS" xml:space="preserve">
+    <value>新シュケル</value>
+  </data>
+  <data name="Currency_INR" xml:space="preserve">
+    <value>インド ・ ルピー</value>
+  </data>
+  <data name="Currency_IQD" xml:space="preserve">
+    <value>イラク ・ ディナール</value>
+  </data>
+  <data name="Currency_IRR" xml:space="preserve">
+    <value>イラン リアル</value>
+  </data>
+  <data name="Currency_ISK" xml:space="preserve">
+    <value>アイスランド クローネ</value>
+  </data>
+  <data name="Currency_JMD" xml:space="preserve">
+    <value>ジャマイカ ・ ドル</value>
+  </data>
+  <data name="Currency_JOD" xml:space="preserve">
+    <value>ヨルダンディナール</value>
+  </data>
+  <data name="Currency_JPY" xml:space="preserve">
+    <value>日本円</value>
+  </data>
+  <data name="Currency_KES" xml:space="preserve">
+    <value>ケニア シリング</value>
+  </data>
+  <data name="Currency_KHR" xml:space="preserve">
+    <value>カンボジア リエル</value>
+  </data>
+  <data name="Currency_KMF" xml:space="preserve">
+    <value>コモロ フラン</value>
+  </data>
+  <data name="Currency_KPW" xml:space="preserve">
+    <value>北朝鮮ウォン</value>
+  </data>
+  <data name="Currency_KRW" xml:space="preserve">
+    <value>韓国ウォン</value>
+  </data>
+  <data name="Currency_KWD" xml:space="preserve">
+    <value>クウェート ディナール</value>
+  </data>
+  <data name="Currency_KYD" xml:space="preserve">
+    <value>ケイマン諸島ドル</value>
+  </data>
+  <data name="Currency_KZT" xml:space="preserve">
+    <value>カザフスタン テンゲ</value>
+  </data>
+  <data name="Currency_LAK" xml:space="preserve">
+    <value>ラオスのキップ</value>
+  </data>
+  <data name="Currency_LBP" xml:space="preserve">
+    <value>レバノン ポンド</value>
+  </data>
+  <data name="Currency_LKR" xml:space="preserve">
+    <value>スリランカ ルピー</value>
+  </data>
+  <data name="Currency_LRD" xml:space="preserve">
+    <value>リベリア ・ ドル</value>
+  </data>
+  <data name="Currency_LSL" xml:space="preserve">
+    <value>レソト ロティ</value>
+  </data>
+  <data name="Currency_LVL" xml:space="preserve">
+    <value>ラトビア ラッツ</value>
+  </data>
+  <data name="Currency_LYD" xml:space="preserve">
+    <value>リビア ディナール</value>
+  </data>
+  <data name="Currency_MAD" xml:space="preserve">
+    <value>モロッコ ディルハム</value>
+  </data>
+  <data name="Currency_MDL" xml:space="preserve">
+    <value>モルドバレイ</value>
+  </data>
+  <data name="Currency_MKD" xml:space="preserve">
+    <value>マケドニア ・ ディナール</value>
+  </data>
+  <data name="Currency_MMK" xml:space="preserve">
+    <value>ミャンマー チャット</value>
+  </data>
+  <data name="Currency_MNT" xml:space="preserve">
+    <value>モンゴル トグログ</value>
+  </data>
+  <data name="Currency_MOP" xml:space="preserve">
+    <value>マカオ パタカ</value>
+  </data>
+  <data name="Currency_MRO" xml:space="preserve">
+    <value>モーリタニア Ougulya</value>
+  </data>
+  <data name="Currency_MUR" xml:space="preserve">
+    <value>モーリシャス ルピー</value>
+  </data>
+  <data name="Currency_MVR" xml:space="preserve">
+    <value>モルディブ ルフィア</value>
+  </data>
+  <data name="Currency_MWK" xml:space="preserve">
+    <value>マラウイ クワチャ</value>
+  </data>
+  <data name="Currency_MXN" xml:space="preserve">
+    <value>メキシコ ・ ペソ</value>
+  </data>
+  <data name="Currency_MYR" xml:space="preserve">
+    <value>マレーシア ・ リンギット</value>
+  </data>
+  <data name="Currency_NAD" xml:space="preserve">
+    <value>ナミビア ・ ドル</value>
+  </data>
+  <data name="Currency_NGN" xml:space="preserve">
+    <value>ナイジェリア ナイラ</value>
+  </data>
+  <data name="Currency_NIO" xml:space="preserve">
+    <value>ニカラグア コルドバ</value>
+  </data>
+  <data name="Currency_NOK" xml:space="preserve">
+    <value>ノルウェー クローネ</value>
+  </data>
+  <data name="Currency_NPR" xml:space="preserve">
+    <value>ネパール ルピー</value>
+  </data>
+  <data name="Currency_NZD" xml:space="preserve">
+    <value>ニュージーランド ・ ドル</value>
+  </data>
+  <data name="Currency_OMR" xml:space="preserve">
+    <value>オマーン ・ リアル</value>
+  </data>
+  <data name="Currency_PAB" xml:space="preserve">
+    <value>パナマ バルボア</value>
+  </data>
+  <data name="Currency_PEN" xml:space="preserve">
+    <value>ペルー ヌエボ・ソル</value>
+  </data>
+  <data name="Currency_PGK" xml:space="preserve">
+    <value>パプア ニューギニア キナ</value>
+  </data>
+  <data name="Currency_PHP" xml:space="preserve">
+    <value>フィリピン ・ ペソ</value>
+  </data>
+  <data name="Currency_PKR" xml:space="preserve">
+    <value>パキスタン ルピー</value>
+  </data>
+  <data name="Currency_PLN" xml:space="preserve">
+    <value>ポーランド ズローティー</value>
+  </data>
+  <data name="Currency_PYG" xml:space="preserve">
+    <value>パラグアイ グアラニ</value>
+  </data>
+  <data name="Currency_QAR" xml:space="preserve">
+    <value>カタール リアル</value>
+  </data>
+  <data name="Currency_RON" xml:space="preserve">
+    <value>ルーマニア語新しいルー</value>
+  </data>
+  <data name="Currency_RUB" xml:space="preserve">
+    <value>ロシア ルーブル</value>
+  </data>
+  <data name="Currency_RWF" xml:space="preserve">
+    <value>ルワンダ フラン</value>
+  </data>
+  <data name="Currency_SAR" xml:space="preserve">
+    <value>サウジアラビア リアル</value>
+  </data>
+  <data name="Currency_SBD" xml:space="preserve">
+    <value>ソロモン諸島ドル</value>
+  </data>
+  <data name="Currency_SCR" xml:space="preserve">
+    <value>セイシェル ルピー</value>
+  </data>
+  <data name="Currency_SDG" xml:space="preserve">
+    <value>スーダン ・ ポンド</value>
+  </data>
+  <data name="Currency_SEK" xml:space="preserve">
+    <value>スウェーデン クローナ</value>
+  </data>
+  <data name="Currency_SGD" xml:space="preserve">
+    <value>シンガポール ・ ドル</value>
+  </data>
+  <data name="Currency_SHP" xml:space="preserve">
+    <value>セント ヘレナ ポンド</value>
+  </data>
+  <data name="Currency_SLL" xml:space="preserve">
+    <value>シエラレオネ シエラレオネ</value>
+  </data>
+  <data name="Currency_SOS" xml:space="preserve">
+    <value>ソマリア シリング</value>
+  </data>
+  <data name="Currency_STD" xml:space="preserve">
+    <value>サントメ ドブラー</value>
+  </data>
+  <data name="Currency_SYP" xml:space="preserve">
+    <value>シリア ポンド</value>
+  </data>
+  <data name="Currency_SZL" xml:space="preserve">
+    <value>スワジランド · リランゲニ</value>
+  </data>
+  <data name="Currency_THB" xml:space="preserve">
+    <value>タイ バーツ</value>
+  </data>
+  <data name="Currency_TND" xml:space="preserve">
+    <value>チュニジア ディナール</value>
+  </data>
+  <data name="Currency_TOP" xml:space="preserve">
+    <value>トンガ パーアンガ</value>
+  </data>
+  <data name="Currency_TRY" xml:space="preserve">
+    <value>新しいトルコのリラ</value>
+  </data>
+  <data name="Currency_TTD" xml:space="preserve">
+    <value>&amp;トリニダード トバゴ ドル</value>
+  </data>
+  <data name="Currency_TWD" xml:space="preserve">
+    <value>台湾ドル</value>
+  </data>
+  <data name="Currency_TZS" xml:space="preserve">
+    <value>タンザニア シリング</value>
+  </data>
+  <data name="Currency_UAH" xml:space="preserve">
+    <value>ウクライナ グリブナ</value>
+  </data>
+  <data name="Currency_UGX" xml:space="preserve">
+    <value>ウガンダ シリング</value>
+  </data>
+  <data name="Currency_USD" xml:space="preserve">
+    <value>米国ドル</value>
+  </data>
+  <data name="Currency_UYU" xml:space="preserve">
+    <value>ウルグアイ新ペソ</value>
+  </data>
+  <data name="Currency_VEF" xml:space="preserve">
+    <value>ベネズエラ ボリバル</value>
+  </data>
+  <data name="Currency_VND" xml:space="preserve">
+    <value>ベトナムドン</value>
+  </data>
+  <data name="Currency_VUV" xml:space="preserve">
+    <value>バヌアツ バツ</value>
+  </data>
+  <data name="Currency_WST" xml:space="preserve">
+    <value>サモア タラ</value>
+  </data>
+  <data name="Currency_XAF" xml:space="preserve">
+    <value>CFA フラン BEAC</value>
+  </data>
+  <data name="Currency_XAG" xml:space="preserve">
+    <value>銀のオンス</value>
+  </data>
+  <data name="Currency_XAU" xml:space="preserve">
+    <value>金のオンス</value>
+  </data>
+  <data name="Currency_XCD" xml:space="preserve">
+    <value>東カリブドル</value>
+  </data>
+  <data name="Currency_XOF" xml:space="preserve">
+    <value>CFA フラン BCEAO</value>
+  </data>
+  <data name="Currency_XPF" xml:space="preserve">
+    <value>太平洋のフラン</value>
+  </data>
+  <data name="Currency_YER" xml:space="preserve">
+    <value>イエメン ・ リヤル</value>
+  </data>
+  <data name="Currency_ZAR" xml:space="preserve">
+    <value>南アフリカ ・ ランド</value>
+  </data>
+  <data name="Currency_AFN" xml:space="preserve">
+    <value>アフガニスタンのアフガニ</value>
+  </data>
+  <data name="Currency_AMD" xml:space="preserve">
+    <value>アルメニア ドラム</value>
+  </data>
+  <data name="Currency_ANG" xml:space="preserve">
+    <value>オランダ系アンティリアン Gulden</value>
+  </data>
+  <data name="Currency_AOA" xml:space="preserve">
+    <value>アンゴラ クワンザ</value>
+  </data>
+  <data name="Currency_AZN" xml:space="preserve">
+    <value>アゼルバイジャン マナト</value>
+  </data>
+  <data name="Currency_BMD" xml:space="preserve">
+    <value>バミューダ ドル</value>
+  </data>
+  <data name="Currency_BTC" xml:space="preserve">
+    <value>ビットコイン</value>
+  </data>
+  <data name="Currency_BYN" xml:space="preserve">
+    <value>新しいベラルーシ ・ ルーブル</value>
+  </data>
+  <data name="Currency_CDF" xml:space="preserve">
+    <value>コンゴ ・ フラン</value>
+  </data>
+  <data name="Currency_GEL" xml:space="preserve">
+    <value>グルジア ラリ</value>
+  </data>
+  <data name="Currency_KGS" xml:space="preserve">
+    <value>キルギス ソム</value>
+  </data>
+  <data name="Currency_LTL" xml:space="preserve">
+    <value>リトアニアリタス</value>
+  </data>
+  <data name="Currency_MGA" xml:space="preserve">
+    <value>マダガスカル ・ アリアリ</value>
+  </data>
+  <data name="Currency_NZN" xml:space="preserve">
+    <value>モザンビーク メティカル</value>
+  </data>
+  <data name="Currency_RSD" xml:space="preserve">
+    <value>セルビア ディーナール</value>
+  </data>
+  <data name="Currency_SIT" xml:space="preserve">
+    <value>トラー スロベニア</value>
+  </data>
+  <data name="Currency_SRD" xml:space="preserve">
+    <value>スリナム ・ ドル</value>
+  </data>
+  <data name="Currency_SVC" xml:space="preserve">
+    <value>エルサルバドル コロン</value>
+  </data>
+  <data name="Currency_TJS" xml:space="preserve">
+    <value>タジキスタン ソモニ</value>
+  </data>
+  <data name="Currency_TMT" xml:space="preserve">
+    <value>トルクメニスタン マナト</value>
+  </data>
+  <data name="Currency_UZS" xml:space="preserve">
+    <value>ウズベキスタン スム</value>
+  </data>
+  <data name="Currency_XDR" xml:space="preserve">
+    <value>特別引き出し権</value>
+  </data>
+  <data name="Currency_ZMK" xml:space="preserve">
+    <value>ザンビア ・ クワチャ</value>
+  </data>
+  <data name="Currency_ZMW" xml:space="preserve">
+    <value>ザンビア ・ クワチャ</value>
+  </data>
+  <data name="Currency_BAM" xml:space="preserve">
+    <value>ボスニア ・ ヘルツェゴビナ Konvertibilna マルカ</value>
+  </data>
+  <data name="Currency_GHS" xml:space="preserve">
+    <value>ガーナ セディ</value>
+  </data>
+  <data name="Currency_MZN" xml:space="preserve">
+    <value>モザンビーク メティカル</value>
+  </data>
+  <data name="AddCurrencies_SearchEntryPlaceholder" xml:space="preserve">
+    <value>通貨コードまたは通貨名</value>
+  </data>
+  <data name="About_Disclaimer_Content" xml:space="preserve">
+    <value>このアプリの相場データは、www.currencyconverterapi.com からです。このアプリケーションの利用とリスクのコンテンツに依存して結果は独自にする必要があります、このアプリケーションと開発者は一切の法的責任を取らない。</value>
+  </data>
+  <data name="About_Disclaimer_Title" xml:space="preserve">
+    <value>免責事項</value>
+  </data>
+  <data name="About_Feedback" xml:space="preserve">
+    <value>フィードバック</value>
+  </data>
+  <data name="About_LikeMe" xml:space="preserve">
+    <value>私のような!</value>
+  </data>
+  <data name="About_Share" xml:space="preserve">
+    <value>共有</value>
+  </data>
+  <data name="About_Share_Content" xml:space="preserve">
+    <value>私は、最新の為替レートを取得する通貨の交換をお勧めします。</value>
+  </data>
+  <data name="Toast_NetworkError" xml:space="preserve">
+    <value>ネットワークは利用できません。</value>
+  </data>
+  <data name="Toast_Title_Error" xml:space="preserve">
+    <value>エラー</value>
+  </data>
+  <data name="Toast_Title_Info" xml:space="preserve">
+    <value>!hOEbH!袢Info ず!</value>
+  </data>
+  <data name="Toast_Title_Warning" xml:space="preserve">
+    <value>警告</value>
+  </data>
+  <data name="Button_Add_Currency" xml:space="preserve">
+    <value>通貨を追加します。</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Button_Chart" xml:space="preserve">
+    <value>グラフ</value>
+  </data>
+  <data name="Button_Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Button_Edit_List" xml:space="preserve">
+    <value>リストの編集</value>
+  </data>
+  <data name="Button_OK" xml:space="preserve">
+    <value>わかりました</value>
+  </data>
+  <data name="Toast_Can_Not_Delete_Base_Currency" xml:space="preserve">
+    <value>基本通貨は削除できません。</value>
+  </data>
+  <data name="Toast_No_Chart_Available_For_Base_Currency" xml:space="preserve">
+    <value>基本通貨のグラフはなし。</value>
+  </data>
+  <data name="About_PageTitle" xml:space="preserve">
+    <value>バージョン情報</value>
+  </data>
+  <data name="AddCurrencies_PageTitle" xml:space="preserve">
+    <value>通貨を追加します。</value>
+  </data>
+  <data name="Chart_PageTitle" xml:space="preserve">
+    <value>グラフ</value>
+  </data>
+  <data name="EditList_PageTitle" xml:space="preserve">
+    <value>リストの編集</value>
+  </data>
+  <data name="Home_PageTitle" xml:space="preserve">
+    <value>通貨の交換</value>
+  </data>
+  <data name="Settings_PageTitle" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Settings_Section_Common" xml:space="preserve">
+    <value>共通</value>
+  </data>
+  <data name="Settings_Section_Currencies" xml:space="preserve">
+    <value>通貨</value>
+  </data>
+  <data name="Menu_About" xml:space="preserve">
+    <value>に関しては</value>
+  </data>
+  <data name="Menu_Chart" xml:space="preserve">
+    <value>グラフ</value>
+  </data>
+  <data name="Menu_Home" xml:space="preserve">
+    <value>ホーム</value>
+  </data>
+  <data name="Menu_Settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Settings_AutoInitializeToZero" xml:space="preserve">
+    <value>0 自動初期化</value>
+  </data>
+  <data name="Settings_AutoRefresh" xml:space="preserve">
+    <value>アプリの起動時の自動 fefresh</value>
+  </data>
+  <data name="Settings_Decimals" xml:space="preserve">
+    <value>小数点以下の桁数</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>言語</value>
+  </data>
+  <data name="Settings_LocalizeCurrencySymbol" xml:space="preserve">
+    <value>通貨をローカライズします。</value>
+  </data>
+  <data name="Settings_PinBaseCurrencyToTop" xml:space="preserve">
+    <value>ピン上に基本通貨</value>
+  </data>
+  <data name="Settings_PullToRefresh" xml:space="preserve">
+    <value>(いいえ UWP) をリフレッシュするプル</value>
+  </data>
+  <data name="About_Help_Content" xml:space="preserve">
+    <value>基本通貨を設定する通貨アイテムのフラグ画像をクリックします。番号を入力する通貨アイテムの右側の領域をクリックします。右クリック (UWP) または長い press(Android and iOS) 通貨項目削除してグラフを表示します。</value>
+  </data>
+  <data name="About_Help_Title" xml:space="preserve">
+    <value>ヘルプ</value>
+  </data>
+</root>

@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Currency_AUD" xml:space="preserve">
+    <value>호주 달러</value>
+  </data>
+  <data name="Currency_AWG" xml:space="preserve">
+    <value>아루바 플로린</value>
+  </data>
+  <data name="Currency_BBD" xml:space="preserve">
+    <value>바베이도스 달러</value>
+  </data>
+  <data name="Currency_BDT" xml:space="preserve">
+    <value>방글라데시 타 카</value>
+  </data>
+  <data name="Currency_BGN" xml:space="preserve">
+    <value>불가리아 신 권 렛</value>
+  </data>
+  <data name="Currency_BHD" xml:space="preserve">
+    <value>바레인 디나르</value>
+  </data>
+  <data name="Currency_BIF" xml:space="preserve">
+    <value>부룬디 프랑</value>
+  </data>
+  <data name="Currency_BND" xml:space="preserve">
+    <value>부 루 나이 달러</value>
+  </data>
+  <data name="Currency_BOB" xml:space="preserve">
+    <value>볼리비아 볼리비아노</value>
+  </data>
+  <data name="Currency_BRL" xml:space="preserve">
+    <value>브라질 레알</value>
+  </data>
+  <data name="Currency_BSD" xml:space="preserve">
+    <value>바하마 달러</value>
+  </data>
+  <data name="Currency_BTN" xml:space="preserve">
+    <value>부탄 눌트럼</value>
+  </data>
+  <data name="Currency_BWP" xml:space="preserve">
+    <value>보츠와나 풀라</value>
+  </data>
+  <data name="Currency_BYR" xml:space="preserve">
+    <value>벨라루스 루블</value>
+  </data>
+  <data name="Currency_BZD" xml:space="preserve">
+    <value>벨리즈 달러</value>
+  </data>
+  <data name="Currency_CAD" xml:space="preserve">
+    <value>캐나다 달러</value>
+  </data>
+  <data name="Currency_CHF" xml:space="preserve">
+    <value>스위스 프랑</value>
+  </data>
+  <data name="Currency_CLP" xml:space="preserve">
+    <value>칠레 페소</value>
+  </data>
+  <data name="Currency_CNY" xml:space="preserve">
+    <value>중국 위안</value>
+  </data>
+  <data name="Currency_COP" xml:space="preserve">
+    <value>콜롬비아 페소</value>
+  </data>
+  <data name="Currency_CRC" xml:space="preserve">
+    <value>코스타 리카 콜론</value>
+  </data>
+  <data name="Currency_CUP" xml:space="preserve">
+    <value>쿠바 페소</value>
+  </data>
+  <data name="Currency_AED" xml:space="preserve">
+    <value>아랍 에미리트 디 르 햄</value>
+  </data>
+  <data name="Currency_ALL" xml:space="preserve">
+    <value>알바니아 레크</value>
+  </data>
+  <data name="Currency_ARS" xml:space="preserve">
+    <value>아르헨티나 페소</value>
+  </data>
+  <data name="Currency_CVE" xml:space="preserve">
+    <value>케이프 베르데 에스쿠도</value>
+  </data>
+  <data name="Currency_CZK" xml:space="preserve">
+    <value>체코 코루나</value>
+  </data>
+  <data name="Currency_DJF" xml:space="preserve">
+    <value>Dijibouti 프랑</value>
+  </data>
+  <data name="Currency_DKK" xml:space="preserve">
+    <value>덴마크 크로네</value>
+  </data>
+  <data name="Currency_DOP" xml:space="preserve">
+    <value>도미니카 페소</value>
+  </data>
+  <data name="Currency_DZD" xml:space="preserve">
+    <value>알제리 디나르</value>
+  </data>
+  <data name="Currency_EGP" xml:space="preserve">
+    <value>이집트 파운드</value>
+  </data>
+  <data name="Currency_ERN" xml:space="preserve">
+    <value>에리트레아 나크파</value>
+  </data>
+  <data name="Currency_ETB" xml:space="preserve">
+    <value>이디오피아 비르</value>
+  </data>
+  <data name="Currency_EUR" xml:space="preserve">
+    <value>유로</value>
+  </data>
+  <data name="Currency_FJD" xml:space="preserve">
+    <value>피지 달러</value>
+  </data>
+  <data name="Currency_FKP" xml:space="preserve">
+    <value>포클랜드 제도 파운드</value>
+  </data>
+  <data name="Currency_GBP" xml:space="preserve">
+    <value>영국 파운드</value>
+  </data>
+  <data name="Currency_GIP" xml:space="preserve">
+    <value>지브롤터 파운드</value>
+  </data>
+  <data name="Currency_GMD" xml:space="preserve">
+    <value>감비아 달라 시</value>
+  </data>
+  <data name="Currency_GNF" xml:space="preserve">
+    <value>기니 프랑</value>
+  </data>
+  <data name="Currency_GTQ" xml:space="preserve">
+    <value>과테말라 케 트 살</value>
+  </data>
+  <data name="Currency_GYD" xml:space="preserve">
+    <value>가이아나 달러</value>
+  </data>
+  <data name="Currency_HKD" xml:space="preserve">
+    <value>홍콩 달러</value>
+  </data>
+  <data name="Currency_HNL" xml:space="preserve">
+    <value>렘피라</value>
+  </data>
+  <data name="Currency_HRK" xml:space="preserve">
+    <value>크로아티아 쿠나</value>
+  </data>
+  <data name="Currency_HTG" xml:space="preserve">
+    <value>아이티 구르 드</value>
+  </data>
+  <data name="Currency_HUF" xml:space="preserve">
+    <value>포린트</value>
+  </data>
+  <data name="Currency_IDR" xml:space="preserve">
+    <value>인도네시아 루피아</value>
+  </data>
+  <data name="Currency_ILS" xml:space="preserve">
+    <value>이스라엘 셰켈</value>
+  </data>
+  <data name="Currency_INR" xml:space="preserve">
+    <value>인도 루피</value>
+  </data>
+  <data name="Currency_IQD" xml:space="preserve">
+    <value>이라크 디나르</value>
+  </data>
+  <data name="Currency_IRR" xml:space="preserve">
+    <value>이란 리알</value>
+  </data>
+  <data name="Currency_ISK" xml:space="preserve">
+    <value>아이슬란드 크로나</value>
+  </data>
+  <data name="Currency_JMD" xml:space="preserve">
+    <value>자메이카 달러</value>
+  </data>
+  <data name="Currency_JOD" xml:space="preserve">
+    <value>요르단 디나르</value>
+  </data>
+  <data name="Currency_JPY" xml:space="preserve">
+    <value>엔</value>
+  </data>
+  <data name="Currency_KES" xml:space="preserve">
+    <value>케냐 실링</value>
+  </data>
+  <data name="Currency_KHR" xml:space="preserve">
+    <value>캄보디아 리엘</value>
+  </data>
+  <data name="Currency_KMF" xml:space="preserve">
+    <value>코모로 프랑</value>
+  </data>
+  <data name="Currency_KPW" xml:space="preserve">
+    <value>조선 민주주의 인민 공화국 원</value>
+  </data>
+  <data name="Currency_KRW" xml:space="preserve">
+    <value>한국 원</value>
+  </data>
+  <data name="Currency_KWD" xml:space="preserve">
+    <value>쿠웨이트 디나르</value>
+  </data>
+  <data name="Currency_KYD" xml:space="preserve">
+    <value>케이맨 제도 달러</value>
+  </data>
+  <data name="Currency_KZT" xml:space="preserve">
+    <value>카자흐스탄 텡 게</value>
+  </data>
+  <data name="Currency_LAK" xml:space="preserve">
+    <value>라오스 키프</value>
+  </data>
+  <data name="Currency_LBP" xml:space="preserve">
+    <value>레바논 파운드</value>
+  </data>
+  <data name="Currency_LKR" xml:space="preserve">
+    <value>스리랑카 루피</value>
+  </data>
+  <data name="Currency_LRD" xml:space="preserve">
+    <value>라이베리아 달러</value>
+  </data>
+  <data name="Currency_LSL" xml:space="preserve">
+    <value>레소토 로티</value>
+  </data>
+  <data name="Currency_LVL" xml:space="preserve">
+    <value>라트비아 라트</value>
+  </data>
+  <data name="Currency_LYD" xml:space="preserve">
+    <value>리비아 디나르</value>
+  </data>
+  <data name="Currency_MAD" xml:space="preserve">
+    <value>모로코 디 렘</value>
+  </data>
+  <data name="Currency_MDL" xml:space="preserve">
+    <value>몰도바 레이</value>
+  </data>
+  <data name="Currency_MKD" xml:space="preserve">
+    <value>마케도니아 디나르</value>
+  </data>
+  <data name="Currency_MMK" xml:space="preserve">
+    <value>미얀마 키 얏</value>
+  </data>
+  <data name="Currency_MNT" xml:space="preserve">
+    <value>몽골 투그리크</value>
+  </data>
+  <data name="Currency_MOP" xml:space="preserve">
+    <value>마카오 파 타 카</value>
+  </data>
+  <data name="Currency_MRO" xml:space="preserve">
+    <value>모리타니 아 Ougulya</value>
+  </data>
+  <data name="Currency_MUR" xml:space="preserve">
+    <value>모리셔스 루피</value>
+  </data>
+  <data name="Currency_MVR" xml:space="preserve">
+    <value>몰디브 Rufiyaa</value>
+  </data>
+  <data name="Currency_MWK" xml:space="preserve">
+    <value>말라위 콰차</value>
+  </data>
+  <data name="Currency_MXN" xml:space="preserve">
+    <value>멕시코 페소</value>
+  </data>
+  <data name="Currency_MYR" xml:space="preserve">
+    <value>말레이시아 링깃</value>
+  </data>
+  <data name="Currency_NAD" xml:space="preserve">
+    <value>나미비아 달러</value>
+  </data>
+  <data name="Currency_NGN" xml:space="preserve">
+    <value>나이지리아 나이라</value>
+  </data>
+  <data name="Currency_NIO" xml:space="preserve">
+    <value>니카라과 코르도바</value>
+  </data>
+  <data name="Currency_NOK" xml:space="preserve">
+    <value>노르웨이 크로네</value>
+  </data>
+  <data name="Currency_NPR" xml:space="preserve">
+    <value>네팔 루피</value>
+  </data>
+  <data name="Currency_NZD" xml:space="preserve">
+    <value>뉴질랜드 달러</value>
+  </data>
+  <data name="Currency_OMR" xml:space="preserve">
+    <value>오만 리알</value>
+  </data>
+  <data name="Currency_PAB" xml:space="preserve">
+    <value>파나마 발보아</value>
+  </data>
+  <data name="Currency_PEN" xml:space="preserve">
+    <value>솔</value>
+  </data>
+  <data name="Currency_PGK" xml:space="preserve">
+    <value>파푸아 뉴 기니 키나</value>
+  </data>
+  <data name="Currency_PHP" xml:space="preserve">
+    <value>필리핀 페소</value>
+  </data>
+  <data name="Currency_PKR" xml:space="preserve">
+    <value>파키스탄 루피</value>
+  </data>
+  <data name="Currency_PLN" xml:space="preserve">
+    <value>즈워티</value>
+  </data>
+  <data name="Currency_PYG" xml:space="preserve">
+    <value>파라과이 과라니어</value>
+  </data>
+  <data name="Currency_QAR" xml:space="preserve">
+    <value>카타르 리얄</value>
+  </data>
+  <data name="Currency_RON" xml:space="preserve">
+    <value>루마니아어 새 레 우</value>
+  </data>
+  <data name="Currency_RUB" xml:space="preserve">
+    <value>러시아 루블</value>
+  </data>
+  <data name="Currency_RWF" xml:space="preserve">
+    <value>르완다 프랑</value>
+  </data>
+  <data name="Currency_SAR" xml:space="preserve">
+    <value>사우디아라비아 리알</value>
+  </data>
+  <data name="Currency_SBD" xml:space="preserve">
+    <value>솔로몬 제도 달러</value>
+  </data>
+  <data name="Currency_SCR" xml:space="preserve">
+    <value>세이 쉴 루피</value>
+  </data>
+  <data name="Currency_SDG" xml:space="preserve">
+    <value>수단 파운드</value>
+  </data>
+  <data name="Currency_SEK" xml:space="preserve">
+    <value>스웨덴 크로나</value>
+  </data>
+  <data name="Currency_SGD" xml:space="preserve">
+    <value>싱가포르 달러</value>
+  </data>
+  <data name="Currency_SHP" xml:space="preserve">
+    <value>세인트 헬레나 파운드</value>
+  </data>
+  <data name="Currency_SLL" xml:space="preserve">
+    <value>시에라 리온 리온</value>
+  </data>
+  <data name="Currency_SOS" xml:space="preserve">
+    <value>소말리아 실링</value>
+  </data>
+  <data name="Currency_STD" xml:space="preserve">
+    <value>상 메 가닥</value>
+  </data>
+  <data name="Currency_SYP" xml:space="preserve">
+    <value>시리아 파운드</value>
+  </data>
+  <data name="Currency_SZL" xml:space="preserve">
+    <value>스와 질 랜드 Lilageni</value>
+  </data>
+  <data name="Currency_THB" xml:space="preserve">
+    <value>태국 바트</value>
+  </data>
+  <data name="Currency_TND" xml:space="preserve">
+    <value>튀니지 디나르</value>
+  </data>
+  <data name="Currency_TOP" xml:space="preserve">
+    <value>통가 파앙가</value>
+  </data>
+  <data name="Currency_TRY" xml:space="preserve">
+    <value>새로운 터키 리라</value>
+  </data>
+  <data name="Currency_TTD" xml:space="preserve">
+    <value>&amp;트리 니다 드 토바고 달러</value>
+  </data>
+  <data name="Currency_TWD" xml:space="preserve">
+    <value>새 대만 달러 호주 달러</value>
+  </data>
+  <data name="Currency_TZS" xml:space="preserve">
+    <value>탄자니아 실링</value>
+  </data>
+  <data name="Currency_UAH" xml:space="preserve">
+    <value>우크라이나 그 리브 나</value>
+  </data>
+  <data name="Currency_UGX" xml:space="preserve">
+    <value>우간다 실링</value>
+  </data>
+  <data name="Currency_USD" xml:space="preserve">
+    <value>미국 달러</value>
+  </data>
+  <data name="Currency_UYU" xml:space="preserve">
+    <value>우루과이 뉴 페소</value>
+  </data>
+  <data name="Currency_VEF" xml:space="preserve">
+    <value>베네수엘라 볼리바르</value>
+  </data>
+  <data name="Currency_VND" xml:space="preserve">
+    <value>베트남 동</value>
+  </data>
+  <data name="Currency_VUV" xml:space="preserve">
+    <value>바누아투 바투</value>
+  </data>
+  <data name="Currency_WST" xml:space="preserve">
+    <value>사모아 탈라</value>
+  </data>
+  <data name="Currency_XAF" xml:space="preserve">
+    <value>CFA 프랑 BEAC</value>
+  </data>
+  <data name="Currency_XAG" xml:space="preserve">
+    <value>실버 온스</value>
+  </data>
+  <data name="Currency_XAU" xml:space="preserve">
+    <value>골드 온스</value>
+  </data>
+  <data name="Currency_XCD" xml:space="preserve">
+    <value>동 카리브 달러</value>
+  </data>
+  <data name="Currency_XOF" xml:space="preserve">
+    <value>CFA 프랑 BCEAO</value>
+  </data>
+  <data name="Currency_XPF" xml:space="preserve">
+    <value>태평양 프랑</value>
+  </data>
+  <data name="Currency_YER" xml:space="preserve">
+    <value>예멘 리얄</value>
+  </data>
+  <data name="Currency_ZAR" xml:space="preserve">
+    <value>랜드</value>
+  </data>
+  <data name="Currency_AFN" xml:space="preserve">
+    <value>아프가니</value>
+  </data>
+  <data name="Currency_AMD" xml:space="preserve">
+    <value>아르메니아 드람</value>
+  </data>
+  <data name="Currency_ANG" xml:space="preserve">
+    <value>네덜란드 안틸레스 네델란드의 화</value>
+  </data>
+  <data name="Currency_AOA" xml:space="preserve">
+    <value>앙골라 콴자</value>
+  </data>
+  <data name="Currency_AZN" xml:space="preserve">
+    <value>아제르바이잔 마나트</value>
+  </data>
+  <data name="Currency_BMD" xml:space="preserve">
+    <value>버뮤다 달러</value>
+  </data>
+  <data name="Currency_BTC" xml:space="preserve">
+    <value>Bitcoin</value>
+  </data>
+  <data name="Currency_BYN" xml:space="preserve">
+    <value>새로운 벨라루스 루블</value>
+  </data>
+  <data name="Currency_CDF" xml:space="preserve">
+    <value>콩고 프랑</value>
+  </data>
+  <data name="Currency_GEL" xml:space="preserve">
+    <value>그루지야 라리</value>
+  </data>
+  <data name="Currency_KGS" xml:space="preserve">
+    <value>키르기스스탄 솜</value>
+  </data>
+  <data name="Currency_LTL" xml:space="preserve">
+    <value>리투아니아 리타스</value>
+  </data>
+  <data name="Currency_MGA" xml:space="preserve">
+    <value>마다가스카르 아리아리</value>
+  </data>
+  <data name="Currency_NZN" xml:space="preserve">
+    <value>모잠비크 메티칼</value>
+  </data>
+  <data name="Currency_RSD" xml:space="preserve">
+    <value>세르비아 디나르</value>
+  </data>
+  <data name="Currency_SIT" xml:space="preserve">
+    <value>톨라르</value>
+  </data>
+  <data name="Currency_SRD" xml:space="preserve">
+    <value>수리남 달러</value>
+  </data>
+  <data name="Currency_SVC" xml:space="preserve">
+    <value>엘살바도르 콜론</value>
+  </data>
+  <data name="Currency_TJS" xml:space="preserve">
+    <value>타지 키스탄 소모 니</value>
+  </data>
+  <data name="Currency_TMT" xml:space="preserve">
+    <value>투르크메니스탄 마나트</value>
+  </data>
+  <data name="Currency_UZS" xml:space="preserve">
+    <value>우즈베키스탄 솜</value>
+  </data>
+  <data name="Currency_XDR" xml:space="preserve">
+    <value>특별 인출권</value>
+  </data>
+  <data name="Currency_ZMK" xml:space="preserve">
+    <value>잠비아 콰차</value>
+  </data>
+  <data name="Currency_ZMW" xml:space="preserve">
+    <value>잠비아 콰차</value>
+  </data>
+  <data name="Currency_BAM" xml:space="preserve">
+    <value>보스니아 헤르체고비나 Konvertibilna 시</value>
+  </data>
+  <data name="Currency_GHS" xml:space="preserve">
+    <value>가 나 시디</value>
+  </data>
+  <data name="Currency_MZN" xml:space="preserve">
+    <value>모잠비크 메티칼</value>
+  </data>
+  <data name="AddCurrencies_SearchEntryPlaceholder" xml:space="preserve">
+    <value>통화 코드 또는 통화 이름</value>
+  </data>
+  <data name="About_Disclaimer_Content" xml:space="preserve">
+    <value>이 애플 리 케이이 션의 환율 데이터는 www.currencyconverterapi.com에서 이다. 이 응용 프로그램의 사용 어떤 위험 든 지의 내용에 의존 하 고 결과 자체에 있어야,이 응용 프로그램 및 개발자 법적 책임에는 영향을 받지 않습니다.</value>
+  </data>
+  <data name="About_Disclaimer_Title" xml:space="preserve">
+    <value>면책 조항</value>
+  </data>
+  <data name="About_Feedback" xml:space="preserve">
+    <value>피드백</value>
+  </data>
+  <data name="About_LikeMe" xml:space="preserve">
+    <value>같은 날!</value>
+  </data>
+  <data name="About_Share" xml:space="preserve">
+    <value>공유</value>
+  </data>
+  <data name="About_Share_Content" xml:space="preserve">
+    <value>나는 최신 통화 요금을 통화 교환기를 추천 한다.</value>
+  </data>
+  <data name="Toast_NetworkError" xml:space="preserve">
+    <value>네트워크를 사용할 수 없습니다.</value>
+  </data>
+  <data name="Toast_Title_Error" xml:space="preserve">
+    <value>오류</value>
+  </data>
+  <data name="Toast_Title_Info" xml:space="preserve">
+    <value>정보</value>
+  </data>
+  <data name="Toast_Title_Warning" xml:space="preserve">
+    <value>경고</value>
+  </data>
+  <data name="Button_Add_Currency" xml:space="preserve">
+    <value>통화 추가</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>취소</value>
+  </data>
+  <data name="Button_Chart" xml:space="preserve">
+    <value>차트</value>
+  </data>
+  <data name="Button_Delete" xml:space="preserve">
+    <value>삭제</value>
+  </data>
+  <data name="Button_Edit_List" xml:space="preserve">
+    <value>목록 편집</value>
+  </data>
+  <data name="Button_OK" xml:space="preserve">
+    <value>그래</value>
+  </data>
+  <data name="Toast_Can_Not_Delete_Base_Currency" xml:space="preserve">
+    <value>기본 통화를 삭제할 수 없습니다.</value>
+  </data>
+  <data name="Toast_No_Chart_Available_For_Base_Currency" xml:space="preserve">
+    <value>없음 차트 기본 통화에 사용할 수 있는입니다.</value>
+  </data>
+  <data name="About_PageTitle" xml:space="preserve">
+    <value>에 대 한</value>
+  </data>
+  <data name="AddCurrencies_PageTitle" xml:space="preserve">
+    <value>통화 추가</value>
+  </data>
+  <data name="Chart_PageTitle" xml:space="preserve">
+    <value>차트</value>
+  </data>
+  <data name="EditList_PageTitle" xml:space="preserve">
+    <value>목록 편집</value>
+  </data>
+  <data name="Home_PageTitle" xml:space="preserve">
+    <value>화폐 교환기</value>
+  </data>
+  <data name="Settings_PageTitle" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="Settings_Section_Common" xml:space="preserve">
+    <value>일반적인</value>
+  </data>
+  <data name="Settings_Section_Currencies" xml:space="preserve">
+    <value>통화</value>
+  </data>
+  <data name="Menu_About" xml:space="preserve">
+    <value>에 대 한</value>
+  </data>
+  <data name="Menu_Chart" xml:space="preserve">
+    <value>차트</value>
+  </data>
+  <data name="Menu_Home" xml:space="preserve">
+    <value>홈</value>
+  </data>
+  <data name="Menu_Settings" xml:space="preserve">
+    <value>설정</value>
+  </data>
+  <data name="Settings_AutoInitializeToZero" xml:space="preserve">
+    <value>0으로 자동 초기화</value>
+  </data>
+  <data name="Settings_AutoRefresh" xml:space="preserve">
+    <value>응용 프로그램 시작할 때 자동 fefresh</value>
+  </data>
+  <data name="Settings_Decimals" xml:space="preserve">
+    <value>소수</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>언어</value>
+  </data>
+  <data name="Settings_LocalizeCurrencySymbol" xml:space="preserve">
+    <value>통화 기호를 지역화</value>
+  </data>
+  <data name="Settings_PinBaseCurrencyToTop" xml:space="preserve">
+    <value>상단에 핀 기본 통화</value>
+  </data>
+  <data name="Settings_PullToRefresh" xml:space="preserve">
+    <value>(No UWP) 새로 고침</value>
+  </data>
+  <data name="About_Help_Content" xml:space="preserve">
+    <value>기본 통화 설정 통화 항목의 국기 이미지를 클릭 하십시오. 번호 입력을 통화 항목의 오른쪽 영역을 클릭 합니다. 마우스 오른쪽 단추 클릭 (UWP) 또는 긴 press(Android and iOS) 통화 항목을 삭제 하 고 차트를 볼.</value>
+  </data>
+  <data name="About_Help_Title" xml:space="preserve">
+    <value>도움말</value>
+  </data>
+</root>

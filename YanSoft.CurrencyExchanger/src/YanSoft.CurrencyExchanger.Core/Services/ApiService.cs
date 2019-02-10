@@ -37,5 +37,26 @@ namespace YanSoft.CurrencyExchanger.Core.Services
                 return result;
             }
         }
+
+        public async Task<ResponseInfo<CurrencyRatesHistoryResponse>> GetRatesHistoryByRange(string baseCode, string targetCode, string range, string interval)
+        {
+            var url = $"{AppConfigurations.ApiUrl}GetHistoryRatesByRange?baseCode={baseCode}&targetCode={targetCode}&range={range}&interval={interval}&api-version=1.0";
+            var result = new ResponseInfo<CurrencyRatesHistoryResponse>();
+            try
+            {
+                var response = await _httpClientService.CreateClient().GetAsync(url);
+                if (response.IsSuccessStatusCode)
+                {
+                    var responseString = await response.Content.ReadAsStringAsync();
+                    result = SerializerHelper.FromJson<ResponseInfo<CurrencyRatesHistoryResponse>>(responseString);
+                }
+                return result;
+            }
+            catch
+            {
+                result.Message = "Service unavailable.";
+                return result;
+            }
+        }
     }
 }

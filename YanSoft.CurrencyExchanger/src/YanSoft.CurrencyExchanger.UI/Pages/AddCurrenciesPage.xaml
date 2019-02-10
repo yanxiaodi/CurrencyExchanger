@@ -5,15 +5,16 @@
              x:Class="YanSoft.CurrencyExchanger.UI.Pages.AddCurrenciesPage"
              xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
                       xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
-                      xmlns:markupExtensions="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
                       xmlns:controls="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
                       x:Name="MainContent"
-                      xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors">
+                      xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
+                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
+                      Title="{ext:Translate AddCurrencies_PageTitle}">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Order="Primary"  Priority="0" Command="{Binding AddCurrenciesAsyncCommand}">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="outline_done_black_48dp.png" />
+                    <On Platform="iOS" Value="outline_done_black_24pt.png" />
                     <On Platform="Android" Value="outline_done_white_48dp.png"/>
                     <On Platform="UWP" Value="Assets/icons/outline_done_black_48dp.png" />
                 </OnPlatform>

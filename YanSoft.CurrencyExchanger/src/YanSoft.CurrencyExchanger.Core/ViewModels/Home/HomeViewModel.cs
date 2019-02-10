@@ -14,6 +14,8 @@ using MvvmCross.Navigation;
 using YanSoft.CurrencyExchanger.Core.Calculator.Parser;
 using Xamarin.Essentials;
 using Plugin.Toasts;
+using MvvmCross.Plugin.Messenger;
+using YanSoft.CurrencyExchanger.Core.Messengers;
 
 namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
 {
@@ -24,19 +26,30 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         //private readonly IDataService<CurrencyExchangeItem> _dataService;
         private readonly AppSettings _appSettings;
         private readonly GlobalContext _globalContext;
-        private readonly IToastNotificator _toastNotificator;
+        private readonly IToastService _toastService;
+        private readonly MvxSubscriptionToken _token;
         public HomeViewModel(IMvxNavigationService navigationService,
             ICurrencyService currencyService, AppSettings appSettings,
-            GlobalContext globalContext, IToastNotificator toastNotificator)
+            GlobalContext globalContext, IToastService toastService,
+            IMvxMessenger messenger)
         {
             _currencyService = currencyService;
             _navigationService = navigationService;
             //_dataService = dataService;
             _appSettings = appSettings;
             _globalContext = globalContext;
-            _toastNotificator = toastNotificator;
+            _toastService = toastService;
             IsPullToRefreshEnabled = false;
             IsRefreshing = false;
+            _token = messenger.Subscribe<UpdateLanguageMessage>(OnUpdateLanguageMessage);
+        }
+
+        private void OnUpdateLanguageMessage(MvxMessage obj)
+        {
+            foreach (var item in CurrencyList)
+            {
+                item.TargetCurrencyName = _globalContext.AllCurrencyItemList.Find(x => x.Code == item.TargetCode).Name;
+            }
         }
 
 
@@ -219,7 +232,8 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             }
             else
             {
-                await _toastNotificator.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+                //await _toastService.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+                _toastService.ShowToast(Resources.AppResources.Toast_NetworkError);
             }
         }
 
@@ -340,7 +354,9 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             }
             else
             {
-                await _toastNotificator.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+                //await _toastService.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+                _toastService.ShowToast(Resources.AppResources.Toast_NetworkError);
+
             }
         }
         #endregion
@@ -364,6 +380,37 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             if (!param.IsBaseCurrency)
             {
                 await _currencyService.DeleteCurrencyAsync(CurrencyList, param);
+            }
+            else
+            {
+                _toastService.ShowToast(Resources.AppResources.Toast_Can_Not_Delete_Base_Currency);
+
+            }
+        }
+        #endregion
+
+
+
+        #region NavigateToChartAsyncCommand;
+        private IMvxAsyncCommand<CurrencyExchangeBindableItem> _navigateToChartAsyncCommand;
+        public IMvxAsyncCommand<CurrencyExchangeBindableItem> NavigateToChartAsyncCommand
+        {
+            get
+            {
+                _navigateToChartAsyncCommand = _navigateToChartAsyncCommand ?? new MvxAsyncCommand<CurrencyExchangeBindableItem>(NavigateToChartAsync);
+                return _navigateToChartAsyncCommand;
+            }
+        }
+        private async Task NavigateToChartAsync(CurrencyExchangeBindableItem param)
+        {
+            // Implement your logic here.
+            if (!param.IsBaseCurrency)
+            {
+                await _navigationService.Navigate<ChartViewModel, CurrencyExchangeBindableItem>(param);
+            }
+            else
+            {
+                _toastService.ShowToast(Resources.AppResources.Toast_No_Chart_Available_For_Base_Currency);
             }
         }
         #endregion

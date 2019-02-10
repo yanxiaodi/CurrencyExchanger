@@ -1,19 +1,28 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using System.Threading.Tasks;
+using MvvmCross;
 using YanSoft.CurrencyExchanger.Core.Models;
 using YanSoft.CurrencyExchanger.Core.Resources;
+using YanSoft.CurrencyExchanger.Core.Services;
 using YanSoft.CurrencyExchanger.Core.Utils;
 
 namespace YanSoft.CurrencyExchanger.Core.Common
 {
     public class GlobalContext
     {
+
+
         public List<CurrencyItem> AllCurrencyItemList { get; set; }
         public CurrencyExchangeBindableItem CurrentBaseCurrency { get; set; }
 
-        public void Initialize()
+        public Dictionary<string, string> HistoryRangeIntervalSetting { get; set; }
+
+        public List<LanguageItem> LanguageItemList { get; set; }
+
+        public void InitializeAllCurrencyItemList()
         {
             AllCurrencyItemList = new List<CurrencyItem>()
             {
@@ -184,6 +193,40 @@ namespace YanSoft.CurrencyExchanger.Core.Common
                 new CurrencyItem{Code = "ZMK", Name = AppResources.Currency_ZMK, Image="flag_zambia", CultureName=""},
                 new CurrencyItem{Code = "ZMW", Name = AppResources.Currency_ZMW, Image="flag_white", CultureName=""}
             };
+        }
+
+        public void InitializeOthers()
+        {
+            HistoryRangeIntervalSetting = new Dictionary<string, string>
+            {
+                { HistoryRange.RangeOneDay, HistoryInterval.FiveMinutes },
+                { HistoryRange.RangeFiveDays, HistoryInterval.ThirtyMinutes },
+                { HistoryRange.RangeOneMonth, HistoryInterval.OneHour },
+                { HistoryRange.RangeThreeMonths, HistoryInterval.OneDay },
+                { HistoryRange.RangeSixMonths, HistoryInterval.OneDay },
+                { HistoryRange.RangeOneYear, HistoryInterval.OneDay },
+                { HistoryRange.RangeTwoYears, HistoryInterval.OneDay },
+            };
+
+            LanguageItemList = new List<LanguageItem>
+            {
+                new LanguageItem { DisplayName = "中文简体 - Chinese (simplified)", Code = "zh-Hans"},
+                new LanguageItem { DisplayName = "中文繁体 - Chinese (Traditional)", Code = "zh-Hant"},
+                new LanguageItem { DisplayName = "English", Code = "en" },
+                new LanguageItem { DisplayName = "Français - French", Code = "fr" },
+                new LanguageItem { DisplayName = "Deutsche - German", Code = "de" },
+                new LanguageItem { DisplayName = "日本語 - Japanese", Code = "ja" },
+                new LanguageItem { DisplayName = "한국어 - Korean", Code = "ko" },
+                new LanguageItem { DisplayName = "Русский - Russian", Code = "ru" }
+            };
+        }
+
+        public void RefreshAllCurrencyItemList(CultureInfo ci)
+        {
+            AllCurrencyItemList.ForEach(x =>
+            {
+                x.Name = Mvx.IoCProvider.Resolve<IAppResourcesService>().GetString($"Currency_{x.Code}", ci);
+            });
         }
     }
 }

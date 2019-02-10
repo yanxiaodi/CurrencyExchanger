@@ -5,7 +5,8 @@
              xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
                       xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
                       x:TypeArguments="viewModels:AboutViewModel"
-                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core">
+                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
+                      Title="{ext:Translate About_PageTitle}">
     <ContentPage.Content>
         <ScrollView>
         <StackLayout Margin="20">
@@ -13,7 +14,7 @@
                    WidthRequest="50" HeightRequest="50"></Image>
             <Label Text="Currency Exchanger" Style="{DynamicResource SubtitleStyle}"
                    HorizontalOptions="Center"/>
-            <Label Text="V1.0" Style="{DynamicResource CaptionStyle}"
+                <Label Text="{Binding AppVersion}" Style="{DynamicResource CaptionStyle}"
                    HorizontalOptions="Center"/>
             <Label Text="{ext:Translate About_Disclaimer_Title}" 
                    Style="{DynamicResource SubtitleStyle}" 
@@ -21,7 +22,13 @@
             <Label Text="{ext:Translate About_Disclaimer_Content}" 
                    Style="{DynamicResource BodyStyle}" 
                    HorizontalOptions="StartAndExpand"></Label>
-            <Button Text="{ext:Translate About_Feedback}" Margin="0,20,0,0"
+                <Label Text="{ext:Translate About_Help_Title}" 
+                   Style="{DynamicResource SubtitleStyle}" 
+                   HorizontalOptions="StartAndExpand"></Label>
+                <Label Text="{ext:Translate About_Help_Content}" 
+                   Style="{DynamicResource BodyStyle}" 
+                   HorizontalOptions="StartAndExpand"></Label>
+                <Button Text="{ext:Translate About_Feedback}" Margin="0,20,0,0"
                     Command="{Binding FeedbackAsyncCommand}">
                 <Button.HorizontalOptions>
                     <OnPlatform UWP="Center" iOS="Center" Android="CenterAndExpand" ></OnPlatform>

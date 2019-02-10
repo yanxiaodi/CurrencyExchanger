@@ -25,6 +25,8 @@ namespace YanSoft.CurrencyExchanger.Core.Models
                 SortOrder = model.SortOrder,
                 UpdateTimeUtc = DateTimeHelper.ConvertTimestampToDateTime(model.UpdateTimeUtc)
             };
+            result.BaseCurrencyName = result.BaseCurrency.Name;
+            result.TargetCurrencyName = result.TargetCurrency.Name;
             result.AmountText = CurrencyHelper.FormatCurrencyAmount(model.Amount, result.TargetCurrency.CultureName);
 
             return result;

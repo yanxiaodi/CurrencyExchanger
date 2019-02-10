@@ -4,23 +4,25 @@
              x:Class="YanSoft.CurrencyExchanger.UI.Pages.SettingsPage"
                       xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
                       xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
-                      x:TypeArguments="viewModels:SettingsViewModel" >
+                      x:TypeArguments="viewModels:SettingsViewModel"
+                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
+                      Title="{ext:Translate Settings_PageTitle}">
     <ContentPage.Content>
         <TableView Intent="Settings">
             <TableView.Margin>
                 <OnPlatform UWP="20,0,20,0" Android="0" iOS="0" ></OnPlatform>
             </TableView.Margin>
             <TableRoot>
-                <TableSection Title="Common">
+                <TableSection Title="{ext:Translate Settings_Section_Common}">
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Auto fefresh when app starts" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="{ext:Translate Settings_AutoRefresh}" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsAutoRefreshRatesOnStartup, Mode=TwoWay}"></Switch>
                         </StackLayout>
                     </ViewCell>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Pull to refresh (No UWP)" HorizontalOptions="Start" VerticalOptions="Center">
+                            <Label Text="{ext:Translate Settings_PullToRefresh}" HorizontalOptions="Start" VerticalOptions="Center">
                                 <Label.TextColor>
                                     <OnPlatform x:TypeArguments="Color">
                                         <On Platform="UWP" Value="Gray" />
@@ -35,30 +37,41 @@
                             </Switch>
                         </StackLayout>
                     </ViewCell>
-                </TableSection>
-                <TableSection Title="Currencies">
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Pin base currency to top" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="{ext:Translate Settings_Language}" HorizontalOptions="Start" VerticalOptions="Center">
+                            </Label>
+                            <Picker HorizontalOptions="EndAndExpand" VerticalOptions="Center"
+                                    ItemsSource="{Binding LanguageItemList}"
+                ItemDisplayBinding="{Binding DisplayName}" SelectedItem="{Binding CurrentLanguageItem, Mode=TwoWay}"
+                x:Name="PickerLanguages"/>
+                        </StackLayout>
+                    </ViewCell>
+
+                </TableSection>
+                <TableSection Title="{ext:Translate Settings_Section_Currencies}">
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                            <Label Text="{ext:Translate Settings_PinBaseCurrencyToTop}" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsPinBaseCurrencyToTopEnabled, Mode=TwoWay}"></Switch>
                         </StackLayout>
                     </ViewCell>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Decimals" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="{ext:Translate Settings_Decimals}" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Label Text="{Binding DecimalPrecision}" HorizontalOptions="EndAndExpand" VerticalOptions="Center" Margin="20,0,0,0" ></Label>
                             <Stepper Minimum="0" Maximum="8" HorizontalOptions="End" Value="{Binding DecimalPrecision, Mode=TwoWay}" VerticalOptions="Center"></Stepper>
                         </StackLayout>
                     </ViewCell>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Localize currency symbol" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="{ext:Translate Settings_LocalizeCurrencySymbol}" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsEnableLocalizedCurrencySymbol, Mode=TwoWay}"></Switch>
                         </StackLayout>
                     </ViewCell>
                     <ViewCell>
                         <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
-                            <Label Text="Auto Initialize To 0" HorizontalOptions="Start" VerticalOptions="Center"/>
+                            <Label Text="{ext:Translate Settings_AutoInitializeToZero}" HorizontalOptions="Start" VerticalOptions="Center"/>
                             <Switch HorizontalOptions="EndAndExpand" VerticalOptions="Center" IsToggled="{Binding IsEnableAutoInitializeToZero, Mode=TwoWay}"></Switch>
                         </StackLayout>
                     </ViewCell>

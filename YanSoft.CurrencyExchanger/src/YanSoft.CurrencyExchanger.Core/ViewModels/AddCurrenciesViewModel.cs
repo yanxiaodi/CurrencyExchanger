@@ -21,15 +21,15 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
         private readonly IMvxNavigationService _navigationService;
         private readonly ICurrencyService _currencyService;
         private readonly GlobalContext _globalContext;
-        private readonly IToastNotificator _toastNotificator;
+        private readonly IToastService _toastService;
 
         public AddCurrenciesViewModel(IMvxNavigationService navigationService,
-            ICurrencyService currencyService, GlobalContext globalContext, IToastNotificator toastNotificator)
+            ICurrencyService currencyService, GlobalContext globalContext, IToastService toastService)
         {
             _navigationService = navigationService;
             _currencyService = currencyService;
             _globalContext = globalContext;
-            _toastNotificator = toastNotificator;
+            _toastService = toastService;
 
             //CurrencyItemSelectedList = new ObservableCollection<CurrencySelectableBindableItem>();
             CurrencyItemSourceList = new ObservableCollection<CurrencySelectableBindableItem>();
@@ -171,7 +171,7 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             var baseCurrency = _globalContext.CurrentBaseCurrency;
             var count = CurrencyList.Count;
             var items = CurrencyItemSourceList.Where(x => x.IsSelected && CurrencyList.Count(c => c.TargetCode == x.CurrencyItem.Code) == 0)
-                .Select(x => new CurrencyExchangeItem(new CurrencyItem { Code = baseCurrency.BaseCode }, new CurrencyItem { Code = x.CurrencyItem.Code }, ++count));
+                .Select(x => new CurrencyExchangeItem(new CurrencyItem { Code = baseCurrency.BaseCode }, new CurrencyItem { Code = x.CurrencyItem.Code }, ++count)).ToList();
             await _currencyService.AddCurrenciesAsync(CurrencyList, items);
             var current = Connectivity.NetworkAccess;
             if (current == NetworkAccess.Internet)
@@ -181,7 +181,8 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels
             }
             else
             {
-                await _toastNotificator.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+                //await _toastService.Notify(new NotificationOptions() { Title = Resources.AppResources.Toast_Title_Error, Description = Resources.AppResources.Toast_NetworkError });
+                _toastService.ShowToast(Resources.AppResources.Toast_NetworkError);
             }
             _currencyService.CalculateCurrencyAmount(CurrencyList, _globalContext.CurrentBaseCurrency);
             await _navigationService.Close(this);

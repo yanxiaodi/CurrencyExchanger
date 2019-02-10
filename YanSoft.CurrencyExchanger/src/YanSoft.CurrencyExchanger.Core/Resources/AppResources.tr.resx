@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Currency_AUD" xml:space="preserve">
+    <value>Avustralya Doları</value>
+  </data>
+  <data name="Currency_AWG" xml:space="preserve">
+    <value>Aruba Florin</value>
+  </data>
+  <data name="Currency_BBD" xml:space="preserve">
+    <value>Barbados Doları</value>
+  </data>
+  <data name="Currency_BDT" xml:space="preserve">
+    <value>Bangladeş Taka</value>
+  </data>
+  <data name="Currency_BGN" xml:space="preserve">
+    <value>Yeni Bulgar Levası</value>
+  </data>
+  <data name="Currency_BHD" xml:space="preserve">
+    <value>Bahreyn Dinarı</value>
+  </data>
+  <data name="Currency_BIF" xml:space="preserve">
+    <value>Burundi Frangı</value>
+  </data>
+  <data name="Currency_BND" xml:space="preserve">
+    <value>Brunei Doları</value>
+  </data>
+  <data name="Currency_BOB" xml:space="preserve">
+    <value>Bolivya Bolivianosu</value>
+  </data>
+  <data name="Currency_BRL" xml:space="preserve">
+    <value>Brezilya Reali</value>
+  </data>
+  <data name="Currency_BSD" xml:space="preserve">
+    <value>Bahama Doları</value>
+  </data>
+  <data name="Currency_BTN" xml:space="preserve">
+    <value>Bhutan Ngultrum</value>
+  </data>
+  <data name="Currency_BWP" xml:space="preserve">
+    <value>Botsvana Pula</value>
+  </data>
+  <data name="Currency_BYR" xml:space="preserve">
+    <value>Beyaz Rusya Rublesi</value>
+  </data>
+  <data name="Currency_BZD" xml:space="preserve">
+    <value>Belize Doları</value>
+  </data>
+  <data name="Currency_CAD" xml:space="preserve">
+    <value>Kanada Doları</value>
+  </data>
+  <data name="Currency_CHF" xml:space="preserve">
+    <value>İsviçre Frankı</value>
+  </data>
+  <data name="Currency_CLP" xml:space="preserve">
+    <value>Şili Pezosu</value>
+  </data>
+  <data name="Currency_CNY" xml:space="preserve">
+    <value>Çin Yuanı</value>
+  </data>
+  <data name="Currency_COP" xml:space="preserve">
+    <value>Kolombiya Pezosu</value>
+  </data>
+  <data name="Currency_CRC" xml:space="preserve">
+    <value>Kosta Rika Colonu</value>
+  </data>
+  <data name="Currency_CUP" xml:space="preserve">
+    <value>Küba Pezosu</value>
+  </data>
+  <data name="Currency_AED" xml:space="preserve">
+    <value>BAE Dirhemi</value>
+  </data>
+  <data name="Currency_ALL" xml:space="preserve">
+    <value>Arnavutluk Lek</value>
+  </data>
+  <data name="Currency_ARS" xml:space="preserve">
+    <value>Arjantin Pezosu</value>
+  </data>
+  <data name="Currency_CVE" xml:space="preserve">
+    <value>Cape Verde Esküdosu</value>
+  </data>
+  <data name="Currency_CZK" xml:space="preserve">
+    <value>Çek Korunası</value>
+  </data>
+  <data name="Currency_DJF" xml:space="preserve">
+    <value>Dijibouti Frangı</value>
+  </data>
+  <data name="Currency_DKK" xml:space="preserve">
+    <value>Danimarka Kronu</value>
+  </data>
+  <data name="Currency_DOP" xml:space="preserve">
+    <value>Dominik Pesosu</value>
+  </data>
+  <data name="Currency_DZD" xml:space="preserve">
+    <value>Cezayir Dinarı</value>
+  </data>
+  <data name="Currency_EGP" xml:space="preserve">
+    <value>Mısır Poundu</value>
+  </data>
+  <data name="Currency_ERN" xml:space="preserve">
+    <value>Eritre Nakfa</value>
+  </data>
+  <data name="Currency_ETB" xml:space="preserve">
+    <value>Etiyopya Biri</value>
+  </data>
+  <data name="Currency_EUR" xml:space="preserve">
+    <value>Euro</value>
+  </data>
+  <data name="Currency_FJD" xml:space="preserve">
+    <value>Fiji Doları</value>
+  </data>
+  <data name="Currency_FKP" xml:space="preserve">
+    <value>Falkland Adaları Lirası</value>
+  </data>
+  <data name="Currency_GBP" xml:space="preserve">
+    <value>İngiliz Sterlini</value>
+  </data>
+  <data name="Currency_GIP" xml:space="preserve">
+    <value>Cebelitarık Lirası</value>
+  </data>
+  <data name="Currency_GMD" xml:space="preserve">
+    <value>Gambiya dalaşı</value>
+  </data>
+  <data name="Currency_GNF" xml:space="preserve">
+    <value>Gine Frangı</value>
+  </data>
+  <data name="Currency_GTQ" xml:space="preserve">
+    <value>Guatemala Quetzal</value>
+  </data>
+  <data name="Currency_GYD" xml:space="preserve">
+    <value>Guyana Doları</value>
+  </data>
+  <data name="Currency_HKD" xml:space="preserve">
+    <value>Hong Kong (Çin ÖİB) Doları</value>
+  </data>
+  <data name="Currency_HNL" xml:space="preserve">
+    <value>Honduras Lempirası</value>
+  </data>
+  <data name="Currency_HRK" xml:space="preserve">
+    <value>Hırvat Kunası</value>
+  </data>
+  <data name="Currency_HTG" xml:space="preserve">
+    <value>Haiti Gourde</value>
+  </data>
+  <data name="Currency_HUF" xml:space="preserve">
+    <value>Macar Forinti</value>
+  </data>
+  <data name="Currency_IDR" xml:space="preserve">
+    <value>Endonezya Rupiahı</value>
+  </data>
+  <data name="Currency_ILS" xml:space="preserve">
+    <value>İsrail Şekeli</value>
+  </data>
+  <data name="Currency_INR" xml:space="preserve">
+    <value>Hint Rupisi</value>
+  </data>
+  <data name="Currency_IQD" xml:space="preserve">
+    <value>Irak Dinarı</value>
+  </data>
+  <data name="Currency_IRR" xml:space="preserve">
+    <value>Iran Riyali</value>
+  </data>
+  <data name="Currency_ISK" xml:space="preserve">
+    <value>İzlanda Kronu</value>
+  </data>
+  <data name="Currency_JMD" xml:space="preserve">
+    <value>Jamaika Doları</value>
+  </data>
+  <data name="Currency_JOD" xml:space="preserve">
+    <value>Ürdün Dinarı</value>
+  </data>
+  <data name="Currency_JPY" xml:space="preserve">
+    <value>Japon yeni</value>
+  </data>
+  <data name="Currency_KES" xml:space="preserve">
+    <value>Kenya Şilini</value>
+  </data>
+  <data name="Currency_KHR" xml:space="preserve">
+    <value>Kamboçya Riel</value>
+  </data>
+  <data name="Currency_KMF" xml:space="preserve">
+    <value>Komoro Frangı</value>
+  </data>
+  <data name="Currency_KPW" xml:space="preserve">
+    <value>Kuzey Kore Wonu</value>
+  </data>
+  <data name="Currency_KRW" xml:space="preserve">
+    <value>Güney Kore Wonu</value>
+  </data>
+  <data name="Currency_KWD" xml:space="preserve">
+    <value>Kuveyt Dinarı</value>
+  </data>
+  <data name="Currency_KYD" xml:space="preserve">
+    <value>Kayman Adaları Doları</value>
+  </data>
+  <data name="Currency_KZT" xml:space="preserve">
+    <value>Kazakistan Tengesi</value>
+  </data>
+  <data name="Currency_LAK" xml:space="preserve">
+    <value>Lao Kip</value>
+  </data>
+  <data name="Currency_LBP" xml:space="preserve">
+    <value>Lübnan Poundu</value>
+  </data>
+  <data name="Currency_LKR" xml:space="preserve">
+    <value>Sri Lanka Rupisi</value>
+  </data>
+  <data name="Currency_LRD" xml:space="preserve">
+    <value>Liberya Doları</value>
+  </data>
+  <data name="Currency_LSL" xml:space="preserve">
+    <value>Lesotho Loti</value>
+  </data>
+  <data name="Currency_LVL" xml:space="preserve">
+    <value>Letonya Latı</value>
+  </data>
+  <data name="Currency_LYD" xml:space="preserve">
+    <value>Libya Dinarı</value>
+  </data>
+  <data name="Currency_MAD" xml:space="preserve">
+    <value>Fas Dirhemi</value>
+  </data>
+  <data name="Currency_MDL" xml:space="preserve">
+    <value>Moldova Leyi</value>
+  </data>
+  <data name="Currency_MKD" xml:space="preserve">
+    <value>Makedon Denar</value>
+  </data>
+  <data name="Currency_MMK" xml:space="preserve">
+    <value>Myanmar Kyat</value>
+  </data>
+  <data name="Currency_MNT" xml:space="preserve">
+    <value>Moğol Tugrik</value>
+  </data>
+  <data name="Currency_MOP" xml:space="preserve">
+    <value>Macau Pataca</value>
+  </data>
+  <data name="Currency_MRO" xml:space="preserve">
+    <value>Moritanya Ougulya</value>
+  </data>
+  <data name="Currency_MUR" xml:space="preserve">
+    <value>Mauritius Rupisi</value>
+  </data>
+  <data name="Currency_MVR" xml:space="preserve">
+    <value>Maldivler Rufiyaa</value>
+  </data>
+  <data name="Currency_MWK" xml:space="preserve">
+    <value>Malavi Kvaçası</value>
+  </data>
+  <data name="Currency_MXN" xml:space="preserve">
+    <value>Meksika Pezosu</value>
+  </data>
+  <data name="Currency_MYR" xml:space="preserve">
+    <value>Malezya Ringgiti</value>
+  </data>
+  <data name="Currency_NAD" xml:space="preserve">
+    <value>Namibya Doları</value>
+  </data>
+  <data name="Currency_NGN" xml:space="preserve">
+    <value>Nijerya Nayrası</value>
+  </data>
+  <data name="Currency_NIO" xml:space="preserve">
+    <value>Nikaragua Cordoba</value>
+  </data>
+  <data name="Currency_NOK" xml:space="preserve">
+    <value>Norveç Kronu</value>
+  </data>
+  <data name="Currency_NPR" xml:space="preserve">
+    <value>Nepal Rupisi</value>
+  </data>
+  <data name="Currency_NZD" xml:space="preserve">
+    <value>Yeni Zelanda Doları</value>
+  </data>
+  <data name="Currency_OMR" xml:space="preserve">
+    <value>Umman Riyali</value>
+  </data>
+  <data name="Currency_PAB" xml:space="preserve">
+    <value>Panama Balboası</value>
+  </data>
+  <data name="Currency_PEN" xml:space="preserve">
+    <value>Perulu Nuevo Sol</value>
+  </data>
+  <data name="Currency_PGK" xml:space="preserve">
+    <value>Papua Yeni Gine Kinası</value>
+  </data>
+  <data name="Currency_PHP" xml:space="preserve">
+    <value>Filipinler Pezosu</value>
+  </data>
+  <data name="Currency_PKR" xml:space="preserve">
+    <value>Pakistan Rupisi</value>
+  </data>
+  <data name="Currency_PLN" xml:space="preserve">
+    <value>Polonya Zlotisi</value>
+  </data>
+  <data name="Currency_PYG" xml:space="preserve">
+    <value>Paraguay Guaranisi</value>
+  </data>
+  <data name="Currency_QAR" xml:space="preserve">
+    <value>Katar Riyali</value>
+  </data>
+  <data name="Currency_RON" xml:space="preserve">
+    <value>Romanya Leyi yeni</value>
+  </data>
+  <data name="Currency_RUB" xml:space="preserve">
+    <value>Rus Rublesi</value>
+  </data>
+  <data name="Currency_RWF" xml:space="preserve">
+    <value>Ruanda Frangı</value>
+  </data>
+  <data name="Currency_SAR" xml:space="preserve">
+    <value>Suudi Arabistan Riyali</value>
+  </data>
+  <data name="Currency_SBD" xml:space="preserve">
+    <value>Solomon Adaları Doları</value>
+  </data>
+  <data name="Currency_SCR" xml:space="preserve">
+    <value>Seyşeller Rupisi</value>
+  </data>
+  <data name="Currency_SDG" xml:space="preserve">
+    <value>Sudan Lirası</value>
+  </data>
+  <data name="Currency_SEK" xml:space="preserve">
+    <value>İsveç Kronu</value>
+  </data>
+  <data name="Currency_SGD" xml:space="preserve">
+    <value>Singapur Doları</value>
+  </data>
+  <data name="Currency_SHP" xml:space="preserve">
+    <value>St Helena Pound</value>
+  </data>
+  <data name="Currency_SLL" xml:space="preserve">
+    <value>Sierra Leone Leone</value>
+  </data>
+  <data name="Currency_SOS" xml:space="preserve">
+    <value>Somali Şilingi</value>
+  </data>
+  <data name="Currency_STD" xml:space="preserve">
+    <value>Sao Tome Dobra</value>
+  </data>
+  <data name="Currency_SYP" xml:space="preserve">
+    <value>Suriye Lirası</value>
+  </data>
+  <data name="Currency_SZL" xml:space="preserve">
+    <value>Svaziland Lilageni</value>
+  </data>
+  <data name="Currency_THB" xml:space="preserve">
+    <value>Tayland Bahtı</value>
+  </data>
+  <data name="Currency_TND" xml:space="preserve">
+    <value>Tunus Dinarı</value>
+  </data>
+  <data name="Currency_TOP" xml:space="preserve">
+    <value>Tonga Pa'anga</value>
+  </data>
+  <data name="Currency_TRY" xml:space="preserve">
+    <value>Yeni Türk Lirası</value>
+  </data>
+  <data name="Currency_TTD" xml:space="preserve">
+    <value>&amp;Trinidad Tobago Doları</value>
+  </data>
+  <data name="Currency_TWD" xml:space="preserve">
+    <value>Yeni Tayvan Doları</value>
+  </data>
+  <data name="Currency_TZS" xml:space="preserve">
+    <value>Tanzanya Şilini</value>
+  </data>
+  <data name="Currency_UAH" xml:space="preserve">
+    <value>Ukrayna Hryvnia</value>
+  </data>
+  <data name="Currency_UGX" xml:space="preserve">
+    <value>Uganda Şilini</value>
+  </data>
+  <data name="Currency_USD" xml:space="preserve">
+    <value>ABD Doları</value>
+  </data>
+  <data name="Currency_UYU" xml:space="preserve">
+    <value>Uruguaylı yeni Pezosu</value>
+  </data>
+  <data name="Currency_VEF" xml:space="preserve">
+    <value>Venezuela Bolivarı</value>
+  </data>
+  <data name="Currency_VND" xml:space="preserve">
+    <value>Vietnam Dong</value>
+  </data>
+  <data name="Currency_VUV" xml:space="preserve">
+    <value>Vanuatu Vatu</value>
+  </data>
+  <data name="Currency_WST" xml:space="preserve">
+    <value>Samoa Talası</value>
+  </data>
+  <data name="Currency_XAF" xml:space="preserve">
+    <value>CFA Frangı BEAC</value>
+  </data>
+  <data name="Currency_XAG" xml:space="preserve">
+    <value>Gümüş ons</value>
+  </data>
+  <data name="Currency_XAU" xml:space="preserve">
+    <value>Altın ons</value>
+  </data>
+  <data name="Currency_XCD" xml:space="preserve">
+    <value>Doğu Karayip Doları</value>
+  </data>
+  <data name="Currency_XOF" xml:space="preserve">
+    <value>CFA Frangı BCEAO</value>
+  </data>
+  <data name="Currency_XPF" xml:space="preserve">
+    <value>Pasifik Frangı</value>
+  </data>
+  <data name="Currency_YER" xml:space="preserve">
+    <value>Yemen Riyali</value>
+  </data>
+  <data name="Currency_ZAR" xml:space="preserve">
+    <value>Güney Afrika Randı</value>
+  </data>
+  <data name="Currency_AFN" xml:space="preserve">
+    <value>Afgan Afganistan Afganisi</value>
+  </data>
+  <data name="Currency_AMD" xml:space="preserve">
+    <value>Ermenistan Dramı</value>
+  </data>
+  <data name="Currency_ANG" xml:space="preserve">
+    <value>Hollanda Antiller gülden</value>
+  </data>
+  <data name="Currency_AOA" xml:space="preserve">
+    <value>Angola Kwanza</value>
+  </data>
+  <data name="Currency_AZN" xml:space="preserve">
+    <value>Azerbaycan Manatı</value>
+  </data>
+  <data name="Currency_BMD" xml:space="preserve">
+    <value>Bermuda Doları</value>
+  </data>
+  <data name="Currency_BTC" xml:space="preserve">
+    <value>Bitcoin</value>
+  </data>
+  <data name="Currency_BYN" xml:space="preserve">
+    <value>Yeni Belarus Rublesi</value>
+  </data>
+  <data name="Currency_CDF" xml:space="preserve">
+    <value>Kongo Frangı</value>
+  </data>
+  <data name="Currency_GEL" xml:space="preserve">
+    <value>Gürcü Lari</value>
+  </data>
+  <data name="Currency_KGS" xml:space="preserve">
+    <value>Kırgızistan Som</value>
+  </data>
+  <data name="Currency_LTL" xml:space="preserve">
+    <value>Lithuanian litlar</value>
+  </data>
+  <data name="Currency_MGA" xml:space="preserve">
+    <value>Malagasy Ariary</value>
+  </data>
+  <data name="Currency_NZN" xml:space="preserve">
+    <value>Mozambik Metical</value>
+  </data>
+  <data name="Currency_RSD" xml:space="preserve">
+    <value>Sırp Dinarı</value>
+  </data>
+  <data name="Currency_SIT" xml:space="preserve">
+    <value>Slovence Tolar</value>
+  </data>
+  <data name="Currency_SRD" xml:space="preserve">
+    <value>Surinam Doları</value>
+  </data>
+  <data name="Currency_SVC" xml:space="preserve">
+    <value>El Salvador Kolonu</value>
+  </data>
+  <data name="Currency_TJS" xml:space="preserve">
+    <value>Tajikistani Somoni</value>
+  </data>
+  <data name="Currency_TMT" xml:space="preserve">
+    <value>Türkmenistan Manatı</value>
+  </data>
+  <data name="Currency_UZS" xml:space="preserve">
+    <value>Özbekistan Som</value>
+  </data>
+  <data name="Currency_XDR" xml:space="preserve">
+    <value>Özel Çekme Hakkı</value>
+  </data>
+  <data name="Currency_ZMK" xml:space="preserve">
+    <value>Zambia Kwacha</value>
+  </data>
+  <data name="Currency_ZMW" xml:space="preserve">
+    <value>Zambia Kwacha</value>
+  </data>
+  <data name="Currency_BAM" xml:space="preserve">
+    <value>Bosna-Hersek Konvertibilna Marka</value>
+  </data>
+  <data name="Currency_GHS" xml:space="preserve">
+    <value>Gana Sedisi</value>
+  </data>
+  <data name="Currency_MZN" xml:space="preserve">
+    <value>Mozambik Metical</value>
+  </data>
+  <data name="AddCurrencies_SearchEntryPlaceholder" xml:space="preserve">
+    <value>para birimi kodu veya para birimi adı</value>
+  </data>
+  <data name="About_Disclaimer_Content" xml:space="preserve">
+    <value>Www.currencyconverterapi.com bu app Döviz Kuru veridir. Bu uygulama kullanımı ve herhangi bir risk içeriğine güveniyor ve sonuçları olmalı, kendi, bu uygulama ve geliştirici herhangi bir yasal sorumluluk almaz.</value>
+  </data>
+  <data name="About_Disclaimer_Title" xml:space="preserve">
+    <value>Bildirim</value>
+  </data>
+  <data name="About_Feedback" xml:space="preserve">
+    <value>geri bildirim</value>
+  </data>
+  <data name="About_LikeMe" xml:space="preserve">
+    <value>benim gibi!</value>
+  </data>
+  <data name="About_Share" xml:space="preserve">
+    <value>Paylaş</value>
+  </data>
+  <data name="About_Share_Content" xml:space="preserve">
+    <value>En son Döviz kurlarını almak için para alışverişi öneririz.</value>
+  </data>
+  <data name="Toast_NetworkError" xml:space="preserve">
+    <value>Ağ kullanılamıyor.</value>
+  </data>
+  <data name="Toast_Title_Error" xml:space="preserve">
+    <value>Hata</value>
+  </data>
+  <data name="Toast_Title_Info" xml:space="preserve">
+    <value>Bilgi:</value>
+  </data>
+  <data name="Toast_Title_Warning" xml:space="preserve">
+    <value>Uyarı</value>
+  </data>
+  <data name="Button_Add_Currency" xml:space="preserve">
+    <value>Para birimi Ekle</value>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>İptal</value>
+  </data>
+  <data name="Button_Chart" xml:space="preserve">
+    <value>Grafik</value>
+  </data>
+  <data name="Button_Delete" xml:space="preserve">
+    <value>Sil</value>
+  </data>
+  <data name="Button_Edit_List" xml:space="preserve">
+    <value>Listeyi düzenleme</value>
+  </data>
+  <data name="Button_OK" xml:space="preserve">
+    <value>Tamam</value>
+  </data>
+  <data name="Toast_Can_Not_Delete_Base_Currency" xml:space="preserve">
+    <value>Baz para birimi silemezsiniz.</value>
+  </data>
+  <data name="Toast_No_Chart_Available_For_Base_Currency" xml:space="preserve">
+    <value>Baz para birimi için kullanılabilen grafik yok.</value>
+  </data>
+  <data name="About_PageTitle" xml:space="preserve">
+    <value>Hakkında</value>
+  </data>
+  <data name="AddCurrencies_PageTitle" xml:space="preserve">
+    <value>Para birimleri ekleyin</value>
+  </data>
+  <data name="Chart_PageTitle" xml:space="preserve">
+    <value>Grafik</value>
+  </data>
+  <data name="EditList_PageTitle" xml:space="preserve">
+    <value>Listeyi düzenleme</value>
+  </data>
+  <data name="Home_PageTitle" xml:space="preserve">
+    <value>Para alışverişi</value>
+  </data>
+  <data name="Settings_PageTitle" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="Settings_Section_Common" xml:space="preserve">
+    <value>Ortak</value>
+  </data>
+  <data name="Settings_Section_Currencies" xml:space="preserve">
+    <value>Para birimleri</value>
+  </data>
+  <data name="Menu_About" xml:space="preserve">
+    <value>Hakkında</value>
+  </data>
+  <data name="Menu_Chart" xml:space="preserve">
+    <value>Grafik</value>
+  </data>
+  <data name="Menu_Home" xml:space="preserve">
+    <value>Ana sayfa</value>
+  </data>
+  <data name="Menu_Settings" xml:space="preserve">
+    <value>Ayarlar</value>
+  </data>
+  <data name="Settings_AutoInitializeToZero" xml:space="preserve">
+    <value>Otomatik başlatma 0</value>
+  </data>
+  <data name="Settings_AutoRefresh" xml:space="preserve">
+    <value>App başladığında otomatik fefresh</value>
+  </data>
+  <data name="Settings_Decimals" xml:space="preserve">
+    <value>Ondalık sayı</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="Settings_LocalizeCurrencySymbol" xml:space="preserve">
+    <value>Para birimi simgesi Yerelleştir</value>
+  </data>
+  <data name="Settings_PinBaseCurrencyToTop" xml:space="preserve">
+    <value>PIN baz para birimi dön</value>
+  </data>
+  <data name="Settings_PullToRefresh" xml:space="preserve">
+    <value>(Hayır UWP) yenilemek için çekme</value>
+  </data>
+  <data name="About_Help_Content" xml:space="preserve">
+    <value>Baz para birimi cinsinden ayarlamak için para birimi madde bayrak görüntüsünü tıklatın. Doğru alanı para birimi maddenin numarasını girin. Sağ tıklatın (UWP) veya silmek ve grafik görmek için uzun-press(Android and iOS) para birimi öğesini.</value>
+  </data>
+  <data name="About_Help_Title" xml:space="preserve">
+    <value>Yardım</value>
+  </data>
+</root>

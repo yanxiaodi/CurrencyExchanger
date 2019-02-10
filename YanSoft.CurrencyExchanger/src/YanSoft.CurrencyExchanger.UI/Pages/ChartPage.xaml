@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YanSoft.CurrencyExchanger.UI.Pages.ChartPage"
+             xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                      xmlns:viewModels="clr-namespace:YanSoft.CurrencyExchanger.Core.ViewModels;assembly=YanSoft.CurrencyExchanger.Core"
+                      x:TypeArguments="viewModels:ChartViewModel"
+                      xmlns:sfButtons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+                      xmlns:sfCombobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+                      xmlns:sfChart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+                      xmlns:behaviors="clr-namespace:Behaviors;assembly=Behaviors"
+                      x:Name="MainContent"
+                      xmlns:ext="clr-namespace:YanSoft.CurrencyExchanger.Core.MarkupExtensions;assembly=YanSoft.CurrencyExchanger.Core"
+                      Title="{ext:Translate Chart_PageTitle}">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.Margin>
+                <OnPlatform UWP="20" Android="6" iOS="6" ></OnPlatform>
+            </Grid.Margin>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackLayout Padding="4" Grid.Row="0" BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                <Image Margin="0" HeightRequest="70"
+                     Source="{Binding BaseCurrency.Image, Converter={StaticResource FlagConverter}}">
+                </Image>
+                <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Center" Padding="6,0,6,0" HorizontalOptions="FillAndExpand">
+                    <Label Text="{Binding BaseCurrency.Code}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}"></Label>
+                    <Label Text="{Binding BaseCurrency.Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}" ></Label>
+                </StackLayout>
+            </StackLayout>
+
+            <sfCombobox:SfComboBox HorizontalOptions="Start" Grid.Row="1"
+                                               VerticalOptions="Center" IsEditableMode="False"
+                                           DisplayMemberPath="Name" DropDownItemHeight="80"
+                                               DataSource="{Binding CurrencyList}"
+                                               SelectedItem="{Binding TargetCurrency, Mode=TwoWay}">
+                <sfCombobox:SfComboBox.Behaviors>
+                    <behaviors:EventHandlerBehavior EventName="SelectionChanged">
+                        <behaviors:InvokeCommandAction 
+                            Command="{Binding BindingContext.DataContext.UpdateTargetCurrencyAsyncCommand, 
+                            Source={x:Reference MainContent}}"></behaviors:InvokeCommandAction>
+                    </behaviors:EventHandlerBehavior>
+                </sfCombobox:SfComboBox.Behaviors>
+                    <sfCombobox:SfComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="4" BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                                <Image Margin="0" HeightRequest="70"
+                                       Source="{Binding Image, Converter={StaticResource FlagConverter}}">
+                                </Image>
+                                <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Center" Padding="6,0,6,0" HorizontalOptions="FillAndExpand">
+                                    <Label Text="{Binding Code}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}"></Label>
+                                    <Label Text="{Binding Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}" ></Label>
+                                </StackLayout>
+                            </StackLayout>
+                        </DataTemplate>
+                    </sfCombobox:SfComboBox.ItemTemplate>
+                </sfCombobox:SfComboBox>
+            <sfButtons:SfSegmentedControl x:Name="segmentedControl" Grid.Row="2"
+                                           HeightRequest="80" Color="Transparent" 
+            BorderColor="#929292" FontColor="#929292"
+            BackgroundColor="Transparent"
+                CornerRadius="5" VisibleSegmentsCount="6" DisplayMode="Text" VerticalOptions="Start"
+                ItemsSource="{Binding RangeList}" SelectedIndex="{Binding SelectedRangeIndex, Mode=TwoWay}">
+                <sfButtons:SfSegmentedControl.SelectionTextColor>
+                    <OnPlatform UWP="White" iOS="#007CEE" Android="#007CEE"></OnPlatform>
+                </sfButtons:SfSegmentedControl.SelectionTextColor>
+                <sfButtons:SfSegmentedControl.Behaviors>
+                    <behaviors:EventHandlerBehavior EventName="SelectionChanged">
+                        <behaviors:InvokeCommandAction 
+                            Command="{Binding BindingContext.DataContext.UpdateHistoryRangeAsyncCommand, 
+                            Source={x:Reference MainContent}}"></behaviors:InvokeCommandAction>
+                    </behaviors:EventHandlerBehavior>
+                </sfButtons:SfSegmentedControl.Behaviors>
+                <sfButtons:SfSegmentedControl.SelectionIndicatorSettings>
+                    <sfButtons:SelectionIndicatorSettings Position="Top">
+                    </sfButtons:SelectionIndicatorSettings>
+                </sfButtons:SfSegmentedControl.SelectionIndicatorSettings>
+            </sfButtons:SfSegmentedControl>
+            <StackLayout Grid.Row="3" Orientation="Vertical">
+                <Label Text="{Binding SelectedItemDateTime}" HorizontalOptions="Center" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="{Binding SelectedItemOpen}" HorizontalOptions="Start"></Label>
+                    <Label Text="{Binding SelectedItemClose}" HorizontalOptions="EndAndExpand"></Label>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="{Binding SelectedItemHigh}" HorizontalOptions="Start"></Label>
+                    <Label Text="{Binding SelectedItemLow}" HorizontalOptions="EndAndExpand"></Label>
+                </StackLayout>
+            </StackLayout>
+            <sfChart:SfChart Grid.Row="4" x:Name="HistoryChart" TrackballCreated="HistoryChart_TrackballCreated">
+                <sfChart:SfChart.PrimaryAxis>
+                    <sfChart:DateTimeAxis>
+                    </sfChart:DateTimeAxis>
+                </sfChart:SfChart.PrimaryAxis>
+                <sfChart:SfChart.SecondaryAxis>
+                    <sfChart:NumericalAxis >
+                    </sfChart:NumericalAxis>
+                </sfChart:SfChart.SecondaryAxis>
+                <!--<sfChart:SfChart.Series>
+                    <sfChart:ColumnSeries ItemsSource="{Binding CurrencyRateHistoryItemList}"
+                                          XBindingPath="DateTime" YBindingPath="Close"/>
+                </sfChart:SfChart.Series>-->
+                <sfChart:SfChart.Series>
+                    <sfChart:HiLoOpenCloseSeries Name="OHLC" ItemsSource="{Binding CurrencyRateHistoryItemList}" XBindingPath="DateTime" Open="Open" High="High" Low="Low" Close="Close"/>
+                    <!--<sfChart:SplineSeries ItemsSource ="{Binding CurrencyRateHistoryItemList}" XBindingPath="DateTime"
+	  					YBindingPath="Close" SplineType="Cardinal" />-->
+                </sfChart:SfChart.Series>
+                
+                <sfChart:SfChart.TechnicalIndicators>
+                    <sfChart:AccumulationDistributionIndicator SeriesName="OHLC"/>
+                </sfChart:SfChart.TechnicalIndicators>
+                <sfChart:SfChart.ChartBehaviors>
+                    <sfChart:ChartTrackballBehavior />
+                </sfChart:SfChart.ChartBehaviors>
+            </sfChart:SfChart>
+
+            <!--<TableView Intent="Settings" Grid.Row="0">
+                <TableView.Margin>
+                    <OnPlatform UWP="20,0,20,0" Android="0" iOS="0" ></OnPlatform>
+                </TableView.Margin>
+                <TableRoot>
+                    <TableSection Title="Select Currency">
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                                <Label Text="Base currency" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Label HorizontalOptions="EndAndExpand" VerticalOptions="Center" Text="{Binding BaseCurrency.Code}"></Label>
+                            </StackLayout>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="12,0,12,0" HorizontalOptions="FillAndExpand">
+                                <Label Text="Target currency" HorizontalOptions="Start" VerticalOptions="Center"/>
+                                <Picker x:Name="picker" Title="Select a currency"
+                                        HorizontalOptions="EndAndExpand"
+                                        VerticalOptions="Center" ItemsSource="{Binding CurrencyList}"
+                                        SelectedItem="{Binding TargetCurrency}"
+                                        ItemDisplayBinding="{Binding Name}"></Picker>
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+                </TableView>-->
+                
+        </Grid>
+    </ContentPage.Content>
+</views:MvxContentPage>
