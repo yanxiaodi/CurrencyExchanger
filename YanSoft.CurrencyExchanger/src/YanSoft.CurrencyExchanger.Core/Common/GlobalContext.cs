@@ -212,7 +212,7 @@ namespace YanSoft.CurrencyExchanger.Core.Common
             {
                 new LanguageItem { DisplayName = "中文简体 - Chinese (simplified)", Code = "zh-Hans"},
                 new LanguageItem { DisplayName = "中文繁体 - Chinese (Traditional)", Code = "zh-Hant"},
-                new LanguageItem { DisplayName = "English", Code = "en" },
+                new LanguageItem { DisplayName = "English - English", Code = "en" },
                 new LanguageItem { DisplayName = "Français - French", Code = "fr" },
                 new LanguageItem { DisplayName = "Deutsche - German", Code = "de" },
                 new LanguageItem { DisplayName = "日本語 - Japanese", Code = "ja" },

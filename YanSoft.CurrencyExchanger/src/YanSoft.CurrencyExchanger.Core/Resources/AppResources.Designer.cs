@@ -556,7 +556,7 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dijibouti Franc.
+        ///   Looks up a localized string similar to Djibouti Franc.
         /// </summary>
         internal static string Currency_DJF {
             get {
@@ -1060,7 +1060,7 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mauritania Ougulya.
+        ///   Looks up a localized string similar to Mauritanian Ouguiya.
         /// </summary>
         internal static string Currency_MRO {
             get {
@@ -1429,7 +1429,7 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Swaziland Lilageni.
+        ///   Looks up a localized string similar to Swaziland Lilangeni.
         /// </summary>
         internal static string Currency_SZL {
             get {
@@ -1780,7 +1780,7 @@ namespace YanSoft.CurrencyExchanger.Core.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language (Restart to apply ).
+        ///   Looks up a localized string similar to Language.
         /// </summary>
         internal static string Settings_Language {
             get {

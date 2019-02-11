@@ -290,32 +290,85 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
         #endregion
 
 
+
         #region NavigateToAddCurrenciesAsyncCommand;
-        private IMvxAsyncCommand _navigateToAddCurrenciesAsyncCommand;
-        public IMvxAsyncCommand NavigateToAddCurrenciesAsyncCommand
+
+        #region NavigateToAddCurrenciesTaskNotifier;
+        private MvxNotifyTask _navigateToAddCurrenciesTaskNotifier;
+        /// <summary>
+        /// Use the IsNotCompleted/IsCompleted properties of the NavigateToAddCurrenciesTaskNotifier to show an indicator. Using the MvxNotifyTask is a recommended way to use an async command.
+        /// </summary>
+        /// <value>
+        /// The NavigateToAddCurrencies task notifier.
+        /// </value>
+        public MvxNotifyTask NavigateToAddCurrenciesTaskNotifier
+        {
+            get => _navigateToAddCurrenciesTaskNotifier;
+            set => SetProperty(ref _navigateToAddCurrenciesTaskNotifier, value);
+        }
+        #endregion
+
+        private IMvxCommand _navigateToAddCurrenciesAsyncCommand;
+        public IMvxCommand NavigateToAddCurrenciesAsyncCommand
         {
             get
             {
-                _navigateToAddCurrenciesAsyncCommand = _navigateToAddCurrenciesAsyncCommand ?? new MvxAsyncCommand(MyCommandAsync);
+                _navigateToAddCurrenciesAsyncCommand = _navigateToAddCurrenciesAsyncCommand ?? new MvxCommand(() =>
+                {
+                    NavigateToAddCurrenciesTaskNotifier = MvxNotifyTask.Create(async () =>
+                        {
+                            await NavigateToAddCurrenciesAsync();
+                        },
+                        OnNavigateToAddCurrenciesException);
+                });
                 return _navigateToAddCurrenciesAsyncCommand;
             }
         }
-        private async Task MyCommandAsync()
+        private async Task NavigateToAddCurrenciesAsync()
         {
             // Implement your logic here.
             await _navigationService.Navigate<AddCurrenciesViewModel, ObservableCollection<CurrencyExchangeBindableItem>>(CurrencyList);
+
+        }
+
+        private void OnNavigateToAddCurrenciesException(Exception ex)
+        {
+            // Catch and log the exception here.
         }
         #endregion
 
 
         #region NavigateToEditListAsyncCommand;
-        private IMvxAsyncCommand _NavigateToEditListAsyncCommand;
-        public IMvxAsyncCommand NavigateToEditListAsyncCommand
+
+        #region NavigateToEditListTaskNotifier;
+        private MvxNotifyTask _navigateToEditListTaskNotifier;
+        /// <summary>
+        /// Use the IsNotCompleted/IsCompleted properties of the NavigateToEditListTaskNotifier to show an indicator. Using the MvxNotifyTask is a recommended way to use an async command.
+        /// </summary>
+        /// <value>
+        /// The NavigateToEditList task notifier.
+        /// </value>
+        public MvxNotifyTask NavigateToEditListTaskNotifier
+        {
+            get => _navigateToEditListTaskNotifier;
+            set => SetProperty(ref _navigateToEditListTaskNotifier, value);
+        }
+        #endregion
+
+        private IMvxCommand _navigateToEditListAsyncCommand;
+        public IMvxCommand NavigateToEditListAsyncCommand
         {
             get
             {
-                _NavigateToEditListAsyncCommand = _NavigateToEditListAsyncCommand ?? new MvxAsyncCommand(NavigateToEditListAsync);
-                return _NavigateToEditListAsyncCommand;
+                _navigateToEditListAsyncCommand = _navigateToEditListAsyncCommand ?? new MvxCommand(() =>
+                {
+                    NavigateToEditListTaskNotifier = MvxNotifyTask.Create(async () =>
+                        {
+                            await NavigateToEditListAsync();
+                        },
+                        OnNavigateToEditListException);
+                });
+                return _navigateToEditListAsyncCommand;
             }
         }
         private async Task NavigateToEditListAsync()
@@ -324,7 +377,13 @@ namespace YanSoft.CurrencyExchanger.Core.ViewModels.Home
             await _navigationService.Navigate<EditListViewModel, ObservableCollection<CurrencyExchangeBindableItem>>(CurrencyList);
 
         }
+
+        private void OnNavigateToEditListException(Exception ex)
+        {
+            // Catch and log the exception here.
+        }
         #endregion
+
 
         #region SetBaseCurrencyAsyncCommand;
         private IMvxAsyncCommand<CurrencyExchangeBindableItem> _setBaseCurrencyAsyncCommand;

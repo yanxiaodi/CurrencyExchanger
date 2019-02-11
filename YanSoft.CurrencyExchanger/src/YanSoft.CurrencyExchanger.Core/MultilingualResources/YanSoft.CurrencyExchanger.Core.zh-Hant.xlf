@@ -52,7 +52,7 @@
         </trans-unit>
         <trans-unit id="Currency_BTN" translate="yes" xml:space="preserve">
           <source>Bhutan Ngultrum</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">不丹 ngsuperum</target>
+          <target state="translated">不丹努爾特魯姆</target>
         </trans-unit>
         <trans-unit id="Currency_BWP" translate="yes" xml:space="preserve">
           <source>Botswana Pula</source>
@@ -68,7 +68,7 @@
         </trans-unit>
         <trans-unit id="Currency_CAD" translate="yes" xml:space="preserve">
           <source>Canadian Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">加元</target>
+          <target state="translated">加拿大元</target>
         </trans-unit>
         <trans-unit id="Currency_CHF" translate="yes" xml:space="preserve">
           <source>Swiss Franc</source>
@@ -88,7 +88,7 @@
         </trans-unit>
         <trans-unit id="Currency_CRC" translate="yes" xml:space="preserve">
           <source>Costa Rica Colon</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">哥斯大黎加結腸</target>
+          <target state="translated">哥斯大黎加科朗</target>
         </trans-unit>
         <trans-unit id="Currency_CUP" translate="yes" xml:space="preserve">
           <source>Cuban Peso</source>
@@ -115,8 +115,8 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">捷克克朗</target>
         </trans-unit>
         <trans-unit id="Currency_DJF" translate="yes" xml:space="preserve">
-          <source>Dijibouti Franc</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">dijiboti franc</target>
+          <source>Djibouti Franc</source>
+          <target state="translated">吉布提法郎</target>
         </trans-unit>
         <trans-unit id="Currency_DKK" translate="yes" xml:space="preserve">
           <source>Danish Krone</source>
@@ -136,7 +136,7 @@
         </trans-unit>
         <trans-unit id="Currency_ERN" translate="yes" xml:space="preserve">
           <source>Eritrea Nakfa</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">厄立特里亞 nakfa</target>
+          <target state="translated">厄立特里亞納克法</target>
         </trans-unit>
         <trans-unit id="Currency_ETB" translate="yes" xml:space="preserve">
           <source>Ethiopian Birr</source>
@@ -172,7 +172,7 @@
         </trans-unit>
         <trans-unit id="Currency_GTQ" translate="yes" xml:space="preserve">
           <source>Guatemala Quetzal</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">瓜地馬拉·格查爾</target>
+          <target state="translated">瓜地馬拉格查爾</target>
         </trans-unit>
         <trans-unit id="Currency_GYD" translate="yes" xml:space="preserve">
           <source>Guyana Dollar</source>
@@ -204,7 +204,7 @@
         </trans-unit>
         <trans-unit id="Currency_ILS" translate="yes" xml:space="preserve">
           <source>Israeli Shekel</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">以色列 shekel</target>
+          <target state="translated">以色列謝克爾</target>
         </trans-unit>
         <trans-unit id="Currency_INR" translate="yes" xml:space="preserve">
           <source>Indian Rupee</source>
@@ -248,7 +248,7 @@
         </trans-unit>
         <trans-unit id="Currency_KPW" translate="yes" xml:space="preserve">
           <source>North Korean Won</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">朝鮮溫</target>
+          <target state="translated">朝鮮元</target>
         </trans-unit>
         <trans-unit id="Currency_KRW" translate="yes" xml:space="preserve">
           <source>South-Korean Won</source>
@@ -300,7 +300,7 @@
         </trans-unit>
         <trans-unit id="Currency_MDL" translate="yes" xml:space="preserve">
           <source>Moldovan Leu</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">摩爾多瓦 leu</target>
+          <target state="translated">摩爾多瓦列伊</target>
         </trans-unit>
         <trans-unit id="Currency_MKD" translate="yes" xml:space="preserve">
           <source>Macedonian Denar</source>
@@ -319,8 +319,8 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">澳門帕塔卡</target>
         </trans-unit>
         <trans-unit id="Currency_MRO" translate="yes" xml:space="preserve">
-          <source>Mauritania Ougulya</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">茅利塔尼亞 Ougulya</target>
+          <source>Mauritanian Ouguiya</source>
+          <target state="translated">茅利塔尼亞烏吉亞</target>
         </trans-unit>
         <trans-unit id="Currency_MUR" translate="yes" xml:space="preserve">
           <source>Mauritius Rupee</source>
@@ -332,7 +332,7 @@
         </trans-unit>
         <trans-unit id="Currency_MWK" translate="yes" xml:space="preserve">
           <source>Malawi Kwacha</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">馬拉威 kkacha</target>
+          <target state="translated">馬拉維克瓦查</target>
         </trans-unit>
         <trans-unit id="Currency_MXN" translate="yes" xml:space="preserve">
           <source>Mexican Peso</source>
@@ -380,7 +380,7 @@
         </trans-unit>
         <trans-unit id="Currency_PGK" translate="yes" xml:space="preserve">
           <source>Papua New Guinea Kina</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴布亞紐幾內亞 kina</target>
+          <target state="translated">巴布亞紐幾內亞基那</target>
         </trans-unit>
         <trans-unit id="Currency_PHP" translate="yes" xml:space="preserve">
           <source>Philippine Peso</source>
@@ -396,7 +396,7 @@
         </trans-unit>
         <trans-unit id="Currency_PYG" translate="yes" xml:space="preserve">
           <source>Paraguayan Guarani</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">巴拉圭瓜拉尼語</target>
+          <target state="translated">巴拉圭瓜拉尼</target>
         </trans-unit>
         <trans-unit id="Currency_QAR" translate="yes" xml:space="preserve">
           <source>Qatar Rial</source>
@@ -444,7 +444,9 @@
         </trans-unit>
         <trans-unit id="Currency_SLL" translate="yes" xml:space="preserve">
           <source>Sierra Leone Leone</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">1. 塞拉里昂</target>
+          <target state="translated">塞拉里昂里昂
+
+</target>
         </trans-unit>
         <trans-unit id="Currency_SOS" translate="yes" xml:space="preserve">
           <source>Somali Shilling</source>
@@ -459,8 +461,8 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">敘利亞鎊</target>
         </trans-unit>
         <trans-unit id="Currency_SZL" translate="yes" xml:space="preserve">
-          <source>Swaziland Lilageni</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">史瓦濟蘭 lilageni</target>
+          <source>Swaziland Lilangeni</source>
+          <target state="translated">史瓦濟蘭吉尼</target>
         </trans-unit>
         <trans-unit id="Currency_THB" translate="yes" xml:space="preserve">
           <source>Thai Baht</source>
@@ -472,7 +474,7 @@
         </trans-unit>
         <trans-unit id="Currency_TOP" translate="yes" xml:space="preserve">
           <source>Tonga Pa'anga</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">湯加 pa ' anga</target>
+          <target state="translated">湯加潘加</target>
         </trans-unit>
         <trans-unit id="Currency_TRY" translate="yes" xml:space="preserve">
           <source>New Turkish Lira</source>
@@ -480,7 +482,7 @@
         </trans-unit>
         <trans-unit id="Currency_TTD" translate="yes" xml:space="preserve">
           <source>Trinidad&amp;Tobago Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">&amp;特立尼達和多巴哥元</target>
+          <target state="translated">特立尼達和多巴哥元</target>
         </trans-unit>
         <trans-unit id="Currency_TWD" translate="yes" xml:space="preserve">
           <source>New Taiwan Dollar</source>
@@ -500,7 +502,7 @@
         </trans-unit>
         <trans-unit id="Currency_USD" translate="yes" xml:space="preserve">
           <source>United States Dollar</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">美元 (美元)</target>
+          <target state="translated">美元</target>
         </trans-unit>
         <trans-unit id="Currency_UYU" translate="yes" xml:space="preserve">
           <source>Uruguayan New Peso</source>
@@ -512,7 +514,7 @@
         </trans-unit>
         <trans-unit id="Currency_VND" translate="yes" xml:space="preserve">
           <source>Vietnam Dong</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">董越南</target>
+          <target state="translated">越南盾</target>
         </trans-unit>
         <trans-unit id="Currency_VUV" translate="yes" xml:space="preserve">
           <source>Vanuatu Vatu</source>
@@ -652,7 +654,7 @@
         </trans-unit>
         <trans-unit id="Currency_BAM" translate="yes" xml:space="preserve">
           <source>Bosnia And Herzegovina Konvertibilna Marka</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">波士尼亞和黑塞哥維那 konvertibilna marka</target>
+          <target state="translated">波士尼亞和黑塞哥維那可兌換馬克</target>
         </trans-unit>
         <trans-unit id="Currency_GHS" translate="yes" xml:space="preserve">
           <source>Ghanaian Cedi</source>
@@ -660,7 +662,7 @@
         </trans-unit>
         <trans-unit id="Currency_MZN" translate="yes" xml:space="preserve">
           <source>Mozambican Metical</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">莫三比克墨西哥</target>
+          <target state="translated">莫三比克梅蒂卡</target>
         </trans-unit>
         <trans-unit id="AddCurrencies_SearchEntryPlaceholder" translate="yes" xml:space="preserve">
           <source>currency code or currency name</source>
@@ -672,23 +674,23 @@
         </trans-unit>
         <trans-unit id="About_Disclaimer_Title" translate="yes" xml:space="preserve">
           <source>Disclaimer</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">免責 聲明</target>
+          <target state="translated">免責聲明</target>
         </trans-unit>
         <trans-unit id="About_Feedback" translate="yes" xml:space="preserve">
           <source>feedback</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">回饋</target>
+          <target state="translated">反饋</target>
         </trans-unit>
         <trans-unit id="About_LikeMe" translate="yes" xml:space="preserve">
           <source>like me!</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">就像我一樣!</target>
+          <target state="translated">給個好評</target>
         </trans-unit>
         <trans-unit id="About_Share" translate="yes" xml:space="preserve">
           <source>share</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">共用</target>
+          <target state="translated">分享</target>
         </trans-unit>
         <trans-unit id="About_Share_Content" translate="yes" xml:space="preserve">
           <source>I recommend Currency Exchanger to get latest currency rates.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">我建議貨幣交換器獲取最新的貨幣匯率。</target>
+          <target state="translated">我建議使用 Currency Exchanger獲取最新的貨幣匯率。</target>
         </trans-unit>
         <trans-unit id="Toast_NetworkError" translate="yes" xml:space="preserve">
           <source>Network unavailable.</source>
@@ -728,7 +730,7 @@
         </trans-unit>
         <trans-unit id="Button_OK" translate="yes" xml:space="preserve">
           <source>OK</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">還行</target>
+          <target state="translated">確定</target>
         </trans-unit>
         <trans-unit id="Toast_Can_Not_Delete_Base_Currency" translate="yes" xml:space="preserve">
           <source>Cannot delete the base currency.</source>
@@ -764,7 +766,7 @@
         </trans-unit>
         <trans-unit id="Settings_Section_Common" translate="yes" xml:space="preserve">
           <source>Common</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">常見</target>
+          <target state="translated">常用</target>
         </trans-unit>
         <trans-unit id="Settings_Section_Currencies" translate="yes" xml:space="preserve">
           <source>Currencies</source>
@@ -772,7 +774,7 @@
         </trans-unit>
         <trans-unit id="Menu_About" translate="yes" xml:space="preserve">
           <source>About</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">關於金龍</target>
+          <target state="translated">關於</target>
         </trans-unit>
         <trans-unit id="Menu_Chart" translate="yes" xml:space="preserve">
           <source>Chart</source>
@@ -780,7 +782,7 @@
         </trans-unit>
         <trans-unit id="Menu_Home" translate="yes" xml:space="preserve">
           <source>Home</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">家</target>
+          <target state="translated">首頁</target>
         </trans-unit>
         <trans-unit id="Menu_Settings" translate="yes" xml:space="preserve">
           <source>Settings</source>
@@ -792,15 +794,14 @@
         </trans-unit>
         <trans-unit id="Settings_AutoRefresh" translate="yes" xml:space="preserve">
           <source>Auto refresh when app starts</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">應用啟動時的自動 fefresh</target>
-          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
+          <target state="translated">應用啟動時自動刷新</target>
         </trans-unit>
         <trans-unit id="Settings_Decimals" translate="yes" xml:space="preserve">
           <source>Decimals</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">小數</target>
         </trans-unit>
         <trans-unit id="Settings_Language" translate="yes" xml:space="preserve">
-          <source>Language (Restart to apply )</source>
+          <source>Language</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">語言</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
@@ -814,11 +815,11 @@
         </trans-unit>
         <trans-unit id="Settings_PullToRefresh" translate="yes" xml:space="preserve">
           <source>Pull to refresh (No UWP)</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">下拉刷新 (無 uwp)</target>
+          <target state="translated">下拉刷新 (不支持UWP)</target>
         </trans-unit>
         <trans-unit id="About_Help_Content" translate="yes" xml:space="preserve">
           <source>Click the flag image of the currency item to set the base currency. Click the right area of the currency item to input number. Right-click (UWP) or long-press(Android and iOS) currency item to delete and view the chart.</source>
-          <target state="needs-review-translation" state-qualifier="mt-suggestion">按一下貨幣項的標誌圖像以設置基礎貨幣。按一下貨幣專案的右側區域以輸入編號。按右鍵 (uwp) 或長按 (android 和 ios) 貨幣專案以刪除和查看圖表。</target>
+          <target state="translated">按一下貨幣項的標誌圖像以設置基礎貨幣。按一下貨幣項的右側區域以輸入數字。按右鍵 (UWP) 或長按 (Android 和 iOS) 貨幣項以刪除和查看圖表。</target>
         </trans-unit>
         <trans-unit id="About_Help_Title" translate="yes" xml:space="preserve">
           <source>Help</source>

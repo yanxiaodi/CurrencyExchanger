@@ -199,7 +199,7 @@
     <value>Czech Koruna</value>
   </data>
   <data name="Currency_DJF" xml:space="preserve">
-    <value>Dijibouti Franc</value>
+    <value>Djibouti Franc</value>
   </data>
   <data name="Currency_DKK" xml:space="preserve">
     <value>Danish Krone</value>
@@ -352,7 +352,7 @@
     <value>Macau Pataca</value>
   </data>
   <data name="Currency_MRO" xml:space="preserve">
-    <value>Mauritania Ougulya</value>
+    <value>Mauritanian Ouguiya</value>
   </data>
   <data name="Currency_MUR" xml:space="preserve">
     <value>Mauritius Rupee</value>
@@ -457,7 +457,7 @@
     <value>Syrian Pound</value>
   </data>
   <data name="Currency_SZL" xml:space="preserve">
-    <value>Swaziland Lilageni</value>
+    <value>Swaziland Lilangeni</value>
   </data>
   <data name="Currency_THB" xml:space="preserve">
     <value>Thai Baht</value>
@@ -712,7 +712,7 @@
     <value>Decimals</value>
   </data>
   <data name="Settings_Language" xml:space="preserve">
-    <value>Language (Restart to apply )</value>
+    <value>Language</value>
   </data>
   <data name="Settings_LocalizeCurrencySymbol" xml:space="preserve">
     <value>Localize currency symbol</value>
