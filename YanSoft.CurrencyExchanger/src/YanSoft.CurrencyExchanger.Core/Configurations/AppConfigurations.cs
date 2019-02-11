@@ -31,5 +31,7 @@ namespace YanSoft.CurrencyExchanger.Core.Configurations
         public const string MicrosoftAdTestAdUnitId = "test";
 
         public const string FeedbackEmail = "yan_xiaodi@hotmail.com";
+
+        public const string TokenKey = "#{TokenKey}#";
     }
 }
