@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using YanSoft.CurrencyExchanger.Core.Configurations;
 
 namespace YanSoft.CurrencyExchanger.Core.Utils
 {
@@ -9,7 +10,7 @@ namespace YanSoft.CurrencyExchanger.Core.Utils
         public static string GetToken(DateTime timeNow, string saltKey)
         {
             int timeStamp = DateTimeHelper.ConvertDateTimeToTimestamp(timeNow.ToUniversalTime());
-            string key = "*****";
+            string key = AppConfigurations.TokenKey;
             string value = $"ts={timeStamp.ToString()}&key={key}&sk={saltKey}";
             string signature = SHA1(value);
             signature = signature.Insert(7, timeStamp.ToString() + "|");

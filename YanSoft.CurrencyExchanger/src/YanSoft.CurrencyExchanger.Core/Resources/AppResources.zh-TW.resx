@@ -46,7 +46,7 @@
     <value>巴哈馬元</value>
   </data>
   <data name="Currency_BTN" xml:space="preserve">
-    <value>不丹 ngsuperum</value>
+    <value>不丹努爾特魯姆</value>
   </data>
   <data name="Currency_BWP" xml:space="preserve">
     <value>博茨瓦納普拉</value>
@@ -58,7 +58,7 @@
     <value>貝里斯元</value>
   </data>
   <data name="Currency_CAD" xml:space="preserve">
-    <value>加元</value>
+    <value>加拿大元</value>
   </data>
   <data name="Currency_CHF" xml:space="preserve">
     <value>瑞士法郎</value>
@@ -73,7 +73,7 @@
     <value>哥倫比亞比索</value>
   </data>
   <data name="Currency_CRC" xml:space="preserve">
-    <value>哥斯大黎加結腸</value>
+    <value>哥斯大黎加科朗</value>
   </data>
   <data name="Currency_CUP" xml:space="preserve">
     <value>古巴比索</value>
@@ -94,7 +94,7 @@
     <value>捷克克朗</value>
   </data>
   <data name="Currency_DJF" xml:space="preserve">
-    <value>dijiboti franc</value>
+    <value>吉布提法郎</value>
   </data>
   <data name="Currency_DKK" xml:space="preserve">
     <value>丹麥克朗</value>
@@ -109,7 +109,7 @@
     <value>埃及鎊</value>
   </data>
   <data name="Currency_ERN" xml:space="preserve">
-    <value>厄立特里亞 nakfa</value>
+    <value>厄立特里亞納克法</value>
   </data>
   <data name="Currency_ETB" xml:space="preserve">
     <value>埃塞俄比亞比爾</value>
@@ -136,7 +136,7 @@
     <value>幾內亞法郎</value>
   </data>
   <data name="Currency_GTQ" xml:space="preserve">
-    <value>瓜地馬拉·格查爾</value>
+    <value>瓜地馬拉格查爾</value>
   </data>
   <data name="Currency_GYD" xml:space="preserve">
     <value>蓋亞納元</value>
@@ -160,7 +160,7 @@
     <value>印尼盾</value>
   </data>
   <data name="Currency_ILS" xml:space="preserve">
-    <value>以色列 shekel</value>
+    <value>以色列謝克爾</value>
   </data>
   <data name="Currency_INR" xml:space="preserve">
     <value>印度盧比</value>
@@ -193,7 +193,7 @@
     <value>科摩羅法郎</value>
   </data>
   <data name="Currency_KPW" xml:space="preserve">
-    <value>朝鮮溫</value>
+    <value>朝鮮元</value>
   </data>
   <data name="Currency_KRW" xml:space="preserve">
     <value>韓元</value>
@@ -232,7 +232,7 @@
     <value>摩洛哥迪拉姆</value>
   </data>
   <data name="Currency_MDL" xml:space="preserve">
-    <value>摩爾多瓦 leu</value>
+    <value>摩爾多瓦列伊</value>
   </data>
   <data name="Currency_MKD" xml:space="preserve">
     <value>馬其頓德納爾</value>
@@ -247,7 +247,7 @@
     <value>澳門帕塔卡</value>
   </data>
   <data name="Currency_MRO" xml:space="preserve">
-    <value>茅利塔尼亞 Ougulya</value>
+    <value>茅利塔尼亞烏吉亞</value>
   </data>
   <data name="Currency_MUR" xml:space="preserve">
     <value>模里西斯盧比</value>
@@ -256,7 +256,7 @@
     <value>馬爾地夫魯菲亞</value>
   </data>
   <data name="Currency_MWK" xml:space="preserve">
-    <value>馬拉威 kkacha</value>
+    <value>馬拉維克瓦查</value>
   </data>
   <data name="Currency_MXN" xml:space="preserve">
     <value>墨西哥比索</value>
@@ -292,7 +292,7 @@
     <value>秘魯新索爾</value>
   </data>
   <data name="Currency_PGK" xml:space="preserve">
-    <value>巴布亞紐幾內亞 kina</value>
+    <value>巴布亞紐幾內亞基那</value>
   </data>
   <data name="Currency_PHP" xml:space="preserve">
     <value>菲律賓比索</value>
@@ -304,7 +304,7 @@
     <value>波蘭茲羅提</value>
   </data>
   <data name="Currency_PYG" xml:space="preserve">
-    <value>巴拉圭瓜拉尼語</value>
+    <value>巴拉圭瓜拉尼</value>
   </data>
   <data name="Currency_QAR" xml:space="preserve">
     <value>卡塔爾瑞爾</value>
@@ -340,7 +340,9 @@
     <value>聖赫勒拿鎊</value>
   </data>
   <data name="Currency_SLL" xml:space="preserve">
-    <value>1. 塞拉里昂</value>
+    <value>塞拉里昂里昂
+
+</value>
   </data>
   <data name="Currency_SOS" xml:space="preserve">
     <value>索馬里先令</value>
@@ -352,7 +354,7 @@
     <value>敘利亞鎊</value>
   </data>
   <data name="Currency_SZL" xml:space="preserve">
-    <value>史瓦濟蘭 lilageni</value>
+    <value>史瓦濟蘭吉尼</value>
   </data>
   <data name="Currency_THB" xml:space="preserve">
     <value>泰銖</value>
@@ -361,13 +363,13 @@
     <value>突尼斯第納爾</value>
   </data>
   <data name="Currency_TOP" xml:space="preserve">
-    <value>湯加 pa ' anga</value>
+    <value>湯加潘加</value>
   </data>
   <data name="Currency_TRY" xml:space="preserve">
     <value>新土耳其里拉</value>
   </data>
   <data name="Currency_TTD" xml:space="preserve">
-    <value>&amp;特立尼達和多巴哥元</value>
+    <value>特立尼達和多巴哥元</value>
   </data>
   <data name="Currency_TWD" xml:space="preserve">
     <value>新臺幣</value>
@@ -382,7 +384,7 @@
     <value>烏干達先令</value>
   </data>
   <data name="Currency_USD" xml:space="preserve">
-    <value>美元 (美元)</value>
+    <value>美元</value>
   </data>
   <data name="Currency_UYU" xml:space="preserve">
     <value>烏拉圭新比索</value>
@@ -391,7 +393,7 @@
     <value>委內瑞拉玻利瓦爾省</value>
   </data>
   <data name="Currency_VND" xml:space="preserve">
-    <value>董越南</value>
+    <value>越南盾</value>
   </data>
   <data name="Currency_VUV" xml:space="preserve">
     <value>瓦努阿圖瓦圖</value>
@@ -496,13 +498,13 @@
     <value>尚比亞克瓦查</value>
   </data>
   <data name="Currency_BAM" xml:space="preserve">
-    <value>波士尼亞和黑塞哥維那 konvertibilna marka</value>
+    <value>波士尼亞和黑塞哥維那可兌換馬克</value>
   </data>
   <data name="Currency_GHS" xml:space="preserve">
     <value>加納塞迪</value>
   </data>
   <data name="Currency_MZN" xml:space="preserve">
-    <value>莫三比克墨西哥</value>
+    <value>莫三比克梅蒂卡</value>
   </data>
   <data name="AddCurrencies_SearchEntryPlaceholder" xml:space="preserve">
     <value>幣種代碼或貨幣名稱</value>
@@ -511,19 +513,19 @@
     <value>此應用程式的匯率資料來自 www.currencyconverterapi.com。您使用本應用程式並依賴內容的任何風險和後果應自行承擔, 此應用程式和開發人員不承擔任何法律責任。</value>
   </data>
   <data name="About_Disclaimer_Title" xml:space="preserve">
-    <value>免責 聲明</value>
+    <value>免責聲明</value>
   </data>
   <data name="About_Feedback" xml:space="preserve">
-    <value>回饋</value>
+    <value>反饋</value>
   </data>
   <data name="About_LikeMe" xml:space="preserve">
-    <value>就像我一樣!</value>
+    <value>給個好評</value>
   </data>
   <data name="About_Share" xml:space="preserve">
-    <value>共用</value>
+    <value>分享</value>
   </data>
   <data name="About_Share_Content" xml:space="preserve">
-    <value>我建議貨幣交換器獲取最新的貨幣匯率。</value>
+    <value>我建議使用 Currency Exchanger獲取最新的貨幣匯率。</value>
   </data>
   <data name="Toast_NetworkError" xml:space="preserve">
     <value>網路不可用。</value>
@@ -553,7 +555,7 @@
     <value>編輯清單</value>
   </data>
   <data name="Button_OK" xml:space="preserve">
-    <value>還行</value>
+    <value>確定</value>
   </data>
   <data name="Toast_Can_Not_Delete_Base_Currency" xml:space="preserve">
     <value>無法刪除基礎貨幣。</value>
@@ -562,7 +564,7 @@
     <value>沒有可用於基礎貨幣的圖表。</value>
   </data>
   <data name="About_PageTitle" xml:space="preserve">
-    <value>關於金龍</value>
+    <value>關於</value>
   </data>
   <data name="AddCurrencies_PageTitle" xml:space="preserve">
     <value>添加貨幣</value>
@@ -580,19 +582,19 @@
     <value>設置</value>
   </data>
   <data name="Settings_Section_Common" xml:space="preserve">
-    <value>常見</value>
+    <value>常用</value>
   </data>
   <data name="Settings_Section_Currencies" xml:space="preserve">
     <value>貨幣</value>
   </data>
   <data name="Menu_About" xml:space="preserve">
-    <value>關於金龍</value>
+    <value>關於</value>
   </data>
   <data name="Menu_Chart" xml:space="preserve">
     <value>圖表</value>
   </data>
   <data name="Menu_Home" xml:space="preserve">
-    <value>家</value>
+    <value>首頁</value>
   </data>
   <data name="Menu_Settings" xml:space="preserve">
     <value>設置</value>
@@ -601,7 +603,7 @@
     <value>自動初始化為0</value>
   </data>
   <data name="Settings_AutoRefresh" xml:space="preserve">
-    <value>應用啟動時的自動 fefresh</value>
+    <value>應用啟動時自動刷新</value>
   </data>
   <data name="Settings_Decimals" xml:space="preserve">
     <value>小數</value>
@@ -616,10 +618,10 @@
     <value>將基礎貨幣固定到頂部</value>
   </data>
   <data name="Settings_PullToRefresh" xml:space="preserve">
-    <value>拉刷新 (無 uwp)</value>
+    <value>下拉刷新 (不支持UWP)</value>
   </data>
   <data name="About_Help_Content" xml:space="preserve">
-    <value>按一下貨幣項的標誌圖像以設置基礎貨幣。按一下貨幣專案的右側區域以輸入編號。按右鍵 (uwp) 或長按 (android 和 ios) 貨幣專案以刪除和查看圖表。</value>
+    <value>按一下貨幣項的標誌圖像以設置基礎貨幣。按一下貨幣項的右側區域以輸入數字。按右鍵 (UWP) 或長按 (Android 和 iOS) 貨幣項以刪除和查看圖表。</value>
   </data>
   <data name="About_Help_Title" xml:space="preserve">
     <value>説明</value>

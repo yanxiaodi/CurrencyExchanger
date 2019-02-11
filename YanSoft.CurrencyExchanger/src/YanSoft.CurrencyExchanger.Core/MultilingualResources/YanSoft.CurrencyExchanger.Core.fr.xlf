@@ -115,8 +115,9 @@
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Couronne tchèque</target>
         </trans-unit>
         <trans-unit id="Currency_DJF" translate="yes" xml:space="preserve">
-          <source>Dijibouti Franc</source>
+          <source>Djibouti Franc</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Dijibouti Franc</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Currency_DKK" translate="yes" xml:space="preserve">
           <source>Danish Krone</source>
@@ -319,8 +320,9 @@
           <target state="needs-review-translation" state-qualifier="tm-suggestion">Macao - Pataca</target>
         </trans-unit>
         <trans-unit id="Currency_MRO" translate="yes" xml:space="preserve">
-          <source>Mauritania Ougulya</source>
+          <source>Mauritanian Ouguiya</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">La Mauritanie ouguiya</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Currency_MUR" translate="yes" xml:space="preserve">
           <source>Mauritius Rupee</source>
@@ -459,8 +461,9 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Livre syrienne</target>
         </trans-unit>
         <trans-unit id="Currency_SZL" translate="yes" xml:space="preserve">
-          <source>Swaziland Lilageni</source>
+          <source>Swaziland Lilangeni</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Swaziland Lilageni</target>
+          <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Currency_THB" translate="yes" xml:space="preserve">
           <source>Thai Baht</source>
@@ -800,7 +803,7 @@
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Nombres décimaux</target>
         </trans-unit>
         <trans-unit id="Settings_Language" translate="yes" xml:space="preserve">
-          <source>Language (Restart to apply )</source>
+          <source>Language</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Langue</target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
