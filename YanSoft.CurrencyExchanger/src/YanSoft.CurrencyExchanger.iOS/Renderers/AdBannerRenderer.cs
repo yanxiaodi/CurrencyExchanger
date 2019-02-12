@@ -49,12 +49,7 @@ namespace YanSoft.CurrencyExchanger.iOS.Renderers
         {
             adControl = new BannerView(AdSizeCons.SmartBannerPortrait)
             {
-#if DEBUG
-                AdUnitID = AppConfigurations.AdMobIosBannerTestAdUnitId,
-#endif
-#if !DEBUG
-                AdUnitId = AppConfigurations.AdMobIosAppId,
-#endif
+                AdUnitID = AppConfigurations.AdMobIosAppId,
             };
             adControl.RootViewController = GetRootViewController();
             adControl.LoadRequest(Request.GetDefaultRequest());
