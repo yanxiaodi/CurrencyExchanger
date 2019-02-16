@@ -46,26 +46,27 @@
                             Source={x:Reference MainContent}}"></behaviors:InvokeCommandAction>
                     </behaviors:EventHandlerBehavior>
                 </sfCombobox:SfComboBox.Behaviors>
-                    <sfCombobox:SfComboBox.ItemTemplate>
-                        <DataTemplate>
-                            <StackLayout Padding="4" BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
-                                <Image Margin="0" HeightRequest="70"
+                <sfCombobox:SfComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="4" BackgroundColor="Transparent" Spacing="0" Orientation="Horizontal" VerticalOptions="CenterAndExpand">
+                            <Image Margin="0" HeightRequest="70"
                                        Source="{Binding Image, Converter={StaticResource FlagConverter}}">
-                                </Image>
-                                <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Center" Padding="6,0,6,0" HorizontalOptions="FillAndExpand">
-                                    <Label Text="{Binding Code}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}"></Label>
-                                    <Label Text="{Binding Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}" ></Label>
-                                </StackLayout>
+                            </Image>
+                            <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Center" Padding="6,0,6,0" HorizontalOptions="FillAndExpand">
+                                <Label Text="{Binding Code}" HorizontalOptions="Start" Style="{StaticResource myListItemTitleTextStyle}"></Label>
+                                <Label Text="{Binding Name}" HorizontalOptions="Start" Style="{StaticResource myListItemDetailTextStyle}" ></Label>
                             </StackLayout>
-                        </DataTemplate>
-                    </sfCombobox:SfComboBox.ItemTemplate>
-                </sfCombobox:SfComboBox>
+                        </StackLayout>
+                    </DataTemplate>
+                </sfCombobox:SfComboBox.ItemTemplate>
+            </sfCombobox:SfComboBox>
             <sfButtons:SfSegmentedControl x:Name="segmentedControl" Grid.Row="2"
                                            HeightRequest="80" Color="Transparent" 
             BorderColor="#929292" FontColor="#929292"
             BackgroundColor="Transparent"
                 CornerRadius="5" VisibleSegmentsCount="6" DisplayMode="Text" VerticalOptions="Start"
-                ItemsSource="{Binding RangeList}" SelectedIndex="{Binding SelectedRangeIndex, Mode=TwoWay}">
+                ItemsSource="{Binding RangeList}"
+                SelectedIndex="{Binding SelectedRangeIndex, Mode=TwoWay}">
                 <sfButtons:SfSegmentedControl.SelectionTextColor>
                     <OnPlatform UWP="White" iOS="#007CEE" Android="#007CEE"></OnPlatform>
                 </sfButtons:SfSegmentedControl.SelectionTextColor>
@@ -81,7 +82,7 @@
                     </sfButtons:SelectionIndicatorSettings>
                 </sfButtons:SfSegmentedControl.SelectionIndicatorSettings>
             </sfButtons:SfSegmentedControl>
-            <StackLayout Grid.Row="3" Orientation="Vertical">
+            <!--<StackLayout Grid.Row="3" Orientation="Vertical">
                 <Label Text="{Binding SelectedItemDateTime}" HorizontalOptions="Center" />
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                     <Label Text="{Binding SelectedItemOpen}" HorizontalOptions="Start"></Label>
@@ -91,31 +92,26 @@
                     <Label Text="{Binding SelectedItemHigh}" HorizontalOptions="Start"></Label>
                     <Label Text="{Binding SelectedItemLow}" HorizontalOptions="EndAndExpand"></Label>
                 </StackLayout>
-            </StackLayout>
-            <sfChart:SfChart Grid.Row="4" x:Name="HistoryChart" TrackballCreated="HistoryChart_TrackballCreated">
+            </StackLayout>-->
+            <sfChart:SfChart Grid.Row="3" Grid.RowSpan="2" x:Name="HistoryChart" >
                 <sfChart:SfChart.PrimaryAxis>
-                    <sfChart:DateTimeAxis>
-                    </sfChart:DateTimeAxis>
+                    <sfChart:DateTimeAxis ShowTrackballInfo="true">
+                    </sfChart:DateTimeAxis >
                 </sfChart:SfChart.PrimaryAxis>
                 <sfChart:SfChart.SecondaryAxis>
                     <sfChart:NumericalAxis >
                     </sfChart:NumericalAxis>
                 </sfChart:SfChart.SecondaryAxis>
-                <!--<sfChart:SfChart.Series>
-                    <sfChart:ColumnSeries ItemsSource="{Binding CurrencyRateHistoryItemList}"
-                                          XBindingPath="DateTime" YBindingPath="Close"/>
-                </sfChart:SfChart.Series>-->
                 <sfChart:SfChart.Series>
                     <sfChart:HiLoOpenCloseSeries Name="OHLC" ItemsSource="{Binding CurrencyRateHistoryItemList}" XBindingPath="DateTime" Open="Open" High="High" Low="Low" Close="Close"/>
-                    <!--<sfChart:SplineSeries ItemsSource ="{Binding CurrencyRateHistoryItemList}" XBindingPath="DateTime"
-	  					YBindingPath="Close" SplineType="Cardinal" />-->
                 </sfChart:SfChart.Series>
-                
+
                 <sfChart:SfChart.TechnicalIndicators>
                     <sfChart:AccumulationDistributionIndicator SeriesName="OHLC"/>
                 </sfChart:SfChart.TechnicalIndicators>
                 <sfChart:SfChart.ChartBehaviors>
-                    <sfChart:ChartTrackballBehavior />
+                    <sfChart:ChartTrackballBehavior ShowLabel="True" ShowLine="True"
+                                                    />
                 </sfChart:SfChart.ChartBehaviors>
             </sfChart:SfChart>
 
@@ -144,7 +140,7 @@
                     </TableSection>
                 </TableRoot>
                 </TableView>-->
-                
+
         </Grid>
     </ContentPage.Content>
 </views:MvxContentPage>

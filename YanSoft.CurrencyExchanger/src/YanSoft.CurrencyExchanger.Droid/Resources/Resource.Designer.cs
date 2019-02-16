@@ -10484,44 +10484,44 @@ namespace YanSoft.CurrencyExchanger.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f0e0054
-			public const int abc_background_cache_hint_selector_material_dark = 2131624020;
-			
 			// aapt resource value: 0x7f0e0055
-			public const int abc_background_cache_hint_selector_material_light = 2131624021;
+			public const int abc_background_cache_hint_selector_material_dark = 2131624021;
 			
 			// aapt resource value: 0x7f0e0056
-			public const int abc_btn_colored_borderless_text_material = 2131624022;
+			public const int abc_background_cache_hint_selector_material_light = 2131624022;
 			
 			// aapt resource value: 0x7f0e0057
-			public const int abc_btn_colored_text_material = 2131624023;
+			public const int abc_btn_colored_borderless_text_material = 2131624023;
 			
 			// aapt resource value: 0x7f0e0058
-			public const int abc_color_highlight_material = 2131624024;
+			public const int abc_btn_colored_text_material = 2131624024;
 			
 			// aapt resource value: 0x7f0e0059
-			public const int abc_hint_foreground_material_dark = 2131624025;
+			public const int abc_color_highlight_material = 2131624025;
 			
 			// aapt resource value: 0x7f0e005a
-			public const int abc_hint_foreground_material_light = 2131624026;
+			public const int abc_hint_foreground_material_dark = 2131624026;
+			
+			// aapt resource value: 0x7f0e005b
+			public const int abc_hint_foreground_material_light = 2131624027;
 			
 			// aapt resource value: 0x7f0e0004
 			public const int abc_input_method_navigation_guard = 2131623940;
 			
-			// aapt resource value: 0x7f0e005b
-			public const int abc_primary_text_disable_only_material_dark = 2131624027;
-			
 			// aapt resource value: 0x7f0e005c
-			public const int abc_primary_text_disable_only_material_light = 2131624028;
+			public const int abc_primary_text_disable_only_material_dark = 2131624028;
 			
 			// aapt resource value: 0x7f0e005d
-			public const int abc_primary_text_material_dark = 2131624029;
+			public const int abc_primary_text_disable_only_material_light = 2131624029;
 			
 			// aapt resource value: 0x7f0e005e
-			public const int abc_primary_text_material_light = 2131624030;
+			public const int abc_primary_text_material_dark = 2131624030;
 			
 			// aapt resource value: 0x7f0e005f
-			public const int abc_search_url_text = 2131624031;
+			public const int abc_primary_text_material_light = 2131624031;
+			
+			// aapt resource value: 0x7f0e0060
+			public const int abc_search_url_text = 2131624032;
 			
 			// aapt resource value: 0x7f0e0005
 			public const int abc_search_url_text_normal = 2131623941;
@@ -10532,29 +10532,29 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0e0007
 			public const int abc_search_url_text_selected = 2131623943;
 			
-			// aapt resource value: 0x7f0e0060
-			public const int abc_secondary_text_material_dark = 2131624032;
-			
 			// aapt resource value: 0x7f0e0061
-			public const int abc_secondary_text_material_light = 2131624033;
+			public const int abc_secondary_text_material_dark = 2131624033;
 			
 			// aapt resource value: 0x7f0e0062
-			public const int abc_tint_btn_checkable = 2131624034;
+			public const int abc_secondary_text_material_light = 2131624034;
 			
 			// aapt resource value: 0x7f0e0063
-			public const int abc_tint_default = 2131624035;
+			public const int abc_tint_btn_checkable = 2131624035;
 			
 			// aapt resource value: 0x7f0e0064
-			public const int abc_tint_edittext = 2131624036;
+			public const int abc_tint_default = 2131624036;
 			
 			// aapt resource value: 0x7f0e0065
-			public const int abc_tint_seek_thumb = 2131624037;
+			public const int abc_tint_edittext = 2131624037;
 			
 			// aapt resource value: 0x7f0e0066
-			public const int abc_tint_spinner = 2131624038;
+			public const int abc_tint_seek_thumb = 2131624038;
 			
 			// aapt resource value: 0x7f0e0067
-			public const int abc_tint_switch_track = 2131624039;
+			public const int abc_tint_spinner = 2131624039;
+			
+			// aapt resource value: 0x7f0e0068
+			public const int abc_tint_switch_track = 2131624040;
 			
 			// aapt resource value: 0x7f0e004e
 			public const int accentColor = 2131624014;
@@ -10619,14 +10619,14 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0e0003
 			public const int cardview_shadow_start_color = 2131623939;
 			
-			// aapt resource value: 0x7f0e0068
-			public const int control_checkable_material = 2131624040;
+			// aapt resource value: 0x7f0e0069
+			public const int control_checkable_material = 2131624041;
 			
 			// aapt resource value: 0x7f0e0040
 			public const int design_bottom_navigation_shadow_color = 2131624000;
 			
-			// aapt resource value: 0x7f0e0069
-			public const int design_error = 2131624041;
+			// aapt resource value: 0x7f0e006a
+			public const int design_error = 2131624042;
 			
 			// aapt resource value: 0x7f0e0041
 			public const int design_fab_shadow_end_color = 2131624001;
@@ -10652,8 +10652,8 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0e0048
 			public const int design_snackbar_background_color = 2131624008;
 			
-			// aapt resource value: 0x7f0e006a
-			public const int design_tint_password_toggle = 2131624042;
+			// aapt resource value: 0x7f0e006b
+			public const int design_tint_password_toggle = 2131624043;
 			
 			// aapt resource value: 0x7f0e0016
 			public const int dim_foreground_disabled_material_dark = 2131623958;
@@ -10682,8 +10682,11 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0e001e
 			public const int highlighted_text_material_light = 2131623966;
 			
+			// aapt resource value: 0x7f0e0054
+			public const int ic_launcher_background = 2131624020;
+			
 			// aapt resource value: 0x7f0e0053
-			public const int ic_launcher_background = 2131624019;
+			public const int iconBackground = 2131624019;
 			
 			// aapt resource value: 0x7f0e001f
 			public const int material_blue_grey_800 = 2131623967;
@@ -10793,11 +10796,11 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0e003a
 			public const int switch_thumb_disabled_material_light = 2131623994;
 			
-			// aapt resource value: 0x7f0e006b
-			public const int switch_thumb_material_dark = 2131624043;
-			
 			// aapt resource value: 0x7f0e006c
-			public const int switch_thumb_material_light = 2131624044;
+			public const int switch_thumb_material_dark = 2131624044;
+			
+			// aapt resource value: 0x7f0e006d
+			public const int switch_thumb_material_light = 2131624045;
 			
 			// aapt resource value: 0x7f0e003b
 			public const int switch_thumb_normal_material_dark = 2131623995;
@@ -11602,26 +11605,26 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f0201d8
-			public const int avd_hide_password_1 = 2130837976;
-			
 			// aapt resource value: 0x7f0201d9
-			public const int avd_hide_password_2 = 2130837977;
+			public const int avd_hide_password_1 = 2130837977;
 			
 			// aapt resource value: 0x7f0201da
-			public const int avd_hide_password_3 = 2130837978;
+			public const int avd_hide_password_2 = 2130837978;
+			
+			// aapt resource value: 0x7f0201db
+			public const int avd_hide_password_3 = 2130837979;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f0201db
-			public const int avd_show_password_1 = 2130837979;
-			
 			// aapt resource value: 0x7f0201dc
-			public const int avd_show_password_2 = 2130837980;
+			public const int avd_show_password_1 = 2130837980;
 			
 			// aapt resource value: 0x7f0201dd
-			public const int avd_show_password_3 = 2130837981;
+			public const int avd_show_password_2 = 2130837981;
+			
+			// aapt resource value: 0x7f0201de
+			public const int avd_show_password_3 = 2130837982;
 			
 			// aapt resource value: 0x7f020056
 			public const int btn_checkbox = 2130837590;
@@ -12745,11 +12748,11 @@ namespace YanSoft.CurrencyExchanger.Droid
 			// aapt resource value: 0x7f0201cb
 			public const int notification_icon_background = 2130837963;
 			
-			// aapt resource value: 0x7f0201d6
-			public const int notification_template_icon_bg = 2130837974;
-			
 			// aapt resource value: 0x7f0201d7
-			public const int notification_template_icon_low_bg = 2130837975;
+			public const int notification_template_icon_bg = 2130837975;
+			
+			// aapt resource value: 0x7f0201d8
+			public const int notification_template_icon_low_bg = 2130837976;
 			
 			// aapt resource value: 0x7f0201cc
 			public const int notification_tile_bg = 2130837964;
@@ -12776,10 +12779,13 @@ namespace YanSoft.CurrencyExchanger.Droid
 			public const int splash_screen = 2130837971;
 			
 			// aapt resource value: 0x7f0201d4
-			public const int tooltip_frame_dark = 2130837972;
+			public const int splashscreen = 2130837972;
 			
 			// aapt resource value: 0x7f0201d5
-			public const int tooltip_frame_light = 2130837973;
+			public const int tooltip_frame_dark = 2130837973;
+			
+			// aapt resource value: 0x7f0201d6
+			public const int tooltip_frame_light = 2130837974;
 			
 			static Drawable()
 			{

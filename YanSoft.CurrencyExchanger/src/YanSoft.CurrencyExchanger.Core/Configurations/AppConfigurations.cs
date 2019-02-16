@@ -27,6 +27,9 @@ namespace YanSoft.CurrencyExchanger.Core.Configurations
         public const string FeedbackEmail = "abc@outlook.com";
 
         public const string TokenKey = "#{TokenKey}#";
+
+        public const string SyncfusionLicenseKey = "#{SyncfusionLicenseKey}#";
+
 #endif
 #if !DEBUG
         public const string ApiUrl = "#{ApiUrl}#";
@@ -50,6 +53,9 @@ namespace YanSoft.CurrencyExchanger.Core.Configurations
         public const string FeedbackEmail = "#{FeedbackEmail}#";
 
         public const string TokenKey = "#{TokenKey}#";
+
+        public const string SyncfusionLicenseKey = "#{SyncfusionLicenseKey}#";
+
 #endif
     }
 }
