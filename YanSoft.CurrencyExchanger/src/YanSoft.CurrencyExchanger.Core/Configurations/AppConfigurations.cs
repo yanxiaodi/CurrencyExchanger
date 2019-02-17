@@ -15,7 +15,7 @@ namespace YanSoft.CurrencyExchanger.Core.Configurations
         public const string AppCenterAppSecretAndroid = "6b6af17f-9bfd-4c74-8ac4-fcfcef223bb2";
         public const string AppCenterAppSecretIos = "cea8fbf3-310d-4f98-b77b-d22a02e6fac2";
 
-        public const string AdMobAndroidBannerAppId = "ca-app-pub-3940256099942544~3347511713";
+        public const string AdMobAndroidAppId = "ca-app-pub-3940256099942544~3347511713";
         public const string AdMobAndroidBannerAdUnitId = "ca-app-pub-3940256099942544/6300978111";
 
         public const string AdMobIosAppId = "ca-app-pub-3940256099942544~1458002511";
