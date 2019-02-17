@@ -57,12 +57,7 @@ namespace YanSoft.CurrencyExchanger.Droid.Renderers
         {
             adControl = new AdView(context)
             {
-#if DEBUG
-                AdUnitId = AppConfigurations.AdMobAndroidBannerTestAdUnitId,
-#endif
-#if !DEBUG
                 AdUnitId = AppConfigurations.AdMobAndroidBannerAdUnitId,
-#endif
                 AdSize  = AdSize.SmartBanner
             };
             adControl.LoadAd(new AdRequest.Builder().Build());

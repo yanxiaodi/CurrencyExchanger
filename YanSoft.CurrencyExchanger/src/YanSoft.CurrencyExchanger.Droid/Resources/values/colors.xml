@@ -10,4 +10,5 @@
 
     <color name="primaryTextColor">#000000</color>
     <color name="secondaryTextColor">#ffffff</color>
+    <color name="iconBackground">#2980B9</color>
 </resources>

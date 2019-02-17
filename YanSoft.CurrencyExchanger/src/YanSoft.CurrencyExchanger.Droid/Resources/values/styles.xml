@@ -19,7 +19,9 @@
 
     <!-- App Splash Screen Theme -->
     <style name="AppTheme.Splash.Base" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
     </style>
 
     <!-- Default Splash Screen theme applied if no resource style overrides for specific API level -->

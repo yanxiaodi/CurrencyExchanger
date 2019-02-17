@@ -52,14 +52,8 @@ namespace YanSoft.CurrencyExchanger.UWP.Renderers
         {
             adControl = new AdControl
             {
-#if DEBUG
-                ApplicationId = AppConfigurations.MicrosoftAdTestAppId,
-                AdUnitId = AppConfigurations.MicrosoftAdTestAdUnitId
-#endif
-#if !DEBUG
-                    ApplicationId = AppConfigurations.MicrosoftAdAppId,
-                    AdUnitId = AppConfigurations.MicrosoftAdUnitId
-#endif
+                ApplicationId = AppConfigurations.MicrosoftAdAppId,
+                AdUnitId = AppConfigurations.MicrosoftAdUnitId
             };
             Tuple<int, int> initSize = GetAdSize();
             adControl.Width = initSize.Item1;

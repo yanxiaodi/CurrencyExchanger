@@ -22,7 +22,7 @@ namespace YanSoft.CurrencyExchanger.Core.Services
                     var count = await db.CurrencyExchangeItems.CountAsync();
                     if (count == 0)
                     {
-                        var targetCodes = new List<string> { "USD", "CNY" };
+                        var targetCodes = new List<string> { "USD", "CNY", "NZD", "AUD" };
                         var targets = new List<CurrencyExchangeItem>();
                         targetCodes.ForEach(x =>
                         {

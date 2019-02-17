@@ -72,5 +72,6 @@ namespace YanSoft.CurrencyExchanger.UI.Pages
                 }
             }
         }
+
     }
 }
